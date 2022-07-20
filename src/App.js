@@ -26,11 +26,8 @@ import Sidebar from "./components/Sidebar";
 function App () {
   return (
     <div>
-   
-   
       <BrowserRouter>
-      <Header/>
-      
+      <Header/> 
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/about" element={<Aboutus />}></Route>
@@ -43,9 +40,11 @@ function App () {
           <Route exact path="/career" element={<Career />}></Route>
           <Route exact path="/privacy" element={<Privacypolicy />}></Route>
           <Route exact path="/return" element={<Return />}></Route>
-          <Route exact path="/blogdetail" element={<Blogdetail />}></Route>
+          <Route exact path="/blogdetail/:id" element={<Blogdetail />}></Route>
           <Route exact path="/apply" element={<Apply />}></Route>
           <Route exact path="/terms" element={<Terms/>}></Route>
+          
+          
           
         </Routes>
         <Footer/>

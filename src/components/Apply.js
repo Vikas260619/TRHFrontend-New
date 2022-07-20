@@ -1,10 +1,111 @@
-import React from "react";
+import React, { useState } from "react";
+import Input from "../Container/Input";
+import { omit } from "lodash";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { baseURL } from "./Basepath";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Apply() {
+  const [candidateName, setCandidateName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone_number, setPhone_number] = useState("");
+  const [applypostion, setApplypostion] = useState("");
+  const [resume, setResume] = useState("");
+  const [technology, setTechnology] = useState("");
+
+  //Form values
+  const [values, setValues] = useState({});
+  //Errors
+  const [errors, setErrors] = useState({});
+
+  const navigate = useNavigate();
+
+  const validate = (event, name, value) => {
+    //A function to validate each input values
+
+    switch (name) {
+      case "email":
+        if (
+          !new RegExp(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          ).test(value)
+        ) {
+          setErrors({
+            ...errors,
+            email: "Enter a valid email address",
+          });
+        } else {
+          let newObj = omit(errors, "email");
+          setErrors(newObj);
+        }
+        break;
+
+      default:
+        break;
+    }
+  };
+
+  const hiddenFileInput = React.useRef(null);
+
+  const uploadDoumentHandler = (event) => {
+    hiddenFileInput.current.click();
+  };
+
+  const handleFileChange = (e) => {
+    setResume(e.target.files[0]);
+  };
+
+  const handleChange = (event) => {
+    event.persist();
+    let name = event.target.name;
+    let val = event.target.value;
+    validate(event, name, val);
+    setEmail(val);
+    setValues({
+      ...values,
+      [name]: val,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (e) e.preventDefault();
+    if (
+      candidateName !== "" &&
+      email !== "" &&
+      phone_number !== "" &&
+      applypostion !== "" &&
+      technology !== "" &&
+      resume !== ""
+    ) {
+      let formData = new FormData();
+      formData.append("candidateName", candidateName);
+      formData.append("email", email);
+      formData.append("phone_number", phone_number);
+      formData.append("applypostion", applypostion);
+      formData.append("resume", resume);
+      formData.append("technology", technology);
+      axios({
+        url: baseURL + "candidate/create",
+        method: "post",
+        headers: "",
+        data: formData,
+      })
+        .then((res) => {
+          setTimeout(() => {
+            toast(res.data.message);
+          }, 1000);
+        })
+        .catch((err) => console.log(err));
+    } else {
+      toast("Fill all the mendetaory  field");
+    }
+  };
+
   return (
     <div>
       <div className="offwrap"></div>
-
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container">
@@ -14,14 +115,13 @@ function Apply() {
                 <span className="watermark">Apply Now</span>
               </h1>
               <span className="sub-text">
-                We Provide Training Each And Everyone Employee's Seriously, This
-                Means Giving Each Employee Complete Courses And Develop Their
-                Skills.
+                We provide training each and everyone employee's seriously, This
+                means giving each employee complete courses and develop their
+                skills.
               </span>
             </div>
           </div>
         </div>
-
         <div className="rs-appointment style1 apply-career bg17 pt-95 pb-95">
           <div className="container">
             <div className="appoint-schedule">
@@ -58,88 +158,92 @@ function Apply() {
                 <div className="col-lg-6 ">
                   <div className="contact-wrap">
                     <div id="form-messages"></div>
-                    <form id="contact-form" method="post" action="mailer.php">
+                    <form id="contact-form">
                       <fieldset>
                         <div className="row">
-                          <div className="col-md-6 col-sm-12 col-xs-12 mb-30">
-                            <div className="form-group">
-                              <label>Name</label>
-                              <input
-                                id="text"
-                                name="your name"
-                                className="form-control-mod"
-                                type="text"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <div className="col-md-6 col-sm-12 col-xs-12 mb-30">
-                            <div className="form-group">
-                              <label>E-Mail</label>
-                              <input
-                                id="email"
-                                name="email"
-                                className="form-control-mod"
-                                type="text"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <div className="col-md-6 col-sm-12 col-xs-12 mb-30">
-                            <div className="form-group">
-                              <label>Phone</label>
-                              <input
-                                id="phone"
-                                name="phone"
-                                className="form-control-mod"
-                                type="text"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <div className="col-md-6 col-sm-12 col-xs-12 mb-30">
-                            <div className="form-group">
-                              <label>Apply position</label>
-                              <input
-                                id="position"
-                                name="position"
-                                className="form-control-mod"
-                                type="text"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <div className="col-lg-12 col-sm-6 mb-30">
-                            <div className="form-group">
-                              <label>Your Resume</label>
-                              <span className="wpcf7-form-control-wrap resume">
-                                <input
-                                  type="file"
-                                  name="resume"
-                                  size="40"
-                                  className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
-                                  required
-                                />
-                              </span>
-                            </div>
-                          </div>
-                          <div className="col-lg-12 mb-35">
-                            <textarea
-                              className="from-control"
-                              id="message"
-                              name="message"
-                              placeholder="Your message Here"
+                          <label>Name</label>
+                          <Input
+                            id="text"
+                            type="text"
+                            name="name"
+                            value={candidateName}
+                            onChange={(e)=>setCandidateName(e.target.value)}
+                          />
+                          <label>Email</label>
+                          <Input
+                            id="email"
+                            name="email"
+                            type="text"
+                            value={email}
+                            style={{
+                              borderBottomColor: errors.email ? "red" : "",
+                            }}
+                            onChange={handleChange}
+                          />
+                          {errors.email && (
+                            <p
+                              style={{
+                                color: errors.email ? "red" : "",
+                                marginTop: "-4vh",
+                              }}
+                            >
+                              {errors.email}
+                            </p>
+                          )}
+                          <label>Phone</label>
+                          <Input
+                            id="phone"
+                            name="phone"
+                            type="number"
+                            value={phone_number}
+                            minLength={9}
+                            maxLength={12}
+                            onChange={(e) => setPhone_number(e.target.value)}
+                          />
+                          <label>Apply position</label>
+                          <Input
+                            id="position"
+                            name="position"
+                            type="text"
+                            value={applypostion}
+                            onChange={(e) => setApplypostion(e.target.value)}
+                          />
+                          <label
+                            for="formImage"
+                            class="form-label"
+                            onClick={() => uploadDoumentHandler("file")}
+                          >
+                            Your Resume
+                          </label>
+                          <span className="wpcf7-form-control-wrap resume">
+                            <Input
+                              type="file"
+                              name="resume"
+                              size="40"
+                              value={resume}
+                              onChange={(e) => handleFileChange(e)}
+                              className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
                               required
-                            ></textarea>
-                          </div>
+                            />
+                          </span>{" "}
+                          <label>Technology</label>
+                          <Input
+                            id="technology"
+                            name="technology"
+                            type="text"
+                            value={technology}
+                            onChange={(e) => setTechnology(e.target.value)}
+                          />
                         </div>
                         <div className="btn-part">
                           <div className="form-group mb-0">
-                            <input
+                            <Input
                               className="readon submit"
                               type="submit"
-                              value="Submit Now"
+                              label="Submit"
+                              onClick={(e) => handleSubmit(e)}
                             />
+                            <ToastContainer />
                           </div>
                         </div>
                       </fieldset>
@@ -150,9 +254,7 @@ function Apply() {
             </div>
           </div>
         </div>
-
       </div>
-
 
       <div id="scrollUp" className="blue-color">
         <i className="fa fa-angle-up"></i>

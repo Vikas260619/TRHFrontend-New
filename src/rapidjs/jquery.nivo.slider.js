@@ -597,7 +597,7 @@
         
         // For debugging
         var trace = function(msg){
-            if(this.console && typeof console.log !== 'undefined') { console.log(msg); }
+            if(this.console && typeof console.log !== 'undefined')
         };
         
         // Start / Stop

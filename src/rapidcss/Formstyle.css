@@ -1,0 +1,44 @@
+.backform{padding: 50px 0 50px;}
+
+.newsecform{border: 2px solid #ccc;
+    padding: 10px;height: auto;margin-bottom: 10px;}
+
+.add-btun{ display: inline-block;
+    position: relative;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #00a3e8;
+    color: #ffffff;
+    border: none;float: left;    margin-right: 10px;
+
+   
+    margin-bottom: 10px;}
+    .remove-btn{
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: 500;
+        background: #000;
+        color: #ffffff;
+        border: none;
+       
+        margin-bottom: 10px;}
+ .savebtton{float: right;}
+
+.savebtton button{margin-right: 10px;}
+
+.remove-btun{cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    padding: 10px 40px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #000;    margin-left: 10px;
+
+    color: #ffffff;
+    border: none;}

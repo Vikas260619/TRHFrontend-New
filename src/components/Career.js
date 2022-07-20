@@ -227,7 +227,7 @@ function Career() {
                       deployment.{" "}
                     </p>
                     <div className="job-salary">
-                      <a href="/apply">
+                      <a href="/apply" target={'_self'}>
                         Apply Now <i className="fa fa-arrow-right"></i>
                       </a>
                     </div>
@@ -280,10 +280,7 @@ function Career() {
       </div>
 
 
-      <div id="scrollUp" className="blue-color">
-        <i className="fa fa-angle-up"></i>
-      </div>
-    </div>
+        </div>
   );
 }
 

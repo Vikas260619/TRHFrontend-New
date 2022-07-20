@@ -1,25 +1,98 @@
-import React from "react";
+import React, { useState } from "react";
+import Common from "../Container/Common.js";
+import axios from "axios";
+import { baseURL } from "./Basepath.js";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { omit } from "lodash";
 
 function Contactus() {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [website, setwebsite] = useState("");
+
+  const [values, setValues] = useState({});
+  //Errors
+  const [errors, setErrors] = useState({});
+
+  const validate = (event, name, value) => {
+    //A function to validate each input values
+
+    switch (name) {
+      case "email":
+        if (
+          !new RegExp(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          ).test(value)
+        ) {
+          setErrors({
+            ...errors,
+            email: "Enter a valid email address",
+          });
+        } else {
+          let newObj = omit(errors, "email");
+          setErrors(newObj);
+        }
+        break;
+
+      default:
+        break;
+    }
+  };
+
+  const handleChange = (event) => {
+    //To stop default events
+    event.persist();
+
+    let name = event.target.name;
+    let val = event.target.value;
+
+    validate(event, name, val);
+
+    setEmail(val);
+    //Let's set these values in state
+    setValues({
+      ...values,
+      [email]: val,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+    if (name !== "" && email !== "" && phone !== "" && message !== "") {
+      let data = {
+        message, name, email, phone, website
+      }
+      axios({
+        url: baseURL + "contact/create",
+        method: "post",
+        data: data
+      })
+        .then((res) => {
+          toast(res.data.message)
+        })
+        .catch((err) => console.log(err));
+    } else {
+      toast("Fill all the medatory")
+    }
+  };
+
   return (
     <div>
       <div className="offwrap"></div>
 
       <div className="main-content">
-        <div className="rs-breadcrumbs img1">
-          <div className="container">
-            <div className="breadcrumbs-inner">
-              <h1 className="page-title">
-                Have questions - contact us
-                <span className="watermark">Contact</span>
-              </h1>
-              <span className="sub-text">
-                Get in touch with us and discuss the needs and requirements of
-                your Development project.
-              </span>
-            </div>
-          </div>
-        </div>
+        <Common
+          name="Have questions - contact us"
+          background="Contact"
+          description="Get in touch with us and discuss the needs and requirements of
+         your Development project."
+        />
+
 
         <div className="rs-contact contact-style2 bg9 pt-95 pb-95 ">
           <div className="container">
@@ -49,29 +122,44 @@ function Contactus() {
                             className="from-control"
                             type="text"
                             id="name"
-                            name="name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                             placeholder="Name"
-                            required=""
+
                           />
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-30">
                           <input
                             className="from-control"
-                            type="text"
-                            id="email"
                             name="email"
+                            type="email"
+                            id="email"
+                            value={email}
+                            onChange={handleChange}
                             placeholder="E-Mail"
-                            required=""
+                            style={{
+                              borderBottomColor: errors.email ? "red" : "",
+                            }}
+                            required
                           />
+                          {errors.email && (
+                            <p
+                              style={{
+                                color: errors.email ? "red" : "",
+                              }}
+                            >
+                              {errors.email}
+                            </p>
+                          )}
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-30">
                           <input
                             className="from-control"
-                            type="text"
+                            type="mob-number"
                             id="phone"
-                            name="phone"
+                            name="number"
+                            onChange={(e) => setPhone(e.target.value)}
                             placeholder="Phone Number"
-                            required=""
                           />
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-30">
@@ -79,9 +167,10 @@ function Contactus() {
                             className="from-control"
                             type="text"
                             id="Website"
-                            name="subject"
+                            name="website"
+                            onChange={(e) => setwebsite(e.target.value)}
                             placeholder="Your Website"
-                            required=""
+                            required
                           />
                         </div>
 
@@ -89,9 +178,10 @@ function Contactus() {
                           <textarea
                             className="from-control"
                             id="message"
-                            name="message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                             placeholder="Your message Here"
-                            required=""
+                            required
                           ></textarea>
                         </div>
                       </div>
@@ -100,8 +190,10 @@ function Contactus() {
                           <input
                             className="readon submit"
                             type="submit"
+                            onClick={handleSubmit}
                             value="Contact Us"
                           />
+                          <ToastContainer />
                         </div>
                       </div>
                     </fieldset>
@@ -157,11 +249,11 @@ function Contactus() {
                           <a href="#">Email us</a>
                         </h2>
                         <a href="mailto:sales@therapidhire.com">
-                          sales@therapidhire.com
+                          mailto:sales@therapidhire.com
                         </a>
                         <br />
                         <a href="mailto:info@therapidhire.com">
-                          info@therapidhire.com
+                          mailto:info@therapidhire.com
                         </a>
                       </div>
                     </div>
@@ -186,11 +278,7 @@ function Contactus() {
             </div>
           </div>
         </div>
-
       </div>
-
-
-     
     </div>
   );
 }
