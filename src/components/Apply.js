@@ -49,9 +49,7 @@ function Apply() {
 
   const hiddenFileInput = React.useRef(null);
 
-  const uploadDoumentHandler = (event) => {
-    hiddenFileInput.current.click();
-  };
+  
 
   const handleFileChange = (e) => {
     setResume(e.target.files[0]);
@@ -111,13 +109,11 @@ function Apply() {
           <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Explore Opportunities-career
+                Explore Opportunities
                 <span className="watermark">Apply Now</span>
               </h1>
               <span className="sub-text">
-                We provide training each and everyone employee's seriously, This
-                means giving each employee complete courses and develop their
-                skills.
+              If you're enthusiastic, inquisitive, and enjoy using your ideas to overcome problems, this is the place for you.
               </span>
             </div>
           </div>
@@ -161,19 +157,21 @@ function Apply() {
                     <form id="contact-form">
                       <fieldset>
                         <div className="row">
-                          <label>Name</label>
+                          <div className="col-lg-6">
+                          
                           <Input
                             id="text"
                             type="text"
-                            name="name"
+                            name="name" placeholder="Name"
                             value={candidateName}
                             onChange={(e)=>setCandidateName(e.target.value)}
                           />
-                          <label>Email</label>
+                          </div>
+                          <div className="col-lg-6">
                           <Input
                             id="email"
                             name="email"
-                            type="text"
+                            type="text" placeholder="Email Address"
                             value={email}
                             style={{
                               borderBottomColor: errors.email ? "red" : "",
@@ -190,31 +188,32 @@ function Apply() {
                               {errors.email}
                             </p>
                           )}
-                          <label>Phone</label>
+                          </div>
+                          </div>
+                          <div className="row">
+                          <div className="col-lg-6">
                           <Input
                             id="phone"
                             name="phone"
-                            type="number"
+                            type="number" placeholder="Phone No."
                             value={phone_number}
                             minLength={9}
                             maxLength={12}
                             onChange={(e) => setPhone_number(e.target.value)}
-                          />
-                          <label>Apply position</label>
+                          /></div>
+                           <div className="col-lg-6">
                           <Input
                             id="position"
-                            name="position"
+                            name="position" placeholder="Apply Position"
                             type="text"
                             value={applypostion}
                             onChange={(e) => setApplypostion(e.target.value)}
                           />
-                          <label
-                            for="formImage"
-                            class="form-label"
-                            onClick={() => uploadDoumentHandler("file")}
-                          >
-                            Your Resume
-                          </label>
+                          </div>
+                          </div>
+                          <div className="row">
+                          <div className="col-lg-12">
+                        
                           <span className="wpcf7-form-control-wrap resume">
                             <Input
                               type="file"
@@ -225,22 +224,29 @@ function Apply() {
                               className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
                               required
                             />
-                          </span>{" "}
-                          <label>Technology</label>
+                          </span>{" "}</div>
+                          </div>
+                          {/* <div className="row" >
+
+                          <div className="col-lg-12">
+
+                         
                           <Input
-                            id="technology"
+                            id="technology" 
                             name="technology"
                             type="text"
+                            placeholder="Technology"
                             value={technology}
                             onChange={(e) => setTechnology(e.target.value)}
                           />
                         </div>
+                        </div> */}
                         <div className="btn-part">
                           <div className="form-group mb-0">
                             <Input
                               className="readon submit"
                               type="submit"
-                              label="Submit"
+                            
                               onClick={(e) => handleSubmit(e)}
                             />
                             <ToastContainer />
@@ -256,9 +262,7 @@ function Apply() {
         </div>
       </div>
 
-      <div id="scrollUp" className="blue-color">
-        <i className="fa fa-angle-up"></i>
-      </div>
+      
     </div>
   );
 }

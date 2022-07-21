@@ -84,7 +84,7 @@ function Blogdetail() {
                     <div className="article-content">
                       <ul className="entry-list">
                         <li>
-                          By <a href="#">{users.author}</a>
+                          By <a href="/">{users.author}</a>
                         </li>
                         <li>{users.date}</li>
                       </ul>
@@ -136,27 +136,27 @@ function Blogdetail() {
                         <div className="col-lg-6 col-md-6">
                           <ul className="share-social text-end">
                             <li>
-                              <a href="#" target="_blank">
+                              <a href="/" target="_blank">
                                 <i className="fa fa-facebook"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#" target="_blank">
+                              <a href="/" target="_blank">
                                 <i className="fa fa-twitter"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#" target="_blank">
+                              <a href="/" target="_blank">
                                 <i className="fa fa-linkedin"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#" target="_blank">
+                              <a href="/" target="_blank">
                                 <i className="fa fa-instagram"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#" target="_blank">
+                              <a href="/" target="_blank">
                                 <i className="fa fa-quora"></i>
                               </a>
                             </li>
@@ -169,7 +169,7 @@ function Blogdetail() {
                       <h3>03 Comments:</h3>
 
                       <div className="comments-list">
-                        <img src="images/image-1.jpg" alt="image" />
+                        <img src="images/image-1.jpg" alt="author" />
                         <h5>
                           Vikas Choudhary, <span>2 months ago</span>
                         </h5>
@@ -178,12 +178,12 @@ function Blogdetail() {
                           sed diam nonumy eirmod tempor invidunt ut labore et
                           dolore magna aliquyam erat, sed diam voluptua.
                         </p>
-                        <a href="#" className="reply-btn">
+                        <a href="/" className="reply-btn">
                           Reply
                         </a>
                       </div>
                       <div className="comments-list children">
-                        <img src="images/image-3.jpg" alt="image" />
+                        <img src="images/image-3.jpg" alt="commenticon" />
                         <h5>
                           Krishna, <span>2 months ago</span>
                         </h5>
@@ -192,12 +192,12 @@ function Blogdetail() {
                           sed diam nonumy eirmod tempor invidunt ut labore et
                           dolore magna aliquyam erat, sed diam voluptua.
                         </p>
-                        <a href="#" className="reply-btn">
+                        <a href="/" className="reply-btn">
                           Reply
                         </a>
                       </div>
                       <div className="comments-list">
-                        <img src="images/image-1.jpg" alt="image" />
+                        <img src="images/image-1.jpg" alt="commenticon1" />
                         <h5>
                           Vikas Choudhary, <span>2 months ago</span>
                         </h5>
@@ -206,7 +206,7 @@ function Blogdetail() {
                           sed diam nonumy eirmod tempor invidunt ut labore et
                           dolore magna aliquyam erat, sed diam voluptua.
                         </p>
-                        <a href="#" className="reply-btn">
+                        <a href="/" className="reply-btn">
                           Reply
                         </a>
                       </div>
@@ -276,13 +276,13 @@ function Blogdetail() {
                       {data
                       ? data.slice(0, 3).map((val) => (
                           <article className="item">
-                            <a href="#" className="thumb">
+                            <a href="/" className="thumb">
                               <img src={val.bannerImage} alt="image" />
                             </a>
                             <div className="info">
                               <span>{val.date}</span>
                               <h4 className="title usmall">
-                                <a href="#">{val.title}</a>
+                                <a href="/">{val.title}</a>
                               </h4>
                             </div>
                           </article>
@@ -301,7 +301,7 @@ function Blogdetail() {
                         categorie.map((val) => (
                           <li>
                             <a
-                              href="#"
+                              href="/"
                               className=" d-flex justify-content-between align-items-center"
                             >
                               {val._id}<span>{val.count}</span>
@@ -312,7 +312,7 @@ function Blogdetail() {
                         categorie.map((val) => (
                           <li>
                             <a
-                              href="#"
+                              href="/"
                               className=" d-flex justify-content-between align-items-center"
                             >
                               {val} <span>{console.log(categorie)}</span>

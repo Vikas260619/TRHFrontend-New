@@ -25,11 +25,11 @@ function Aboutus() {
         >
           <div className="container">
             <div className="animat-rat">
-              <img src="images/sib-1.png" className="rat-sib" alt="" />
-              <img src="images/round-2.png" className="rat-round" alt="" />
-              <img src="images/ract.png" className="rat-ract" alt="" />
-              <img src="images/squar.png" className="rat-squar1" alt="" />
-              <img src="images/squar.png" className="rat-squar2" alt="" />
+              <img src="images/sib-1.png" className="rat-sib" alt="icon1" />
+              <img src="images/round-2.png" className="rat-round" alt="icon2" />
+              <img src="images/ract.png" className="rat-ract" alt="icon3" />
+              <img src="images/squar.png" className="rat-squar1" alt="icon4" />
+              <img src="images/squar.png" className="rat-squar2" alt="icon5" />
             </div>
 
             <div className="row">
@@ -61,12 +61,12 @@ function Aboutus() {
                       <div className="front-content-part">
                         <div className="front-icon-part">
                           <div className="icon-part">
-                            <img src="images/rapid1.png" alt="" />
+                            <img src="images/rapid1.png" alt="vision" />
                           </div>
                         </div>
                         <div className="front-title-part">
                           <h3 className="title">
-                            <a href="//">Vision</a>
+                            <a href="/">Vision</a>
                           </h3>
                         </div>
                         <div className="front-desc-part">
@@ -81,7 +81,7 @@ function Aboutus() {
                       <div className="back-front-content">
                         <div className="back-title-part">
                           <h3 className="back-title">
-                            <a href="//">Vision</a>
+                            <a href="/">Vision</a>
                           </h3>
                         </div>
                         <div className="back-desc-part">
@@ -106,12 +106,12 @@ function Aboutus() {
                       <div className="front-content-part">
                         <div className="front-icon-part">
                           <div className="icon-part">
-                            <img src="images/rapid2.png" alt="" />
+                            <img src="images/rapid2.png" alt="mission" />
                           </div>
                         </div>
                         <div className="front-title-part">
                           <h3 className="title">
-                            <a href="//">Mission</a>
+                            <a href="/">Mission</a>
                           </h3>
                         </div>
                         <div className="front-desc-part">
@@ -126,7 +126,7 @@ function Aboutus() {
                       <div className="back-front-content">
                         <div className="back-title-part">
                           <h3 className="back-title">
-                            <a href="#">Mission</a>
+                            <a href="/">Mission</a>
                           </h3>
                         </div>
                         <div className="back-desc-part">
@@ -151,12 +151,12 @@ function Aboutus() {
                       <div className="front-content-part">
                         <div className="front-icon-part">
                           <div className="icon-part">
-                            <img src="images/rapid3.png" alt="" />
+                            <img src="images/rapid3.png" alt="values" />
                           </div>
                         </div>
                         <div className="front-title-part">
                           <h3 className="title">
-                            <a href="#">Values</a>
+                            <a href="/">Values</a>
                           </h3>
                         </div>
                         <div className="front-desc-part">
@@ -171,7 +171,7 @@ function Aboutus() {
                       <div className="back-front-content">
                         <div className="back-title-part">
                           <h3 className="back-title">
-                            <a href="#">Values</a>
+                            <a href="/">Values</a>
                           </h3>
                         </div>
                         <div className="back-desc-part">
@@ -190,7 +190,7 @@ function Aboutus() {
               </div>
             </div>
             <div className="about-circle-shape">
-              <img src="images/about-circle.png" alt="image" />
+              <img src="images/about-circle.png" alt="imagecircle" />
             </div>
           </div>
         </div>
@@ -211,13 +211,13 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="#">
-                      <img src="images/choose-1.png" alt="image" />
+                    <a href="/">
+                      <img src="images/choose-1.png" alt="imagechoose" />
                     </a>
                   </div>
                   <div className="choose-content">
                     <h3>
-                      <a href="#">Client Oriented</a>
+                      <a href="/">Client Oriented</a>
                     </h3>
                     <p>
                       Being customer-oriented is an approach in which, rather
@@ -232,12 +232,12 @@ function Aboutus() {
                 <div className="single-choose-card">
                   <div className="choose-image">
                     <a href="/">
-                      <img src="images/choose-2.png" alt="image" />
+                      <img src="images/choose-2.png" alt="choose" />
                     </a>
                   </div>
                   <div className="choose-content">
                     <h3>
-                      <a href="#">Creativity</a>
+                      <a href="/">Creativity</a>
                     </h3>
                     <p>
                       Our Creative thinking can also lead to innovation that
@@ -252,13 +252,13 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="#">
-                      <img src="images/choose-3.png" alt="image" />
+                    <a href="/">
+                      <img src="images/choose-3.png" alt="meeting" />
                     </a>
                   </div>
                   <div className="choose-content">
                     <h3>
-                      <a href="#">Meeting Deadlines</a>
+                      <a href="/">Meeting Deadlines</a>
                     </h3>
                     <p>
                       Meeting Deadlines help us to collaborate toward achieving
@@ -272,13 +272,13 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="#">
-                      <img src="images/choose-4.png" alt="image" />
+                    <a href="/">
+                      <img src="images/choose-4.png" alt="plan" />
                     </a>
                   </div>
                   <div className="choose-content">
                     <h3>
-                      <a href="#">A Plan for Success</a>
+                      <a href="/">A Plan for Success</a>
                     </h3>
                     <p>
                       Our Planning helps to critically assess the goal to see in

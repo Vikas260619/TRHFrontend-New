@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Sidebar() {
   return (
     <div>
@@ -7,22 +8,22 @@ function Sidebar() {
         <div className="social">
           <ul>
             <li className="twit">
-              <a href="#">
+              <a href="https://twitter.com/HireRapid" target="_blank">
                 Twitter <i className="fa fa-twitter "></i>
               </a>
             </li>
             <li className="insta">
-              <a href="#">
+              <a href="https://www.instagram.com/therapidhire_/" target="_blank">
                 Instagram <i className="fa fa-instagram"></i>
               </a>
             </li>
             <li className="linke">
-              <a href="#">
+              <a href="https://www.linkedin.com/company/therapidhire" target="_blank">
                 Linkedin <i className="fa fa-linkedin"></i>
               </a>
             </li>
             <li className="facebook">
-              <a href="#">
+              <a href="https://www.facebook.com/therapidhire" target="_blank">
                 Facebook <i className="fa fa-facebook"></i>
               </a>
             </li>

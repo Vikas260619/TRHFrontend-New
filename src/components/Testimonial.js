@@ -190,7 +190,12 @@ function Testimonial() {
             <br />
             <div>
               <AliceCarousel
-                autoPlay
+               autoPlay
+               autoPlayStrategy="none"
+               autoPlayInterval={3000}
+               animationDuration={3000}
+               animationType="fadeout"
+               infinite
                 mouseTracking
                 items={items}
                 responsive={responsive}

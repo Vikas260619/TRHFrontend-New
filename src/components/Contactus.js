@@ -211,10 +211,10 @@ function Contactus() {
                     <div className="contact-item">
                       <div className="content-text">
                         <div className="contact-icon">
-                          <i className="fa fa-map marker"></i>
+                        <img src="images/usa.png"  alt="usaflag"/>
                         </div>
                         <h2 className="title">
-                          <a href="#">USA office</a>
+                          <a href="#">USA Office</a>
                         </h2>
                         <p className="services-txt">
                           1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801
@@ -227,10 +227,10 @@ function Contactus() {
                     <div className="contact-item">
                       <div className="content-text">
                         <div className="contact-icon">
-                          <i className="fa fa-map-pin"></i>
-                        </div>
+                          <img src="images/indiaflag.png"  alt="indiaflag"/>
+                      </div>
                         <h2 className="title">
-                          <a href="#">BD office</a>
+                          <a href="/">India Office</a>
                         </h2>
                         <p className="services-txt">
                           51, Electronic Complex, Pardesi Pura Main Road,
@@ -246,14 +246,14 @@ function Contactus() {
                           <i className="fa fa-envelope"></i>
                         </div>
                         <h2 className="title">
-                          <a href="#">Email us</a>
+                          <a href="#">Email Us</a>
                         </h2>
                         <a href="mailto:sales@therapidhire.com">
-                          mailto:sales@therapidhire.com
+                          sales@therapidhire.com
                         </a>
                         <br />
                         <a href="mailto:info@therapidhire.com">
-                          mailto:info@therapidhire.com
+                          info@therapidhire.com
                         </a>
                       </div>
                     </div>
@@ -265,7 +265,7 @@ function Contactus() {
                           <i className="fa fa-phone"></i>
                         </div>
                         <h2 className="title">
-                          <a href="#">Call us</a>
+                          <a href="#">Call Us</a>
                         </h2>
                         <a href="tel:+1 (917) 628 2406">+1 (917) 628 2406</a>
                         <br />

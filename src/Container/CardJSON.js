@@ -97,6 +97,11 @@ const TechnoData = [
 
 const Teamdata=[
    {
+      imgsrc:'images/team5.jpg',
+      title:'Vipin Joshi',
+      description:'HUMAN RESOURCE'
+   },
+   {
       imgsrc:'images/team1.jpg',
       title:'Shraddha Sharma',
       description:'BUSINESS DEVELOPMENT EXECUTIVE'
@@ -126,11 +131,7 @@ const Teamdata=[
       title:'Yogita Saxena',
       description:'SOFTWARE DEVELOPER'
    },
-   {
-      imgsrc:'images/team5.jpg',
-      title:'Krishna Makwana',
-      description:'SOFTWARE DEVELOPER'
-   },
+   
    {
       imgsrc:'images/team8.jpg',
       title:'Govind Somani',

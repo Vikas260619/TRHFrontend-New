@@ -9,14 +9,17 @@ function Home() {
     {
       item: "Cloud Services",
       image: "images/slider1.jpg",
+      descp:"We've been offering innovative cloud solutions to people in need of IT innovation and support.",
     },
     {
       item: "Web Development",
       image: "images/slider2.jpg",
+      descp: "With a broad selection of web application services, we guarantee to best meet all of your business needs.",
     },
     {
-      item: "Data Engineering",
+      item: "Mobile App Development",
       image: "images/slider3.jpg",
+      descp: "We provide complete application design, integration, and management services.",
     },
   ];
   const responsive = {
@@ -33,7 +36,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="#">Cloud Services</a>
+            <a href="/">Cloud Services</a>
           </h3>
           <div className="desc">
             Our cloud services provide the options of availing remote services
@@ -49,7 +52,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="#">Web Development</a>
+            <a href="/">Web Development</a>
           </h3>
           <div className="desc">
             We provide designing, coding, programming and modifying websites,
@@ -65,7 +68,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="">AWS Services</a>
+            <a href="/">AWS Services</a>
           </h3>
           <div className="desc">
             Build, Deploy, and Manage Websites, Apps or Processes On AWS Secure,
@@ -81,7 +84,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="">Web Designing</a>
+            <a href="/">Web Designing</a>
           </h3>
           <div className="desc">
             Want to build your product with a team that establishes a clear
@@ -97,7 +100,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="">Database Management</a>
+            <a href="/">Database Management</a>
           </h3>
           <div className="desc">
             In today’s business landscape, every CXO is in theprocess or
@@ -113,7 +116,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="">Cyber Security</a>
+            <a href="/">Cyber Security</a>
           </h3>
           <div className="desc">
             In today’s business landscape, every CXO is in theprocess or
@@ -126,7 +129,13 @@ function Home() {
 
   return (
     <div>
-      <AliceCarousel autoPlay autoPlayInterval={3000}>
+      <AliceCarousel autoPlay
+        
+        autoPlayStrategy="none"
+        autoPlayInterval={3000}
+        animationDuration={3000}
+        animationType="fadeout"
+        infinite>
         {list.map((items) => (
           <>
             <div
@@ -145,9 +154,7 @@ function Home() {
                     <div className="slider-des">
                       <div className="sl-subtitle">{items.item}</div>
                       <h1 className="sl-title">
-                        {" "}
-                        We grow & manage
-                        <br /> Your Business
+                       {items.descp}
                       </h1>
                     </div>
                     <div className="slider-bottom">
@@ -163,7 +170,7 @@ function Home() {
         ))}
       </AliceCarousel>
       <div
-        className="rs-about style4 pt-95 pb-95"
+        className="rs-about style4 pt-25 pb-95"
         style={{ position: "relative", overflow: "hidden" }}
       >
         <div className="container">
@@ -183,7 +190,7 @@ function Home() {
                 </h2>
                 <div className="heading-border-line"></div>
               </div>
-              <p className="pt-50 text-center">
+              <p className="pt-50 text-center para21">
                 Therapidhire is a software development and IT outsourcing
                 company based in India. Therapidhire takes an energetic,
                 collaborative strategy to create and customize solutions across
@@ -256,30 +263,30 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="rs-services" className="rs-services style2 bg11 pt-95 pb-95 ">
+      <div id="rs-services" className="rs-services style2 bg11 pt-95 pb-25 ">
         <div className="container">
-          <div className="sec-title2 d-flex align-items-center mb-60 md-mb-40">
-            <div className="first-half">
-              <div className="sec-title3">
+        <div className="row">
+            <div className="col-lg-12  col-md-6 ">
+              <div className="sec-title3 text-center mb-35">
                 <span className="sub-title">OUR SERVICES</span>
-                <h2 className="title pb-25">
-                  We Provide The Best Quality Services
-                </h2>
-                <div className="heading-border-line left-style"></div>
-              </div>
-            </div>
-            <div className="last-half">
-              <p className="desc mb-0 pl-20 md-pl-15">
+                <h2 className="title pb-25 ">
                 We provide industry-specific and need-based services, which
-                allows us to deliver tailor-made solutions. We serve customers
-                ranging from small individual startups to big corporate houses.
-              </p>
+    allows us to deliver tailor-made solutions. We serve customers
+    ranging from small individual startups to big corporate houses.
+                </h2>
+                <div className="heading-border-line"></div>
+              </div>
             </div>
           </div>
           <br />
           <br />
           <AliceCarousel
-            autoPlay
+            autoPlay 
+            autoPlayStrategy="none"
+            autoPlayInterval={3000}
+            animationDuration={3000}
+            animationType="fadeout"
+            infinite
             mouseTracking
             items={items1}
             responsive={responsive}

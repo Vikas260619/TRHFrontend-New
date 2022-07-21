@@ -6,7 +6,7 @@ const CardTechno = (props) => {
         <div className="technology-item">
             <img
                 src={props.imgsrc}
-                alt="technology image"
+                alt="technologyimage"
                 className="technology-bg-img"
             />
             <div className="bodytech">
@@ -15,7 +15,7 @@ const CardTechno = (props) => {
                 <p> {props.description}</p>
             </div>
             <div className="icontech">
-                <img src={props.icon_imgsrc} alt="TRH" />
+                <img src={props.icon_imgsrc} alt="Propimage" />
             </div>
             <div className="icontech-border"></div>
         </div>

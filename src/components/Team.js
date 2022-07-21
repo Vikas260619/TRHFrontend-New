@@ -13,10 +13,8 @@ function Team() {
       <Common
           name="MEET OUR TEAM - Expert Team"   
          background= "Team" 
-         description=" The way a team plays as a whole determines its success. You may
-         have the greatest bunch of individual stars in the world. We can
-         all do small things, with great love, and together we can do
-         something wonderful."
+         description="A team's success is determined by how well it plays as a whole. You could have the world's best collection of individual stars.
+          We can all do little things with great love, and together we can accomplish great things.	"
             />
 
 

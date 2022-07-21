@@ -58,12 +58,11 @@ function Blog() {
           <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Creative ideas - blogs
+                TRH Blog
                 <span className="watermark">Blog</span>
               </h1>
               <span className="sub-text">
-                Most creative ideas in blog post of Cloud services , Designing ,
-                Development..{" "}
+              Get the latest industry insights and expert tips to stay ahead!!
               </span>
             </div>
           </div>
@@ -80,18 +79,18 @@ function Blog() {
                           <div className="single-blog-card">
                             <div className="blog-image">
                               <a href="//">
-                                <img src={item.bannerImage} alt="image" />
+                                <img src={item.bannerImage} alt="blog" />
                               </a>
                               <div className="date">{item.date}</div>
                             </div>
                             <div className="blog-content">
                               <h3>
-                                <a href="#">{item.title}</a>
+                                <a href="/">{item.title}</a>
                               </h3>
                               <p>{item.mainDesc.slice(0, 124)}</p>
-                              <a onClick={() => newPage(item._id)}>
+                              <button onClick={() => newPage(item._id)} className="blog-btn">
                                 View more...
-                              </a>
+                              </button>
                             </div>
                           </div>
                         </div>
@@ -108,13 +107,13 @@ function Blog() {
                     {data
                       ? data.slice(0, 3).map((val) => (
                           <article className="item">
-                            <a href="#" className="thumb">
+                            <a href="/" className="thumb">
                               <img src={val.bannerImage} alt="image" />
                             </a>
                             <div className="info">
                               <span>{val.date}</span>
                               <h4 className="title usmall">
-                                <a href="#">{val.title}</a>
+                                <a href="/">{val.title}</a>
                               </h4>
                             </div>
                           </article>
@@ -130,7 +129,7 @@ function Blog() {
                         categorie.map((val) => (
                           <li>
                             <a
-                              href="#"
+                              href="/"
                               className=" d-flex justify-content-between align-items-center"
                             >
                               {val._id}<span>{val.count}</span>

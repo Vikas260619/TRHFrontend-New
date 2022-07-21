@@ -1,6 +1,8 @@
 import React from "react";
 
+
 function Features() {
+  
   return (
     <div>
       <div className="main-content">

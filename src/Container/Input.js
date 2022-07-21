@@ -10,6 +10,7 @@ const Input = (props) => {
             type={props.type}
             name={props.name}
             size={props.size}
+            placeholder={props.placeholder}
             className={props.className ? props.className : "form-control-mod"}
             onClick={props.onClick}
             onChange={props.onChange}

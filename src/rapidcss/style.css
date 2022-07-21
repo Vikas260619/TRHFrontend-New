@@ -111,10 +111,10 @@ h6 {
   background: #064491 !important;
 }
 .pt-133 {
-    padding-top: 133px;
+    padding-top: 35px;
 }
 .pb-133 {
-    padding-bottom: 133px;
+    padding-bottom: 25px;
 }
 .rs-vertical-bottom {
   display: -ms-flexbox;
@@ -1036,10 +1036,13 @@ button:focus {
   transition: all .3s ease;
   z-index: 0;
 }
+.para21{font-size: 18px;}
+
+.white-color{color: #fff !important;}
 .sec-title3 .title {
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 46px;
+  line-height: 30px;
   color: #0a0a0a;
       margin-bottom: 13px;
 }
@@ -1865,7 +1868,7 @@ body .search-modal .close:hover {
   line-height: 30px;
   font-weight: 500;
   color: #fff;
-  text-transform: capitalize;
+  text-transform: unset;
   display: inline-block;
   margin-top: 10px;
   padding-right: 290px;
@@ -1946,9 +1949,9 @@ body .search-modal .close:hover {
   position: absolute;
   content: '';
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  
 }
 .rs-slider.slider3 .content-part .sl-subtitle {
   font-size: 16px;
@@ -2058,16 +2061,16 @@ body .search-modal .close:hover {
   border-color: #00a3e8;
 }
 .rs-slider.rs-slider-style3.slider3 .content-part .sl-subtitle {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #00a3e8;
 }
 .rs-slider.rs-slider-style3.slider3 .content-part .sl-title {
-  font-size: 55px;
+  font-size: 20px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 36px;color: #fff;
 }
 .rs-slider.rs-slider-style3 .nivo-directionNav > a {
@@ -3296,10 +3299,10 @@ body .search-modal .close:hover {
   padding: 20px 20px 20px;
 }
 .rs-team.style4 .team-item-wrap .team-content .person-name {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  margin-bottom: 5px;
+  font-size: 25px;
+    font-weight: 600;
+    line-height: 17px;
+  margin-bottom: 20px;
 }
 .rs-team.style4 .team-item-wrap .team-content .person-name a {
   color: #0a0a0a;
@@ -3685,7 +3688,7 @@ border:2px dotted #000}
   margin-bottom: 30px;
 }
 .rs-testimonial.style1 .item .testi-img img {
-  max-width: 80px;
+  max-width: 253px;
   margin: 0 auto;
 }
 .rs-testimonial.style1 .item .rating {
@@ -3742,7 +3745,7 @@ border:2px dotted #000}
 .rs-testimonial.style1 .pattern-img .common.img3 {
   top: 0;
   right: 0;
-  max-width: 330px;
+  max-width: 260px;
   margin: 0 auto 0 0;
 }
 /*-----------------------------------------------
@@ -5031,7 +5034,7 @@ border:2px dotted #000}
     border-radius: 20px;}
 
 
-.enquirebtn:hover { background: unset;color: #fff !important;
+.enquirebtn:hover { background: #000;color: #fff !important;
     padding: 10px 10px;border: 2px solid #fff;
     border-radius: 20px;}
 
@@ -5505,8 +5508,8 @@ Choose Area CSS
 }
 .rs-contact.main-home .contact-icons-style .contact-item .contact-icon img {
   max-width: unset;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   padding: 5px 5px 0px 0px;
 }
 .rs-contact.main-home .contact-icons-style .contact-item .content-text {
@@ -6891,7 +6894,8 @@ Blog Details Area CSS
     -webkit-transition: var(--transition);
     transition: var(--transition);
     position: relative;
-    margin-top: 15px;
+    margin-top: 15px;background: none;
+    border: none;
 }
 .single-blog-card .blog-content .blog-btn::before {
     content: "";
@@ -6928,7 +6932,9 @@ Blog Details Area CSS
     bottom: -1px;
     background-color: #00a3e8;
 }
-.our-team{ text-align: center; }
+.our-team{ text-align: center;    margin-top: 20px;    margin-bottom: 50px;
+
+}
 .our-team .pic{
     border-radius: 50%;
     overflow: hidden;
@@ -6979,7 +6985,8 @@ Blog Details Area CSS
     display: block;
     font-size: 16px;
    
-    color: #00a3e8;
+    color: #00a3e8;    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .our-team .icon11{
     list-style: none;
@@ -7477,7 +7484,8 @@ Blog Details Area CSS
   border: 1px solid #ebebeb;
   padding: 45px 20px;
   background: #fff;
-  position: relative;box-shadow: 0 6px 25px rgb(12 89 219 / 9%);
+  position: relative;box-shadow: 0 6px 25px rgb(12 89 219 / 9%);    height: 432px;
+
 }
 @media (max-width: 767px) {
   .job-wrapper {
@@ -7572,7 +7580,8 @@ div.job-tag span {
   color: #26ae61;
 }
 .job-content p {
-  margin-bottom: 25px;text-align: justify;
+  margin-bottom: 25px;text-align: justify; height: 150px;
+
 }
 
 .job-salary span {
@@ -7711,7 +7720,7 @@ div.job-tag span {
     font-size: 17px;}
     .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item{display: none !important;}
     .itemteam{text-align: center;}
-    .itemteam img{border-radius: 50%;}
+    .itemteam img{border-radius: 50%;width: 50%;}
     
 
     .text88{
@@ -7729,8 +7738,10 @@ div.job-tag span {
 }
 
 @media(max-width:767px){
+
+  .rs-slider.slider3 .content-part{top: 43%;}
   .rs-slider.rs-slider-style3.slider3 .content-part .sl-title {
-    font-size: 17px;}
+    font-size: 14px;}
     .rs-slider.rs-slider-style3.slider3 .content-part .sl-subtitle {
       font-size: 18px;    
     }
@@ -7738,7 +7749,7 @@ div.job-tag span {
 
 }
 .alice-carousel__dots {
-  margin: 0px 3px 5px !important;
+  margin: 20px 3px 5px !important;
   
 }
 .widget-area .widget_recent_post .item .thumb .fullimage.bg1 {
@@ -7750,3 +7761,11 @@ div.job-tag span {
 .widget-area .widget_recent_post .item .thumb .fullimage.bg3 {
   background-image: url(../../public/images/blog-3.jpg);
 }
+
+.marq1 div{   --gradient-color: rgb(255 255 255 / 0%), rgba(255, 255, 255, 0) !important;
+}
+.marq1 div img{margin: 40px 20px;    width: 120px;
+}
+.pb-25{padding-bottom: 25px;}
+
+.pt-25{padding-top: 25px;}

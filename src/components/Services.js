@@ -14,9 +14,7 @@ function Services() {
         <Common
           name=" We manage services"
           background="Services"
-          description=" We provide industry-specific and need-based services, which
-         allows us to deliver tailor-made solutions. We serve customers
-         ranging from small individual startups to big corporate houses." />
+          description=" We offer industry-specific and need-based services, allowing us to deliver customized solutions. Customers range from small individual startups to large corporations." />
 
         <div className="rs-services style2 servicepage rs-services-style2 bg17 pt-95 pb-95 ">
           <div className="container custom">

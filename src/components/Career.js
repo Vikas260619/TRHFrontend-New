@@ -10,13 +10,11 @@ function Career() {
           <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Explore Opportunities-career
+                Explore Opportunities
                 <span className="watermark">Career</span>
               </h1>
               <span className="sub-text">
-                We Provide Training Each And Everyone Employee's Seriously, This
-                Means Giving Each Employee Complete Courses And Develop Their
-                Skills.
+              We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment.		
               </span>
             </div>
           </div>
@@ -174,7 +172,7 @@ function Career() {
                     </div>
                     <div className="job-instructor-title">
                       <h4>
-                        <a href="#">Java Developer</a>
+                        <a href="/">Java Developer</a>
                       </h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
@@ -211,7 +209,7 @@ function Career() {
                     </div>
                     <div className="job-instructor-title">
                       <h4>
-                        <a href="#">MERN Stack Developer</a>
+                        <a href="/">MERN Stack Developer</a>
                       </h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
@@ -249,7 +247,7 @@ function Career() {
                     </div>
                     <div className="job-instructor-title">
                       <h4>
-                        <a href="#">MEAN Stack Developer</a>
+                        <a href="/">MEAN Stack Developer</a>
                       </h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
