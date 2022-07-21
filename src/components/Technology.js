@@ -14,7 +14,7 @@ function Technology() {
       <div className="main-content">
 
         <Common
-          name="  We manage technology"
+          name="Technology"
           background="Technology"
           description=" The way we buy, sell, and do everything is changing as a result of technological advancements. With software development services, we help clients realize their full potential and accelerate their growth.	" />
 

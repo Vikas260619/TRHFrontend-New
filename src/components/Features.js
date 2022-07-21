@@ -10,7 +10,7 @@ function Features() {
           <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                We manage features
+                Features
                 <span className="watermark">Features</span>
               </h1>
               <span className="sub-text">

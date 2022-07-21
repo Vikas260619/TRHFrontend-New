@@ -12,7 +12,7 @@ function Services() {
       <div className="offwrap">
       <div className="main-content">
         <Common
-          name=" We manage services"
+          name="Services"
           background="Services"
           description=" We offer industry-specific and need-based services, allowing us to deliver customized solutions. Customers range from small individual startups to large corporations." />
 

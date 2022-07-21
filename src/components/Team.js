@@ -11,7 +11,7 @@ function Team() {
       <div className="main-content">
 
       <Common
-          name="MEET OUR TEAM - Expert Team"   
+          name="Meet Our Team "   
          background= "Team" 
          description="A team's success is determined by how well it plays as a whole. You could have the world's best collection of individual stars.
           We can all do little things with great love, and together we can accomplish great things.	"

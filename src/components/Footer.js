@@ -80,8 +80,8 @@ function Footer() {
                   <li>
                     <i className="fa fa-envelope"></i>
                     <div className="desc">
-                      <a href="mailto:sales@therapidhire.com">
-                        sales@therapidhire.com
+                      <a href="mailto:info@therapidhire.com">
+                        info@therapidhire.com
                       </a>
                     </div>
                   </li>

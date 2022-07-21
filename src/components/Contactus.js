@@ -87,7 +87,7 @@ function Contactus() {
 
       <div className="main-content">
         <Common
-          name="Have questions - contact us"
+          name="Get in touch"
           background="Contact"
           description="Get in touch with us and discuss the needs and requirements of
          your Development project."
@@ -107,10 +107,7 @@ function Contactus() {
                   <h2 className="title pb-20">
                     Let us help your business to move <span>forward.</span>
                   </h2>
-                  <p className="margin-0">
-                    We donec pulvinar magna id leoersi pellentesque impered
-                    dignissim rhoncus euismod euismod eros vitae..
-                  </p>
+                  <br/>
                 </div>
                 <div className="contact-wrap">
                   <div id="form-messages"></div>

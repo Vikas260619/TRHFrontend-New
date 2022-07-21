@@ -8,7 +8,7 @@ function Aboutus() {
           <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                We strengthen organizations
+                About Us
                 <span className="watermark">About</span>
               </h1>
               <span className="sub-text">

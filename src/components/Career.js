@@ -271,6 +271,14 @@ function Career() {
                 </div>
               </div>
             </div>
+            <div className="row">
+            <div className="col-xl-12 col-lg-12 col-md-12 text-center">
+              <p className="resume1">Send your resume at "career@therapidhire.com"</p>
+
+
+             </div>
+
+            </div>
           </div>
         </div>
 

@@ -7488,8 +7488,14 @@ Blog Details Area CSS
 
 }
 @media (max-width: 767px) {
+
+  .job-content p {
+    
+    height: 170px !important;
+}
   .job-wrapper {
-    padding: 25px 25px;
+    padding: 25px 25px;    height: 460px;
+
   }
 }
 
@@ -7580,7 +7586,7 @@ div.job-tag span {
   color: #26ae61;
 }
 .job-content p {
-  margin-bottom: 25px;text-align: justify; height: 150px;
+  margin-bottom: 25px; height: 150px;
 
 }
 
@@ -7769,3 +7775,4 @@ div.job-tag span {
 .pb-25{padding-bottom: 25px;}
 
 .pt-25{padding-top: 25px;}
+.resume1{font-size: 24px;}
