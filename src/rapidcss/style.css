@@ -7776,3 +7776,12 @@ div.job-tag span {
 
 .pt-25{padding-top: 25px;}
 .resume1{font-size: 24px;}
+.blogcomment button{color: #fff;
+  font-weight: 600;
+  transition: var(--transition);
+  position: relative;
+  margin-top: 15px;
+  background: none;padding: 10px;
+  border: none;border-radius: 20px;background-color: #000;}
+  .viewbutton{background:#fff ;border:none}
+  

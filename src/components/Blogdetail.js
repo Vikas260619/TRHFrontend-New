@@ -1,31 +1,60 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios'
-import { useParams } from 'react-router-dom';
+import axios from "axios";
+import { useParams } from "react-router-dom";
 import { baseURL } from "./Basepath";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Moment from "react-moment";
+import { useNavigate } from "react-router";
 
 function Blogdetail() {
   const { id } = useParams();
   const [users, setUsers] = useState("");
   const [data, setdata] = useState([]);
-  const [categorie, setCategorie] = useState([]);
-
-
+  const [comments, setComments] = useState([]);
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [comment, setComment] = useState("");
+  const Navigate = useNavigate();
+  
+  const newPage = (id) => {
+    Navigate("/blogdetail/" + id);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let data = {
+      fullname,
+      email,
+      comment,
+    };
+    axios({
+      url: baseURL + "comment/create",
+      method: "post",
+      data: data,
+    })
+      .then((res) => {
+        toast(res.data);
+      })
+      .catch((err) => console.log(err));
+  };
 
   useEffect(() => {
     axios({
-      url: baseURL+"blog/getOne/" + id,
-      method: 'get',
+      url: baseURL + "blog/getOne/" + id,
+      method: "get",
     })
-      .then(res => {
-        setUsers(res.data.message)
-      }).catch(err => {
-        console.log(err)
+      .then((res) => {
+        // console.log(res.data.message)
+        setUsers(res.data.message);
       })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   useEffect(() => {
     axios({
-      url: baseURL+"blog/recentBlog",
+      url: baseURL + "blog/getall",
       method: "get",
     })
       .then((result) => {
@@ -38,22 +67,28 @@ function Blogdetail() {
 
   useEffect(() => {
     axios({
-      url:  baseURL+"blog/categoriesCount",
+      url: baseURL + "comment/getAll",
       method: "get",
     })
-      .then((res) => {
-        setCategorie(res.data.message);
+      .then((result) => {
+        setComments(result.data.message);
+        console.log(result);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+  // const Commenthandle = (e) => {
+  // console.log('Comments===', comments)
 
+ 
+
+  //     setShow(!show);
+    
+  // };
 
   return (
     <div>
-      <div className="offwrap"></div>
-
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container">
@@ -72,11 +107,10 @@ function Blogdetail() {
 
         <div className="blog-details-area pt-95 pb-95">
           <div className="container">
-            {users ?
+            {users ? (
               <div className="row">
                 <div className="col-lg-8 col-md-12">
                   <div className="blog-details-desc">
-
                     <div className="article-image">
                       <img src={users.bannerImage} alt="image" />
                     </div>
@@ -89,43 +123,39 @@ function Blogdetail() {
                         <li>{users.date}</li>
                       </ul>
                       <h3>{users.title}</h3>
-                      <p>
-                        {users.mainDesc}
-                      </p>
-                      {users.content ? users.content?.map((val) => (
-                        <div>
-                          <ul className="list">
-                            <li>
-                              <h4>{val.title}</h4>
-                            </li>
-                            {val.description?.map((items) => (
-                              <>
-                                {val.description?.length === 1 ?
-                                  <li>
-                                    {items}
-                                  </li>
-                                  :
-                                  <li>
-                                    <i className="fa fa-check-circle"></i> {items}
-                                  </li>
-                                }
-                              </>
-                            ))}
-                          </ul>
-                        </div>
-                      )) : ""}
-                      {
-                        users.quotes?.map((i) => (
-                          <div className="article-quote">
-                            <i className="fa fa-quote-left"></i>
-                            <p>
-                              {i}
-                            </p>
+                      <p>{users.mainDesc}</p>
+                      {users.content &&
+                        users.content?.map((val) => (
+                          <div>
+                            <ul className="list">
+                              <li>
+                                <h4>{val.title}</h4>
+                              </li>
+                              {val.description?.map((items) => (
+                                <>
+                                  {val.description?.length === 1 ? (
+                                    <li>{items}</li>
+                                  ) : (
+                                    <li>
+                                      <i className="fa fa-check-circle"></i>{" "}
+                                      {items}
+                                    </li>
+                                  )}
+                                </>
+                              ))}
+                              <div className="article-image">
+                                <img src={val.contentImages} alt="image" />
+                              </div>
+                            </ul>
                           </div>
-                        ))
-                      }
+                        ))}
+                      {users.quotes?.map((i) => (
+                        <div className="article-quote">
+                          <i className="fa fa-quote-left"></i>
+                          <p>{i}</p>
+                        </div>
+                      ))}
                     </div>
-
                     <div className="article-share">
                       <div className="row align-items-center">
                         <div className="col-lg-6 col-md-6">
@@ -166,49 +196,43 @@ function Blogdetail() {
                     </div>
 
                     <div className="article-comments">
-                      <h3>03 Comments:</h3>
+                      <h3>{comments.length} Comments:</h3>
 
                       <div className="comments-list">
-                        <img src="images/image-1.jpg" alt="author" />
-                        <h5>
-                          Vikas Choudhary, <span>2 months ago</span>
-                        </h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                          sed diam nonumy eirmod tempor invidunt ut labore et
-                          dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                        <a href="/" className="reply-btn">
-                          Reply
-                        </a>
-                      </div>
-                      <div className="comments-list children">
-                        <img src="images/image-3.jpg" alt="commenticon" />
-                        <h5>
-                          Krishna, <span>2 months ago</span>
-                        </h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                          sed diam nonumy eirmod tempor invidunt ut labore et
-                          dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                        <a href="/" className="reply-btn">
-                          Reply
-                        </a>
-                      </div>
-                      <div className="comments-list">
-                        <img src="images/image-1.jpg" alt="commenticon1" />
-                        <h5>
-                          Vikas Choudhary, <span>2 months ago</span>
-                        </h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                          sed diam nonumy eirmod tempor invidunt ut labore et
-                          dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                        <a href="/" className="reply-btn">
-                          Reply
-                        </a>
+                        {/* {/ <img src="images/image-1.jpg" alt="commenticon1" />  /} */}
+
+                        {/* {/ <img src="images/image-1.jpg" alt="image" />  /} */}
+
+                        {comments
+                          ? comments.slice(0, 3).map((comt) => (
+                              <>
+                                <h5>
+                                  {comt.fullname.replace(/\b\w/g, (l) =>
+                                    l.toUpperCase()
+                                  )}
+                                  ,{" "}
+                                  <span>
+                                    <Moment fromNow>{comt.createdAt}</Moment>
+                                  </span>
+                                </h5>
+                                <p> {comt.comment} </p>
+                                <a
+                                  href="javaScript:void(0)"
+                                  className="reply-btn"
+                                >
+                                  Reply
+                                </a>
+                              </>
+                            ))
+                          : ""}
+                        <div className="blogcomment">
+                          {/* {/ {show ?<button onClick={Commenthandle}>View more...</button>  : ''} /} */}
+                          
+                        
+                            
+                           
+                          
+                        </div>
                       </div>
                     </div>
 
@@ -221,6 +245,8 @@ function Blogdetail() {
                             <div className="form-group">
                               <input
                                 type="text"
+                                value={fullname}
+                                onChange={(e) => setFullname(e.target.value)}
                                 className="form-control"
                                 placeholder="Enter name"
                               />
@@ -231,6 +257,8 @@ function Blogdetail() {
                             <div className="form-group">
                               <input
                                 type="text"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 className="form-control"
                                 placeholder="Email address"
                               />
@@ -252,15 +280,22 @@ function Blogdetail() {
                               <textarea
                                 name="message"
                                 className="form-control"
+                                value={comment}
+                                onChange={(e) => setComment(e.target.value)}
                                 placeholder="Your message"
                               ></textarea>
                             </div>
                           </div>
 
                           <div className="col-lg-12 col-md-12">
-                            <button type="submit" className="enquirebtn">
+                            <button
+                              type="submit"
+                              className="enquirebtn "
+                              onClick={handleSubmit}
+                            >
                               Post A Comment
                             </button>
+                            <ToastContainer />
                           </div>
                         </div>
                       </form>
@@ -268,74 +303,34 @@ function Blogdetail() {
                   </div>
                 </div>
 
-
                 <div className="col-lg-4 col-md-12">
                   <aside className="widget-area">
                     <div className="widget widget_recent_post">
                       <h3 className="widget-title">Recent Post</h3>
-                      {data
-                      ? data.slice(0, 3).map((val) => (
+                      {data &&
+                        data.slice(0, 3).map((val) => (
                           <article className="item">
-                            <a href="/" className="thumb">
+                            <a href="" className="thumb">
                               <img src={val.bannerImage} alt="image" />
                             </a>
                             <div className="info">
                               <span>{val.date}</span>
-                              <h4 className="title usmall">
-                                <a href="/">{val.title}</a>
+                              <h4 className="title usmall"  onClick={(e) => newPage(val._id)}>
+                                <a href="">{val.title}</a>
                               </h4>
                             </div>
                           </article>
-                        ))
-                      : ""}
-
-                     
-                    
-
-                                         </div>
-                    <br />
-                    <div className="widget widget_categories">
-                      <h3 className="widget-title">Categories</h3>
-                      <ul className="list">
-                      {categorie &&
-                        categorie.map((val) => (
-                          <li>
-                            <a
-                              href="/"
-                              className=" d-flex justify-content-between align-items-center"
-                            >
-                              {val._id}<span>{val.count}</span>
-                            </a>
-                          </li>
                         ))}
-                      {/* {categorie &&
-                        categorie.map((val) => (
-                          <li>
-                            <a
-                              href="/"
-                              className=" d-flex justify-content-between align-items-center"
-                            >
-                              {val} <span>{console.log(categorie)}</span>
-                            </a>
-                          </li>
-                        ))} */}
-                    </ul>
-
-                                          </div>
+                    </div>
+                    <br />
                   </aside>
                 </div>
-
-                
               </div>
-              : "Data Not Found"}
+            ) : (
+              "Data Not Found"
+            )}
           </div>
         </div>
-
-      </div>
-
-
-      <div id="scrollUp" className="blue-color">
-        <i className="fa fa-angle-up"></i>
       </div>
     </div>
   );

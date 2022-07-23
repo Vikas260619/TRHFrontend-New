@@ -43,9 +43,6 @@ function App () {
           <Route exact path="/blogdetail/:id" element={<Blogdetail />}></Route>
           <Route exact path="/apply" element={<Apply />}></Route>
           <Route exact path="/terms" element={<Terms/>}></Route>
-          
-          
-          
         </Routes>
         <Footer/>
         <Sidebar/>

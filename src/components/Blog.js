@@ -9,12 +9,16 @@ function Blog() {
   const [categorie, setCategorie] = useState([]);
   const Navigate = useNavigate();
   useEffect(() => {
+    console.log(baseURL);
     axios({
-      url: baseURL+"blog/getall",
-            method: "get",
+      url: baseURL + "blog/getall",
+      //  url: "http://localhost:8080/blog/getall",
+
+      method: "get",
     })
       .then((res) => {
         setUsers(res.data.message);
+        console.log(res.data.message);
       })
       .catch((err) => {
         console.log(err);
@@ -24,31 +28,33 @@ function Blog() {
   const newPage = (id) => {
     Navigate("/blogdetail/" + id);
   };
-  useEffect(() => {
-    axios({
-      url: baseURL+ "blog/recentBlog",
-      method: "get",
-    })
-      .then((result) => {
-        setdata(result.data.message);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
 
-  useEffect(() => {
-    axios({
-      url: baseURL+"blog/categoriesCount",
-      method: "get",
-    })
-      .then((res) => {
-        setCategorie(res.data.message);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+ const  new1 =(md) =>{
+console.log(md)
+users.map((item,err)=>{
+ if(item.categories === md){
+ console.log(item._id) 
+ }else{
+console.log(err);
+ }
+ })
+}
+ 
+  const mediaTypes = users
+    .map((dataItem) => dataItem.categories) // get all media types
+    .filter((mediaType, index, array) => array.indexOf(mediaType) === index); // filter out duplicates
+
+  const counts = mediaTypes.map((mediaType) => ({
+    type: mediaType,
+    count: users.filter((item) => item.categories === mediaType).length,
+  }));
+  console.log(counts); 
+console.log(mediaTypes);
+
+
+//  const mediaTypes.map((mediaType) => ({
+  
+// })
 
   return (
     <div>
@@ -58,16 +64,16 @@ function Blog() {
           <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                TRH Blog
+                Creative ideas - blogs
                 <span className="watermark">Blog</span>
               </h1>
               <span className="sub-text">
-              Get the latest industry insights and expert tips to stay ahead!!
+                Most creative ideas in blog post of Cloud services , Designing ,
+                Development..{" "}
               </span>
             </div>
           </div>
         </div>
-
         <div className="blog-area pt-95 pb-95">
           <div className="container">
             <div className="row">
@@ -79,16 +85,16 @@ function Blog() {
                           <div className="single-blog-card">
                             <div className="blog-image">
                               <a href="//">
-                                <img src={item.bannerImage} alt="blog" />
+                                <img src={item.bannerImage} alt="image" />
                               </a>
                               <div className="date">{item.date}</div>
                             </div>
                             <div className="blog-content">
                               <h3>
-                                <a href="/">{item.title}</a>
+                                <a href="#">{item.title}</a>
                               </h3>
                               <p>{item.mainDesc.slice(0, 124)}</p>
-                              <button onClick={() => newPage(item._id)} className="blog-btn">
+                              <button onClick={() => newPage(item._id)} className="viewbutton">
                                 View more...
                               </button>
                             </div>
@@ -104,16 +110,19 @@ function Blog() {
                   <div className="widget widget_recent_post">
                     <h3 className="widget-title">Recent Post</h3>
 
-                    {data
-                      ? data.slice(0, 3).map((val) => (
+                    {users
+                      ? users.slice(0, 3).map((val) => (
                           <article className="item">
-                            <a href="/" className="thumb">
+                            <a href="#" className="thumb">
                               <img src={val.bannerImage} alt="image" />
                             </a>
                             <div className="info">
                               <span>{val.date}</span>
-                              <h4 className="title usmall">
-                                <a href="/">{val.title}</a>
+                              <h4
+                                className="title usmall"
+                                onClick={() => newPage(val._id)}
+                              >
+                                <a href="#">{val.title}</a>
                               </h4>
                             </div>
                           </article>
@@ -125,28 +134,24 @@ function Blog() {
                     <h3 className="widget-title">Categories</h3>
 
                     <ul className="list">
-                      {categorie &&
-                        categorie.map((val) => (
-                          <li>
-                            <a
-                              href="/"
-                              className=" d-flex justify-content-between align-items-center"
-                            >
-                              {val._id}<span>{val.count}</span>
-                            </a>
-                          </li>
+                      <div>
+                        {mediaTypes.map((mediaType) =>(
+                        <li 
+                        onClick={() => new1(mediaType)}
+                        >   
+                       <a
+                      href=""
+                      className=" d-flex justify-content-between align-items-center"
+                    >
+                             {mediaType}<span >( {
+                                users.filter(
+                          (item) => item.categories === mediaType
+                                ).length
+                               })</span>
+                    </a> 
+                        </li>  
                         ))}
-                      {/* {categorie &&
-                        categorie.map((val) => (
-                          <li>
-                            <a
-                              href="#"
-                              className=" d-flex justify-content-between align-items-center"
-                            >
-                              {val} <span>{console.log(categorie)}</span>
-                            </a>
-                          </li>
-                        ))} */}
+                      </div>
                     </ul>
                   </div>
                 </aside>
@@ -154,10 +159,6 @@ function Blog() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div id="scrollUp" className="blue-color">
-        <i className="fa fa-angle-up"></i>
       </div>
     </div>
   );
