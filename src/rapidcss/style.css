@@ -5501,15 +5501,14 @@ Choose Area CSS
   border: none;
 }
 .rs-contact.main-home .contact-icons-style .contact-item {
-  display: flex;
-  padding: 30px 30px 30px 30px;
+  padding: 30px 10px 30px 10px;
   margin: 0 -5px 0 0;
   
 }
 .rs-contact.main-home .contact-icons-style .contact-item .contact-icon img {
   max-width: unset;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+    height: 40px;
   padding: 5px 5px 0px 0px;
 }
 .rs-contact.main-home .contact-icons-style .contact-item .content-text {
@@ -5542,7 +5541,7 @@ Choose Area CSS
     box-shadow: 0px 0px 45px 22px #eee;
     
     border-radius: 5px 5px 5px 5px;
-    margin: 0px;text-align: center;    min-height: 219px;
+    margin: 0px;text-align: center;    min-height: 228px;
 }
 .rs-contact.main-home .contact-icons-style.box-address .contact-item:hover {
 animation-name: dance_hover;
@@ -5614,7 +5613,9 @@ animation-name: dance_hover;
 .rs-contact .contact-icon  {
   text-align: center;
 }
-.rs-contact .contact-icon i{color: #00a3e8;}
+.rs-contact .contact-icon i{color: #00a3e8;    font-size: 30px;    margin-bottom: 10px;
+
+}
 .rs-contact.main-home.office-modify1 .contact-box .content-text .title {
   font-size: 20px;
   font-weight: 600;
@@ -7785,3 +7786,4 @@ div.job-tag span {
   border: none;border-radius: 20px;background-color: #000;}
   .viewbutton{background:#fff ;border:none}
   
+

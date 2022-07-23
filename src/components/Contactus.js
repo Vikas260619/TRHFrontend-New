@@ -214,7 +214,7 @@ function Contactus() {
                           <a href="#">USA Office</a>
                         </h2>
                         <p className="services-txt">
-                          1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801
+                          1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801<br/>
                           USA
                         </p>
                       </div>

@@ -74,7 +74,7 @@ function Footer() {
                   <li>
                     <i className="fa fa-phone"></i>
                     <div className="desc">
-                      <a href="tel:0731 356 2005">0731 356 20055</a>
+                      <a href="tel:+19176282406">+1 (917) 628 2406</a>
                     </div>
                   </li>
                   <li>
@@ -85,10 +85,7 @@ function Footer() {
                       </a>
                     </div>
                   </li>
-                  <li>
-                    <i className="fa fa-clock-o"></i>
-                    <div className="desc">Office Hours: 10AM - 7PM</div>
-                  </li>
+                  
                 </ul>
               </div>
               <div className="col-lg-3 col-md-12 col-sm-12">

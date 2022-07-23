@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Moment from "react-moment";
+import moment from "moment";
 import { useNavigate } from "react-router";
 
 function Blogdetail() {
@@ -18,7 +18,7 @@ function Blogdetail() {
   const Navigate = useNavigate();
   
   const newPage = (id) => {
-    Navigate("/blogdetail/" + id);
+    Navigate("/blogdetail/" + id);g
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -212,7 +212,7 @@ function Blogdetail() {
                                   )}
                                   ,{" "}
                                   <span>
-                                    <Moment fromNow>{comt.createdAt}</Moment>
+                                    <moment fromNow>{comt.createdAt}</moment>
                                   </span>
                                 </h5>
                                 <p> {comt.comment} </p>
