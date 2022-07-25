@@ -226,7 +226,7 @@ function Apply() {
                             />
                           </span>{" "}</div>
                           </div>
-                          {/* <div className="row" >
+                          <div className="row" >
 
                           <div className="col-lg-12">
 
@@ -240,7 +240,7 @@ function Apply() {
                             onChange={(e) => setTechnology(e.target.value)}
                           />
                         </div>
-                        </div> */}
+                        </div>
                         <div className="btn-part">
                           <div className="form-group mb-0">
                             <Input
