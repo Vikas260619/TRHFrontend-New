@@ -3,7 +3,7 @@ import React from 'react'
 const Common = (props) => {
   return (
     <div className="rs-breadcrumbs img1">
-    <div className="container">
+    <div className="container-fluid">
       <div className="breadcrumbs-inner">
         <h1 className="page-title">
           {props.name}

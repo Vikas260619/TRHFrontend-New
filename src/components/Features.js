@@ -7,7 +7,7 @@ function Features() {
     <div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container">
+          <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Features
@@ -25,70 +25,77 @@ function Features() {
         <section className="our-service-area bg17 pt-95 pb-95">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 col-md-6">
+              <div className="col-lg-4 col-md-4">
                 <div className="single-services">
                   <h3>
                     <img src="images/feat1.png" alt="" />
-                    EXPERIENCED TEAM
+                    DEDICATED TEAM
                   </h3>
                   <p>
-                    TheRapidHire furnishes a complete answer for you with
-                    inventive methodology and high trustworthiness,We let you
-                    stay ahead in this computerized promoting world through
-                    changed administrations forthcoming on the lookout and which
-                    are as of now settled too. With an extraordinary energy for
-                    what we work on, we permit fervor to remain with us to
-                    produce powerful answers for our clients.
+                  Our team provides you with a comprehensive solution using innovative technique and great reliability. 
+                  We work with incredible passion and let that passion stay with us as we deliver effective solutions to our clients.
                   </p>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-6">
+              <div className="col-lg-4 col-md-4">
                 <div className="single-services">
                   <h3>
                     <img src="images/feat2.png" alt="" />
                     DIVERSE TECHNOLOGY
                   </h3>
                   <p>
-                    Our team helps you to increase control over your small
-                    business with software designed to grow with you. Streamline
-                    all processes, gain greater insight into your business, and
-                    make decisions based on real-time information to drive
-                    profitable growth.We have faith in making long haul
-                    relationships with our customers making a superior
-                    association each time we connect.
+                  Our team assists you in gaining control of your small business through software designed to grow with you, streamline all processes, 
+                  gain greater insight into your business, and make decisions based on real-time data to drive profitable growth. 
                   </p>
                 </div>
               </div>
 
-              <div className="col-lg-6 col-md-6">
+              <div className="col-lg-4 col-md-4">
                 <div className="single-services">
                   <h3>
                     <img src="images/feat3.png" alt="" />
                     RESEARCH AND DEVELOPMENT
                   </h3>
                   <p>
-                    We employ best practice processes and development
-                    methodologies as a foundation for rapid building of
-                    cutting-edge technology solutions in a structured and
-                    methodical way.We keep elevated expectations to contend in
-                    the high speed worldwide market and give refined programming
-                    answers for our customers.
+                  We use best-practice processes and development methodologies as a foundation for the structured and methodical development 
+                  of cutting-edge technology solutions in the global market and provide refined programming solutions to our customers.
                   </p>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-6">
+              <div className="col-lg-4 col-md-4">
                 <div className="single-services">
                   <h3>
                     <img src="images/feat4.png" alt="" />
-                    AVAILABILITY ALL THE TIME
+                    CUSTOMER ACCOMPLISHMENT
                   </h3>
                   <p>
-                    We have been giving multidimensional IT organizations to our
-                    clients including electronic exhibiting and online webpage
-                    arranging solutions.we Offer monetarily wise and quick
-                    solutions for our clients, we work with a right attitude and
-                    thusly execute fittingly. It's not by and large you, it's
-                    us.
+                  Client satisfaction is our priority, 
+                  which contributes to continuous improvement in order to maintain and 
+                  improve client satisfaction.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-4">
+                <div className="single-services">
+                  <h3>
+                    <img src="images/feat5.png" alt="" />
+                    DEDICATED ASSISTANCE
+
+                  </h3>
+                  <p>
+                  We are enthusiastic about our industry and enjoy what we do. For client assurance, we provide regular updates, calls, and product demos.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-4">
+                <div className="single-services">
+                  <h3>
+                    <img src="images/feat6.png" alt="" />
+                    EXPERTISE
+                  </h3>
+                  <p>
+                  Working with the best businesses and leaders worldwide is something we are capable of doing because of our experience and knowledge.
+
                   </p>
                 </div>
               </div>

@@ -7,7 +7,7 @@ function Career() {
 
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container">
+          <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Explore Opportunities
@@ -273,7 +273,7 @@ function Career() {
             </div>
             <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12 text-center">
-              <p className="resume1">Send your resume at "career@therapidhire.com"</p>
+              <p className="resume1">Send your resume at <a href="mailto:career@therapidhire.com">"career@therapidhire.com"</a></p>
 
 
              </div>
