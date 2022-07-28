@@ -52,12 +52,6 @@ function App () {
           <Route exact path="/login" element={<Login/>}></Route>
           <Route exact path="/signup" element={<Signup/>}></Route>
           <Route exact path="/profile" element={<Profile/>}></Route>
-
-
-
-          
-          
-          
         </Routes>
         <Footer/>
         <Sidebar/>

@@ -4,6 +4,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light navtrh">
       <div className="container-fluid navihead">
+    
         <a className="navbar-brand" href="/">
           <img src="images/logo.png" alt="TRH" />
         </a>
