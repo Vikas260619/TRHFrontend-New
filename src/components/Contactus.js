@@ -99,7 +99,8 @@ function Contactus() {
             <div className="row">
               <div className="col-lg-6 pr-40 md-pr-15 md-mb-50">
                 <div className="contact-map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3368426490233!2d75.86513545041912!3d22.75287738501716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e32b2894590f%3A0x4e73ebc1261cc50!2sTheRapidHire%20Private%20Limited!5e0!3m2!1sen!2sin!4v1654772103650!5m2!1sen!2sin"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.95864591758658!2d75.86723884040701!3d22.75282198501708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e32b2894590f%3A0x4e73ebc1261cc50!2sTheRapidHire%20Private%20Limited!5e0!3m2!1sen!2sin!4v1658831054327!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              
+
                 </div>
               </div>
               <div className="col-lg-6">
@@ -214,7 +215,7 @@ function Contactus() {
                           <a href="#">USA Office</a>
                         </h2>
                         <p className="services-txt">
-                          1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801
+                          1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801<br/>
                           USA
                         </p>
                       </div>
@@ -230,7 +231,7 @@ function Contactus() {
                           <a href="/">India Office</a>
                         </h2>
                         <p className="services-txt">
-                          51, Electronic Complex, Pardesi Pura Main Road,
+                          51, Electronic Complex, Pardesi Pura Main Road,<br/>
                           INDORE(M.P){" "}
                         </p>
                       </div>

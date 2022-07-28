@@ -29,7 +29,7 @@ function Technology() {
                   data-wow-delay="0.2s">
                   <CardTechno
                     imgsrc={item.imgsrc}
-                    Numb={item.Numb}
+                   
                     title={item.title}
                     description={item.description}
                     icon_imgsrc={item.icon_imgsrc}

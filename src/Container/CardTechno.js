@@ -10,14 +10,11 @@ const CardTechno = (props) => {
                 className="technology-bg-img"
             />
             <div className="bodytech">
-                <h4>{props.Numb}</h4>
+            <img src={props.icon_imgsrc} alt="Propimage" />
                 <h5>{props.title}</h5>
                 <p> {props.description}</p>
             </div>
-            <div className="icontech">
-                <img src={props.icon_imgsrc} alt="Propimage" />
-            </div>
-            <div className="icontech-border"></div>
+            
         </div>
     )
 }

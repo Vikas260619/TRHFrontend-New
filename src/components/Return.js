@@ -6,7 +6,7 @@ function Return(props) {
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container">
+          <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Return and Refund Policy
@@ -55,7 +55,7 @@ function Return(props) {
                     <li>
                       Submit written explanation of refund request within 15
                       calendar days of payment of the amount. Request refunds by
-                      mail to hr@therapidhire.com.
+                      mail to <a href="mailto:hr@therapidhire.com">hr@therapidhire.com.</a>
                     </li>
 
                     <li>

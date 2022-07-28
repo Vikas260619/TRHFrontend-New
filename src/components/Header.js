@@ -2,8 +2,8 @@ import React from "react";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light navtrh">
+      <div className="container-fluid navihead">
         <a className="navbar-brand" href="/">
           <img src="images/logo.png" alt="TRH" />
         </a>
@@ -38,28 +38,23 @@ function Header() {
                     ABOUT US
                   </a>
                 </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
+                
                 <li>
                   <a className="dropdown-item" href="/services">
                     SERVICES
                   </a>
                 </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/feature">
-                    FEATURES
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
+                
+               
                 <li>
                   <a className="dropdown-item" href="/technology">
                     TECHNOLOGY
+                  </a>
+                </li>
+                
+                <li>
+                  <a className="dropdown-item" href="/pricing">
+                    PRICING
                   </a>
                 </li>
               </ul>
@@ -86,9 +81,7 @@ function Header() {
                     TEAM
                   </a>
                 </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
+                
                 <li>
                   <a className="dropdown-item" href="/career">
                     WORK WITH US
@@ -99,6 +92,9 @@ function Header() {
           </ul>
           <a href="/contactus" className="enquirebtn">
             Get A Enquiry
+          </a>
+          <a href="/login" className="loginbtn">
+          <span><i className="fa fa-user" /></span>Login
           </a>
         </div>
       </div>

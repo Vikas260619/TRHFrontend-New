@@ -56,7 +56,7 @@ function Blogdetail() {
 
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container">
+          <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Creative ideas - blogs

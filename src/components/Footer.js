@@ -3,11 +3,14 @@ import React from "react";
 function Footer() {
   return (
     <div>
+      
+
       <footer
         id="rs-footer"
         className="rs-footer style1 footer-home3-style"
         style={{ position: "relative", overflow: "hidden" }}
       >
+
         <div
           className="icon-six"
           style={{ backgroundImage: "url(images/icon-6.png)" }}
@@ -74,7 +77,7 @@ function Footer() {
                   <li>
                     <i className="fa fa-phone"></i>
                     <div className="desc">
-                      <a href="tel:0731 356 2005">0731 356 20055</a>
+                    <a href="tel:+1 (917) 628 2406">+1 (917) 628 2406</a>
                     </div>
                   </li>
                   <li>
@@ -85,26 +88,22 @@ function Footer() {
                       </a>
                     </div>
                   </li>
-                  <li>
-                    <i className="fa fa-clock-o"></i>
-                    <div className="desc">Office Hours: 10AM - 7PM</div>
-                  </li>
+                  
                 </ul>
               </div>
               <div className="col-lg-3 col-md-12 col-sm-12">
                 <h3 className="footer-title">Newsletter</h3>
                 <p className="widget-desc white-color">
                   Stay up to update with our latest news and products.
-                </p>
-                <p>
-                  <input
-                    type="email"
-                    name="EMAIL"
-                    placeholder="Your email address"
-                    required=""
-                  />
-                  <input type="submit" value="Subscribe Now" />
-                </p>
+                </p><br/>
+                <div class="contentsubs">
+    <form class="subscription">
+      <input class="add-email" type="email" placeholder="Email Address" />
+      <button class="submit-email" type="submit">
+        <span class="before-submit">Subscribe</span>
+       </button>
+    </form>
+  </div>
               </div>
             </div>
           </div>
