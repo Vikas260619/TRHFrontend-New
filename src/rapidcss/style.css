@@ -5515,6 +5515,7 @@ Choose Area CSS
   max-width: unset;
   width: 30px;
   height: 30px;
+
   padding: 5px 5px 0px 0px;
 }
 .rs-contact.main-home .contact-icons-style .contact-item .content-text {
@@ -5547,7 +5548,7 @@ Choose Area CSS
     box-shadow: 0px 0px 45px 22px #eee;
     
     border-radius: 5px 5px 5px 5px;
-    margin: 0px;text-align: center;    min-height: 219px;
+    margin: 0px;text-align: center;    min-height: 228px;
 }
 .rs-contact.main-home .contact-icons-style.box-address .contact-item:hover {
 animation-name: dance_hover;
@@ -5620,7 +5621,8 @@ animation-name: dance_hover;
   text-align: center;
 }
 .rs-contact .contact-icon i{color: #00a3e8;font-size: 20px;
-  margin-bottom: 10px;}
+  margin-bottom: 10px;
+  }
 .rs-contact.main-home.office-modify1 .contact-box .content-text .title {
   font-size: 20px;
   font-weight: 600;
@@ -8088,6 +8090,7 @@ border-radius: 20px;margin-left: 10px;}
   font-weight: 600;
   color: #0062cc;
 }
+
 @media(max-width:1024px){
   .technology-item {
     
@@ -8114,3 +8117,13 @@ border-radius: 20px;margin-left: 10px;}
 }
 
 .serviceindustry .service-wrap{height: 446px !important;}
+
+.blogcomment button{color: #fff;
+  font-weight: 600;
+  transition: var(--transition);
+  position: relative;
+  margin-top: 15px;
+  background: none;padding: 10px;
+  border: none;border-radius: 20px;background-color: #000;}
+  .viewbutton{background:#fff ;border:none}
+  
