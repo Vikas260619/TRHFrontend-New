@@ -18,7 +18,7 @@ function Blogdetail() {
   const Navigate = useNavigate();
   
   const newPage = (id) => {
-    Navigate("/blogdetail/" + id);g
+    Navigate("/blogdetail/" + id);
   };
   const handleSubmit = (e) => {
     e.preventDefault();

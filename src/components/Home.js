@@ -46,7 +46,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="/">Cloud Services</a>
+            <a href="/Services">Cloud Services</a>
           </h3>
           <div className="desc">
             Our cloud services provide the options of availing remote services
@@ -62,7 +62,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="/">Web Development</a>
+            <a href="/Services">Web Development</a>
           </h3>
           <div className="desc">
             We provide designing, coding, programming and modifying websites,
@@ -78,7 +78,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="/">AWS Services</a>
+            <a href="/Services">AWS Services</a>
           </h3>
           <div className="desc">
             Build, Deploy, and Manage Websites, Apps or Processes On AWS Secure,
@@ -94,7 +94,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="/">Web Designing</a>
+            <a href="/Services">Web Designing</a>
           </h3>
           <div className="desc">
             Want to build your product with a team that establishes a clear
@@ -110,7 +110,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="/">Database Management</a>
+            <a href="/Services">Database Management</a>
           </h3>
           <div className="desc">
             In today’s business landscape, every CXO is in theprocess or
@@ -126,7 +126,7 @@ function Home() {
         </div>
         <div className="content-part">
           <h3 className="title">
-            <a href="/">Cyber Security</a>
+            <a href="/Services">Cyber Security</a>
           </h3>
           <div className="desc">
             In today’s business landscape, every CXO is in theprocess or
@@ -289,10 +289,10 @@ function Home() {
         </div>
       </div>
       <Clients />
-      <div id="rs-services" className="rs-services style2   pb-25 ">
+      <div id="rs-services" className="rs-services serviceindustry style2   pb-25 ">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12  col-md-6 ">
+            <div className="col-lg-12  col-md-12">
               <div className="sec-title3 text-center mb-35">
                 <span className="sub-title">OUR SERVICES</span>
                 <h2 className="title pb-25 ">
