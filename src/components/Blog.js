@@ -41,12 +41,13 @@ function Blog() {
 
   console.log();
 
+
   return (
     <div>
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container">
+          <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Creative ideas - blogs

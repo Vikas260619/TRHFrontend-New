@@ -1,6 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import Clients from "./Clients";
 import Expertteam from "./Expertteam";
 import Testimonial from "./Testimonial";
 
@@ -9,17 +10,26 @@ function Home() {
     {
       item: "Cloud Services",
       image: "images/slider1.jpg",
-      descp:"We've been offering innovative cloud solutions to people in need of IT innovation and support.",
+      descp:
+        "We can assist you in identifying and implementing the appropriate Cloud solution to meet your critical application and ERP migration goals and business circumstances.",
     },
     {
       item: "Web Development",
       image: "images/slider2.jpg",
-      descp: "With a broad selection of web application services, we guarantee to best meet all of your business needs.",
+      descp:
+        "With a broad selection of web application services, we guarantee to best meet all of your business needs. Our web developers are driven to produce outcomes that assist you in growing your company.",
     },
     {
       item: "Mobile App Development",
       image: "images/slider3.jpg",
-      descp: "We provide complete application design, integration, and management services.",
+      descp:
+        "We provide complete application design, integration, and management services.Whether it's a consumer-oriented app or a transformative enterprise-class solution.",
+    },
+    {
+      item: "Agile Team Deployment",
+      image: "images/slider4.jpg",
+      descp:
+        "We have the ability to respond quickly to the growing demand for Agile Team Deployment in the business sector through continuous training and procedure upgrades.",
     },
   ];
   const responsive = {
@@ -129,13 +139,14 @@ function Home() {
 
   return (
     <div>
-      <AliceCarousel autoPlay
-        
+      <AliceCarousel
+        autoPlay
         autoPlayStrategy="none"
         autoPlayInterval={3000}
         animationDuration={3000}
         animationType="fadeout"
-        infinite>
+        infinite
+      >
         {list.map((items) => (
           <>
             <div
@@ -145,23 +156,19 @@ function Home() {
             >
               <div className="bend niceties">
                 <div id="nivoSlider" className="slides"></div>
-                <img src={items.image} alt="" title="#slide-1" />
+                <img src={items.image} alt="trhslider" title="" />
               </div>
               <div className="wave"></div>
               <div id="slide-1" className="slider-direction">
                 <div className="content-part">
-                  <div className="container">
-                    <div className="slider-des">
-                      <div className="sl-subtitle">{items.item}</div>
-                      <h1 className="sl-title">
-                       {items.descp}
-                      </h1>
-                    </div>
-                    <div className="slider-bottom">
-                      <a className="readon blue-slide" href="/services">
-                        Get Started
-                      </a>
-                    </div>
+                  <div className="slider-des">
+                    <div className="sl-subtitle">{items.item}</div>
+                    <h1 className="sl-title">{items.descp}</h1>
+                  </div>
+                  <div className="slider-bottom">
+                    <a className="readon blue-slide" href="/services">
+                      Get Started
+                    </a>
                   </div>
                 </div>
               </div>
@@ -175,7 +182,7 @@ function Home() {
       >
         <div className="container">
           <div className="animat-rat">
-            <img src="images/sib-1.png" className="rat-sib" alt="" />
+            <img src="images/squar.png" className="rat-sib" alt="" />
             <img src="images/round-2.png" className="rat-round" alt="" />
             <img src="images/ract.png" className="rat-ract" alt="" />
             <img src="images/squar.png" className="rat-squar1" alt="" />
@@ -200,79 +207,99 @@ function Home() {
                 Therapidhire company helps you with quality service at minimal
                 prices and complimentary with great satisfaction.
               </p>
+              <br />
+              <div className="row">
+                <div className="col-lg-4 col-md-4">
+                  <div className="single-services">
+                    <img src="images/feat1.png" alt="" />
+                    <h3>DEDICATED TEAM</h3>
+                    <p>
+                      Our team provides you with a comprehensive solution using
+                      innovative technique and great reliability. We work with
+                      incredible passion and let that passion stay with us.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-4">
+                  <div className="single-services">
+                    <img src="images/feat2.png" alt="" />
 
-              <div className="btn-part text-center" style={{ display: "none" }}>
-                <a className="readon2" href="">
-                  Learn More <div className="btn-arrow"></div>
-                </a>
+                    <h3>DIVERSE TECHNOLOGY</h3>
+                    <p>
+                      Our team assists you in gaining control of your small
+                      business through software designed to grow with you,
+                      streamline all processes, gain greater insight into your
+                      business.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 col-md-4">
+                  <div className="single-services">
+                    <img src="images/feat3.png" alt="" />
+
+                    <h3>RESEARCH AND DEVELOPMENT</h3>
+                    <p>
+                      We use best-practice processes and development
+                      methodologies as a foundation for the structured and
+                      methodical development of cutting-edge technology
+                      solutions in the global market.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-4">
+                  <div className="single-services">
+                    <img src="images/feat4.png" alt="" />
+
+                    <h3>CUSTOMER ACCOMPLISHMENT</h3>
+                    <p>
+                      Client satisfaction is our priority, which contributes to
+                      continuous improvement in order to maintain and improve
+                      client satisfaction.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-4">
+                  <div className="single-services">
+                    <img src="images/feat5.png" alt="" />
+
+                    <h3>COMMITTED ASSISTANCE</h3>
+                    <p>
+                      We are enthusiastic about our industry and enjoy what we
+                      do. For client assurance, we provide regular updates,
+                      calls, and product demos.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-4">
+                  <div className="single-services">
+                    <img src="images/feat6.png" alt="" />
+
+                    <h3>EXPERTISE</h3>
+                    <p>
+                      Working with the best businesses and leaders worldwide is
+                      something we are capable of doing because of our
+                      experience and knowledge.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="rs-counter style1 counter-home5-style client23 bg25  ">
+      <Clients />
+      <div id="rs-services" className="rs-services style2   pb-25 ">
         <div className="container">
           <div className="row">
             <div className="col-lg-12  col-md-6 ">
               <div className="sec-title3 text-center mb-35">
-                <span className="sub-title">OUR CLIENTS</span>
-                <h2 className="title pb-25 white-color">
-                  Trusted By The World's Best Companies
-                </h2>
-                <div className="heading-border-line"></div>
-              </div>
-            </div>
-          </div>
-          <div className="row ">
-            <div className="col-lg-3 col-md-6  col-6 md-mb-30 ">
-              <div className="counter-area">
-                <div className="counter-list mb-25">
-                  <div className="counter-icon">
-                    <img src="images/client1.png" alt="Counter" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6  col-6 md-mb-30">
-              <div className="counter-area">
-                <div className="counter-list mb-25">
-                  <div className="counter-icon">
-                    <img src="images/client2.png" alt="Counter" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6  col-6 sm-mb-30">
-              <div className="counter-area">
-                <div className="counter-list mb-25">
-                  <div className="counter-icon">
-                    <img src="images/client3.png" alt="Counter" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6  col-6">
-              <div className="counter-area">
-                <div className="counter-list mb-25">
-                  <div className="counter-icon">
-                    <img src="images/client4.png" alt="Counter" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="rs-services" className="rs-services style2 bg11 pt-95 pb-25 ">
-        <div className="container">
-        <div className="row">
-            <div className="col-lg-12  col-md-6 ">
-              <div className="sec-title3 text-center mb-35">
                 <span className="sub-title">OUR SERVICES</span>
                 <h2 className="title pb-25 ">
-                We provide industry-specific and need-based services, which
-    allows us to deliver tailor-made solutions. We serve customers
-    ranging from small individual startups to big corporate houses.
+                  We provide industry-specific and need-based services, which
+                  allows us to deliver tailor-made solutions. We serve customers
+                  ranging from small individual startups to big corporate
+                  houses.
                 </h2>
                 <div className="heading-border-line"></div>
               </div>
@@ -281,7 +308,7 @@ function Home() {
           <br />
           <br />
           <AliceCarousel
-            autoPlay 
+            autoPlay
             autoPlayStrategy="none"
             autoPlayInterval={3000}
             animationDuration={3000}

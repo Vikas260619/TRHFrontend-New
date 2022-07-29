@@ -4,8 +4,9 @@ import { useParams } from "react-router-dom";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Moment from "react-moment";
-import { useNavigate } from "react-router";
+import  Moment  from "react-moment";
+import { useNavigate } from "react-router"
+import TimeAgo from "timeago-react";
 
 function Blogdetail() {
   const { id } = useParams();
@@ -100,7 +101,7 @@ function Blogdetail() {
     <div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container">
+          <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Creative ideas - blogs
@@ -220,9 +221,7 @@ function Blogdetail() {
                                             l.toUpperCase()
                                           )}{" "}
                                           <span>
-                                            <Moment fromNow>
-                                              {comt.createdAt}
-                                            </Moment>
+                                            <TimeAgo datetime={comt.createdAt}/>
                                           </span>
                                         </h5>
                                         <p> {comt.comment} </p>
@@ -260,9 +259,8 @@ function Blogdetail() {
                                             l.toUpperCase()
                                           )}{" "}
                                           <span>
-                                            <Moment fromNow>
-                                              {comt.createdAt}
-                                            </Moment>
+                                          <TimeAgo datetime={comt.createdAt}/>
+           
                                           </span>
                                         </h5>
                                         <p> {comt.comment} </p>

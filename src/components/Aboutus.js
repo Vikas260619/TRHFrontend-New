@@ -1,11 +1,107 @@
 import React from "react";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 function Aboutus() {
+  const responsive = {
+    0: { items: 2 },
+    568: { items: 2 },
+    1024: { items: 4 },
+  };
+
+  const items = [
+    <div className="item" data-value="1">
+      <div className="about-box-inner">
+        <div className="flip-box-wrap">
+          <div className="front-part">
+            <div className="front-content-part">
+              <div className="front-icon-part">
+                <div className="icon-part">
+                  <img src="images/rapid1.png" alt="vision" />
+                </div>
+              </div>
+              <div className="front-title-part">
+                <h3 className="title">
+                  <a href="/">Vision</a>
+                </h3>
+              </div>
+              <div className="front-desc-part">
+                <p>
+                  TheRapidHire Pvt Ltd. will inspire its employees to be the
+                  best they can be. We will engage in sustainable practices and
+                  anticipate the needs of our customers. Our vision is to bring
+                  our employees into the 21st century through innovation and
+                  modern technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>,
+    <div className="item" data-value="2">
+      <div className="about-box-inner">
+        <div className="flip-box-wrap">
+          <div className="front-part">
+            <div className="front-content-part">
+              <div className="front-icon-part">
+                <div className="icon-part">
+                  <img src="images/rapid2.png" alt="mission" />
+                </div>
+              </div>
+              <div className="front-title-part">
+                <h3 className="title">
+                  <a href="/">Mission</a>
+                </h3>
+              </div>
+              <div className="front-desc-part">
+                <p>
+                  Our mission is to provide a supercilious support to our
+                  customer through our service. We are always aware of new
+                  trends in the field of security and are committed to applying
+                  it in our solution. We always improvise our services by
+                  surveying the interest of our customer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>,
+    <div className="item" data-value="3">
+      <div className="about-box-inner">
+        <div className="flip-box-wrap">
+          <div className="front-part">
+            <div className="front-content-part">
+              <div className="front-icon-part">
+                <div className="icon-part">
+                  <img src="images/rapid3.png" alt="values" />
+                </div>
+              </div>
+              <div className="front-title-part">
+                <h3 className="title">
+                  <a href="/">Values</a>
+                </h3>
+              </div>
+              <div className="front-desc-part">
+                <p>
+                  Having clear company values helps us ensure that all our
+                  employees are working towards the same goals. Our core values
+                  support the company's vision and shape its culture. That's why
+                  our business decision should be aligned with these values.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>,
+  ];
   return (
     <div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container">
+          <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 About Us
@@ -52,142 +148,20 @@ function Aboutus() {
                   prices and complimentary with great satisfaction.
                 </p>
               </div>
-            </div>
+            </div><br/><br/>
             <div className="row">
-              <div className="col-lg-4 col-md-6 mb-25">
-                <div className="flip-box-inner">
-                  <div className="flip-box-wrap">
-                    <div className="front-part">
-                      <div className="front-content-part">
-                        <div className="front-icon-part">
-                          <div className="icon-part">
-                            <img src="images/rapid1.png" alt="vision" />
-                          </div>
-                        </div>
-                        <div className="front-title-part">
-                          <h3 className="title">
-                            <a href="/">Vision</a>
-                          </h3>
-                        </div>
-                        <div className="front-desc-part">
-                          <p>
-                            Our vision is to bring our employees into the 21st
-                            century through innovation and modern technology.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="back-part">
-                      <div className="back-front-content">
-                        <div className="back-title-part">
-                          <h3 className="back-title">
-                            <a href="/">Vision</a>
-                          </h3>
-                        </div>
-                        <div className="back-desc-part">
-                          <p className="back-desc">
-                            TheRapidHire Pvt Ltd. will inspire its employees to
-                            be the best they can be. We will engage in
-                            sustainable practices and anticipate the needs of
-                            our customers. Our vision is to bring our employees
-                            into the 21st century through innovation and modern
-                            technology.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 mb-25">
-                <div className="flip-box-inner">
-                  <div className="flip-box-wrap">
-                    <div className="front-part">
-                      <div className="front-content-part">
-                        <div className="front-icon-part">
-                          <div className="icon-part">
-                            <img src="images/rapid2.png" alt="mission" />
-                          </div>
-                        </div>
-                        <div className="front-title-part">
-                          <h3 className="title">
-                            <a href="/">Mission</a>
-                          </h3>
-                        </div>
-                        <div className="front-desc-part">
-                          <p>
-                            Our mission is to provide a supercilious support to
-                            our customer through our service.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="back-part">
-                      <div className="back-front-content">
-                        <div className="back-title-part">
-                          <h3 className="back-title">
-                            <a href="/">Mission</a>
-                          </h3>
-                        </div>
-                        <div className="back-desc-part">
-                          <p className="back-desc">
-                            Our mission is to provide a supercilious support to
-                            our customer through our service. We are always
-                            aware of new trends in the field of security and are
-                            committed to applying it in our solution. We always
-                            improvise our services by surveying the interest of
-                            our customer.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 mb-25">
-                <div className="flip-box-inner">
-                  <div className="flip-box-wrap">
-                    <div className="front-part">
-                      <div className="front-content-part">
-                        <div className="front-icon-part">
-                          <div className="icon-part">
-                            <img src="images/rapid3.png" alt="values" />
-                          </div>
-                        </div>
-                        <div className="front-title-part">
-                          <h3 className="title">
-                            <a href="/">Values</a>
-                          </h3>
-                        </div>
-                        <div className="front-desc-part">
-                          <p>
-                            Having clear company values helps us ensure that all
-                            our employees are working towards the same goals.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="back-part">
-                      <div className="back-front-content">
-                        <div className="back-title-part">
-                          <h3 className="back-title">
-                            <a href="/">Values</a>
-                          </h3>
-                        </div>
-                        <div className="back-desc-part">
-                          <p className="back-desc">
-                            Having clear company values helps us ensure that all
-                            our employees are working towards the same goals.
-                            Our core values support the company's vision and
-                            shape its culture. That's why our business decision
-                            should be aligned with these values.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <AliceCarousel
+                autoPlay
+                autoPlayStrategy="none"
+                autoPlayInterval={3000}
+                animationDuration={3000}
+                animationType="fadeout"
+                infinite
+                mouseTracking
+                items={items}
+                responsive={responsive}
+                controlsStrategy="alternate"
+              />
             </div>
             <div className="about-circle-shape">
               <img src="images/about-circle.png" alt="imagecircle" />

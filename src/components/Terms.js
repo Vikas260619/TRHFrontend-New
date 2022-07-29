@@ -8,7 +8,7 @@ function Terms() {
       <div className="main-content">
 
         <div className="rs-breadcrumbs img1">
-          <div className="container">
+          <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Terms of Service
@@ -78,7 +78,7 @@ function Terms() {
                   <h5>Contacting us</h5>
                   <p>
                     If you have any questions feel free to contact directly
-                    here: mail hr@therapidhire.com
+                    here: mail to <a href="mailto:hr@therapidhire.com">hr@therapidhire.com</a>
                   </p>
                 </div>
               </div>
