@@ -38,11 +38,12 @@ function Footer() {
                   <li>
                     <a href="/technology">Technology</a>
                   </li>
-                  <li>
-                    <a href="/feature">Features</a>
-                  </li>
+                 
                   <li>
                     <a href="/team">Team</a>
+                  </li>
+                  <li>
+                    <a href="/Pricing">Pricing</a>
                   </li>
                 </ul>
               </div>

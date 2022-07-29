@@ -33,18 +33,18 @@ export default function Signup() {
               <br />
               <br />
               <div className="row ">
-                <div className="col-lg-6 ">
+                <div className="col-lg-6 col-xs-12">
                   <div className="cont22">
                     <img src="images/signup.png" alt="join" />
                   </div>
                 </div>
-                <div className="col-lg-6 ">
+                <div className="col-lg-6 col-xs-12 ">
                   <div className="contact-wrap">
                     <div id="form-messages"></div>
-                    <form id="contact-form">
+                    <form id="signup-form">
                       <fieldset>
                         <div className="row">
-                          <div className="col-lg-6">
+                          <div className="col-lg-6  col-xs-12">
                             <Input
                               id="fname"
                               type="text"
@@ -53,7 +53,7 @@ export default function Signup() {
                               value="fname"
                             />
                           </div>
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 col-xs-12">
                             <Input
                               id="email"
                               type="text"
@@ -64,7 +64,7 @@ export default function Signup() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 col-xs-12">
                             <Input
                               id="phone"
                               name="phone"
@@ -73,7 +73,7 @@ export default function Signup() {
                               value="phone"
                             />
                           </div>
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 col-xs-12">
                             <select
                               class="form-select occu"
                               aria-label="Default select example"
@@ -86,7 +86,7 @@ export default function Signup() {
                           </div>
                         </div>
                         <div className="row">
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 col-xs-12">
                             <Input
                               id="password"
                               name="password"
@@ -95,7 +95,7 @@ export default function Signup() {
                               value="password"
                             />
                           </div>
-                          <div className="col-lg-6">
+                          <div className="col-lg-6 col-xs-12">
                             <Input
                               id="cpassword"
                               name="cpassword"

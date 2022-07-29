@@ -2,7 +2,7 @@ import React from "react";
 import Input from "../Container/Input";
 
 
-export default function Login() {
+export default function Forgotpassword() {
   
   return (
     <div>
@@ -11,8 +11,7 @@ export default function Login() {
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Join Our Team
-                <span className="watermark">Login</span>
+                Forgot Password <span className="watermark">Forgotpassword</span>
               </h1>
               <span className="sub-text">
                 At TheRapidHire, we believe in hard work and transparency. We
@@ -27,7 +26,7 @@ export default function Login() {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="sec-title3 text-center ">
-                    <h2 className="title ">Login To Your Account</h2>
+                    <h2 className="title ">Forgot Your Password</h2>
                     <div className="heading-border-line"></div>
                   </div>
                 </div>
@@ -35,24 +34,24 @@ export default function Login() {
               <br />
               <br />
               <div className="row ">
-                <div className="col-lg-6 col-xs-12 ">
+                <div className="col-lg-6 col-xs-12">
                   <div className="cont22">
-                    <img src="images/join.jpg" alt="join"/>
+                    <img src="images/forgot.png" alt="join"/>
                   </div>
                 </div>
-                <div className="col-lg-6 col-xs-12 ">
+                <div className="col-lg-6 col-xs-12">
                   <div className="contact-wrap">
                     <div id="form-messages"></div>
                     <form id="contact-form">
                       <fieldset>
                         <div className="row">
-                          <div className="col-lg-12 col-xs-12 ">
+                          <div className="col-lg-12 col-xs-12">
                           
                           <Input
-                            id="email"
-                            type="text"
-                            name="email" placeholder="Email"
-                            value="email"
+                            id="newpassword"
+                            type="password"
+                            name="newpassword" placeholder="New password"
+                            value="newpassword"
                            
                           />
                           </div>
@@ -61,30 +60,30 @@ export default function Login() {
                           </div>
                          
                           <div className="row">
-                          <div className="col-lg-12 col-xs-12 ">
+                          <div className="col-lg-12 col-xs-12">
                         
                           <Input
 
-                            id="password"
-                            name="password"
-                            type="password" placeholder="Password"
-                            value="password"/>
+                            id="cpassword"
+                            name="cpassword"
+                            type="password" placeholder="Confirm Password"
+                            value="cpassword"/>
                           
                           </div>
                           </div>
-                          <div className="forgot"><a href="/forgotpassword">Forgot Password ?</a></div>
+                          
                         <div className="btn-part">
                           <div className="form-group mb-0">
                             <input
                               className="readon submit"
-                              type="submit"
+                              type="submit" value="Reset Password"
                             
                              
                             />
                           
                           </div>
                         </div><br/>
-                        <div className="signup "><span>Don't have an account?</span><a href="/Signup">Signup</a></div>
+                        <div className="signup "><span>Back To </span><a href="/Login">Login</a></div>
                       </fieldset>
                     </form>
                   </div>

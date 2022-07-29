@@ -44,7 +44,7 @@ function Technology() {
         <section className="pt-95 pb-95 ">
           <div className="container">
            <div className="row">
-           <div className="col-lg-12  col-md-6 ">
+           <div className="col-lg-12  col-md-12 ">
               <div className="sec-title3 text-center mb-35">
                 <span className="sub-title">OUR EXPERTISE</span>
                 <h2 className="title pb-25 ">
