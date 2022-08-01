@@ -209,7 +209,7 @@ function Home() {
               </p>
               <br />
               <div className="row">
-                <div className="col-lg-4 col-md-4">
+                <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
                     <img src="images/feat1.png" alt="" />
                     <h3>DEDICATED TEAM</h3>
@@ -220,7 +220,7 @@ function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4">
+                <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
                     <img src="images/feat2.png" alt="" />
 
@@ -234,7 +234,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="col-lg-4 col-md-4">
+                <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
                     <img src="images/feat3.png" alt="" />
 
@@ -247,7 +247,7 @@ function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4">
+                <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
                     <img src="images/feat4.png" alt="" />
 
@@ -259,7 +259,7 @@ function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4">
+                <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
                     <img src="images/feat5.png" alt="" />
 
@@ -271,7 +271,7 @@ function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4">
+                <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
                     <img src="images/feat6.png" alt="" />
 

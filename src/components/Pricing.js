@@ -12,8 +12,8 @@ export default function Pricing() {
                 <span className="watermark">Pricing</span>
               </h1>
               <span className="sub-text">
-                At TheRapidHire, we believe in hard work and transparency. We
-                encourage professionalism and clarity of thought at all times.{" "}
+              Explore the most scalable and comprehensible software development and IT Sourcing business solution.
+               Upgrade as your needs change, or cancel at any time.{" "}
               </span>
             </div>
           </div>

@@ -5,7 +5,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 function Clients() {
   const responsive = {
     0: { items: 2 },
-    568: { items: 2 },
+    568: { items: 3 },
     1024: { items: 4 },
   };
 
@@ -60,7 +60,7 @@ function Clients() {
     <div className="rs-counter style1 counter-home5-style client23 bg25  ">
       <div className="container">
         <div className="row">
-          <div className="col-lg-12  col-md-6 ">
+          <div className="col-lg-12  col-md-12 col-xs-12 ">
             <div className="sec-title3 text-center mb-35">
               <span className="sub-title">OUR CLIENTS</span>
               <h2 className="title pb-25 white-color">
