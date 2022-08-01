@@ -83,7 +83,7 @@ function Expertteam() {
         <div className="team-wrap">
           <div className="image-inner">
             <a href="/">
-              <img src="images/team5.jpg" alt="Krishna_Makwana" />
+              <img src="images/team7.jpg" alt="Yogita Saxena" />
             </a>
           </div>
         </div>

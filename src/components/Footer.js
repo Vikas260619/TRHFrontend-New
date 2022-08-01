@@ -23,7 +23,7 @@ function Footer() {
         <div className="footer-top">
           <div className="container">
             <div className="row">
-              <div className="col-lg-2 col-md-12 col-sm-12 md-mb-10">
+              <div className="col-lg-2 col-md-6 col-sm-12 md-mb-10">
                 <h3 className="footer-title">Quick Links</h3>
                 <ul className="site-map">
                   <li>
@@ -47,7 +47,7 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-3 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
+              <div className="col-lg-3 col-md-6 col-sm-12 md-mb-10 pl-55 md-pl-15">
                 <h3 className="footer-title">General Links</h3>
                 <ul className="site-map">
                   <li>
@@ -64,7 +64,7 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-4 col-md-12 col-sm-12 md-mb-10">
+              <div className="col-lg-4 col-md-6 col-sm-12 md-mb-10">
                 <h3 className="footer-title">Contact Info</h3>
                 <ul className="address-widget">
                   <li>
@@ -92,7 +92,7 @@ function Footer() {
                   
                 </ul>
               </div>
-              <div className="col-lg-3 col-md-12 col-sm-12">
+              <div className="col-lg-3 col-md-6 col-sm-12">
                 <h3 className="footer-title">Newsletter</h3>
                 <p className="widget-desc white-color">
                   Stay up to update with our latest news and products.
