@@ -26,6 +26,8 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Profile from "./components/Profile";
 import Forgotpassword from "./components/Forgotpassword";
+import Faq from "./components/Faq";
+
 
 
 
@@ -55,6 +57,8 @@ function App () {
           <Route exact path="/signup" element={<Signup/>}></Route>
           <Route exact path="/profile" element={<Profile/>}></Route>
           <Route exact path="/forgotpassword" element={<Forgotpassword/>}></Route>
+          <Route exact path="/faq" element={<Faq/>}></Route>
+
 
 
 

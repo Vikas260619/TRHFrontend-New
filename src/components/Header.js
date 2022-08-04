@@ -84,6 +84,11 @@ function Header() {
                     TEAM
                   </a>
                 </li>
+                <li>
+                  <a className="dropdown-item" href="/faq">
+                    FAQ
+                  </a>
+                </li>
                 
                 <li>
                   <a className="dropdown-item" href="/career">
