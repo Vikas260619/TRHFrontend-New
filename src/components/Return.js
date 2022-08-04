@@ -12,12 +12,7 @@ function Return(props) {
                 Return and Refund Policy
                 <span className="watermark">Return</span>
               </h1>
-              <span className="sub-text">
-                {" "}
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown .
-              </span>
+              
             </div>
           </div>
         </div>
