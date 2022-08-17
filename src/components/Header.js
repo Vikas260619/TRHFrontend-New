@@ -74,14 +74,17 @@ function Header() {
                     TECHNOLOGY
                   </a>
                 </li>
-
                 <li>
                   <a className="dropdown-item" href="/pricing">
-                    PRICING
+                  PRICING
                   </a>
                 </li>
+                
+                
               </ul>
             </li>
+
+            
             <li className="nav-item">
               <a className="nav-link" href="/blog">
                 BLOG
@@ -104,6 +107,13 @@ function Header() {
                     TEAM
                   </a>
                 </li>
+
+                <li>
+                  <a className="dropdown-item" href="/faq">
+                    FAQ
+                  </a>
+                </li>
+                
 
                 <li>
                   <a className="dropdown-item" href="/career">

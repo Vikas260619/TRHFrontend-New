@@ -147,6 +147,40 @@
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar-brand img {
+        width: 172px;
+    }
+    .single-services h3 {
+        font-size: 15px;}
+
+    .single-services {
+      
+        height: 318px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        margin: 0px 14px;
+        font-size: 12px;
+    }
+    .enquirebtn {
+        padding: 10px 6px;
+        
+        font-size: 10px;
+    }
+    .loginbtn {
+        
+        font-size: 10px;
+    }
+
+   
+
+    .rs-appointment.style1.apply-career .appoint-schedule .contact-wrap {
+        padding: 0 !important;}
+
+    .technology-item {
+    
+        height: 600px;}
+    
+
    .rs-services.style4 .services-item {
         padding: 40px 20px 40px 24px;
     }
@@ -246,6 +280,24 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .rs-contact.main-home .contact-icons-style .contact-item .content-text .services-txt {
+        margin: 0;
+        
+      }
+    .single-services {
+      
+        height: 286px;
+    }
+    .technology-item {
+    
+        height: 510px;}
+
+    .rs-slider.rs-slider-style3.slider3 .content-part .sl-subtitle{font-size: 30px;}
+    .rs-slider.slider3 img{height: 450px;}
+
+    .rs-slider.rs-slider-style3.slider3 .content-part .sl-title{margin-bottom: 20px;font-size: 16px;}
+
+    .rs-footer.style1 .footer-top ul{margin-bottom: 20px;}
     .hidden-md {
         display: none !important;
     }
@@ -432,7 +484,7 @@
         padding-bottom: 7px;
     }
     .rs-breadcrumbs .breadcrumbs-inner {
-        padding: 270px 0 140px;
+        padding: 106px 0 106px;
     }
     .rs-breadcrumbs .breadcrumbs-inner .sub-text {
         font-size: 15px;

@@ -80,7 +80,7 @@ function Blog() {
                                 <a href="#">{item.title}</a>
                               </h3>
                               <p>{item.mainDesc.slice(0, 124)}</p>
-                              <button onClick={() => newPage1(item._id)}>
+                              <button onClick={() => newPage1(item._id)} className="blogbtn" >
                                 View more...
                               </button>
                             </div>
@@ -102,7 +102,7 @@ function Blog() {
                                 <a href="#">{item.title}</a>
                               </h3>
                               <p>{item.mainDesc.slice(0, 124)}</p>
-                              <button onClick={() => newPage1(item._id)}>
+                              <button className="blogbtn" onClick={() => newPage1(item._id)}>
                                 View more...
                               </button>
                             </div>

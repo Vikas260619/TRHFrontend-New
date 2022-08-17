@@ -26,6 +26,7 @@ import Signup from "./components/Signup";
 import Profile from "./components/Profile";
 import Forgotpassword from "./components/Forgotpassword";
 import Verifie from "./components/Verifie";
+import Faq from "./components/Faq";
 
 function App () {
   return (
@@ -53,6 +54,9 @@ function App () {
           <Route exact path="/profile/:id/" element={<Profile/>}></Route>
           <Route exact path="/forgotpassword/:id/" element={<Forgotpassword/>}></Route>
           <Route exact path="/verifiey/:id/" element={<Verifie/>}></Route>          
+          <Route exact path="/profile" element={<Profile/>}></Route>
+          <Route exact path="/forgotpassword" element={<Forgotpassword/>}></Route>
+          <Route exact path="/faq" element={<Faq/>}></Route>
         </Routes>
         <Footer/>
         <Sidebar/>
