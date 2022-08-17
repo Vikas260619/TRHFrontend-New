@@ -10,6 +10,7 @@ import TimeAgo from "timeago-react";
 
 function Blogdetail() {
   const { id } = useParams();
+    
   const [users, setUsers] = useState("");
   const [data, setdata] = useState([]);
   const [comments, setComments] = useState([true]);
@@ -101,7 +102,7 @@ function Blogdetail() {
     <div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container-fluid">
+          <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Creative ideas - blogs
@@ -222,6 +223,9 @@ function Blogdetail() {
                                           )}{" "}
                                           <span>
                                             <TimeAgo datetime={comt.createdAt}/>
+                                            {/* <Moment fromNow>
+                                              {comt.createdAt}
+                                            </Moment> */}
                                           </span>
                                         </h5>
                                         <p> {comt.comment} </p>
@@ -260,7 +264,9 @@ function Blogdetail() {
                                           )}{" "}
                                           <span>
                                           <TimeAgo datetime={comt.createdAt}/>
-           
+                                            {/* <Moment fromNow>
+                                              {comt.createdAt}
+                                            </Moment> */}
                                           </span>
                                         </h5>
                                         <p> {comt.comment} </p>

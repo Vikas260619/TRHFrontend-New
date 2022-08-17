@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Common from "../Container/Common.js";
 import axios from "axios";
 import { baseURL } from "./Basepath.js";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { omit } from "lodash";
 
 function Contactus() {
@@ -12,14 +12,9 @@ function Contactus() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [website, setwebsite] = useState("");
-
   const [values, setValues] = useState({});
-  //Errors
   const [errors, setErrors] = useState({});
-
   const validate = (event, name, value) => {
-    //A function to validate each input values
-
     switch (name) {
       case "email":
         if (
@@ -43,7 +38,6 @@ function Contactus() {
   };
 
   const handleChange = (event) => {
-    //To stop default events
     event.persist();
 
     let name = event.target.name;
@@ -52,32 +46,46 @@ function Contactus() {
     validate(event, name, val);
 
     setEmail(val);
-    //Let's set these values in state
+
     setValues({
       ...values,
       [email]: val,
     });
   };
+  const checkInput = (e) => {
+    const onlyDigits = e.target.value.replace(/\D/g, "");
+    setPhone(onlyDigits);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-
     if (name !== "" && email !== "" && phone !== "" && message !== "") {
       let data = {
-        message, name, email, phone, website
-      }
+        message,
+        name,
+        email,
+        phone,
+        website,
+      };
       axios({
         url: baseURL + "contact/create",
         method: "post",
-        data: data
+        data: data,
       })
         .then((res) => {
-          toast(res.data.message)
+          setTimeout(() => {
+          toast(res.data.message);
+        }, 1000);
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000);
+
         })
+        
         .catch((err) => console.log(err));
     } else {
-      toast("Fill all the medatory")
+      toast("Fill all the medatory");
     }
   };
 
@@ -93,14 +101,17 @@ function Contactus() {
          your Development project."
         />
 
-
         <div className="rs-contact contact-style2 bg9 pt-95 pb-95 ">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 pr-40 md-pr-15 md-mb-50">
                 <div className="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.95864591758658!2d75.86723884040701!3d22.75282198501708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e32b2894590f%3A0x4e73ebc1261cc50!2sTheRapidHire%20Private%20Limited!5e0!3m2!1sen!2sin!4v1658831054327!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              
-
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.95864591758658!2d75.86723884040701!3d22.75282198501708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e32b2894590f%3A0x4e73ebc1261cc50!2sTheRapidHire%20Private%20Limited!5e0!3m2!1sen!2sin!4v1658831054327!5m2!1sen!2sin"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -108,7 +119,7 @@ function Contactus() {
                   <h2 className="title pb-20">
                     Let us help your business to move <span>forward.</span>
                   </h2>
-                  <br/>
+                  <br />
                 </div>
                 <div className="contact-wrap">
                   <div id="form-messages"></div>
@@ -123,7 +134,6 @@ function Contactus() {
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             placeholder="Name"
-
                           />
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-30">
@@ -153,11 +163,14 @@ function Contactus() {
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-30">
                           <input
                             className="from-control"
-                            type="mob-number"
-                            id="phone"
-                            name="number"
-                            onChange={(e) => setPhone(e.target.value)}
-                            placeholder="Phone Number"
+                            type="tel"
+                           // id="phone"
+                           // name="number"
+                           minLength={9}
+                           maxLength={12}
+                           placeholder="Phone Number"
+                           onChange={(e) =>checkInput(e)}
+
                           />
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-30">
@@ -209,13 +222,14 @@ function Contactus() {
                     <div className="contact-item">
                       <div className="content-text">
                         <div className="contact-icon">
-                        <img src="images/usa.png"  alt="usaflag"/>
+                          <img src="images/usa.png" alt="usaflag" />
                         </div>
                         <h2 className="title">
                           <a href="#">USA Office</a>
                         </h2>
                         <p className="services-txt">
-                          1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801<br/>
+                          1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801
+                          <br />
                           USA
                         </p>
                       </div>
@@ -225,13 +239,14 @@ function Contactus() {
                     <div className="contact-item">
                       <div className="content-text">
                         <div className="contact-icon">
-                          <img src="images/indiaflag.png"  alt="indiaflag"/>
-                      </div>
+                          <img src="images/indiaflag.png" alt="indiaflag" />
+                        </div>
                         <h2 className="title">
                           <a href="/">India Office</a>
                         </h2>
                         <p className="services-txt">
-                          51, Electronic Complex, Pardesi Pura Main Road,<br/>
+                          51, Electronic Complex, Pardesi Pura Main Road,
+                          <br />
                           INDORE(M.P){" "}
                         </p>
                       </div>

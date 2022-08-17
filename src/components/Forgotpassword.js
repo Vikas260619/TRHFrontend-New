@@ -2,35 +2,33 @@ import axios from "axios";
 import React, { useState } from "react";
 import Input from "../Container/Input";
 import { baseURL } from "./Basepath";
-import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-export default function Login() {
-  const Navigate = useNavigate();
+import { useParams } from "react-router-dom";
 
 
-  const [email, setEmail] = useState("");
+export default function Forgotpassword() {
+  const { id } = useParams();
   const [password, setPassword] = useState("");
+  const [confirm_password, setConfirm_password] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email !== "" && password !== "") {
+    if (password !== "" && confirm_password !== "") {
       let data = {
-        email,
         password,
+        confirm_password, 
       };
       axios({
-        url: baseURL + "user/login",
+        url: baseURL + "user/reset-pwd/"+id,
         method: "post",
         data: data,
       })
         .then((res) => {
-        
-          localStorage.setItem("Token",JSON.stringify(res.data.token))
+          console.log(res)
           setTimeout(() => {
-           Navigate("/profile/" + res.data.Data._id);
-          }, 3000);
+            toast(res.data.message);
+          }, 1000);
           toast(res.data.message);
         })
         .catch((err) => console.log(err));
@@ -38,30 +36,6 @@ export default function Login() {
       toast("Fill all the medatory");
     }
   };
-
-  const Forgethandle = (e) => {
-    e.preventDefault();
-    if (email !== "") {
-      let data = {
-        email,
-      };
-      axios({
-        url: baseURL + "user/forget",
-        method: "post",
-        data: data,
-      })
-        .then((res) => {
-          toast(res.data.message);
-
-          setTimeout(() => {
-            }, 1000);
-        })
-        .catch((err) => console.log(err));
-    } else {
-      toast("Please Fill the email field");
-    }
-  };
-
   return (
     <div>
       <div className="main-content">
@@ -69,8 +43,8 @@ export default function Login() {
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Join Our Team
-                <span className="watermark">Login</span>
+                Forgot Password{" "}
+                <span className="watermark">Forgotpassword</span>
               </h1>
               <span className="sub-text">
                 At TheRapidHire, we believe in hard work and transparency. We
@@ -85,7 +59,7 @@ export default function Login() {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="sec-title3 text-center ">
-                    <h2 className="title ">Login To Your Account</h2>
+                    <h2 className="title ">Forgot Your Password</h2>
                     <div className="heading-border-line"></div>
                   </div>
                 </div>
@@ -93,64 +67,62 @@ export default function Login() {
               <br />
               <br />
               <div className="row ">
-                <div className="col-lg-6 col-xs-12 ">
+                <div className="col-lg-6 col-xs-12">
                   <div className="cont22">
-                    <img src="images/join.jpg" alt="join" />
+                    <img src="images/forgot.png" alt="join" />
                   </div>
                 </div>
-                <div className="col-lg-6 col-xs-12 ">
+                <div className="col-lg-6 col-xs-12">
                   <div className="contact-wrap">
                     <div id="form-messages"></div>
                     <form id="contact-form">
                       <fieldset>
                         <div className="row">
-                          <div className="col-lg-12 col-xs-12 ">
+                          <div className="col-lg-12 col-xs-12">
                             <Input
-                              id="email"
-                              type="text"
-                              name="email"
-                              placeholder="Email"
-                              value={email}
-                              onChange={(e) => setEmail(e.target.value)}
-                            />
-                          </div>
-                        </div>
-
-                        <div className="row">
-                          <div className="col-lg-12 col-xs-12 ">
-                            <Input
-                              id="password"
-                              name="password"
+                              id="newpassword"
                               type="password"
-                              placeholder="Password"
+                              name="newpassword"
+                              placeholder="New password"
                               value={password}
                               onChange={(e) => setPassword(e.target.value)}
                             />
                           </div>
                         </div>
-                        <div className="forgot">
-                          <a href="" onClick={Forgethandle}>
-                            {" "}
-                            <ToastContainer />
-                            Forgot Password ?
-                          </a>
+
+                        <div className="row">
+                          <div className="col-lg-12 col-xs-12">
+                            <Input
+                              id="cpassword"
+                              name="cpassword"
+                              type="password"
+                              placeholder="Confirm Password"
+                              value={confirm_password}
+                              onChange={(e) =>
+                                setConfirm_password(e.target.value)
+                              }
+                            />
+                          </div>
                         </div>
+
                         <div className="btn-part">
                           <div className="form-group mb-0">
                             <input
                               className="readon submit"
                               type="submit"
+                              value="Reset Password"
                               onClick={(e) => handleSubmit(e)}
                             />
+                            <ToastContainer/>
                           </div>
                         </div>
                         <br />
                         <div className="signup ">
-                          <span>Don't have an account?</span>
-                          <a href="/Signup">Signup</a>
+                          <span>Back To </span>
+                          <a href="/Login">Login</a>
                         </div>
                       </fieldset>
-                    </form>
+                    </form> 
                   </div>
                 </div>
               </div>

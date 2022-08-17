@@ -8,9 +8,10 @@ function Blog() {
   const [data, setdata] = useState([]);
   const [filterData, setFilterData] = useState([]);
   const [flag, setFlag] = useState(false);
+  const [categorie, setCategorie] = useState([]);
   const Navigate = useNavigate();
   useEffect(() => {
-    
+    console.log(baseURL);
     axios({
       url: baseURL + "blog/getall",
       method: "get",
@@ -18,7 +19,6 @@ function Blog() {
       .then((res) => {
         setUsers(res.data.message);
         setdata(res.data.message);
-        console.log(res.data.message);
       })
       .catch((err) => {
         console.log(err);
@@ -41,13 +41,12 @@ function Blog() {
 
   console.log();
 
-
   return (
     <div>
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container-fluid">
+          <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Creative ideas - blogs
@@ -103,10 +102,7 @@ function Blog() {
                                 <a href="#">{item.title}</a>
                               </h3>
                               <p>{item.mainDesc.slice(0, 124)}</p>
-                              <button
-                                onClick={() => newPage1(item._id)}
-                                className=""
-                              >
+                              <button onClick={() => newPage1(item._id)}>
                                 View more...
                               </button>
                             </div>

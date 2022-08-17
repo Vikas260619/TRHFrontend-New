@@ -4,7 +4,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 function Aboutus() {
   const responsive = {
-    0: { items: 2 },
+    0: { items: 1 },
     568: { items: 2 },
     1024: { items: 4 },
   };
@@ -22,7 +22,7 @@ function Aboutus() {
               </div>
               <div className="front-title-part">
                 <h3 className="title">
-                  <a href="/">Vision</a>
+                  <a href="/about">Vision</a>
                 </h3>
               </div>
               <div className="front-desc-part">
@@ -51,7 +51,7 @@ function Aboutus() {
               </div>
               <div className="front-title-part">
                 <h3 className="title">
-                  <a href="/">Mission</a>
+                  <a href="/about">Mission</a>
                 </h3>
               </div>
               <div className="front-desc-part">
@@ -80,7 +80,7 @@ function Aboutus() {
               </div>
               <div className="front-title-part">
                 <h3 className="title">
-                  <a href="/">Values</a>
+                  <a href="/about">Values</a>
                 </h3>
               </div>
               <div className="front-desc-part">
@@ -185,13 +185,13 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="/">
+                    <a href="/about">
                       <img src="images/choose-1.png" alt="imagechoose" />
                     </a>
                   </div>
                   <div className="choose-content">
                     <h3>
-                      <a href="/">Client Oriented</a>
+                      <a href="/about">Client Oriented</a>
                     </h3>
                     <p>
                       Being customer-oriented is an approach in which, rather
@@ -205,13 +205,13 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="/">
+                    <a href="/about">
                       <img src="images/choose-2.png" alt="choose" />
                     </a>
                   </div>
                   <div className="choose-content">
                     <h3>
-                      <a href="/">Creativity</a>
+                      <a href="/about">Creativity</a>
                     </h3>
                     <p>
                       Our Creative thinking can also lead to innovation that
@@ -226,13 +226,13 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="/">
+                    <a href="/about">
                       <img src="images/choose-3.png" alt="meeting" />
                     </a>
                   </div>
                   <div className="choose-content">
                     <h3>
-                      <a href="/">Meeting Deadlines</a>
+                      <a href="/about">Meeting Deadlines</a>
                     </h3>
                     <p>
                       Meeting Deadlines help us to collaborate toward achieving
@@ -246,13 +246,13 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="/">
+                    <a href="/about">
                       <img src="images/choose-4.png" alt="plan" />
                     </a>
                   </div>
                   <div className="choose-content">
                     <h3>
-                      <a href="/">A Plan for Success</a>
+                      <a href="/about">A Plan for Success</a>
                     </h3>
                     <p>
                       Our Planning helps to critically assess the goal to see in

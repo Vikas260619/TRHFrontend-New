@@ -11,7 +11,6 @@ import Blog from "./components/Blog";
 import Contactus from "./components/Contactus";
 import Technology from "./components/Technology";
 import Pricing from "./components/Pricing";
-
 import Team from "./components/Team";
 import Career from "./components/Career";
 import Privacypolicy from "./components/Privacypolicy";
@@ -25,9 +24,8 @@ import Sidebar from "./components/Sidebar";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Profile from "./components/Profile";
-
-
-
+import Forgotpassword from "./components/Forgotpassword";
+import Verifie from "./components/Verifie";
 
 function App () {
   return (
@@ -52,7 +50,9 @@ function App () {
           <Route exact path="/terms" element={<Terms/>}></Route>
           <Route exact path="/login" element={<Login/>}></Route>
           <Route exact path="/signup" element={<Signup/>}></Route>
-          <Route exact path="/profile" element={<Profile/>}></Route>
+          <Route exact path="/profile/:id/" element={<Profile/>}></Route>
+          <Route exact path="/forgotpassword/:id/" element={<Forgotpassword/>}></Route>
+          <Route exact path="/verifiey/:id/" element={<Verifie/>}></Route>          
         </Routes>
         <Footer/>
         <Sidebar/>
