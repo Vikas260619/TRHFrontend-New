@@ -4,10 +4,8 @@ import Input from "../Container/Input";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
-  const Navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -47,13 +45,17 @@ export default function Signup() {
       })
         .then((res) => {
           setTimeout(() => {
-          toast(res.data.message);
-        }, 1000);
-        setTimeout(() => {
-          window.location.reload();
-        }, 3000);
-
-          
+            toast(res.data.message);
+          }, 1000);
+          setTimeout(() => {
+            setName("");
+            setEmail("");
+            setMobile("");
+            setOccupation("");
+            setPassword("");
+            setConfirm_password("");
+            setAddress("");
+          }, 3000);
         })
 
         .catch((err) => console.log(err));
@@ -128,14 +130,12 @@ export default function Signup() {
                         <div className="row">
                           <div className="col-lg-6 col-xs-12">
                             <Input
-                             /// id="phone"
-                             // name="phone"
                               type="tel"
                               placeholder="Phone No."
                               value={mobile}
                               minLength={9}
                               maxLength={12}
-                              onChange={(e) =>checkInput(e)}
+                              onChange={(e) => checkInput(e)}
                             />
                           </div>
                           <div className="col-lg-6 col-xs-12">

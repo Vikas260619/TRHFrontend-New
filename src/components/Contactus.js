@@ -75,14 +75,17 @@ function Contactus() {
       })
         .then((res) => {
           setTimeout(() => {
-          toast(res.data.message);
-        }, 1000);
-        setTimeout(() => {
-          window.location.reload();
-        }, 3000);
-
+            toast(res.data.message);
+          }, 1000);
+          setTimeout(() => {
+            setName("");
+            setMessage("");
+            setEmail("");
+            setPhone("");
+            setwebsite("");
+          }, 3000);
         })
-        
+
         .catch((err) => console.log(err));
     } else {
       toast("Fill all the medatory");
@@ -164,13 +167,13 @@ function Contactus() {
                           <input
                             className="from-control"
                             type="tel"
-                           // id="phone"
-                           // name="number"
-                           minLength={9}
-                           maxLength={12}
-                           placeholder="Phone Number"
-                           onChange={(e) =>checkInput(e)}
-
+                            // id="phone"
+                            // name="number"
+                            value={phone}
+                            minLength={9}
+                            maxLength={12}
+                            placeholder="Phone Number"
+                            onChange={(e) => checkInput(e)}
                           />
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-30">
@@ -178,6 +181,7 @@ function Contactus() {
                             className="from-control"
                             type="text"
                             id="Website"
+                            value={website}
                             name="website"
                             onChange={(e) => setwebsite(e.target.value)}
                             placeholder="Your Website"

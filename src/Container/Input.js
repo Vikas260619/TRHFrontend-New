@@ -15,6 +15,7 @@ const Input = (props) => {
             onClick={props.onClick}
             onChange={props.onChange}
             value={props.value}
+            key={props.key}
             maxLength={props.maxLength}
             minLength={props.minLength}
             required

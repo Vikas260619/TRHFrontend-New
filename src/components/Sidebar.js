@@ -1,6 +1,4 @@
 import React from "react";
-
-
 function Sidebar() {
   return (
     <div>
@@ -13,12 +11,18 @@ function Sidebar() {
               </a>
             </li>
             <li className="insta">
-              <a href="https://www.instagram.com/therapidhire_/" target="_blank">
+              <a
+                href="https://www.instagram.com/therapidhire_/"
+                target="_blank"
+              >
                 Instagram <i className="fa fa-instagram"></i>
               </a>
             </li>
             <li className="linke">
-              <a href="https://www.linkedin.com/company/therapidhire" target="_blank">
+              <a
+                href="https://www.linkedin.com/company/therapidhire"
+                target="_blank"
+              >
                 Linkedin <i className="fa fa-linkedin"></i>
               </a>
             </li>

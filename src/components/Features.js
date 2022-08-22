@@ -1,8 +1,5 @@
 import React from "react";
-
-
 function Features() {
-  
   return (
     <div>
       <div className="main-content">
@@ -32,8 +29,10 @@ function Features() {
                     DEDICATED TEAM
                   </h3>
                   <p>
-                  Our team provides you with a comprehensive solution using innovative technique and great reliability. 
-                  We work with incredible passion and let that passion stay with us as we deliver effective solutions to our clients.
+                    Our team provides you with a comprehensive solution using
+                    innovative technique and great reliability. We work with
+                    incredible passion and let that passion stay with us as we
+                    deliver effective solutions to our clients.
                   </p>
                 </div>
               </div>
@@ -44,8 +43,11 @@ function Features() {
                     DIVERSE TECHNOLOGY
                   </h3>
                   <p>
-                  Our team assists you in gaining control of your small business through software designed to grow with you, streamline all processes, 
-                  gain greater insight into your business, and make decisions based on real-time data to drive profitable growth. 
+                    Our team assists you in gaining control of your small
+                    business through software designed to grow with you,
+                    streamline all processes, gain greater insight into your
+                    business, and make decisions based on real-time data to
+                    drive profitable growth.
                   </p>
                 </div>
               </div>
@@ -57,8 +59,11 @@ function Features() {
                     RESEARCH AND DEVELOPMENT
                   </h3>
                   <p>
-                  We use best-practice processes and development methodologies as a foundation for the structured and methodical development 
-                  of cutting-edge technology solutions in the global market and provide refined programming solutions to our customers.
+                    We use best-practice processes and development methodologies
+                    as a foundation for the structured and methodical
+                    development of cutting-edge technology solutions in the
+                    global market and provide refined programming solutions to
+                    our customers.
                   </p>
                 </div>
               </div>
@@ -69,9 +74,9 @@ function Features() {
                     CUSTOMER ACCOMPLISHMENT
                   </h3>
                   <p>
-                  Client satisfaction is our priority, 
-                  which contributes to continuous improvement in order to maintain and 
-                  improve client satisfaction.
+                    Client satisfaction is our priority, which contributes to
+                    continuous improvement in order to maintain and improve
+                    client satisfaction.
                   </p>
                 </div>
               </div>
@@ -80,10 +85,11 @@ function Features() {
                   <h3>
                     <img src="images/feat5.png" alt="" />
                     DEDICATED ASSISTANCE
-
                   </h3>
                   <p>
-                  We are enthusiastic about our industry and enjoy what we do. For client assurance, we provide regular updates, calls, and product demos.
+                    We are enthusiastic about our industry and enjoy what we do.
+                    For client assurance, we provide regular updates, calls, and
+                    product demos.
                   </p>
                 </div>
               </div>
@@ -94,18 +100,16 @@ function Features() {
                     EXPERTISE
                   </h3>
                   <p>
-                  Working with the best businesses and leaders worldwide is something we are capable of doing because of our experience and knowledge.
-
+                    Working with the best businesses and leaders worldwide is
+                    something we are capable of doing because of our experience
+                    and knowledge.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
       </div>
-
-     
     </div>
   );
 }

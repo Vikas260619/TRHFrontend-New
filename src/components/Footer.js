@@ -1,16 +1,12 @@
 import React from "react";
-
 function Footer() {
   return (
     <div>
-      
-
       <footer
         id="rs-footer"
         className="rs-footer style1 footer-home3-style"
         style={{ position: "relative", overflow: "hidden" }}
       >
-
         <div
           className="icon-six"
           style={{ backgroundImage: "url(images/icon-6.png)" }}
@@ -38,7 +34,7 @@ function Footer() {
                   <li>
                     <a href="/technology">Technology</a>
                   </li>
-                 
+
                   <li>
                     <a href="/team">Team</a>
                   </li>
@@ -62,9 +58,7 @@ function Footer() {
                   <li>
                     <a href="/contactus">Contact Us</a>
                   </li>
-                  <li>
-                    <a href="/return">Return and Refund Policy</a>
-                  </li>
+                  <li></li>
                 </ul>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12 md-mb-10">
@@ -81,7 +75,7 @@ function Footer() {
                   <li>
                     <i className="fa fa-phone"></i>
                     <div className="desc">
-                    <a href="tel:+1 (917) 628 2406">+1 (917) 628 2406</a>
+                      <a href="tel:+1 (917) 628 2406">+1 (917) 628 2406</a>
                     </div>
                   </li>
                   <li>
@@ -92,22 +86,26 @@ function Footer() {
                       </a>
                     </div>
                   </li>
-                  
                 </ul>
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12">
                 <h3 className="footer-title">Newsletter</h3>
                 <p className="widget-desc white-color">
                   Stay up to update with our latest news and products.
-                </p><br/>
+                </p>
+                <br />
                 <div class="contentsubs">
-    <form class="subscription">
-      <input class="add-email" type="email" placeholder="Email Address" />
-      <button class="submit-email" type="submit">
-        <span class="before-submit">Subscribe</span>
-       </button>
-    </form>
-  </div>
+                  <form class="subscription">
+                    <input
+                      class="add-email"
+                      type="email"
+                      placeholder="Email Address"
+                    />
+                    <button class="submit-email" type="submit">
+                      <span class="before-submit">Subscribe</span>
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

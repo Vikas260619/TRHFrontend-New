@@ -4,13 +4,11 @@ import { useParams } from "react-router-dom";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import  Moment  from "react-moment";
-import { useNavigate } from "react-router"
+import { useNavigate } from "react-router";
 import TimeAgo from "timeago-react";
 
 function Blogdetail() {
   const { id } = useParams();
-    
   const [users, setUsers] = useState("");
   const [data, setdata] = useState([]);
   const [comments, setComments] = useState([true]);
@@ -222,10 +220,9 @@ function Blogdetail() {
                                             l.toUpperCase()
                                           )}{" "}
                                           <span>
-                                            <TimeAgo datetime={comt.createdAt}/>
-                                            {/* <Moment fromNow>
-                                              {comt.createdAt}
-                                            </Moment> */}
+                                            <TimeAgo
+                                              datetime={comt.createdAt}
+                                            />
                                           </span>
                                         </h5>
                                         <p> {comt.comment} </p>
@@ -263,10 +260,9 @@ function Blogdetail() {
                                             l.toUpperCase()
                                           )}{" "}
                                           <span>
-                                          <TimeAgo datetime={comt.createdAt}/>
-                                            {/* <Moment fromNow>
-                                              {comt.createdAt}
-                                            </Moment> */}
+                                            <TimeAgo
+                                              datetime={comt.createdAt}
+                                            />
                                           </span>
                                         </h5>
                                         <p> {comt.comment} </p>

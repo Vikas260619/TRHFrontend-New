@@ -3688,8 +3688,8 @@ border:2px dotted #000}
   margin-bottom: 30px;
 }
 .rs-testimonial.style1 .item .testi-img img {
-  max-width: 253px;
-  margin: 0 auto;
+ 
+  margin: 0 auto;width: 70px;height: 70px;border-radius: 50%;border:4px solid #fff;
 }
 .rs-testimonial.style1 .item .rating {
   margin-bottom: 13px;

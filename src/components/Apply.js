@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Input from "../Container/Input";
 import { omit } from "lodash";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
@@ -14,17 +13,13 @@ function Apply() {
   const [applypostion, setApplypostion] = useState("");
   const [resume, setResume] = useState("");
   const [technology, setTechnology] = useState("");
+  const [inputFile, setInputFile] = useState(false);
 
-  //Form values
   const [values, setValues] = useState({});
-  //Errors
+
   const [errors, setErrors] = useState({});
 
-  const navigate = useNavigate();
-
   const validate = (event, name, value) => {
-    //A function to validate each input values
-
     switch (name) {
       case "email":
         if (
@@ -48,9 +43,12 @@ function Apply() {
   };
 
   const handleFileChange = (e) => {
-    setResume(e.target.files[0]);
+    if (inputFile === false) {
+      setResume(e.target.files[0]);
+    } else {
+      e.target.files = null;
+    }
   };
-
   const handleChange = (event) => {
     event.persist();
     let name = event.target.name;
@@ -62,8 +60,8 @@ function Apply() {
       [name]: val,
     });
   };
-  
-   const checkInput = (e) => {
+
+  const checkInput = (e) => {
     const onlyDigits = e.target.value.replace(/\D/g, "");
     setPhone_number(onlyDigits);
   };
@@ -93,14 +91,19 @@ function Apply() {
         data: formData,
       })
         .then((res) => {
-      
           setTimeout(() => {
             toast(res.data.message);
           }, 1000);
+
           setTimeout(() => {
-            window.location.reload();
+            setCandidateName("");
+            setEmail("");
+            setPhone_number("");
+            setApplypostion("");
+            setTechnology("");
+            setInputFile(true);
+            setResume(null);
           }, 3000);
-          
         })
         .catch((err) => console.log(err));
     } else {
@@ -202,14 +205,12 @@ function Apply() {
                         <div className="row">
                           <div className="col-lg-6">
                             <Input
-                              //id="phone"
-                             // name="phone"
                               type="tel"
                               placeholder="Phone No."
                               value={phone_number}
                               minLength={9}
                               maxLength={12}
-                              onChange={(e) =>checkInput(e)}
+                              onChange={(e) => checkInput(e)}
                             />
                           </div>
                           <div className="col-lg-6">
@@ -230,6 +231,7 @@ function Apply() {
                                 type="file"
                                 name="resume"
                                 size="40"
+                                key={resume || ""}
                                 onChange={(e) => handleFileChange(e)}
                                 className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
                                 required
@@ -271,6 +273,5 @@ function Apply() {
     </div>
   );
 }
-
 
 export default Apply;

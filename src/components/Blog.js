@@ -8,7 +8,6 @@ function Blog() {
   const [data, setdata] = useState([]);
   const [filterData, setFilterData] = useState([]);
   const [flag, setFlag] = useState(false);
-  const [categorie, setCategorie] = useState([]);
   const Navigate = useNavigate();
   useEffect(() => {
     console.log(baseURL);
@@ -27,10 +26,8 @@ function Blog() {
 
   const newPage = (mediaType) => {
     setFlag(true);
-    console.log(mediaType);
 
     const EL = users.filter((el) => el.categories === mediaType);
-    console.log(EL);
 
     setFilterData(EL);
   };
@@ -80,7 +77,10 @@ function Blog() {
                                 <a href="#">{item.title}</a>
                               </h3>
                               <p>{item.mainDesc.slice(0, 124)}</p>
-                              <button onClick={() => newPage1(item._id)} className="blogbtn" >
+                              <button
+                                onClick={() => newPage1(item._id)}
+                                className="blogbtn"
+                              >
                                 View more...
                               </button>
                             </div>
@@ -102,7 +102,10 @@ function Blog() {
                                 <a href="#">{item.title}</a>
                               </h3>
                               <p>{item.mainDesc.slice(0, 124)}</p>
-                              <button className="blogbtn" onClick={() => newPage1(item._id)}>
+                              <button
+                                className="blogbtn"
+                                onClick={() => newPage1(item._id)}
+                              >
                                 View more...
                               </button>
                             </div>
@@ -143,7 +146,7 @@ function Blog() {
                     <ul className="list">
                       <div>
                         {users
-                          .map((dataItem) => dataItem.categories) // get all media types
+                          .map((dataItem) => dataItem.categories)
                           .filter(
                             (mediaType, index, array) =>
                               array.indexOf(mediaType) === index

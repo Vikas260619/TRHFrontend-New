@@ -9,7 +9,6 @@ import "react-toastify/dist/ReactToastify.css";
 export default function Login() {
   const Navigate = useNavigate();
 
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -26,10 +25,10 @@ export default function Login() {
         data: data,
       })
         .then((res) => {
-        
-          localStorage.setItem("Token",JSON.stringify(res.data.token))
+          localStorage.setItem("Token", JSON.stringify(res.data.token));
           setTimeout(() => {
-           Navigate("/profile/" + res.data.Data._id);
+            Navigate("/profile/" + res.data.Data._id);
+            window.location.reload();
           }, 3000);
           toast(res.data.message);
         })
@@ -53,8 +52,7 @@ export default function Login() {
         .then((res) => {
           toast(res.data.message);
 
-          setTimeout(() => {
-            }, 1000);
+          setTimeout(() => {}, 1000);
         })
         .catch((err) => console.log(err));
     } else {

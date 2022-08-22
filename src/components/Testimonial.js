@@ -13,39 +13,6 @@ function Testimonial() {
     <div className="item" data-value="1">
       <div className="item text-center">
         <div className="testi-img">
-          <img src="images/testimonial1.png" alt="" />
-        </div>
-        <ul className="rating">
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-        </ul>
-        <div className="author-detail">
-          <div className="desc">
-            "Lorem ipsum is placeholder text commonly used in the graphic,
-            print, and publishing industries for previewing layouts and visual
-            mockups."
-          </div>
-          <h4 className="name">Nathan Hirsch</h4>
-          <span className="designation">Manager</span>
-        </div>
-      </div>
-    </div>,
-    <div className="item" data-value="2">
-      <div className="item text-center">
-        <div className="testi-img">
           <img src="images/testimonial2.png" alt="" />
         </div>
         <ul className="rating">
@@ -67,12 +34,43 @@ function Testimonial() {
         </ul>
         <div className="author-detail">
           <div className="desc">
-            "Lorem ipsum is placeholder text commonly used in the graphic,
-            print, and publishing industries for previewing layouts and visual
-            mockups."
+            We thank TheRapidHire for the wonderful job in helping us develop
+            our program. Everyone was professional, excellent and hard working.
+            Thanks to them, we were able to achieve our goal on time, and we
+            look forward to continue working with them in the future.
           </div>
-          <h4 className="name">Piter More</h4>
-          <span className="designation">Business Planner</span>
+          <h4 className="name">Anil Spia</h4>
+          <span className="designation">Director Of Softing</span>
+        </div>
+      </div>
+    </div>,
+    <div className="item" data-value="2">
+      <div className="item text-center">
+        <div className="testi-img">
+          <img src="images/testimonial3.png" alt="" />
+        </div>
+        <ul className="rating">
+          <li>
+            <i className="fa fa-star"></i>
+          </li>
+          <li>
+            <i className="fa fa-star"></i>
+          </li>
+          <li>
+            <i className="fa fa-star"></i>
+          </li>
+          <li>
+            <i className="fa fa-star"></i>
+          </li>
+          <li>
+            <i className="fa fa-star"></i>
+          </li>
+        </ul>
+        <div className="author-detail">
+          <div className="desc">
+          A successful project always requires the best team. Together with Therapidhire, we at Softing have already been able to work on various projects with highly professional, flexible, and motivated people who deliver first-class results in complex environments.  </div>
+          <h4 className="name">Paul Munni</h4>
+          <span className="designation">Developer Of Softing</span>
         </div>
       </div>
     </div>,
@@ -100,82 +98,19 @@ function Testimonial() {
         </ul>
         <div className="author-detail">
           <div className="desc">
-            "Lorem ipsum is placeholder text commonly used in the graphic,
-            print, and publishing industries for previewing layouts and visual
-            mockups."
+            We would like to express our satisfaction on the co-operation
+            regarding the development of our web application. TheRapidHire and
+            the development team did a very professional job. We are satisfied
+            with the solution given to us and with the communication flow
+            through the project.
           </div>
-          <h4 className="name">Devis Polo</h4>
-          <span className="designation">CEO</span>
+          <h4 className="name">Junl Sarukh</h4>
+          <span className="designation">CEO Of Softing</span>
         </div>
       </div>
     </div>,
-    <div className="item" data-value="4">
-      <div className="item text-center">
-        <div className="testi-img">
-          <img src="images/testimonial1.png" alt="" />
-        </div>
-        <ul className="rating">
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-        </ul>
-        <div className="author-detail">
-          <div className="desc">
-            "Lorem ipsum is placeholder text commonly used in the graphic,
-            print, and publishing industries for previewing layouts and visual
-            mockups."
-          </div>
-          <h4 className="name">Jhon Peter</h4>
-          <span className="designation">Manager</span>
-        </div>
-      </div>
-    </div>,
-    <div className="item" data-value="5">
-      <div className="item text-center">
-        <div className="testi-img">
-          <img src="images/testimonial2.png" alt="" />
-        </div>
-        <ul className="rating">
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-          <li>
-            <i className="fa fa-star"></i>
-          </li>
-        </ul>
-        <div className="author-detail">
-          <div className="desc">
-            "Lorem ipsum is placeholder text commonly used in the graphic,
-            print, and publishing industries for previewing layouts and visual
-            mockups."
-          </div>
-          <h4 className="name">Jeson Thomas</h4>
-          <span className="designation">Consultant</span>
-        </div>
-      </div>
-    </div>,
-  ];
+   
+    ];
   return (
     <div>
       <div className="rs-testimonial style1">
@@ -190,12 +125,12 @@ function Testimonial() {
             <br />
             <div>
               <AliceCarousel
-               autoPlay
-               autoPlayStrategy="none"
-               autoPlayInterval={3000}
-               animationDuration={3000}
-               animationType="fadeout"
-               infinite
+                autoPlay
+                autoPlayStrategy="none"
+                autoPlayInterval={3000}
+                animationDuration={3000}
+                animationType="fadeout"
+                infinite
                 mouseTracking
                 items={items}
                 responsive={responsive}

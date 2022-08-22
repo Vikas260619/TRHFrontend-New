@@ -1,16 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useParams, useNavigate } from "react-router-dom";
-import queryString from "query-string";
-
 function Header() {
-  // const { id } = useParams();
-  const img = "images/logo.png";
-  const location = window.location.href;
-  const query = queryString.parse(location);
-  const arr = location.split("/");
-  const id = arr[arr.length - 1];
-  console.log(id);
   const Navigate = useNavigate();
   const [token, setToken] = useState("");
   const logoutBtn = () => {
@@ -29,7 +20,7 @@ function Header() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light navtrh">
       <div className="container-fluid navihead">
         <a className="navbar-brand" href="/">
-          <img src={process.env.PUBLIC_URL +'/images/logo.png'} alt="TRH" />
+          <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="TRH" />
         </a>
 
         <button
@@ -76,15 +67,12 @@ function Header() {
                 </li>
                 <li>
                   <a className="dropdown-item" href="/pricing">
-                  PRICING
+                    PRICING
                   </a>
                 </li>
-                
-                
               </ul>
             </li>
 
-            
             <li className="nav-item">
               <a className="nav-link" href="/blog">
                 BLOG
@@ -113,7 +101,6 @@ function Header() {
                     FAQ
                   </a>
                 </li>
-                
 
                 <li>
                   <a className="dropdown-item" href="/career">

@@ -12,7 +12,6 @@ export default function Profile() {
   const [mobile, setMobile] = useState("");
   const [occupation, setOccupation] = useState("");
   const [address, setAddress] = useState("");
-
   const { id } = useParams();
   const Navigate = useNavigate();
 
@@ -36,7 +35,7 @@ export default function Profile() {
       });
   }, []);
 
- const checkInput = (e) => {
+  const checkInput = (e) => {
     const onlyDigits = e.target.value.replace(/\D/g, "");
     setMobile(onlyDigits);
   };
@@ -55,19 +54,12 @@ export default function Profile() {
         setTimeout(() => {
           window.location.reload();
         }, 3000);
-                
-
       })
       .catch((err) => {
         console.log(err);
       });
-    
   };
 
- 
-  // function refreshPage() {
-  //   window.location.reload();
-  // }
   return (
     <div>
       <div className="main-content">
@@ -89,9 +81,12 @@ export default function Profile() {
             <div className="appoint-schedule">
               <div className="row ">
                 <div className="col-lg-6 ">
-                  <img src={process.env.PUBLIC_URL +'/images/profile.png'} alt="profile" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/profile.png"}
+                    alt="profile"
+                  />
                 </div>
-                
+
                 <div className="col-lg-6 ">
                   <div className="profile-head">
                     <div className="row">
@@ -135,7 +130,7 @@ export default function Profile() {
                                   <form id="signup-form">
                                     <fieldset>
                                       <div className="row">
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-12">
                                           <Input
                                             id="fname"
                                             type="text"
@@ -149,19 +144,17 @@ export default function Profile() {
                                         </div>
                                       </div>
                                       <div className="row">
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-12">
                                           <Input
-                                          //  id="phone"
-                                           // name="phone"
                                             type="tel"
                                             placeholder="Phone No."
                                             value={mobile}
                                             minLength={9}
-                              maxLength={12}
-                              onChange={(e) =>checkInput(e)}
+                                            maxLength={12}
+                                            onChange={(e) => checkInput(e)}
                                           />
                                         </div>
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-12">
                                           <select
                                             class="form-select occu"
                                             aria-label="Default select example"
@@ -207,7 +200,6 @@ export default function Profile() {
                                   type="button"
                                   class="btn btn-secondary"
                                   data-bs-dismiss="modal"
-                                  //onClick={refreshPage}
                                 >
                                   Close
                                 </button>
@@ -279,22 +271,7 @@ export default function Profile() {
                             <p>{users.occupation}</p>
                           </div>
                         </div>
-                        {/* <div className="row">
-                          <div className="col-md-6">
-                            <label>Password</label>
-                          </div>
-                          <div className="col-md-6">
-                            <p>****** </p>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-6">
-                            <label>Confirm Password</label>
-                          </div>
-                          <div className="col-md-6">
-                            <p>****** </p>
-                          </div>
-                        </div> */}
+
                         <div className="row">
                           <div className="col-md-6">
                             <label>Address</label>
