@@ -114,7 +114,7 @@ function Privacypolicy() {
                   </p>
                 </div>
                 <div className="term12">
-                  <h5>.To provide assistance or other services.</h5>
+                  <h5>To provide assistance or other services.</h5>
                   <p>
                     THERAPIDHIRE may use your personal information to provide
                     you with support or other services you have ordered or

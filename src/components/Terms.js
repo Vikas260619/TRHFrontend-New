@@ -32,17 +32,18 @@ function Terms() {
                   <div className="heading-border-line"></div>
                 </div>
                 <p className="pt-50 text-center">
+                  
                   By using this website (" Website"), you admit that you have
                   read, understood, and accepted the Terms of Use that govern
-                  its use.However, Therapidhire Private Limited ("
-                  Therapidhire") requests that you not pierce the Website or
-                  download any document from the Website, if you don't agree to
-                  these terms and conditions. Continued use of access to the
-                  Website or downloading any material available on the Website
-                  will be interpreted as acceptance of these Terms of Use.
-                  Therapidhire reserves the right to make changes and variations
+                  its use.However, Therapidhire Private Limited (" Therapidhire")
+                  requests that you not pierce the Website or download any document
+                  from the Website, if you don't agree to these terms and conditions.
+                   Continued use of access to the Website or downloading any material 
+                   available on the Website will be interpreted as acceptance of these 
+                   Terms of Use.Therapidhire reserves the right to make changes and variations
                   to the contents of this Website, including these Terms of Use,
                   at any time and without notice.
+                
                 </p>
                 <p>
                   Therapidhire makes no representation that the contents or
@@ -63,7 +64,7 @@ function Terms() {
                     non-exclusive,non-transferable, limited right to access,
                     use, and display this Website and its document for
                     particular and instructional purposes only. Therapidhire
-                    subventions authorization to use documents (similarto white
+                    subventions authorization to use documents (similar to white
                     papers, press releases, and other publications) that can be
                     downloaded from this Website, handed that (1) Therapidhire's
                     brand notice appears in all clones of documents, (2) Use of
@@ -88,7 +89,7 @@ function Terms() {
                   <p>
                     This website, including its design, layout, law, and
                     contents, as well as all content (banning any
-                    third-partydocument), is the sole property of Therapidhire
+                    third-party document), is the sole property of Therapidhire
                     and is defended by brand laws. It's banned to copy,
                     reproduce in whole or in part, or produce secondary
                     workshops in any form or medium without express written
@@ -97,11 +98,11 @@ function Terms() {
                     or other intellectual property rights.
                   </p>
                   <p>
-                    Therapidhire'slogo is a registered trademark that's defended
+                    Therapidhire's logo is a registered trademark that's defended
                     under trademark laws. Therapidhire and the names of
-                    Therapidhire's products mentioned herein are Therapidhire
+                    Therapidhire's products mentioned here in are Therapidhire
                     trademarks. Other products and company names mentioned
-                    herein may be trademarks and/ or service marks of their
+                    here in may be trademarks and/ or service marks of their
                     separate possessors, and they're conceded as similar.
                   </p>
                 </div>
@@ -148,7 +149,7 @@ function Terms() {
                     purpose.
                   </p>
                   <p>
-                    Therapidhire doesn't guarantee or warrantythat those files
+                    Therapidhire doesn't guarantee or warranty that those files
                     available for downloading from this website (including,
                     without limitation, mobileslotcash.com) are free of
                     infection or viruses, worms, or other codes that manifest
@@ -160,7 +161,7 @@ function Terms() {
                   </p>
                 </div>
                 <div className="term12">
-                  <h5>ContIndemnity & Limitation of Liability:acting us</h5>
+                  <h5>Counter indemnity & Limitation of Liability:acting us</h5>
                   <p>
                     You agree to compensate, defend, and hold inoffensive
                     Therapidhire, its accessories, and cells from any claim,
@@ -200,7 +201,7 @@ function Terms() {
                     The laws of India, without regard to its rules on conflicts
                     of law, shall govern these Terms of Use. Any dispute
                     originating from or relating to these Terms of Use shall be
-                    exclusively before the courts in Pune, Maharashtra, India.
+                    exclusively before the courts in Indore, Madhya Pradesh, India.
                   </p>
                 </div>
               </div>

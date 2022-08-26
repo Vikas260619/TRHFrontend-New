@@ -129,9 +129,10 @@ function Home() {
             <a href="/Services">Cyber Security</a>
           </h3>
           <div className="desc">
-            In today’s business landscape, every CXO is in theprocess or
-            planning on implementing CASS– Cloud,Analytics
-          </div>
+          Transform your business and manage risk by partnering with Therapidhire in cybersecurity 
+          consulting and managed security services.
+
+</div>
         </div>
       </div>
     </div>,

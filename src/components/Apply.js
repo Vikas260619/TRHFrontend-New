@@ -119,7 +119,7 @@ function Apply() {
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Explore Opportunities
+                Explore Opportunities 
                 <span className="watermark">Apply Now</span>
               </h1>
               <span className="sub-text">

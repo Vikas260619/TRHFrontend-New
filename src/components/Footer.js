@@ -47,7 +47,7 @@ function Footer() {
                 <h3 className="footer-title">General Links</h3>
                 <ul className="site-map">
                   <li>
-                    <a href="/terms">Terms & Conditions</a>
+                    <a href="/terms">Terms of Service</a>
                   </li>
                   <li>
                     <a href="/privacy">Privacy policy</a>

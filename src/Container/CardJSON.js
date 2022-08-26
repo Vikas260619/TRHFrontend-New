@@ -4,39 +4,36 @@ const CardData = [
    {
       imgsrc: "images/ser1.png",
       title: "CLOUD SERVICES",
-      description: "Our cloud services provide the options of availing remot services via cloud computing servers. Services includedare computing resources, data resources and communicatio resources. Furthermore, IaaS, PaaS and SaaS platforms arealso available for services"
+      description: "Our cloud services provide the options of availing remote services via cloud computing servers. Services include dare computing resources, data resources and communication resources. Further more, IaaS, PaaS and SaaS platforms area also available for services"
 
    },
    {
       imgsrc: "images/ser2.png",
       title: "WEB DESIGNING",
-      description: " We are looking for a web designer who will be responsiblefor creating great websites for our clients. Primaryduties include conceptualizing and implementing creativeideas for client websites, as well as creating visualelements that are in line with our clients' branding."
+      description: " We are looking for a web designer who will be responsible for creating great websites for our clients. Primaryduties include conceptualizing and implementing creative ideas for client websites, as well as creating visual elements that are in line with our clients' branding."
    },
    {
       imgsrc: "images/ser3.png",
       title: "WEB DEVELOPMENT",
-      description: " An interactive web application readily amplifies use engagement. Our user-centred web app is feature-rich,intuitive, and performs exceedingly well. We craft yourweb destination with a clear view of the business goal and ensure that it supports the user-journey."
+      description: " An interactive web application readily amplifies use engagement. Our user-centred web app is feature-rich,intuitive, and performs exceedingly well. We craft your web destination with a clear view of the business goal and ensure that it supports the user-journey."
    },
    {
       imgsrc: "images/ser4.png",
       title: "DATA ENGINEERING",
-      description: "We focus on practical applications of data collection ,analysis and organizing data by also keeping an eye outfor trends or inconsistencies that will impact businessgoals. We build data pipelines that source and transform the data into the structures needed for analysis."
+      description: "We focus on practical applications of data collection ,analysis and organizing data by also keeping an eye outfor trends or inconsistencies that will impact business goals. We build data pipelines that source and transform the data into the structures needed for analysis."
    },
    {
       imgsrc: "images/ser5.png",
       title: "MINIMUM VARIABLE PRODUCT (MVP) DEVELOPMENT",
-      description: "Our team follows MVP development technique in which itintroduces a new product in the market with basicfeatures, but enough to get the attention of theConsumers. We launch the final product after sufficient feedback from our product’s initial clients."
+      description: "Our team follows MVP development technique in which it introduces a new product in the market with basic features, but enough to get the attention of the Consumers. We launch the final product after sufficient feedback from our product’s initial clients."
    },
    {
       imgsrc: "images/ser6.png",
       title: "PRODUCT DEVELOPMENT",
-      description: "  We believe in bringing new product to the marketplace by  implementing innovative businesses thrive by understanding our marketeers wants, making smart product improvements, and developing new products that meet and exceed their customer’s expectations"
+      description: "  We believe in bringing new product to the market place by implementing innovative businesses thrive by understanding our marketeers wants, making smart product improvements, and developing new products that meet and exceed their customer’s expectations"
    }
 
 ]
-
-
-
 
 
 const TechnoData = [
@@ -61,7 +58,7 @@ const TechnoData = [
       imgsrc: 'images/techback.jpg',
       Numb: '03',
       title: 'PHP',
-      description: ' We are looking for a PHP Developer responsible for managing back-end services and the interchange of data between the server and the users. Your primary focus willbe the development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from thefront-end.',
+      description: ' We are looking for a PHP Developer responsible for managing back-end services and the interchange of data between the server and the users. Your primary focus will be the development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end.',
 
       icon_imgsrc: 'images/tech3.png'
    },
