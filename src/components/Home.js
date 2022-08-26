@@ -81,7 +81,7 @@ function Home() {
             <a href="/Services">AWS Services</a>
           </h3>
           <div className="desc">
-            Build, Deploy, and Manage Websites, Apps or Processes On AWS Secure,
+            Build, Deploy, and Manage Websites, Apps  or Processes On AWS Secure,
             Reliable Network.
           </div>
         </div>
