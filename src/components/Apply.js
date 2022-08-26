@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Input from "../Container/Input";
 import { omit } from "lodash";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
@@ -14,17 +13,13 @@ function Apply() {
   const [applypostion, setApplypostion] = useState("");
   const [resume, setResume] = useState("");
   const [technology, setTechnology] = useState("");
+  const [inputFile, setInputFile] = useState(false);
 
-  //Form values
   const [values, setValues] = useState({});
-  //Errors
+
   const [errors, setErrors] = useState({});
 
-  const navigate = useNavigate();
-
   const validate = (event, name, value) => {
-    //A function to validate each input values
-
     switch (name) {
       case "email":
         if (
@@ -47,14 +42,13 @@ function Apply() {
     }
   };
 
-  const hiddenFileInput = React.useRef(null);
-
-  
-
   const handleFileChange = (e) => {
-    setResume(e.target.files[0]);
+    if (inputFile === false) {
+      setResume(e.target.files[0]);
+    } else {
+      e.target.files = null;
+    }
   };
-
   const handleChange = (event) => {
     event.persist();
     let name = event.target.name;
@@ -66,6 +60,12 @@ function Apply() {
       [name]: val,
     });
   };
+
+  const checkInput = (e) => {
+    const onlyDigits = e.target.value.replace(/\D/g, "");
+    setPhone_number(onlyDigits);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (e) e.preventDefault();
@@ -94,6 +94,16 @@ function Apply() {
           setTimeout(() => {
             toast(res.data.message);
           }, 1000);
+
+          setTimeout(() => {
+            setCandidateName("");
+            setEmail("");
+            setPhone_number("");
+            setApplypostion("");
+            setTechnology("");
+            setInputFile(true);
+            setResume(null);
+          }, 3000);
         })
         .catch((err) => console.log(err));
     } else {
@@ -109,11 +119,12 @@ function Apply() {
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Explore Opportunities
+                Explore Opportunities 
                 <span className="watermark">Apply Now</span>
               </h1>
               <span className="sub-text">
-              If you're enthusiastic, inquisitive, and enjoy using your ideas to overcome problems, this is the place for you.
+                If you're enthusiastic, inquisitive, and enjoy using your ideas
+                to overcome problems, this is the place for you.
               </span>
             </div>
           </div>
@@ -158,95 +169,93 @@ function Apply() {
                       <fieldset>
                         <div className="row">
                           <div className="col-lg-6">
-                          
-                          <Input
-                            id="text"
-                            type="text"
-                            name="name" placeholder="Name"
-                            value={candidateName}
-                            onChange={(e)=>setCandidateName(e.target.value)}
-                          />
-                          </div>
-                          <div className="col-lg-6">
-                          <Input
-                            id="email"
-                            name="email"
-                            type="text" placeholder="Email Address"
-                            value={email}
-                            style={{
-                              borderBottomColor: errors.email ? "red" : "",
-                            }}
-                            onChange={handleChange}
-                          />
-                          {errors.email && (
-                            <p
-                              style={{
-                                color: errors.email ? "red" : "",
-                                marginTop: "-4vh",
-                              }}
-                            >
-                              {errors.email}
-                            </p>
-                          )}
-                          </div>
-                          </div>
-                          <div className="row">
-                          <div className="col-lg-6">
-                          <Input
-                            id="phone"
-                            name="phone"
-                            type="number" placeholder="Phone No."
-                            value={phone_number}
-                            minLength={9}
-                            maxLength={12}
-                            onChange={(e) => setPhone_number(e.target.value)}
-                          /></div>
-                           <div className="col-lg-6">
-                          <Input
-                            id="position"
-                            name="position" placeholder="Apply Position"
-                            type="text"
-                            value={applypostion}
-                            onChange={(e) => setApplypostion(e.target.value)}
-                          />
-                          </div>
-                          </div>
-                          <div className="row">
-                          <div className="col-lg-12">
-                        
-                          <span className="wpcf7-form-control-wrap resume">
                             <Input
-                              type="file"
-                              name="resume"
-                              size="40"
-                              value={resume}
-                              onChange={(e) => handleFileChange(e)}
-                              className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
-                              required
+                              id="text"
+                              type="text"
+                              name="name"
+                              placeholder="Name"
+                              value={candidateName}
+                              onChange={(e) => setCandidateName(e.target.value)}
                             />
-                          </span>{" "}</div>
                           </div>
-                          {/* <div className="row" >
-
-                          <div className="col-lg-12">
-
-                         
-                          <Input
-                            id="technology" 
-                            name="technology"
-                            type="text"
-                            placeholder="Technology"
-                            value={technology}
-                            onChange={(e) => setTechnology(e.target.value)}
-                          />
+                          <div className="col-lg-6">
+                            <Input
+                              id="email"
+                              name="email"
+                              type="text"
+                              placeholder="Email Address"
+                              value={email}
+                              style={{
+                                borderBottomColor: errors.email ? "red" : "",
+                              }}
+                              onChange={handleChange}
+                            />
+                            {errors.email && (
+                              <p
+                                style={{
+                                  color: errors.email ? "red" : "",
+                                  marginTop: "-4vh",
+                                }}
+                              >
+                                {errors.email}
+                              </p>
+                            )}
+                          </div>
                         </div>
-                        </div> */}
+                        <div className="row">
+                          <div className="col-lg-6">
+                            <Input
+                              type="tel"
+                              placeholder="Phone No."
+                              value={phone_number}
+                              minLength={9}
+                              maxLength={12}
+                              onChange={(e) => checkInput(e)}
+                            />
+                          </div>
+                          <div className="col-lg-6">
+                            <Input
+                              id="position"
+                              name="position"
+                              placeholder="Apply Position"
+                              type="text"
+                              value={applypostion}
+                              onChange={(e) => setApplypostion(e.target.value)}
+                            />
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-lg-12">
+                            <span className="wpcf7-form-control-wrap resume">
+                              <Input
+                                type="file"
+                                name="resume"
+                                size="40"
+                                key={resume || ""}
+                                onChange={(e) => handleFileChange(e)}
+                                className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
+                                required
+                              />
+                            </span>{" "}
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-lg-12">
+                            <Input
+                              id="technology"
+                              name="technology"
+                              type="text"
+                              placeholder="Technology"
+                              value={technology}
+                              onChange={(e) => setTechnology(e.target.value)}
+                            />
+                          </div>
+                        </div>
                         <div className="btn-part">
                           <div className="form-group mb-0">
                             <Input
                               className="readon submit"
                               type="submit"
-                            
                               onClick={(e) => handleSubmit(e)}
                             />
                             <ToastContainer />
@@ -261,8 +270,6 @@ function Apply() {
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 }

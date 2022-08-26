@@ -4,28 +4,32 @@ import { useParams } from "react-router-dom";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import moment from "moment";
 import { useNavigate } from "react-router";
+import TimeAgo from "timeago-react";
 
 function Blogdetail() {
   const { id } = useParams();
   const [users, setUsers] = useState("");
   const [data, setdata] = useState([]);
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState([true]);
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
+  const [show, setShow] = useState(true);
+  const [commentFlag, setCommentFlag] = useState(0);
+  const [allComment, setAllComment] = useState(0);
   const Navigate = useNavigate();
-  
-  const newPage = (id) => {
-    Navigate("/blogdetail/" + id);
-  };
+  let blog_id = id;
+  var comment_status = "pending";
   const handleSubmit = (e) => {
     e.preventDefault();
+
     let data = {
       fullname,
       email,
       comment,
+      comment_status,
+      blog_id,
     };
     axios({
       url: baseURL + "comment/create",
@@ -33,7 +37,10 @@ function Blogdetail() {
       data: data,
     })
       .then((res) => {
-        toast(res.data);
+        toast("Comment Submited Sucessfully");
+        setTimeout(() => {
+          window.location.reload();
+        }, 5000);
       })
       .catch((err) => console.log(err));
   };
@@ -44,7 +51,6 @@ function Blogdetail() {
       method: "get",
     })
       .then((res) => {
-        // console.log(res.data.message)
         setUsers(res.data.message);
       })
       .catch((err) => {
@@ -67,31 +73,34 @@ function Blogdetail() {
 
   useEffect(() => {
     axios({
-      url: baseURL + "comment/getAll",
+      url: baseURL + "comment/getblogcomment/" + id,
       method: "get",
     })
       .then((result) => {
-        setComments(result.data.message);
-        console.log(result);
+        setComments(result.data.message.reverse());
+        if (result.data.message.length > 0) {
+          setCommentFlag(1);
+        }
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-  // const Commenthandle = (e) => {
-  // console.log('Comments===', comments)
 
- 
+  const Commenthandle = (e) => {
+    allComment === 0 ? setAllComment(1) : setAllComment(0);
+    setShow(!show);
+  };
 
-  //     setShow(!show);
-    
-  // };
+  const newPage = (id) => {
+    Navigate("/blogdetail/" + id);
+  };
 
   return (
     <div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container-fluid">
+          <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Creative ideas - blogs
@@ -166,27 +175,27 @@ function Blogdetail() {
                         <div className="col-lg-6 col-md-6">
                           <ul className="share-social text-end">
                             <li>
-                              <a href="/" target="_blank">
+                              <a href="" target="_blank">
                                 <i className="fa fa-facebook"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="/" target="_blank">
+                              <a href="" target="_blank">
                                 <i className="fa fa-twitter"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="/" target="_blank">
+                              <a href="" target="_blank">
                                 <i className="fa fa-linkedin"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="/" target="_blank">
+                              <a href="" target="_blank">
                                 <i className="fa fa-instagram"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="/" target="_blank">
+                              <a href="" target="_blank">
                                 <i className="fa fa-quora"></i>
                               </a>
                             </li>
@@ -195,46 +204,94 @@ function Blogdetail() {
                       </div>
                     </div>
 
-                    <div className="article-comments">
-                      <h3>{comments.length} Comments:</h3>
+                    {commentFlag === 1 ? (
+                      <>
+                        {allComment == 0 ? (
+                          <>
+                            <div className="article-comments">
+                              <h3> {comments.length} Comments:</h3>
 
-                      <div className="comments-list">
-                        {/* {/ <img src="images/image-1.jpg" alt="commenticon1" />  /} */}
-
-                        {/* {/ <img src="images/image-1.jpg" alt="image" />  /} */}
-
-                        {comments
-                          ? comments.slice(0, 3).map((comt) => (
-                              <>
-                                <h5>
-                                  {comt.fullname.replace(/\b\w/g, (l) =>
-                                    l.toUpperCase()
-                                  )}
-                                  ,{" "}
-                                  <span>
-                                    <moment fromNow>{comt.createdAt}</moment>
-                                  </span>
-                                </h5>
-                                <p> {comt.comment} </p>
-                                <a
-                                  href="javaScript:void(0)"
-                                  className="reply-btn"
-                                >
-                                  Reply
-                                </a>
-                              </>
-                            ))
-                          : ""}
-                        <div className="blogcomment">
-                          {/* {/ {show ?<button onClick={Commenthandle}>View more...</button>  : ''} /} */}
-                          
-                        
-                            
-                           
-                          
+                              <div className="comments-list">
+                                {comments
+                                  ? comments.slice(0, 3).map((comt, index) => (
+                                      <>
+                                        <h5>
+                                          {comt.fullname.replace(/\b\w/g, (l) =>
+                                            l.toUpperCase()
+                                          )}{" "}
+                                          <span>
+                                            <TimeAgo
+                                              datetime={comt.createdAt}
+                                            />
+                                          </span>
+                                        </h5>
+                                        <p> {comt.comment} </p>
+                                        <a
+                                          href="javaScript:void(0)"
+                                          className="reply-btn"
+                                        >
+                                          Reply
+                                        </a>
+                                      </>
+                                    ))
+                                  : ""}
+                                {comments.length > 3 ? (
+                                  <div className="blogcomment">
+                                    <button onClick={Commenthandle}>
+                                      {show ? "View more..." : "Show Less"}
+                                    </button>
+                                  </div>
+                                ) : (
+                                  ""
+                                )}
+                              </div>
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <div className="article-comments">
+                              <h3> {comments.length} Comments:</h3>
+                              <div className="comments-list">
+                                {comments
+                                  ? comments.map((comt, index) => (
+                                      <>
+                                        <h5>
+                                          {comt.fullname.replace(/\b\w/g, (l) =>
+                                            l.toUpperCase()
+                                          )}{" "}
+                                          <span>
+                                            <TimeAgo
+                                              datetime={comt.createdAt}
+                                            />
+                                          </span>
+                                        </h5>
+                                        <p> {comt.comment} </p>
+                                        <a
+                                          href="javaScript:void(0)"
+                                          className="reply-btn"
+                                        >
+                                          Reply
+                                        </a>
+                                      </>
+                                    ))
+                                  : ""}
+                                <div className="blogcomment">
+                                  <button onClick={Commenthandle}>
+                                    {show ? "View more..." : "Show Less"}
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </>
+                        )}
+                      </>
+                    ) : (
+                      <>
+                        <div className="article-comments">
+                          <h3> No Comments:</h3>
                         </div>
-                      </div>
-                    </div>
+                      </>
+                    )}
 
                     <div className="article-leave-comment">
                       <h3>Leave a reply</h3>
@@ -261,16 +318,6 @@ function Blogdetail() {
                                 onChange={(e) => setEmail(e.target.value)}
                                 className="form-control"
                                 placeholder="Email address"
-                              />
-                            </div>
-                          </div>
-
-                          <div className="col-lg-12 col-md-12">
-                            <div className="form-group">
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Website"
                               />
                             </div>
                           </div>
@@ -315,7 +362,10 @@ function Blogdetail() {
                             </a>
                             <div className="info">
                               <span>{val.date}</span>
-                              <h4 className="title usmall"  onClick={(e) => newPage(val._id)}>
+                              <h4
+                                className="title usmall"
+                                onClick={() => newPage(val._id)}
+                              >
                                 <a href="">{val.title}</a>
                               </h4>
                             </div>

@@ -1,7 +1,65 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Input from "../Container/Input";
+import axios from "axios";
+import { baseURL } from "./Basepath";
+import { useParams, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Profile() {
+  const [users, setUsers] = useState("");
+  const [name, setName] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [occupation, setOccupation] = useState("");
+  const [address, setAddress] = useState("");
+  const { id } = useParams();
+  const Navigate = useNavigate();
+
+  useEffect(() => {
+    const token = JSON.parse(localStorage.getItem("Token"));
+    axios({
+      url: baseURL + "user/profile/" + id,
+      method: "get",
+      headers: { Authorization: `Bearer ${token}` },
+    })
+      .then((res) => {
+        console.log(res.data.message);
+        setUsers(res.data.message);
+        setName(res.data.message.name);
+        setMobile(res.data.message.mobile);
+        setOccupation(res.data.message.occupation);
+        setAddress(res.data.message.address);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  const checkInput = (e) => {
+    const onlyDigits = e.target.value.replace(/\D/g, "");
+    setMobile(onlyDigits);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const token = JSON.parse(localStorage.getItem("Token"));
+    axios({
+      url: baseURL + "user/updateprofile/" + id,
+      method: "post",
+      headers: { Authorization: `Bearer ${token}` },
+      data: { name, mobile, occupation, address },
+    })
+      .then((res) => {
+        toast(res.data.status);
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <div>
       <div className="main-content">
@@ -23,15 +81,18 @@ export default function Profile() {
             <div className="appoint-schedule">
               <div className="row ">
                 <div className="col-lg-6 ">
-                  <img src="images/profile.png" alt="profile" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/profile.png"}
+                    alt="profile"
+                  />
                 </div>
 
                 <div className="col-lg-6 ">
                   <div className="profile-head">
                     <div className="row">
                       <div className="col-md-6">
-                        <h5>Kshiti Ghelani</h5>
-                        <h6>Fresher </h6>
+                        <h5>{users.name}</h5>
+                        <h6>{users.occupation} </h6>
                       </div>
                       <div className="col-md-6">
                         <button
@@ -69,41 +130,41 @@ export default function Profile() {
                                   <form id="signup-form">
                                     <fieldset>
                                       <div className="row">
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-12">
                                           <Input
                                             id="fname"
                                             type="text"
                                             name="fname"
                                             placeholder="FullName"
-                                            value="fname"
-                                          />
-                                        </div>
-                                        <div className="col-lg-6">
-                                          <Input
-                                            id="email"
-                                            type="text"
-                                            name="email"
-                                            placeholder="Email"
-                                            value="email"
+                                            value={name}
+                                            onChange={(e) =>
+                                              setName(e.target.value)
+                                            }
                                           />
                                         </div>
                                       </div>
                                       <div className="row">
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-12">
                                           <Input
-                                            id="phone"
-                                            name="phone"
-                                            type="number"
+                                            type="tel"
                                             placeholder="Phone No."
-                                            value="phone"
+                                            value={mobile}
+                                            minLength={9}
+                                            maxLength={12}
+                                            onChange={(e) => checkInput(e)}
                                           />
                                         </div>
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-12">
                                           <select
                                             class="form-select occu"
                                             aria-label="Default select example"
+                                            onChange={(e) =>
+                                              setOccupation(e.target.value)
+                                            }
                                           >
-                                            <option selected>Occupation</option>
+                                            <option selected>
+                                              {occupation}
+                                            </option>
                                             <option value="Student">
                                               Student
                                             </option>
@@ -117,39 +178,19 @@ export default function Profile() {
                                         </div>
                                       </div>
                                       <div className="row">
-                                        <div className="col-lg-6">
-                                          <Input
-                                            id="password"
-                                            name="password"
-                                            type="password"
-                                            placeholder="Password"
-                                            value="password"
-                                          />
-                                        </div>
-                                        <div className="col-lg-6">
-                                          <Input
-                                            id="cpassword"
-                                            name="cpassword"
-                                            type="password"
-                                            placeholder="Confirm Password"
-                                            value="cpassword"
-                                          />
-                                        </div>
-                                      </div>
-                                      
-                                      <div className="row">
                                         <div className="col-lg-12">
                                           <textarea
                                             class="form-control occu"
                                             id="address"
                                             rows="2"
                                             placeholder="Address"
+                                            value={address}
+                                            onChange={(e) =>
+                                              setAddress(e.target.value)
+                                            }
                                           ></textarea>
                                         </div>
                                       </div>
-
-                                     
-                                     
                                     </fieldset>
                                   </form>
                                 </div>
@@ -162,9 +203,14 @@ export default function Profile() {
                                 >
                                   Close
                                 </button>
-                                <button type="button" class="btn btn-primary">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary"
+                                  onClick={handleSubmit}
+                                >
                                   Save changes
                                 </button>
+                                <ToastContainer />
                               </div>
                             </div>
                           </div>
@@ -198,7 +244,7 @@ export default function Profile() {
                             <label>Name</label>
                           </div>
                           <div className="col-md-6">
-                            <p>Kshiti Ghelani</p>
+                            <p>{users.name}</p>
                           </div>
                         </div>
                         <div className="row">
@@ -206,7 +252,7 @@ export default function Profile() {
                             <label>Email</label>
                           </div>
                           <div className="col-md-6">
-                            <p>kshitighelani@gmail.com</p>
+                            <p>{users.email}</p>
                           </div>
                         </div>
                         <div className="row">
@@ -214,7 +260,7 @@ export default function Profile() {
                             <label>Phone</label>
                           </div>
                           <div className="col-md-6">
-                            <p>123 456 7890</p>
+                            <p>{users.mobile}</p>
                           </div>
                         </div>
                         <div className="row">
@@ -222,31 +268,16 @@ export default function Profile() {
                             <label>Occupation</label>
                           </div>
                           <div class="col-md-6">
-                            <p>Fresher</p>
+                            <p>{users.occupation}</p>
                           </div>
                         </div>
-                        <div className="row">
-                          <div className="col-md-6">
-                            <label>Password</label>
-                          </div>
-                          <div className="col-md-6">
-                            <p>****** </p>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-6">
-                            <label>Confirm Password</label>
-                          </div>
-                          <div className="col-md-6">
-                            <p>****** </p>
-                          </div>
-                        </div>
+
                         <div className="row">
                           <div className="col-md-6">
                             <label>Address</label>
                           </div>
                           <div className="col-md-6">
-                            <p>Keas 69 Str. 15234, Chalandri Athens, Greece </p>
+                            <p>{users.address} </p>
                           </div>
                         </div>
                       </div>

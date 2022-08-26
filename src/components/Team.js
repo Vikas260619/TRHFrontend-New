@@ -9,36 +9,29 @@ function Team() {
       <div className="offwrap"></div>
 
       <div className="main-content">
-
-      <Common
-          name="Meet Our Team "   
-         background= "Team" 
-         description="A team's success is determined by how well it plays as a whole. You could have the world's best collection of individual stars.
+        <Common
+          name="Meet Our Team "
+          background="Team"
+          description="A team's success is determined by how well it plays as a whole. You could have the world's best collection of individual stars.
           We can all do little things with great love, and together we can accomplish great things.	"
-            />
-
+        />
 
         <div className="pt-95 pb-95">
           <div className="container">
             <div className="row">
-
-              {Teamdata.map((item,key)=>(
+              {Teamdata.map((item, key) => (
                 <div className="col-md-3 col-sm-6">
                   <CardTeam
-                     imgsrc={item.imgsrc}
-                     title={item.title}
-                     description={item.description}/>
+                    imgsrc={item.imgsrc}
+                    title={item.title}
+                    description={item.description}
+                  />
                 </div>
-
               ))}
-            
             </div>
           </div>
         </div>
-
       </div>
-
-      
     </div>
   );
 }

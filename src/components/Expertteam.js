@@ -6,7 +6,7 @@ function Expertteam() {
   const responsive = {
     0: { items: 2 },
     568: { items: 3 },
-    1024: { items: 4},
+    1024: { items: 4 },
   };
 
   const items1 = [
@@ -113,22 +113,22 @@ function Expertteam() {
       </div>
     </div>,
     <div className="itemteam" data-value="7">
-    <div className="team-item-wrap">
-      <div className="team-wrap">
-        <div className="image-inner">
-          <a href="/">
-            <img src="images/team5.jpg" alt="" />
-          </a>
+      <div className="team-item-wrap">
+        <div className="team-wrap">
+          <div className="image-inner">
+            <a href="/">
+              <img src="images/team5.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div className="team-content text-center">
+          <h4 className="person-name">
+            <a href="/">Vipin Joshi</a>
+          </h4>
+          <span className="designation">HUMAN RESOURCE</span>
         </div>
       </div>
-      <div className="team-content text-center">
-        <h4 className="person-name">
-          <a href="/">Vipin Joshi</a>
-        </h4>
-        <span className="designation">HUMAN RESOURCE</span>
-      </div>
-    </div>
-  </div>,
+    </div>,
   ];
 
   return (

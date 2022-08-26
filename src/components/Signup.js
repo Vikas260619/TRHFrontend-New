@@ -1,7 +1,69 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import Input from "../Container/Input";
+import { baseURL } from "./Basepath";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Signup() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirm_password, setConfirm_password] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [occupation, setOccupation] = useState("");
+  const [address, setAddress] = useState("");
+  const checkInput = (e) => {
+    const onlyDigits = e.target.value.replace(/\D/g, "");
+    setMobile(onlyDigits);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      name !== "" &&
+      email !== "" &&
+      password !== "" &&
+      confirm_password !== "" &&
+      mobile !== "" &&
+      occupation !== "" &&
+      address !== ""
+    ) {
+      let data = {
+        name,
+        email,
+        password,
+        confirm_password,
+        mobile,
+        occupation,
+        address,
+      };
+      axios({
+        url: baseURL + "user/create",
+        method: "post",
+        data: data,
+      })
+        .then((res) => {
+          setTimeout(() => {
+            toast(res.data.message);
+          }, 1000);
+          setTimeout(() => {
+            setName("");
+            setEmail("");
+            setMobile("");
+            setOccupation("");
+            setPassword("");
+            setConfirm_password("");
+            setAddress("");
+          }, 3000);
+        })
+
+        .catch((err) => console.log(err));
+    } else {
+      toast("Fill all the medatory");
+    }
+  };
+
   return (
     <div>
       <div className="main-content">
@@ -50,7 +112,8 @@ export default function Signup() {
                               type="text"
                               name="fname"
                               placeholder="FullName"
-                              value="fname"
+                              value={name}
+                              onChange={(e) => setName(e.target.value)}
                             />
                           </div>
                           <div className="col-lg-6 col-xs-12">
@@ -59,24 +122,28 @@ export default function Signup() {
                               type="text"
                               name="email"
                               placeholder="Email"
-                              value="email"
+                              value={email}
+                              onChange={(e) => setEmail(e.target.value)}
                             />
                           </div>
                         </div>
                         <div className="row">
                           <div className="col-lg-6 col-xs-12">
                             <Input
-                              id="phone"
-                              name="phone"
-                              type="number"
+                              type="tel"
                               placeholder="Phone No."
-                              value="phone"
+                              value={mobile}
+                              minLength={9}
+                              maxLength={12}
+                              onChange={(e) => checkInput(e)}
                             />
                           </div>
                           <div className="col-lg-6 col-xs-12">
                             <select
                               class="form-select occu"
                               aria-label="Default select example"
+                              value={occupation}
+                              onChange={(e) => setOccupation(e.target.value)}
                             >
                               <option selected>Occupation</option>
                               <option value="Student">Student</option>
@@ -92,7 +159,8 @@ export default function Signup() {
                               name="password"
                               type="password"
                               placeholder="Password"
-                              value="password"
+                              value={password}
+                              onChange={(e) => setPassword(e.target.value)}
                             />
                           </div>
                           <div className="col-lg-6 col-xs-12">
@@ -101,15 +169,24 @@ export default function Signup() {
                               name="cpassword"
                               type="password"
                               placeholder="Confirm Password"
-                              value="cpassword"
+                              value={confirm_password}
+                              onChange={(e) =>
+                                setConfirm_password(e.target.value)
+                              }
                             />
                           </div>
                         </div>
                         <div className="row">
                           <div className="col-lg-12">
-                          <textarea class="form-control occu" id="address" rows="2" placeholder="Address"></textarea>
+                            <textarea
+                              class="form-control occu"
+                              id="address"
+                              rows="2"
+                              placeholder="Address"
+                              value={address}
+                              onChange={(e) => setAddress(e.target.value)}
+                            ></textarea>
                           </div>
-                         
                         </div>
 
                         <div className="row">
@@ -138,7 +215,9 @@ export default function Signup() {
                               className="readon submit"
                               type="submit"
                               value="Create Account"
+                              onClick={(e) => handleSubmit(e)}
                             />
+                            <ToastContainer />
                           </div>
                           <br />
                           <p>

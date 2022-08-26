@@ -236,7 +236,7 @@ function Aboutus() {
                     </h3>
                     <p>
                       Meeting Deadlines help us to collaborate toward achieving
-                      a shared goal, and to keep complex,we work multistage
+                      a shared goal, and to keep complex,we work multi stage
                       projects on track. we set all expectations
                     </p>
                   </div>
