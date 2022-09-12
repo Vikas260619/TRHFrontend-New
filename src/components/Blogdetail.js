@@ -9,7 +9,6 @@ import { useNavigate } from "react-router";
 import TimeAgo from "timeago-react";
 import ScrollToTop from "react-scroll-to-top";
 
-
 function Blogdetail() {
   const { id } = useParams();
   const [users, setUsers] = useState("");
@@ -66,37 +65,37 @@ function Blogdetail() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(fullname !== ""){
-      if(email !== ""){
-        if(comment !== ""){
-    let data = {
-      fullname,
-      email,
-      comment,
-      comment_status,
-      blog_id,
-    };
-    axios({
-      url: baseURL + "comment/create",
-      method: "post",
-      data: data,
-    })
-      .then((res) => {
-        toast("Comment Submited Sucessfully");
-        setTimeout(() => {
-          window.location.reload();
-        }, 5000);
-      })
-      .catch((err) => console.log(err));
-    } else {
-      toast("Please Fill the massage field ");
-      }
-    } else {
-      toast("Please Fill the email field ");
+    if (fullname !== "") {
+      if (email !== "") {
+        if (comment !== "") {
+          let data = {
+            fullname,
+            email,
+            comment,
+            comment_status,
+            blog_id,
+          };
+          axios({
+            url: baseURL + "comment/create",
+            method: "post",
+            data: data,
+          })
+            .then((res) => {
+              toast("Comment Submited Sucessfully");
+              setTimeout(() => {
+                window.location.reload();
+              }, 5000);
+            })
+            .catch((err) => console.log(err));
+        } else {
+          toast("Please Fill the massage field ");
+        }
+      } else {
+        toast("Please Fill the email field ");
       }
     } else {
       toast("Please Fill the name field ");
-      }
+    }
   };
 
   useEffect(() => {
@@ -183,7 +182,7 @@ function Blogdetail() {
                         <li>
                           By <a href="/">{users.author}</a>
                         </li>
-                        <li>{users.date}</li>
+                        {users.date && <li>{users.date}</li>}
                       </ul>
                       <h3>{users.title}</h3>
                       <p>{users.mainDesc}</p>
@@ -212,18 +211,18 @@ function Blogdetail() {
                             </ul>
                           </div>
                         ))}
-                        
-                      {users.quotes&&users.quotes?.map((i) =>(
-                        i=== "" ? console.log(null):
-                         <div className="article-quote">
-                        <i className="fa fa-quote-left"></i>
-                        <p>{i}</p>
-       
-                      </div>
-                      
-                          
-                      
-                      ))}
+
+                      {users.quotes &&
+                        users.quotes?.map((i) =>
+                          i === "" ? (
+                            console.log(null)
+                          ) : (
+                            <div className="article-quote">
+                              <i className="fa fa-quote-left"></i>
+                              <p>{i}</p>
+                            </div>
+                          )
+                        )}
                     </div>
                     <div className="article-share">
                       <div className="row align-items-center">
@@ -268,11 +267,11 @@ function Blogdetail() {
                       <>
                         {allComment === 0 ? (
                           <>
-                            <div className="article-comments">{
-                              comments && 
-                              <h3> {comments.length} Comments:</h3>
-                            }
-                              
+                            <div className="article-comments">
+                              {comments && (
+                                <h3> {comments.length} Comments:</h3>
+                              )}
+
                               <div className="comments-list">
                                 {comments
                                   ? comments.slice(0, 3).map((comt, index) => (
@@ -377,9 +376,9 @@ function Blogdetail() {
                               <input
                                 type="text"
                                 id="email"
-                              name="email"
+                                name="email"
                                 value={email}
-                               // onChange={(e) => setEmail(e.target.value)}
+                                // onChange={(e) => setEmail(e.target.value)}
                                 className="form-control"
                                 placeholder="Email address"
                                 style={{
@@ -387,16 +386,16 @@ function Blogdetail() {
                                 }}
                                 onChange={handleChange}
                               />
-                               {errors.email && (
-                              <p
-                                style={{
-                                  color: errors.email ? "red" : "",
-                                  marginTop: "-4vh",
-                                }}
-                              >
-                                {errors.email}
-                              </p>
-                            )}
+                              {errors.email && (
+                                <p
+                                  style={{
+                                    color: errors.email ? "red" : "",
+                                    marginTop: "-4vh",
+                                  }}
+                                >
+                                  {errors.email}
+                                </p>
+                              )}
                             </div>
                           </div>
 
@@ -439,7 +438,7 @@ function Blogdetail() {
                               <img src={val.bannerImage} alt="image" />
                             </a>
                             <div className="info">
-                              <span>{val.date}</span>
+                              {val.date && <span>{val.date}</span>}
                               <h4
                                 className="title usmall"
                                 onClick={() => newPage(val._id)}
@@ -463,6 +462,6 @@ function Blogdetail() {
     </div>
   );
 }
-<ScrollToTop/>
+<ScrollToTop />;
 
 export default Blogdetail;

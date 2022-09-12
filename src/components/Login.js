@@ -48,7 +48,7 @@ export default function Login() {
           ) {
             setErrors({
               ...errors,
-              password: "Enter a minimum 8 character with strong password ",
+              password: "Enter a min 8 character with at least one digit and one Special Characters",
             });
           } else {
             let newObj = omit(errors, "password");
