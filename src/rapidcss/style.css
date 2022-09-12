@@ -6178,7 +6178,7 @@ Blog Area CSS
 .single-blog-card .blog-image a img {
   border-radius: 15px;
   -webkit-transition: var(--transition);
-  transition: var(--transition);
+  transition: var(--transition);height: 230px;
 }
 
 .single-blog-card .blog-image .date {
@@ -6205,7 +6205,8 @@ Blog Area CSS
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: bold; height: 100px;
+
 }
 
 .single-blog-card .blog-content h3 a {
@@ -6403,7 +6404,7 @@ Blog Details Area CSS
   margin-bottom: 20px;
   color: var(--paragraph-color);
   position: relative;
-  padding-left: 25px;
+  padding-left: 25px; 
   font-weight: 500;
 }
 
@@ -8192,4 +8193,21 @@ border-radius: 20px;margin-left: 10px;}
   margin-bottom: 20px;
   font-size: 15px;    font-weight: 500;
 
+}
+.validation {
+  margin-top: -24px;
+font-weight: bold;
+font-size: 10px;
+margin-top: -24px;
+}
+.but88{border: none;}
+
+.p-viewer {
+  position: relative;
+  margin: -67px 10px;
+  float: right;
+}
+
+.fa-eye {
+color: #000;
 }

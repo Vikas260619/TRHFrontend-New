@@ -14,9 +14,7 @@ function Apply() {
   const [resume, setResume] = useState("");
   const [technology, setTechnology] = useState("");
   const [inputFile, setInputFile] = useState(false);
-
   const [values, setValues] = useState({});
-
   const [errors, setErrors] = useState({});
 
   const validate = (event, name, value) => {
@@ -68,46 +66,57 @@ function Apply() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (e) e.preventDefault();
-    if (
-      candidateName !== "" &&
-      email !== "" &&
-      phone_number !== "" &&
-      applypostion !== "" &&
-      technology !== "" &&
-      resume !== ""
-    ) {
-      let formData = new FormData();
-      formData.append("candidateName", candidateName);
-      formData.append("email", email);
-      formData.append("phone_number", phone_number);
-      formData.append("applypostion", applypostion);
-      formData.append("resume", resume);
-      formData.append("technology", technology);
-      axios({
-        url: baseURL + "candidate/create",
-        method: "post",
-        headers: "",
-        data: formData,
-      })
-        .then((res) => {
-          setTimeout(() => {
-            toast(res.data.message);
-          }, 1000);
 
-          setTimeout(() => {
-            setCandidateName("");
-            setEmail("");
-            setPhone_number("");
-            setApplypostion("");
-            setTechnology("");
-            setInputFile(true);
-            setResume(null);
-          }, 3000);
-        })
-        .catch((err) => console.log(err));
+    if (candidateName !== "") {
+      if (email !== "") {
+        if (phone_number !== "") {
+          if (applypostion !== "") {
+            if (resume !== "") {
+              if (technology !== "") {
+                let formData = new FormData();
+                formData.append("candidateName", candidateName);
+                formData.append("email", email);
+                formData.append("phone_number", phone_number);
+                formData.append("applypostion", applypostion);
+                formData.append("resume", resume);
+                formData.append("technology", technology);
+                axios({
+                  url: baseURL + "candidate/create",
+                  method: "post",
+                  headers: "",
+                  data: formData,
+                })
+                  .then((res) => {
+                    toast(res.data.message);
+
+                    setTimeout(() => {
+                      setCandidateName("");
+                      setEmail("");
+                      setPhone_number("");
+                      setApplypostion("");
+                      setTechnology("");
+                      setInputFile(true);
+                      setResume(null);
+                    }, 3000);
+                  })
+                  .catch((err) => console.log(err));
+              } else {
+                toast("Please Fill the Technology field");
+              }
+            } else {
+              toast("Please Fill the Resume field");
+            }
+          } else {
+            toast("Please Fill the Apply Postion field");
+          }
+        } else {
+          toast("Please Fill the Phone number field");
+        }
+      } else {
+        toast("Please Fill the email field");
+      }
     } else {
-      toast("Fill all the mendetaory  field");
+      toast("Please Fill the Name field");
     }
   };
 
@@ -119,7 +128,7 @@ function Apply() {
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Explore Opportunities 
+                Explore Opportunities
                 <span className="watermark">Apply Now</span>
               </h1>
               <span className="sub-text">
@@ -209,7 +218,7 @@ function Apply() {
                               placeholder="Phone No."
                               value={phone_number}
                               minLength={9}
-                              maxLength={12}
+                              maxLength={10}
                               onChange={(e) => checkInput(e)}
                             />
                           </div>

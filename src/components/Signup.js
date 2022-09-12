@@ -1,6 +1,7 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Input from "../Container/Input";
+import { omit } from "lodash";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -13,6 +14,114 @@ export default function Signup() {
   const [mobile, setMobile] = useState("");
   const [occupation, setOccupation] = useState("");
   const [address, setAddress] = useState("");
+  const [errors, setErrors] = useState({});
+  const [values, setValues] = useState({});
+
+  const [passwordType, setPasswordType] = useState("password");
+  const [confirm_passwordType, setConfirm_passwordType] =
+    useState("Confirm password");
+
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const [cPasswordClass, setCPasswordClass] = useState("form-control-mod");
+  const [isCPasswordDirty, setIsCPasswordDirty] = useState(false);
+
+  const togglePassword = () => {
+    if (passwordType === "password") {
+      setPasswordType("text");
+      return;
+    }
+    setPasswordType("password");
+  };
+
+  const [cpasswordType, setCPasswordType] = useState("password");
+  const toggleCPassword = () => {
+    if (passwordType === "password") {
+      setCPasswordType("text");
+      return;
+    }
+    setCPasswordType("password");
+  };
+
+  useEffect(() => {
+    if (isCPasswordDirty) {
+      if (password === confirm_password) {
+        setShowErrorMessage(false);
+        setCPasswordClass("form-control-mod is-valid");
+      } else {
+        setShowErrorMessage(true);
+        setCPasswordClass("form-control-mod is-invalid");
+      }
+    }
+  }, [confirm_password]);
+
+  const handleCPassword = (e) => {
+    setConfirm_password(e.target.value);
+    setIsCPasswordDirty(true);
+  };
+
+  const validate = (event, name, value) => {
+    switch (name) {
+      case "email":
+        if (
+          !new RegExp(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          ).test(value)
+        ) {
+          setErrors({
+            ...errors,
+            email: "Enter a valid email address",
+          });
+        } else {
+          let newObj = omit(errors, "email");
+          setErrors(newObj);
+        }
+        break;
+      case "password":
+        if (
+          !new RegExp(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{7,30}$/
+          ).test(value)
+        ) {
+          setErrors({
+            ...errors,
+            password:
+              "Enter a min 8 character with at least one digit and one Special Characters",
+          });
+        } else {
+          let newObj = omit(errors, "password");
+          setErrors(newObj);
+        }
+        break;
+
+      default:
+        break;
+    }
+  };
+
+  const handleChange = (event) => {
+    event.persist();
+    let name = event.target.name;
+    let val = event.target.value;
+    validate(event, name, val);
+    setEmail(val);
+    setValues({
+      ...values,
+      [name]: val,
+    });
+  };
+
+  const pwvalidation = (event) => {
+    event.persist();
+    let name = event.target.name;
+    let val = event.target.value;
+    validate(event, name, val);
+    setPassword(val);
+    setValues({
+      ...values,
+      [name]: val,
+    });
+  };
+
   const checkInput = (e) => {
     const onlyDigits = e.target.value.replace(/\D/g, "");
     setMobile(onlyDigits);
@@ -20,47 +129,61 @@ export default function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (
-      name !== "" &&
-      email !== "" &&
-      password !== "" &&
-      confirm_password !== "" &&
-      mobile !== "" &&
-      occupation !== "" &&
-      address !== ""
-    ) {
-      let data = {
-        name,
-        email,
-        password,
-        confirm_password,
-        mobile,
-        occupation,
-        address,
-      };
-      axios({
-        url: baseURL + "user/create",
-        method: "post",
-        data: data,
-      })
-        .then((res) => {
-          setTimeout(() => {
-            toast(res.data.message);
-          }, 1000);
-          setTimeout(() => {
-            setName("");
-            setEmail("");
-            setMobile("");
-            setOccupation("");
-            setPassword("");
-            setConfirm_password("");
-            setAddress("");
-          }, 3000);
-        })
+    if (name !== "") {
+      if (email !== "") {
+        if (password !== "") {
+          if (occupation !== "") {
+            if (confirm_password !== "") {
+              if (mobile !== "") {
+                if (address !== "") {
+                  let data = {
+                    name,
+                    email,
+                    password,
+                    confirm_password,
+                    mobile,
+                    occupation,
+                    address,
+                  };
+                  axios({
+                    url: baseURL + "user/create",
+                    method: "post",
+                    data: data,
+                  })
+                    .then((res) => {
+                      toast(res.data.message);
+                      setTimeout(() => {
+                        setName("");
+                        setEmail("");
+                        setMobile("");
+                        setOccupation("");
+                        setPassword("");
+                        setConfirm_password("");
+                        setAddress("");
+                      }, 3000);
+                    })
 
-        .catch((err) => console.log(err));
+                    .catch((err) => console.log(err));
+                } else {
+                  toast("Please Fill the Address field ");
+                }
+              } else {
+                toast("Please Fill the Phone number field ");
+              }
+            } else {
+              toast("Please Fill the Confirm password field ");
+            }
+          } else {
+            toast("Please Fill the Occupation field ");
+          }
+        } else {
+          toast("Please Fill the password field ");
+        }
+      } else {
+        toast("Please Fill the Email field ");
+      }
     } else {
-      toast("Fill all the medatory");
+      toast("Please Fill the Name field ");
     }
   };
 
@@ -123,8 +246,21 @@ export default function Signup() {
                               name="email"
                               placeholder="Email"
                               value={email}
-                              onChange={(e) => setEmail(e.target.value)}
+                              style={{
+                                borderBottomColor: errors.email ? "red" : "",
+                              }}
+                              onChange={handleChange}
                             />
+                            {errors.email && (
+                              <p
+                                style={{
+                                  color: errors.email ? "red" : "",
+                                  marginTop: "-4vh",
+                                }}
+                              >
+                                {errors.email}
+                              </p>
+                            )}
                           </div>
                         </div>
                         <div className="row">
@@ -134,7 +270,7 @@ export default function Signup() {
                               placeholder="Phone No."
                               value={mobile}
                               minLength={9}
-                              maxLength={12}
+                              maxLength={10}
                               onChange={(e) => checkInput(e)}
                             />
                           </div>
@@ -157,23 +293,75 @@ export default function Signup() {
                             <Input
                               id="password"
                               name="password"
-                              type="password"
+                              type={passwordType}
+                              className="form-control-mod"
                               placeholder="Password"
                               value={password}
-                              onChange={(e) => setPassword(e.target.value)}
+                              minLength={7}
+                              style={{
+                                borderBottomColor: errors.password ? "red" : "",
+                              }}
+                              onChange={pwvalidation}
                             />
+                            <span
+                              for="icon"
+                              class="p-viewer but88"
+                              onClick={togglePassword}
+                            >
+                              {passwordType === "password" ? (
+                                <i className="fa fa-eye-slash"></i>
+                              ) : (
+                                <i className="fa fa-eye"></i>
+                              )}
+                            </span>
+                            {errors.password && (
+                              <p
+                                style={{
+                                  color: errors.password ? "red" : "",
+                                  marginTop: "-4vh",
+                                }}
+                              >
+                                {errors.password}
+                              </p>
+                            )}
                           </div>
                           <div className="col-lg-6 col-xs-12">
                             <Input
                               id="cpassword"
                               name="cpassword"
-                              type="password"
+                              type={cpasswordType}
+                              className={cPasswordClass}
                               placeholder="Confirm Password"
+                              minLength={8}
                               value={confirm_password}
-                              onChange={(e) =>
-                                setConfirm_password(e.target.value)
-                              }
+                              onChange={handleCPassword}
                             />
+
+                            <span
+                              for="icon"
+                              class="p-viewer but88"
+                              onClick={toggleCPassword}
+                            >
+                              {cpasswordType === "password" ? (
+                                <i className="fa fa-eye-slash"></i>
+                              ) : (
+                                <i className="fa fa-eye"></i>
+                              )}
+                            </span>
+
+                            {showErrorMessage && isCPasswordDirty ? (
+                              <p
+                                style={{
+                                  color: "red",
+                                  marginTop: "-4vh",
+                                }}
+                              >
+                                {" "}
+                                Passwords did not match{" "}
+                              </p>
+                            ) : (
+                              ""
+                            )}
                           </div>
                         </div>
                         <div className="row">

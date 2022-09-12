@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { baseURL } from "./Basepath";
+import ScrollToTop from "react-scroll-to-top";
 
 function Blog() {
   const [users, setUsers] = useState([]);
@@ -46,7 +47,7 @@ function Blog() {
           <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Creative ideas - blogs
+                Creative Ideas - Blogs
                 <span className="watermark">Blog</span>
               </h1>
               <span className="sub-text">
@@ -56,11 +57,14 @@ function Blog() {
             </div>
           </div>
         </div>
+        {users ? (
+
         <div className="blog-area pt-95 pb-95">
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-md-12">
                 <div className="row justify-content-center">
+
                   {flag === false
                     ? users &&
                       users.map((item) => (
@@ -68,7 +72,7 @@ function Blog() {
                           <div className="single-blog-card">
                             <div className="blog-image">
                               <a href="//">
-                                <img src={item.bannerImage} alt="image" />
+                                <img src={item.bannerImage} alt="image"/>
                               </a>
                               <div className="date">{item.date}</div>
                             </div>
@@ -95,8 +99,13 @@ function Blog() {
                               <a href="//">
                                 <img src={item.bannerImage} alt="image" />
                               </a>
+                              {item.date&&item.date?.map((item) =>(
+                        item=== "" ? console.log(null):
                               <div className="date">{item.date}</div>
+                              ))}
+
                             </div>
+                          
                             <div className="blog-content">
                               <h3>
                                 <a href="#">{item.title}</a>
@@ -114,7 +123,7 @@ function Blog() {
                       ))}
                 </div>
               </div>
-
+            
               <div className="col-lg-4 col-md-12">
                 <aside className="widget-area">
                   <div className="widget widget_recent_post">
@@ -164,7 +173,7 @@ function Blog() {
                                   }
                                   )
                                 </span>
-                              </a>
+                              </a> 
                             </li>
                           ))}
                       </div>
@@ -175,12 +184,15 @@ function Blog() {
             </div>
           </div>
         </div>
+):(
+  "Data not found"
+)}
       </div>
-
       <div id="scrollUp" className="blue-color">
         <i className="fa fa-angle-up"></i>
       </div>
     </div>
   );
 }
+<ScrollToTop/>
 export default Blog;

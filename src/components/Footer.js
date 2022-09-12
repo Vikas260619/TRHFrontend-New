@@ -38,9 +38,9 @@ function Footer() {
                   <li>
                     <a href="/team">Team</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="/Pricing">Pricing</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 md-mb-10 pl-55 md-pl-15">

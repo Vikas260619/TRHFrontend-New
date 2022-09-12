@@ -10,7 +10,7 @@ const CardData = [
    {
       imgsrc: "images/ser2.png",
       title: "WEB DESIGNING",
-      description: " We are looking for a web designer who will be responsible for creating great websites for our clients. Primaryduties include conceptualizing and implementing creative ideas for client websites, as well as creating visual elements that are in line with our clients' branding."
+      description: " We are looking for a web designer who will be responsible for creating great websites for our clients. Primary duties include conceptualizing and implementing creative ideas for client websites, as well as creating visual elements that are in line with our clients' branding."
    },
    {
       imgsrc: "images/ser3.png",
@@ -41,15 +41,15 @@ const TechnoData = [
       imgsrc: 'images/techback.jpg',
       Numb: '01',
       title: 'JAVA',
-      description: ' Experience in core Java advanced programming,Experience in Spring Hibernate is mandatory.Experience in buildingmechanisms like Maven.Good knowledge on design patterns and anti-patterns. Good in algorithms and data structures.Good understanding of Database concepts and Experience in SQL, PLSQL and NoSQL. Excellent Analytical and programsolving skills .',
+      description: ' Our Java Web Application Development specialists create programs that are scalable, intelligent, and efficient, taking advantage of Javas cross-platform capabilities.A Java application development firm that develops both general-purpose and business-oriented Java solutions (J2EE). The J2EE and J2SE environments, as well as tools like JSP, SWING, Servlets, Struts, XML EJB, Hibernate Technologies, etc, are frequently used by our skilled team when creating complex Java web applications.',
 
       icon_imgsrc: 'images/tech1.png'
    },
    {
       imgsrc: 'images/techback.jpg',
       Numb: '02',
-      title: 'MONGO DB',
-      description: '   Our company is looking for a talented Magento 1 and/or  developer that will be in charge of maintaining our eCommerce website. Your main tasks will be to ensure that the last security patches are installed and that existing  functionality continues to work properly. You will also be in charge of developing new modules and applying any required front-end changes.',
+      title: 'AngularJS',
+      description: 'AngularJS is one of the best open-source structural frameworks on the market, and we offer a full range of AngularJS development services. Among our AngularJS development services are AngularJS web and mobile application development, AngularJS cross-platform app development, AngularJS portal development, and AngularJS plugin development.      ',
 
 
       icon_imgsrc: 'images/tech2.png'
@@ -57,8 +57,8 @@ const TechnoData = [
    {
       imgsrc: 'images/techback.jpg',
       Numb: '03',
-      title: 'PHP',
-      description: ' We are looking for a PHP Developer responsible for managing back-end services and the interchange of data between the server and the users. Your primary focus will be the development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end.',
+      title: '.NET MVC',
+      description: ' TheRapidHire offers a full suite of.NET MVC development services. We provide.NET MVC web portal and web app development,.NET MVC e-commerce solutions,.NET MVC mobile solutions, and.NET MVC content management system development, among other services.      .',
 
       icon_imgsrc: 'images/tech3.png'
    },
@@ -66,23 +66,22 @@ const TechnoData = [
       imgsrc: 'images/techback.jpg',
       Numb: '04',
       title: 'MERN STACK',
-      description: '  We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of across-functional team that’s responsible for the full  software development life cycle, from conception to deployment. As a Developer, should be comfortable around  both front-end and back-end.',
-
+      description: ' MEAN stack is a comprehensive set of JavaScript-based technologies and frameworks used to build full web and solution stacks. Our website development consultants were among the first to use the MEAN stack and scripting technologies. The team has extensive technology experience. ',
       icon_imgsrc: 'images/tech4.png'
    },
    {
       imgsrc: 'images/techback.jpg',
       Numb: '05',
-      title: 'WEB DESIGNER',
-      description: '   We are looking for a web designer who will be responsible for creating great websites for our clients. Primary duties include conceptualizing and implementing creative ideas for client websites, as well as creating visual elements that are in line with our clientsbranding',
+      title: 'Python',
+      description: 'We are a company that provides Python application development services to customers worldwide. Our offerings include the creation of desktop applications, web applications, web services, web crawlers, application performance monitoring and tweaking, and customized content management systems',
 
       icon_imgsrc: 'images/tech5.png'
    },
    {
       imgsrc: 'images/techback.jpg',
       Numb: '06',
-      title: 'WORDPRESS',
-      description: 'We are seeking a WordPress Developer responsible for both  back-end and front-end development, including creating  WordPress themes and plugins. This position requires acombination of programming skills (namely PHP, HTML5, CSS3, and JavaScript) and aesthetics (understanding element)',
+      title: 'React Native ',
+      description: 'TheRapidHire creates incredibly fantastic mobile and web applications with React Native, providing plenty of possibilities to experiment with different app development models. We are one of the most expedient and quick to embrace React Native, and our team is designed to consistently outperform expectations for quality and customization. With a multitude of resources at their disposal, our IT specialists totally meet your companys needs.      ',
 
       icon_imgsrc: 'images/tech6.png'
    }

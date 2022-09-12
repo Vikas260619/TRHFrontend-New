@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { omit } from "lodash";
 import { useParams } from "react-router-dom";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router";
 import TimeAgo from "timeago-react";
+import ScrollToTop from "react-scroll-to-top";
+
 
 function Blogdetail() {
   const { id } = useParams();
@@ -18,12 +21,54 @@ function Blogdetail() {
   const [show, setShow] = useState(true);
   const [commentFlag, setCommentFlag] = useState(0);
   const [allComment, setAllComment] = useState(0);
+  const [values, setValues] = useState({});
+
+  const [errors, setErrors] = useState({});
+
   const Navigate = useNavigate();
   let blog_id = id;
   var comment_status = "pending";
+
+  const validate = (event, name, value) => {
+    switch (name) {
+      case "email":
+        if (
+          !new RegExp(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          ).test(value)
+        ) {
+          setErrors({
+            ...errors,
+            email: "Enter a valid email address",
+          });
+        } else {
+          let newObj = omit(errors, "email");
+          setErrors(newObj);
+        }
+        break;
+
+      default:
+        break;
+    }
+  };
+
+  const handleChange = (event) => {
+    event.persist();
+    let name = event.target.name;
+    let val = event.target.value;
+    validate(event, name, val);
+    setEmail(val);
+    setValues({
+      ...values,
+      [name]: val,
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    if(fullname !== ""){
+      if(email !== ""){
+        if(comment !== ""){
     let data = {
       fullname,
       email,
@@ -43,6 +88,15 @@ function Blogdetail() {
         }, 5000);
       })
       .catch((err) => console.log(err));
+    } else {
+      toast("Please Fill the massage field ");
+      }
+    } else {
+      toast("Please Fill the email field ");
+      }
+    } else {
+      toast("Please Fill the name field ");
+      }
   };
 
   useEffect(() => {
@@ -103,7 +157,7 @@ function Blogdetail() {
           <div className="container">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Creative ideas - blogs
+                Creative Ideas - Blogs
                 <span className="watermark">Blog</span>
               </h1>
               <span className="sub-text">
@@ -121,7 +175,7 @@ function Blogdetail() {
                 <div className="col-lg-8 col-md-12">
                   <div className="blog-details-desc">
                     <div className="article-image">
-                      <img src={users.bannerImage} alt="image" />
+                      <img src={users.bannerImage} alt="" />
                     </div>
 
                     <div className="article-content">
@@ -153,16 +207,22 @@ function Blogdetail() {
                                 </>
                               ))}
                               <div className="article-image">
-                                <img src={val.contentImages} alt="image" />
+                                <img src={val.contentImages} alt="" />
                               </div>
                             </ul>
                           </div>
                         ))}
-                      {users.quotes?.map((i) => (
-                        <div className="article-quote">
-                          <i className="fa fa-quote-left"></i>
-                          <p>{i}</p>
-                        </div>
+                        
+                      {users.quotes&&users.quotes?.map((i) =>(
+                        i=== "" ? console.log(null):
+                         <div className="article-quote">
+                        <i className="fa fa-quote-left"></i>
+                        <p>{i}</p>
+       
+                      </div>
+                      
+                          
+                      
                       ))}
                     </div>
                     <div className="article-share">
@@ -206,11 +266,13 @@ function Blogdetail() {
 
                     {commentFlag === 1 ? (
                       <>
-                        {allComment == 0 ? (
+                        {allComment === 0 ? (
                           <>
-                            <div className="article-comments">
+                            <div className="article-comments">{
+                              comments && 
                               <h3> {comments.length} Comments:</h3>
-
+                            }
+                              
                               <div className="comments-list">
                                 {comments
                                   ? comments.slice(0, 3).map((comt, index) => (
@@ -314,11 +376,27 @@ function Blogdetail() {
                             <div className="form-group">
                               <input
                                 type="text"
+                                id="email"
+                              name="email"
                                 value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                               // onChange={(e) => setEmail(e.target.value)}
                                 className="form-control"
                                 placeholder="Email address"
+                                style={{
+                                  borderBottomColor: errors.email ? "red" : "",
+                                }}
+                                onChange={handleChange}
                               />
+                               {errors.email && (
+                              <p
+                                style={{
+                                  color: errors.email ? "red" : "",
+                                  marginTop: "-4vh",
+                                }}
+                              >
+                                {errors.email}
+                              </p>
+                            )}
                             </div>
                           </div>
 
@@ -377,7 +455,7 @@ function Blogdetail() {
                 </div>
               </div>
             ) : (
-              "Data Not Found"
+              ""
             )}
           </div>
         </div>
@@ -385,5 +463,6 @@ function Blogdetail() {
     </div>
   );
 }
+<ScrollToTop/>
 
 export default Blogdetail;

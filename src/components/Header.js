@@ -34,7 +34,7 @@ function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <ToastContainer />
+      
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown">
@@ -65,11 +65,11 @@ function Header() {
                     TECHNOLOGY
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a className="dropdown-item" href="/pricing">
                     PRICING
                   </a>
-                </li>
+                </li> */}
               </ul>
             </li>
 
@@ -129,8 +129,11 @@ function Header() {
             </a>
           )}
         </div>
+        
       </div>
+      <ToastContainer />
     </nav>
+      
   );
 }
 
