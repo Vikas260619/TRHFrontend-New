@@ -1,20 +1,89 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import Input from "../Container/Input";
 import { baseURL } from "./Basepath";
+import { omit } from "lodash";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useParams } from "react-router-dom";
-
 
 export default function Forgotpassword() {
   const { id } = useParams();
   const [password, setPassword] = useState("");
   const [confirm_password, setConfirm_password] = useState("");
+  const [errors, setErrors] = useState({});
+  const [values, setValues] = useState({});
+  const [passwordType, setPasswordType] = useState("password");
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const [cPasswordClass, setCPasswordClass] = useState('form-control-mod');
+  const [isCPasswordDirty, setIsCPasswordDirty] = useState(false);
+
+  const togglePassword = () => {
+    if (passwordType === "password") {
+      setPasswordType("text");
+      return;
+    }
+    setPasswordType("password");
+  };
+
+
+  useEffect(() => {
+    if (isCPasswordDirty) {
+        if (password === confirm_password) {
+            setShowErrorMessage(false);
+            setCPasswordClass('form-control-mod is-valid')
+        } else {
+            setShowErrorMessage(true)
+            setCPasswordClass('form-control-mod is-invalid')
+        }
+    }
+}, [confirm_password])
+const handleCPassword = (e) => {
+    setConfirm_password(e.target.value);
+    setIsCPasswordDirty(true);
+}
+
+
+  const validate = (event, name, value) => {
+    switch (name) {
+        case "password":
+          if (
+            !new RegExp(
+              /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/
+            ).test(value)
+          ) {
+            setErrors({
+              ...errors,
+              password: "Enter a minimum 8 character with strong password ",
+            });
+          } else {
+            let newObj = omit(errors, "password");
+            setErrors(newObj);
+          }
+          break;
+
+      default:
+        break;
+    }
+  };
+
+  const pwvalidation = (event) => {
+    event.persist();
+    let name = event.target.name;
+    let val = event.target.value;
+    validate(event, name, val);
+    setPassword(val);
+    setValues({
+      ...values,
+      [name]: val,
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password !== "" && confirm_password !== "") {
+   
+      if (password !== "") {
+        if (confirm_password !== "") {
       let data = {
         password,
         confirm_password, 
@@ -25,16 +94,20 @@ export default function Forgotpassword() {
         data: data,
       })
         .then((res) => {
-          console.log(res)
-          setTimeout(() => {
+      
             toast(res.data.message);
-          }, 1000);
-          toast(res.data.message);
+            console.log(res.data.message);
+
+
         })
         .catch((err) => console.log(err));
+      } else {
+        toast("Please Fill the confirm password field");
+      }
     } else {
-      toast("Fill all the medatory");
+      toast("Please Fill the  password field");
     }
+  
   };
   return (
     <div>
@@ -69,7 +142,8 @@ export default function Forgotpassword() {
               <div className="row ">
                 <div className="col-lg-6 col-xs-12">
                   <div className="cont22">
-                    <img src="images/forgot.png" alt="join" />
+             
+                    <img   src={process.env.PUBLIC_URL + "/images/forgot.png"} alt="join" />
                   </div>
                 </div>
                 <div className="col-lg-6 col-xs-12">
@@ -80,13 +154,36 @@ export default function Forgotpassword() {
                         <div className="row">
                           <div className="col-lg-12 col-xs-12">
                             <Input
-                              id="newpassword"
-                              type="password"
-                              name="newpassword"
+                              id="password"
+                              type={passwordType}
+                              name="password"
                               placeholder="New password"
+                              className="form-control-mod"
                               value={password}
-                              onChange={(e) => setPassword(e.target.value)}
+                              onChange={pwvalidation}
                             />
+                            <span
+                              for="icon"
+                              class="p-viewer but88"
+                              onClick={togglePassword}
+                            >
+                              {passwordType === "password" ? (
+                                <i className="fa fa-eye-slash"></i>
+                              ) : (
+                                <i className="fa fa-eye"></i>
+                              )}
+                            </span>
+
+                            {errors.password && (
+                              <p
+                                style={{
+                                  color: errors.password ? "red" : "",
+                                  marginTop: "-4vh",
+                                }}
+                              >
+                                {errors.password}
+                              </p>
+                            )}
                           </div>
                         </div>
 
@@ -97,11 +194,14 @@ export default function Forgotpassword() {
                               name="cpassword"
                               type="password"
                               placeholder="Confirm Password"
+                              className={cPasswordClass}
                               value={confirm_password}
-                              onChange={(e) =>
-                                setConfirm_password(e.target.value)
-                              }
+                              onChange={handleCPassword}
                             />
+                            {showErrorMessage && isCPasswordDirty ? <p  style={{
+                                  color: "red",
+                                  marginTop: "-4vh",
+                                }}> Passwords did not match </p> : ''}
                           </div>
                         </div>
 

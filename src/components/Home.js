@@ -4,6 +4,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Clients from "./Clients";
 import Expertteam from "./Expertteam";
 import Testimonial from "./Testimonial";
+import ScrollToTop from "react-scroll-to-top";
 
 function Home() {
   const list = [
@@ -81,7 +82,7 @@ function Home() {
             <a href="/Services">AWS Services</a>
           </h3>
           <div className="desc">
-            Build, Deploy, and Manage Websites, Apps  or Processes On AWS Secure,
+            Build, Deploy, and Manage Websites, Apps or Processes On AWS Secure,
             Reliable Network.
           </div>
         </div>
@@ -129,10 +130,10 @@ function Home() {
             <a href="/Services">Cyber Security</a>
           </h3>
           <div className="desc">
-          Transform your business and manage risk by partnering with Therapidhire in cybersecurity 
-          consulting and managed security services.
+          Transform your business and manage risk by partnering with Therapidhire in cybersecurity consulting 
+          and managed security services.
 
-</div>
+          </div>
         </div>
       </div>
     </div>,
@@ -324,6 +325,7 @@ function Home() {
       </div>
       <Testimonial />
       <Expertteam />
+     {/* | <ScrollToTop/> */}
     </div>
   );
 }

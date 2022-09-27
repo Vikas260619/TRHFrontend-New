@@ -21,7 +21,7 @@ export default function Faq() {
                 type="checkbox"
                 name="collapse"
                 id="handle1"
-                checked="checked"
+               
               />
               <h2 className="handle">
                 <label for="handle1">Q. What does Therapidhire do?</label>

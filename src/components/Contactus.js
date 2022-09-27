@@ -59,37 +59,55 @@ function Contactus() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+   
+    if (name !== "") {
+      if (email !== "") {
+        if (phone !== "") {
+          if (website !== "") {
+            if (message !== "") {
+              
+                let data = {
+                  message,
+                  name,
+                  email,
+                  phone,
+                  website,
+                };
+                axios({
+                  url: baseURL + "contact/create",
+                  method: "post",
+                  data: data,
+                })
+                  .then((res) => {
+                    toast(res.data.message);
 
-    if (name !== "" && email !== "" && phone !== "" && message !== "") {
-      let data = {
-        message,
-        name,
-        email,
-        phone,
-        website,
-      };
-      axios({
-        url: baseURL + "contact/create",
-        method: "post",
-        data: data,
-      })
-        .then((res) => {
-          setTimeout(() => {
-            toast(res.data.message);
-          }, 1000);
-          setTimeout(() => {
-            setName("");
-            setMessage("");
-            setEmail("");
-            setPhone("");
-            setwebsite("");
-          }, 3000);
-        })
+                    setTimeout(() => {
+                      setName("");
+                      setMessage("");
+                      setEmail("");
+                      setPhone("");
+                      setwebsite("");
+                    }, 3000);
+                  })
 
-        .catch((err) => console.log(err));
-    } else {
-      toast("Fill all the medatory");
-    }
+                  .catch((err) => console.log(err));
+                
+              } else {
+                toast("Please Fill the Message field");
+              }
+            } else {
+              toast("Please Fill the Website field");
+            }
+          } else {
+            toast("Please Fill the Phone Number field");
+          }
+        } else {
+          toast("Please Fill the email field");
+        }
+      } else {
+        toast("Please Fill the Name field");
+      }
+   
   };
 
   return (
@@ -167,11 +185,9 @@ function Contactus() {
                           <input
                             className="from-control"
                             type="tel"
-                            // id="phone"
-                            // name="number"
                             value={phone}
                             minLength={9}
-                            maxLength={12}
+                            maxLength={10}
                             placeholder="Phone Number"
                             onChange={(e) => checkInput(e)}
                           />
