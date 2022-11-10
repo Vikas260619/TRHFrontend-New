@@ -37,10 +37,10 @@ function Blog() {
     for (let i = 0; i < array.length; i++) {
       if (array[i] === " ") {
         array[i] = "-";
-      }
+      } 
     }
     let arr = array.join("");
-    Navigate("/" + arr, { state: { userId: id } });
+    Navigate("/" +arr ,{state: {userId: id }});
   };
 
   console.log();
@@ -157,16 +157,16 @@ function Blog() {
                       {data
                         ? data.slice(0, 3).map((val) => (
                             <article className="item">
-                              <a href="#" className="thumb">
+                              <a className="thumb" onClick={() => newPage1(val._id, val.title)}>
                                 <img src={val.bannerImage} alt="image" />
                               </a>
                               <div className="info">
-                                <span>{val.date}</span>
+                                <span  onClick={() => newPage1(val._id, val.title)}>{val.date}</span>
                                 <h4
                                   className="title usmall"
                                   onClick={() => newPage1(val._id, val.title)}
                                 >
-                                  <a href="#">{val.title}</a>
+                                  <a  onClick={() => newPage1(val._id, val.title)}>{val.title}</a>
                                 </h4>
                               </div>
                             </article>

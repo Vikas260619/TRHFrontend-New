@@ -180,7 +180,7 @@ function Blogdetail() {
     allComment === 0 ? setAllComment(1) : setAllComment(0);
     setShow(!show);
   };
-
+ 
   const newPage = (id, title) => {
     let array = title.split("");
     for (let i = 0; i < array.length; i++) {
@@ -190,6 +190,7 @@ function Blogdetail() {
     }
     let arr = array.join("");
     Navigate("/" + arr, { state: { userId: id } });
+    window.location.reload();
   };
 
   return (
@@ -285,9 +286,7 @@ function Blogdetail() {
                                   )}
                                 </>
                               ))}
-                              <div className="article-image">
-                                <img src={val.contentImages} alt="image" />
-                              </div>
+                            
                             </ul>
                           </div>
                         ))}
@@ -503,7 +502,7 @@ function Blogdetail() {
                       {data &&
                         data.slice(0, 3).map((val) => (
                           <article className="item">
-                            <a href="" className="thumb">
+                            <a className="thumb"  onClick={() => newPage(val._id, val.title)}>
                               <img src={val.bannerImage} alt="image" />
                             </a>
                             <div className="info">
@@ -512,7 +511,7 @@ function Blogdetail() {
                                 className="title usmall"
                                 onClick={() => newPage(val._id, val.title)}
                               >
-                                <a href="">{val.title}</a>
+                                <a onClick={() => newPage(val._id, val.title)}>{val.title}</a>
                               </h4>
                             </div>
                           </article>
