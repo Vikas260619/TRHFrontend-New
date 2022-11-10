@@ -1,8 +1,46 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function Career() {
   return (
     <div>
+      <Helmet>
+        <title>Work with Us - TheRapidHire</title>
+        <meta
+          name="description"
+          content="We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment."
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://therapidhire.com/workwithus/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Work with us" />
+        <meta property="og:url" content="https://therapidhire.com/workwithus" />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/ser3.png"
+        />
+        <meta
+          property="og:description"
+          content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment."
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Work with us- TheRapidHire" />
+        <meta name="twitter:site" content="@therapidhire" />
+        <meta
+          name="twitter:description"
+          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+        />
+        <meta
+          name="twitter:image"
+          content="https://therapidhire.com/images/ser3.png"
+        />
+        <meta name="twitter:image:alt" content="workwithus" />
+      </Helmet>
+
       <div className="offwrap"></div>
 
       <div className="main-content">
@@ -14,7 +52,10 @@ function Career() {
                 <span className="watermark">Career</span>
               </h1>
               <span className="sub-text">
-              We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment.		
+                We consider our employees to be our most valuable asset! We
+                strive to provide them with new and challenging opportunities to
+                hone their technology skills and advance their careers in a
+                fast-paced environment.
               </span>
             </div>
           </div>
@@ -168,11 +209,11 @@ function Career() {
                   </div>
                   <div className="job-instructor-profile mb-30">
                     <div className="job-instructor-img f-left">
-                      <img src="images/job1.png" alt="" />
+                      <img src="images/job1.png" alt="job1" />
                     </div>
                     <div className="job-instructor-title">
                       <h4>
-                        <a href="/">Java Developer</a>
+                        <a href="/career">Java Developer</a>
                       </h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
@@ -205,11 +246,11 @@ function Career() {
                   </div>
                   <div className="job-instructor-profile mb-30">
                     <div className="job-instructor-img f-left">
-                      <img src="images/job2.png" alt="" />
+                      <img src="images/job2.png" alt="job2" />
                     </div>
                     <div className="job-instructor-title">
                       <h4>
-                        <a href="/">MERN Stack Developer</a>
+                        <a href="/career">MERN Stack Developer</a>
                       </h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
@@ -225,7 +266,7 @@ function Career() {
                       deployment.{" "}
                     </p>
                     <div className="job-salary">
-                      <a href="/apply" target={'_self'}>
+                      <a href="/applymern" target={"_self"}>
                         Apply Now <i className="fa fa-arrow-right"></i>
                       </a>
                     </div>
@@ -247,7 +288,7 @@ function Career() {
                     </div>
                     <div className="job-instructor-title">
                       <h4>
-                        <a href="/">MEAN Stack Developer</a>
+                        <a href="/career">MEAN Stack Developer</a>
                       </h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
@@ -263,7 +304,7 @@ function Career() {
                       a Node.js.{" "}
                     </p>
                     <div className="job-salary">
-                      <a href="/apply">
+                      <a href="/applymean">
                         Apply Now <i className="fa fa-arrow-right"></i>
                       </a>
                     </div>
@@ -272,22 +313,31 @@ function Career() {
               </div>
             </div>
             <div className="row">
-            <div className="col-xl-12 col-lg-12 col-md-12 text-center">
-              <p className="resume1">Send your resume at <a href="mailto:career@therapidhire.com">"career@therapidhire.com"</a></p>
-
-
-             </div>
-
+              <div className="col-xl-12 col-lg-12 col-md-12 text-center">
+                <p className="resume1">
+                  Send your resume at{" "}
+                  <a href="mailto:career@therapidhire.com">
+                    "career@therapidhire.com"
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
-
-
-        </div>
+    </div>
   );
 }
 
 export default Career;
+
+
+
+
+
+
+
+
+
+
+

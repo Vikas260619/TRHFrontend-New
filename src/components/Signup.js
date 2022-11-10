@@ -24,6 +24,10 @@ export default function Signup() {
   const [showErrorMessage, setShowErrorMessage] = useState(false);
   const [cPasswordClass, setCPasswordClass] = useState("form-control-mod");
   const [isCPasswordDirty, setIsCPasswordDirty] = useState(false);
+  useEffect(() => {
+    document.title="Singup"
+    }, )
+ 
 
   const togglePassword = () => {
     if (passwordType === "password") {

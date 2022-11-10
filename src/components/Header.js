@@ -34,7 +34,7 @@ function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-      
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown">
@@ -46,23 +46,27 @@ function Header() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                WE ARE
+                We Are
               </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDr
+              opdown"
+              >
                 <li>
-                  <a className="dropdown-item" href="/about">
-                    ABOUT US
+                  <a className="dropdown-item" href="/aboutus">
+                    About Us
                   </a>
                 </li>
 
                 <li>
                   <a className="dropdown-item" href="/services">
-                    SERVICES
+                    Services
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/technology">
-                    TECHNOLOGY
+                    Technology
                   </a>
                 </li>
                 {/* <li>
@@ -75,24 +79,24 @@ function Header() {
 
             <li className="nav-item">
               <a className="nav-link" href="/blog">
-                BLOG
+                Blog
               </a>
             </li>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="/contactus"
+                href="/getaenquiry"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                CONTACT US
+                Contact Us
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a className="dropdown-item" href="/team">
-                    TEAM
+                    Team
                   </a>
                 </li>
 
@@ -103,14 +107,14 @@ function Header() {
                 </li>
 
                 <li>
-                  <a className="dropdown-item" href="/career">
-                    WORK WITH US
+                  <a className="dropdown-item" href="/workwithus">
+                    Work With Us
                   </a>
                 </li>
               </ul>
             </li>
           </ul>
-          <a href="/contactus" className="enquirebtn">
+          <a href="/getaenquiry" className="enquirebtn">
             Get A Enquiry
           </a>
           {token ? (
@@ -129,11 +133,9 @@ function Header() {
             </a>
           )}
         </div>
-        
       </div>
       <ToastContainer />
     </nav>
-      
   );
 }
 

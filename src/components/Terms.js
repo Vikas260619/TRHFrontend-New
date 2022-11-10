@@ -1,5 +1,10 @@
 import React from "react";
+import { useEffect } from "react";
 function Terms() {
+  useEffect(() => {
+    document.title="Terms"
+    }, )
+ 
   return (
     <div>
       <div className="offwrap"></div>
@@ -9,14 +14,14 @@ function Terms() {
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
-                Terms of Service
+                Terms of Services
                 <span className="watermark">Terms</span>
               </h1>
               <span className="sub-text">
                 {" "}
-                We Use Our Website To Communicate With The Valuable Customers
-                About Our Products & Services And To Take In Personal
-                Information By Customers And People Who Wish To Connect With Us
+                We use our website to communicate with the valuable customers
+                about our products & services and to take in personal
+                information by customers and people who wish to connect with us
               </span>
             </div>
           </div>

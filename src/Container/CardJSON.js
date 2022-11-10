@@ -24,7 +24,7 @@ const CardData = [
    },
    {
       imgsrc: "images/ser5.png",
-      title: "MINIMUM VARIABLE PRODUCT (MVP) DEVELOPMENT",
+      title: "MINIMUM VIABLE PRODUCT",
       description: "Our team follows MVP development technique in which it introduces a new product in the market with basic features, but enough to get the attention of the Consumers. We launch the final product after sufficient feedback from our product’s initial clients."
    },
    {
@@ -41,9 +41,9 @@ const TechnoData = [
       imgsrc: 'images/techback.jpg',
       Numb: '01',
       title: 'JAVA',
-      description: ' Our Java Web Application Development specialists create programs that are scalable, intelligent, and efficient, taking advantage of Javas cross-platform capabilities.A Java application development firm that develops both general-purpose and business-oriented Java solutions (J2EE). The J2EE and J2SE environments, as well as tools like JSP, SWING, Servlets, Struts, XML EJB, Hibernate Technologies, etc, are frequently used by our skilled team when creating complex Java web applications.',
+      description: ' Our Java Web Application Development specialists create programs that are scalable taking advantage of Javas cross-platform capabilities.A Java application development firm that develops both general-purpose and business-oriented Java solutions (J2EE). The J2EE and J2SE environments, tools like JSP, SWING, Servlets, Struts, XML EJB, Hibernate Technologies, etc.',
 
-      icon_imgsrc: 'images/tech1.png'
+      icon_imgsrc: 'images/java.png'
    },
    {
       imgsrc: 'images/techback.jpg',
@@ -52,7 +52,7 @@ const TechnoData = [
       description: 'AngularJS is one of the best open-source structural frameworks on the market, and we offer a full range of AngularJS development services. Among our AngularJS development services are AngularJS web and mobile application development, AngularJS cross-platform app development, AngularJS portal development, and AngularJS plugin development.      ',
 
 
-      icon_imgsrc: 'images/tech2.png'
+      icon_imgsrc: 'images/Angular.png'
    },
    {
       imgsrc: 'images/techback.jpg',
@@ -60,14 +60,14 @@ const TechnoData = [
       title: '.NET MVC',
       description: ' TheRapidHire offers a full suite of.NET MVC development services. We provide.NET MVC web portal and web app development,.NET MVC e-commerce solutions,.NET MVC mobile solutions, and.NET MVC content management system development, among other services.      .',
 
-      icon_imgsrc: 'images/tech3.png'
+      icon_imgsrc: 'images/mvc.png'
    },
    {
       imgsrc: 'images/techback.jpg',
       Numb: '04',
       title: 'MERN STACK',
       description: ' MEAN stack is a comprehensive set of JavaScript-based technologies and frameworks used to build full web and solution stacks. Our website development consultants were among the first to use the MEAN stack and scripting technologies. The team has extensive technology experience. ',
-      icon_imgsrc: 'images/tech4.png'
+      icon_imgsrc: 'images/mern.png'
    },
    {
       imgsrc: 'images/techback.jpg',
@@ -75,15 +75,15 @@ const TechnoData = [
       title: 'Python',
       description: 'We are a company that provides Python application development services to customers worldwide. Our offerings include the creation of desktop applications, web applications, web services, web crawlers, application performance monitoring and tweaking, and customized content management systems',
 
-      icon_imgsrc: 'images/tech5.png'
+      icon_imgsrc: 'images/python.png'
    },
    {
       imgsrc: 'images/techback.jpg',
       Numb: '06',
       title: 'React Native ',
-      description: 'TheRapidHire creates incredibly fantastic mobile and web applications with React Native, providing plenty of possibilities to experiment with different app development models. We are one of the most expedient and quick to embrace React Native, and our team is designed to consistently outperform expectations for quality and customization. With a multitude of resources at their disposal, our IT specialists totally meet your companys needs.      ',
+      description: 'TheRapidHire creates incredibly fantastic mobile and web applications with React Native, providing plenty of possibilities to experiment with different app development models. We are one of the most expedient and quick to embrace React Native, and our team is designed to consistently outperform expectations for quality and customization.',
 
-      icon_imgsrc: 'images/tech6.png'
+      icon_imgsrc: 'images/Reactnative.png'
    }
 ]
 

@@ -4,7 +4,8 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Clients from "./Clients";
 import Expertteam from "./Expertteam";
 import Testimonial from "./Testimonial";
-import ScrollToTop from "react-scroll-to-top";
+
+import { Helmet } from "react-helmet";
 
 function Home() {
   const list = [
@@ -33,6 +34,7 @@ function Home() {
         "We have the ability to respond quickly to the growing demand for Agile Team Deployment in the business sector through continuous training and procedure upgrades.",
     },
   ];
+
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },
@@ -130,9 +132,9 @@ function Home() {
             <a href="/Services">Cyber Security</a>
           </h3>
           <div className="desc">
-          Transform your business and manage risk by partnering with Therapidhire in cybersecurity consulting 
-          and managed security services.
-
+            Transform your business and manage risk by partnering with
+            Therapidhire in cybersecurity consulting and managed security
+            services.
           </div>
         </div>
       </div>
@@ -141,6 +143,45 @@ function Home() {
 
   return (
     <div>
+      <Helmet>
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="TheRapidHire - Software Development|IT outsourcing company"
+        />
+        <meta property="og:url" content="https://therapidhire.com/" />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/ser3.png"
+        />
+        <meta property="og:image:width" content="150" />
+        <meta property="og:image:height" content="150" />
+        <meta
+          property="og:description"
+          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="TheRapidHire - Software Development|IT outsourcing company"
+        />
+        <meta name="twitter:site" content="@therapidhire" />
+        <meta
+          name="twitter:description"
+          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+        />
+        <meta
+          name="twitter:image"
+          content="https://therapidhire.com/images/ser3.png"
+        />
+        <meta name="twitter:image:alt" content="therapidhire" />
+      </Helmet>
+
       <AliceCarousel
         autoPlay
         autoPlayStrategy="none"
@@ -164,8 +205,8 @@ function Home() {
               <div id="slide-1" className="slider-direction">
                 <div className="content-part">
                   <div className="slider-des">
-                    <div className="sl-subtitle">{items.item}</div>
-                    <h1 className="sl-title">{items.descp}</h1>
+                    <h1 className="sl-subtitle">{items.item}</h1>
+                    <p className="sl-title">{items.descp}</p>
                   </div>
                   <div className="slider-bottom">
                     <a className="readon blue-slide" href="/services">
@@ -184,11 +225,11 @@ function Home() {
       >
         <div className="container">
           <div className="animat-rat">
-            <img src="images/squar.png" className="rat-sib" alt="" />
-            <img src="images/round-2.png" className="rat-round" alt="" />
-            <img src="images/ract.png" className="rat-ract" alt="" />
-            <img src="images/squar.png" className="rat-squar1" alt="" />
-            <img src="images/squar.png" className="rat-squar2" alt="" />
+            <img src="images/squar.png" className="rat-sib" alt="squre" />
+            <img src="images/round-2.png" className="rat-round" alt="round" />
+            <img src="images/ract.png" className="rat-ract" alt="ract" />
+            <img src="images/squar.png" className="rat-squar1" alt="squar1" />
+            <img src="images/squar.png" className="rat-squar2" alt="squar2" />
           </div>
           <div className="row">
             <div className="col-lg-12 ">
@@ -213,7 +254,7 @@ function Home() {
               <div className="row">
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat1.png" alt="" />
+                    <img src="images/feat1.png" alt="feat1" />
                     <h3>DEDICATED TEAM</h3>
                     <p>
                       Our team provides you with a comprehensive solution using
@@ -224,7 +265,7 @@ function Home() {
                 </div>
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat2.png" alt="" />
+                    <img src="images/feat2.png" alt="feat2" />
 
                     <h3>DIVERSE TECHNOLOGY</h3>
                     <p>
@@ -238,7 +279,7 @@ function Home() {
 
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat3.png" alt="" />
+                    <img src="images/feat3.png" alt="feat3" />
 
                     <h3>RESEARCH AND DEVELOPMENT</h3>
                     <p>
@@ -251,7 +292,7 @@ function Home() {
                 </div>
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat4.png" alt="" />
+                    <img src="images/feat4.png" alt="faet4" />
 
                     <h3>CUSTOMER ACCOMPLISHMENT</h3>
                     <p>
@@ -263,7 +304,7 @@ function Home() {
                 </div>
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat5.png" alt="" />
+                    <img src="images/feat5.png" alt="feat5" />
 
                     <h3>COMMITTED ASSISTANCE</h3>
                     <p>
@@ -275,7 +316,7 @@ function Home() {
                 </div>
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat6.png" alt="" />
+                    <img src="images/feat6.png" alt="feat6" />
 
                     <h3>EXPERTISE</h3>
                     <p>
@@ -291,7 +332,10 @@ function Home() {
         </div>
       </div>
       <Clients />
-      <div id="rs-services" className="rs-services serviceindustry style2   pb-25 ">
+      <div
+        id="rs-services"
+        className="rs-services serviceindustry style2 pb-25 "
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-12  col-md-12">
@@ -325,7 +369,6 @@ function Home() {
       </div>
       <Testimonial />
       <Expertteam />
-     {/* | <ScrollToTop/> */}
     </div>
   );
 }

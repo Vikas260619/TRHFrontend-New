@@ -5,12 +5,14 @@ import { useParams } from "react-router-dom";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 import TimeAgo from "timeago-react";
 import ScrollToTop from "react-scroll-to-top";
+import { Helmet } from "react-helmet";
 
 function Blogdetail() {
   const { id } = useParams();
+
   const [users, setUsers] = useState("");
   const [data, setdata] = useState([]);
   const [comments, setComments] = useState([true]);
@@ -21,8 +23,41 @@ function Blogdetail() {
   const [commentFlag, setCommentFlag] = useState(0);
   const [allComment, setAllComment] = useState(0);
   const [values, setValues] = useState({});
+  const [liveUrl, setLiveUrl] = useState();
+  const [twitterUrl, setTwitterUrl] = useState();
+  const [facebookUrl, setFacebookUrl] = useState();
+  const [linkdinUrl, setLinkdinUrl] = useState();
+  const [imageurl, setImageUrl] = useState();
+  const { state } = useLocation();
+  const { userId } = state;
 
   const [errors, setErrors] = useState({});
+  useEffect(() => {
+    setImageUrl(users.bannerImage);
+    document.title = "Blogdetail";
+    const url = window.location.href;
+    const url1 =
+      "https://www.linkedin.com/cws/share?url=" +
+      window.location.href +
+      "/" +
+      imageurl;
+    const newUrl2 =
+      "https://twitter.com/intent/tweet?text=" +
+      window.location.host +
+      window.location.pathname +
+      "/" +
+      imageurl;
+    const newUrl =
+      "https://www.facebook.com/sharer.php?u=" +
+      window.location.host +
+      window.location.pathname +
+      "/" +
+      imageurl;
+    setLiveUrl(url);
+    setFacebookUrl(newUrl);
+    setTwitterUrl(newUrl2);
+    setLinkdinUrl(url1);
+  });
 
   const Navigate = useNavigate();
   let blog_id = id;
@@ -100,7 +135,7 @@ function Blogdetail() {
 
   useEffect(() => {
     axios({
-      url: baseURL + "blog/getOne/" + id,
+      url: baseURL + "blog/getOne/" + userId,
       method: "get",
     })
       .then((res) => {
@@ -125,6 +160,7 @@ function Blogdetail() {
   }, []);
 
   useEffect(() => {
+    window.scroll(0, 0);
     axios({
       url: baseURL + "comment/getblogcomment/" + id,
       method: "get",
@@ -145,12 +181,55 @@ function Blogdetail() {
     setShow(!show);
   };
 
-  const newPage = (id) => {
-    Navigate("/blogdetail/" + id);
+  const newPage = (id, title) => {
+    let array = title.split("");
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] === " ") {
+        array[i] = "-";
+      }
+    }
+    let arr = array.join("");
+    Navigate("/" + arr, { state: { userId: id } });
   };
 
   return (
     <div>
+      {users ? (
+        <Helmet>
+          <title>{users.title}</title>
+
+          <meta name="description" content={users.metaDesc} />
+          <meta name="keywords" content={users.keywords} />
+          <meta
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+          />
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content="Is Blockchain Secure your Data?" />
+
+          <meta property="og:url" content={liveUrl} />
+          <meta property="og:image" content={imageurl} />
+          <meta
+            property="og:description"
+            content="The security of non-public data, especially which is stored online, is vital and also somebody's right for many years, it’s been in danger and constantly deteriorated. Blockchain technology provides a chic solution to the present problem"
+          />
+          <meta property="article:author" content="Muskan Sharma" />
+          <meta
+            property="article:published_time"
+            content="2022-09-29T12:39:00.000+05:30"
+          />
+          <meta property="article:section" content="Technology" />
+          <meta property="article:tag" content="blockchain" />
+          <meta property="article:tag" content="blockchain technology" />
+          <meta property="article:tag" content="cryptocurrency" />
+          <meta property="article:tag" content="bitcoin" />
+          <meta property="article:tag" content="membership service provider " />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="" />
+        </Helmet>
+      ) : (
+        ""
+      )}
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container">
@@ -174,10 +253,11 @@ function Blogdetail() {
                 <div className="col-lg-8 col-md-12">
                   <div className="blog-details-desc">
                     <div className="article-image">
-                      <img src={users.bannerImage} alt="" />
+                      <img src={users.bannerImage} alt="image" />
                     </div>
 
                     <div className="article-content">
+                      {console.log(users)}
                       <ul className="entry-list">
                         <li>
                           By <a href="/">{users.author}</a>
@@ -206,7 +286,7 @@ function Blogdetail() {
                                 </>
                               ))}
                               <div className="article-image">
-                                <img src={val.contentImages} alt="" />
+                                <img src={val.contentImages} alt="image" />
                               </div>
                             </ul>
                           </div>
@@ -234,28 +314,18 @@ function Blogdetail() {
                         <div className="col-lg-6 col-md-6">
                           <ul className="share-social text-end">
                             <li>
-                              <a href="" target="_blank">
+                              <a href={facebookUrl}>
                                 <i className="fa fa-facebook"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="" target="_blank">
+                              <a href={twitterUrl}>
                                 <i className="fa fa-twitter"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="" target="_blank">
+                              <a href={linkdinUrl}>
                                 <i className="fa fa-linkedin"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="" target="_blank">
-                                <i className="fa fa-instagram"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="" target="_blank">
-                                <i className="fa fa-quora"></i>
                               </a>
                             </li>
                           </ul>
@@ -378,7 +448,6 @@ function Blogdetail() {
                                 id="email"
                                 name="email"
                                 value={email}
-                                // onChange={(e) => setEmail(e.target.value)}
                                 className="form-control"
                                 placeholder="Email address"
                                 style={{
@@ -441,7 +510,7 @@ function Blogdetail() {
                               {val.date && <span>{val.date}</span>}
                               <h4
                                 className="title usmall"
-                                onClick={() => newPage(val._id)}
+                                onClick={() => newPage(val._id, val.title)}
                               >
                                 <a href="">{val.title}</a>
                               </h4>

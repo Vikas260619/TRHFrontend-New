@@ -7,8 +7,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 
-function Apply() {
+function Applymern() {
   const [candidateName, setCandidateName] = useState("");
+  
   const [email, setEmail] = useState("");
   const [phone_number, setPhone_number] = useState("");
   const [applypostion, setApplypostion] = useState("");
@@ -18,8 +19,9 @@ function Apply() {
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
   useEffect(() => {
-    document.title = "Apply";
-  });
+    document.title="Apply Mern"
+    }, )
+  
 
   const validate = (event, name, value) => {
     switch (name) {
@@ -121,7 +123,7 @@ function Apply() {
       }
     } else {
       toast("Please Fill the Name field");
-    }
+    }                                                                               
   };
 
   return (
@@ -129,7 +131,7 @@ function Apply() {
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container-fluid">
+          <div className="container-fluid"> 
             <div className="breadcrumbs-inner">
               <h1 className="page-title">
                 Explore Opportunities
@@ -148,7 +150,7 @@ function Apply() {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="sec-title3 text-center ">
-                    <h2 className="title ">Apply For Java Developer</h2>
+                    <h2 className="title ">Apply For MERN Developer</h2>
                     <div className="heading-border-line"></div>
                   </div>
                 </div>
@@ -159,19 +161,8 @@ function Apply() {
                 <div className="col-lg-6 ">
                   <div className="cont22">
                     <p>
-                      Experience in core Java advanced programming. Experience
-                      in Spring & Hibernate is mandatory. Experience in building
-                      mechanisms like Maven. Good knowledge on design patterns
-                      and anti-patterns. Good in algorithms and data structures.
-                      Good understanding of Database concepts and Experience in
-                      SQL, PLSQL and NoSQL. Excellent Analytical and program
-                      solving skills Excellent written and oral communication
-                      skills self-starter and highly motivated Work in a dynamic
-                      environment and ability to adapt quickly to changes.
-                      Experience with Test and defect management tools. An
-                      innovator, always suggesting newer ways of improving
-                      Productivity. Mentor and train team members. Identify and
-                      escalate Risks on time and suggest mitigation measures.
+                    Ability to translate Wireframes and PSD Designs into functional web apps using HTML5, AngularJS, React, Node.js, and Mongo. Binding of UI elements to JavaScript object models. Creating RESTful services with Node.js. Architect scalable web architectures. Work in a cross-functional team to deliver a complete user experience. Create Unit and Integration tests to ensure the quality of code. Be responsive to change requests and feature requests. Write code that is cross-platform and cross-device compatible. Ability to wear many hats and learn new technologies quickly. creating complex HTML-based solutions. Detail-oriented experience as a Web Developer creating Angular-based solutions with Node.js and Express. Ability to work both independently and in collaborative teams to communicate design and build ideas effectively. Experience using asynchronous RESTful services (JSON).
+
                     </p>
                   </div>
                 </div>
@@ -287,4 +278,4 @@ function Apply() {
   );
 }
 
-export default Apply;
+export default Applymern;

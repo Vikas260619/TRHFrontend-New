@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { baseURL } from "./Basepath";
 import ScrollToTop from "react-scroll-to-top";
-
+import { Helmet } from "react-helmet";
 function Blog() {
   const [users, setUsers] = useState([]);
   const [data, setdata] = useState([]);
@@ -11,7 +11,6 @@ function Blog() {
   const [flag, setFlag] = useState(false);
   const Navigate = useNavigate();
   useEffect(() => {
-    console.log(baseURL);
     axios({
       url: baseURL + "blog/getall",
       method: "get",
@@ -33,14 +32,43 @@ function Blog() {
     setFilterData(EL);
   };
 
-  const newPage1 = (id) => {
-    Navigate("/blogdetail/" + id);
+  const newPage1 = (id, title) => {
+    let array = title.split("");
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] === " ") {
+        array[i] = "-";
+      }
+    }
+    let arr = array.join("");
+    Navigate("/" + arr, { state: { userId: id } });
   };
 
   console.log();
+  useEffect(() => {
+    document.title = "Blog";
+  });
 
   return (
     <div>
+      <Helmet>
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://therapidhire.com/blog/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Blog" />
+        <meta property="og:url" content="https://therapidhire.com/blog" />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/ser6.png"
+        />
+        <meta
+          property="og:description"
+          content="TRH Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."
+        />
+      </Helmet>
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
@@ -69,7 +97,7 @@ function Blog() {
                           <div className="col-lg-6 col-md-6">
                             <div className="single-blog-card">
                               <div className="blog-image">
-                                <a href="//">
+                                <a>
                                   <img src={item.bannerImage} alt="image" />
                                 </a>
                                 {item.date && (
@@ -82,7 +110,7 @@ function Blog() {
                                 </h3>
                                 <p>{item.mainDesc.slice(0, 124)}</p>
                                 <button
-                                  onClick={() => newPage1(item._id)}
+                                  onClick={() => newPage1(item._id, item.title)}
                                   className="blogbtn"
                                 >
                                   View more...
@@ -110,7 +138,7 @@ function Blog() {
                                 <p>{item.mainDesc.slice(0, 124)}</p>
                                 <button
                                   className="blogbtn"
-                                  onClick={() => newPage1(item._id)}
+                                  onClick={() => newPage1(item._id, item.title)}
                                 >
                                   View more...
                                 </button>
@@ -136,7 +164,7 @@ function Blog() {
                                 <span>{val.date}</span>
                                 <h4
                                   className="title usmall"
-                                  onClick={() => newPage1(val._id)}
+                                  onClick={() => newPage1(val._id, val.title)}
                                 >
                                   <a href="#">{val.title}</a>
                                 </h4>

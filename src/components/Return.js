@@ -1,5 +1,10 @@
-import React from "react";
+import React, { useEffect} from "react";
+
 function Return(props) {
+  useEffect(() => {
+    document.title="Return"
+    }, )
+ 
   return (
     <div>
       <div className="offwrap"></div>

@@ -159,6 +159,24 @@ function Expertteam() {
             controlsStrategy="alternate"
           />
         </div>
+        <div className="container">
+          <div className="sec-title3 text-center ">
+            <span className="sub-title">Certifications</span>
+
+            <div className="heading-border-line"></div>
+          </div>
+          <div className="row certifite text-center">
+            <div className="col-xs-12 col-md-4">
+              <img src="images/rqc.png" alt="rqc" />
+            </div>
+            <div className="col-xs-12 col-md-4">
+              <img src="images/ukasl.png" alt="ukas" />
+            </div>
+            <div className="col-xs-12 col-md-4">
+              <img src="images/cmmi.png" alt="cmmi" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

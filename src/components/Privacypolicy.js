@@ -1,6 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 
 function Privacypolicy() {
+  useEffect(() => {
+    document.title="Privacypolicy"
+    }, )
+ 
   return (
     <div>
       <div className="offwrap"></div>

@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 
-function Apply() {
+function Applymean() {
   const [candidateName, setCandidateName] = useState("");
   const [email, setEmail] = useState("");
   const [phone_number, setPhone_number] = useState("");
@@ -18,7 +18,7 @@ function Apply() {
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
   useEffect(() => {
-    document.title = "Apply";
+    document.title = "Apply Mean";
   });
 
   const validate = (event, name, value) => {
@@ -142,13 +142,13 @@ function Apply() {
             </div>
           </div>
         </div>
-        <div className="rs-appointment style1 apply-career bg17 pt-95 pb-95">
+        <div className="rs-appointment style1 apply-career bg17 pt-95  pb-95">
           <div className="container">
             <div className="appoint-schedule">
               <div className="row">
                 <div className="col-lg-12">
                   <div className="sec-title3 text-center ">
-                    <h2 className="title ">Apply For Java Developer</h2>
+                    <h2 className="title ">Apply For MEAN Developer</h2>
                     <div className="heading-border-line"></div>
                   </div>
                 </div>
@@ -159,19 +159,19 @@ function Apply() {
                 <div className="col-lg-6 ">
                   <div className="cont22">
                     <p>
-                      Experience in core Java advanced programming. Experience
-                      in Spring & Hibernate is mandatory. Experience in building
-                      mechanisms like Maven. Good knowledge on design patterns
-                      and anti-patterns. Good in algorithms and data structures.
-                      Good understanding of Database concepts and Experience in
-                      SQL, PLSQL and NoSQL. Excellent Analytical and program
-                      solving skills Excellent written and oral communication
-                      skills self-starter and highly motivated Work in a dynamic
-                      environment and ability to adapt quickly to changes.
-                      Experience with Test and defect management tools. An
-                      innovator, always suggesting newer ways of improving
-                      Productivity. Mentor and train team members. Identify and
-                      escalate Risks on time and suggest mitigation measures.
+                      Basic understanding of server-side requirements and
+                      processes. In-depth knowledge of client-side requirements
+                      and processes. Knowledge of workflow and architecture.
+                      Understanding of MongoDB, Express.js, Node.js, and
+                      Angular.js. Extensive knowledge of cloud technology,
+                      continuous integration, and web development. Knowledge of
+                      software development lifecycle (SDLC) and agile
+                      methodology. Excellent verbal and communication skills.
+                      Strong analytical skills with a creative mindset.
+                      Proficiency in CSS, HTML, and JavaScript. Ability to
+                      implement applications using Angular JS. Well-versed in a
+                      domain-specific language. Strong time management and
+                      critical thinking skills.
                     </p>
                   </div>
                 </div>
@@ -287,4 +287,4 @@ function Apply() {
   );
 }
 
-export default Apply;
+export default Applymean;

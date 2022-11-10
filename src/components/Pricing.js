@@ -1,6 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
+
 
 export default function Pricing() {
+  useEffect(() => {
+    document.title="Pricing"
+    }, )
   return (
     <div>
       <div className="main-content">

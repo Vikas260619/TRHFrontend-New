@@ -13,8 +13,10 @@ export default function Profile() {
   const [occupation, setOccupation] = useState("");
   const [address, setAddress] = useState("");
   const { id } = useParams();
-  const Navigate = useNavigate();
-
+  useEffect(() => {
+    document.title="Profile"
+    }, )
+ 
   useEffect(() => {
     const token = JSON.parse(localStorage.getItem("Token"));
     axios({

@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Common from "../Container/Common.js";
 import axios from "axios";
 import { baseURL } from "./Basepath.js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { omit } from "lodash";
+import { Helmet } from "react-helmet";
 
 function Contactus() {
   const [name, setName] = useState("");
@@ -14,6 +15,9 @@ function Contactus() {
   const [website, setwebsite] = useState("");
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
+  useEffect(() => {
+    document.title = "Get a enquiry";
+  });
   const validate = (event, name, value) => {
     switch (name) {
       case "email":
@@ -59,59 +63,89 @@ function Contactus() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   
+
     if (name !== "") {
       if (email !== "") {
         if (phone !== "") {
           if (website !== "") {
             if (message !== "") {
-              
-                let data = {
-                  message,
-                  name,
-                  email,
-                  phone,
-                  website,
-                };
-                axios({
-                  url: baseURL + "contact/create",
-                  method: "post",
-                  data: data,
+              let data = {
+                message,
+                name,
+                email,
+                phone,
+                website,
+              };
+              axios({
+                url: baseURL + "contact/create",
+                method: "post",
+                data: data,
+              })
+                .then((res) => {
+                  toast(res.data.message);
+
+                  setTimeout(() => {
+                    setName("");
+                    setMessage("");
+                    setEmail("");
+                    setPhone("");
+                    setwebsite("");
+                  }, 3000);
                 })
-                  .then((res) => {
-                    toast(res.data.message);
 
-                    setTimeout(() => {
-                      setName("");
-                      setMessage("");
-                      setEmail("");
-                      setPhone("");
-                      setwebsite("");
-                    }, 3000);
-                  })
-
-                  .catch((err) => console.log(err));
-                
-              } else {
-                toast("Please Fill the Message field");
-              }
+                .catch((err) => console.log(err));
             } else {
-              toast("Please Fill the Website field");
+              toast("Please Fill the Message field");
             }
           } else {
-            toast("Please Fill the Phone Number field");
+            toast("Please Fill the Website field");
           }
         } else {
-          toast("Please Fill the email field");
+          toast("Please Fill the Phone Number field");
         }
       } else {
-        toast("Please Fill the Name field");
+        toast("Please Fill the email field");
       }
-   
+    } else {
+      toast("Please Fill the Name field");
+    }
   };
 
   return (
     <div>
+      <Helmet>
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://therapidhire.com/getaenquiry/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Get a Enquiry" />
+        <meta property="og:url" content="https://therapidhire.com/contactus" />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/ser3.png"
+        />
+        <meta
+          property="og:description"
+          content="Get in touch with us and discuss the needs and requirements of your development project.
+"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Get a Enquiry" />
+        <meta name="twitter:site" content="@therapidhire" />
+        <meta
+          name="twitter:description"
+          content="Get in touch with us and discuss the needs and requirements of your development project."
+        />
+        <meta
+          name="twitter:image"
+          content="https://therapidhire.com/images/ser3.png"
+        />
+
+        <meta name="twitter:image:alt" content="Getintouch" />
+      </Helmet>
       <div className="offwrap"></div>
 
       <div className="main-content">
@@ -119,7 +153,7 @@ function Contactus() {
           name="Get in touch"
           background="Contact"
           description="Get in touch with us and discuss the needs and requirements of
-         your Development project."
+         your development project."
         />
 
         <div className="rs-contact contact-style2 bg9 pt-95 pb-95 ">
