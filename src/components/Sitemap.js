@@ -26,7 +26,7 @@ function Sitemap() {
             <div className="row">
               <div className="col-lg-12">
                 <div className="sec-title3 text-center ">
-                  <h1>Site Map</h1>
+                  <h1>Sitemap</h1>
                   <div className="heading-border-line"></div>
                 </div>
               </div>
@@ -41,7 +41,7 @@ function Sitemap() {
                 <h4 ><a href="/">Home</a></h4> 
                </li>
              <li className="footer-title">
-                 <h4><a href="/aboutus">About us</a></h4>
+                 <h4><a href="/aboutus">About Us</a></h4>
                </li>
                
                <li className="footer-title">
@@ -63,13 +63,13 @@ function Sitemap() {
                <h4> <a href="/workwithus">Work with us</a></h4> 
                </li>
                <li  className="footer-title">
-               <h4> <a href="/termsofservices">Terms of Service</a></h4> 
+               <h4> <a href="/termsofservices">Terms of Services</a></h4> 
                </li>
                <li className="footer-title">
                <h4><a href="/login">Login</a></h4> 
                </li>
                <li className="footer-title">
-               <h4> <a href="/privacy">Privacy policy</a></h4> 
+               <h4> <a href="/privacy">Privacy Policy</a></h4> 
                </li>
              
              </ul>

@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 function Terms() {
   useEffect(() => {
-    document.title="Terms"
+    document.title="Terms of Services"
     }, )
  
   return (
@@ -118,18 +118,18 @@ function Terms() {
                     available (" Third Party Content"). By penetrating similar
                     Third-Party Content, you may be directed down from this
                     Website and to an external website not maintained by
-                    Therapidhire. You pierce and use such a third-party website
+                    TheRapidHire. You pierce and use such a third-party website
                     at your own threat and responsibility. In addition, the
                     Website may contain links to third-party websites. These
-                    linked spots aren't under Therapidhire's control, and
-                    Therapidhire isn't responsible for their contents or any
-                    links contained in a linked point. Therapidhire provides
+                    linked spots aren't under TheRapidHire's control, and
+                    TheRapidHire isn't responsible for their contents or any
+                    links contained in a linked point. TheRapidHire provides
                     links for your convenience only, and the addition of any
                     link doesn't indicate the countersign of the point by
-                    Therapidhire.Therapidhire makes no bond or representation
+                    TheRapidHire.TheRapidHire makes no bond or representation
                     regarding similar Third-Party Content and doesn't plump it.
                     The Website is hosted by a third party, and your use or
-                    access to the Website is governed by the terms and
+                    access to the website is governed by the terms and
                     conditions applicable to the use of a similar third-party,
                     in addition to these Terms of Use.
                   </p>
@@ -140,7 +140,7 @@ function Terms() {
                     All information and material on this website are handed" as
                     is," without any runner or unexpressed guarantees or
                     representations of any kind. To the fullest extent permitted
-                    in law, therapidhire expressly disclaims all runner,
+                    in law, TheRapidHire expressly disclaims all runner,
                     implied, statutory, or other guarantees or representations,
                     including without limitation, the inferred guarantees of
                     non-infringement, merchantability, or fitness for a
@@ -148,13 +148,13 @@ function Terms() {
                   </p>
                   <p>
                     While all of the documents and plates on this website are
-                    accurate and true, Therapidhire andor its separate mates
+                    accurate and true, TheRapidHire andor its separate mates
                     make no claims about the information contained in the
                     documents and affiliated plates on this website for any
                     purpose.
                   </p>
                   <p>
-                    Therapidhire doesn't guarantee or warranty that those files
+                  TheRapidHire doesn't guarantee or warranty that those files
                     available for downloading from this website (including,
                     without limitation, mobileslotcash.com) are free of
                     infection or viruses, worms, or other codes that manifest
@@ -169,7 +169,7 @@ function Terms() {
                   <h5>Counter indemnity & Limitation of Liability:acting us</h5>
                   <p>
                     You agree to compensate, defend, and hold inoffensive
-                    Therapidhire, its accessories, and cells from any claim,
+                    TheRapidHire, its accessories, and cells from any claim,
                     cost, expenditure, judgment, damages, or other loss arising
                     out of or in connection with your use of this Website in any
                     way.
@@ -179,12 +179,12 @@ function Terms() {
                     associated with using this website, its contents, or any
                     material obtained from it. Even if Therapidhire has been
                     informed of the possibility of such damages, under no
-                    circumstances shall Therapidhire be liable for any direct,
+                    circumstances shall TheRapidHire be liable for any direct,
                     indirect, incidental, special, punitive, or other damages of
                     any kind (including, without limitation, damages for loss of
                     business profits, business interruption, or loss of business
                     information), arising out of or in connection with your use
-                    or access to the Website (including, without limitation, the
+                    or access to the website (including, without limitation, the
                     Website's unavailability).
                   </p>
                 </div>
@@ -192,9 +192,9 @@ function Terms() {
                   <h5>Data Privacy</h5>
                   <p>
                     If you have any questions feel free to contact directly
-                    here: mail to Data privacy is important to Therapidhire.
-                    Therapidhire has a detailed Data Privacy Policy that is
-                    available on the link Privacy Notice. Therapidhire’s Data
+                    here: mail to Data privacy is important to TheRapidHire.
+                    TheRapidHire has a detailed Data Privacy Policy that is
+                    available on the link Privacy Notice. TheRapidHire Data
                     Privacy Policy describes how we collect, use and disclose
                     information that we may obtain through this Website or as a
                     part of our internal processes.

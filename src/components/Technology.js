@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 
 function Technology() {
   useEffect(() => {
-    document.title="Tchnology"
+    document.title="Technology"
     }, )
  
   return (

@@ -122,7 +122,7 @@ function Contactus() {
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Get a Enquiry" />
-        <meta property="og:url" content="https://therapidhire.com/contactus" />
+        <meta property="og:url" content="https://therapidhire.com/getaenquiry/" />
         <meta
           property="og:image"
           content="https://therapidhire.com/images/ser3.png"

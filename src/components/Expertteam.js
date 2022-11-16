@@ -40,7 +40,7 @@ function Expertteam() {
           <h4 className="person-name">
             <a href="/">Nitin Vishvakarma</a>
           </h4>
-          <span className="designation">WEB DEVELOPER</span>
+          <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
       </div>
     </div>,
@@ -49,7 +49,7 @@ function Expertteam() {
         <div className="team-wrap">
           <div className="image-inner">
             <a href="/">
-              <img src="images/team3.jpg" alt="Vikas_Choudhary" />
+              <img src="images/team3.jpeg" alt="Vikas_Choudhary" />
             </a>
           </div>
         </div>
@@ -66,13 +66,13 @@ function Expertteam() {
         <div className="team-wrap">
           <div className="image-inner">
             <a href="/">
-              <img src="images/team4.jpg" alt="Narendra_SinghRajput" />
+              <img src="images/team4.jpeg" alt="Sumut__Tiwari" />
             </a>
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Narendra Rajput</a>
+            <a href="/">Sumit Tiwari</a>
           </h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
@@ -100,13 +100,13 @@ function Expertteam() {
         <div className="team-wrap">
           <div className="image-inner">
             <a href="/">
-              <img src="images/team6.jpg" alt="Abhay_Mourya" />
+              <img src="images/team6.jpeg" alt="raghav dubey" />
             </a>
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Abhay Mourya</a>
+            <a href="/">Raghav Dubey</a>
           </h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
@@ -117,7 +117,7 @@ function Expertteam() {
         <div className="team-wrap">
           <div className="image-inner">
             <a href="/">
-              <img src="images/team5.jpg" alt="" />
+              <img src="images/team5.jpeg" alt="" />
             </a>
           </div>
         </div>
@@ -125,7 +125,24 @@ function Expertteam() {
           <h4 className="person-name">
             <a href="/">Vipin Joshi</a>
           </h4>
-          <span className="designation">HUMAN RESOURCE</span>
+          <span className="designation">HR MANAGER</span>
+        </div>
+      </div>
+    </div>,
+      <div className="itemteam" data-value="8">
+      <div className="team-item-wrap">
+        <div className="team-wrap">
+          <div className="image-inner">
+            <a href="/">
+              <img src="images/team8.jpeg" alt="Navin_Kukreja" />
+            </a>
+          </div>
+        </div>
+        <div className="team-content text-center">
+          <h4 className="person-name">
+            <a href="/">Navin Kukreja</a>
+          </h4>
+          <span className="designation">WEB DEVELOPER</span>
         </div>
       </div>
     </div>,

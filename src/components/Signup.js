@@ -89,7 +89,7 @@ export default function Signup() {
           setErrors({
             ...errors,
             password:
-              "Enter a min 8 character with at least one digit and one Special Characters",
+              "Enter a min 8 character with at least one digit and one special characters",
           });
         } else {
           let newObj = omit(errors, "password");
@@ -169,25 +169,25 @@ export default function Signup() {
 
                     .catch((err) => console.log(err));
                 } else {
-                  toast("Please Fill the Address field ");
+                  toast("Please fill the address field ");
                 }
               } else {
-                toast("Please Fill the Phone number field ");
+                toast("Please fill the Phone number field ");
               }
             } else {
-              toast("Please Fill the Confirm password field ");
+              toast("Please fill the confirm password field ");
             }
           } else {
-            toast("Please Fill the Occupation field ");
+            toast("Please fill the occupation field ");
           }
         } else {
-          toast("Please Fill the password field ");
+          toast("Please fill the password field ");
         }
       } else {
-        toast("Please Fill the Email field ");
+        toast("Please fill the Email field ");
       }
     } else {
-      toast("Please Fill the Name field ");
+      toast("Please fill the name field ");
     }
   };
 
@@ -415,7 +415,7 @@ export default function Signup() {
                           <p>
                             <strong>
                               Already have an account ?{" "}
-                              <a href="/Login">Log in</a>
+                              <a href="/Login">Log In</a>
                             </strong>
                           </p>
                         </div>

@@ -15,7 +15,7 @@ function Blogdetail() {
 
   const [users, setUsers] = useState("");
   const [data, setdata] = useState([]);
-  const [comments, setComments] = useState([true]);
+  const [comments, setComments] = useState([]);
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
@@ -60,7 +60,7 @@ function Blogdetail() {
   });
 
   const Navigate = useNavigate();
-  let blog_id = id;
+  let blog_id = userId;
   var comment_status = "pending";
 
   const validate = (event, name, value) => {
@@ -162,10 +162,11 @@ function Blogdetail() {
   useEffect(() => {
     window.scroll(0, 0);
     axios({
-      url: baseURL + "comment/getblogcomment/" + id,
+      url: baseURL + "comment/getblogcomment/" + userId,
       method: "get",
     })
       .then((result) => {
+        console.log(result)
         setComments(result.data.message.reverse());
         if (result.data.message.length > 0) {
           setCommentFlag(1);
@@ -180,41 +181,52 @@ function Blogdetail() {
     allComment === 0 ? setAllComment(1) : setAllComment(0);
     setShow(!show);
   };
+  function getOne(id){
+    axios
+       .get('https://trhblogsnew2.herokuapp.com/blog/getOne/' + id)
+       .then((response) => {
+           setUsers(response.data.message)
+       })
+       .catch((error) => {
+           console.log(error);
+       });
+}
+ 
  
   const newPage = (id, title) => {
-    let array = title.split("");
+    const array = title.split("");
     for (let i = 0; i < array.length; i++) {
-      if (array[i] === " ") {
-        array[i] = "-";
-      }
+        if (array[i] == " ") {
+            array[i] = "-";
+        }
     }
-    let arr = array.join("");
-    Navigate("/" + arr, { state: { userId: id } });
-    window.location.reload();
-  };
+    Navigate("/" + array.join(""), { state: { userId: id } }) 
+    getOne(id);
+}
 
   return (
     <div>
       {users ? (
         <Helmet>
-          <title>{users.title}</title>
+          <title>{users?.title}</title>
 
-          <meta name="description" content={users.metaDesc} />
-          <meta name="keywords" content={users.keywords} />
+          <meta name="description" content={users?.metaDesc} />
+          <meta name="keywords" content={users?.keywords} />
           <meta
             name="robots"
             content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
           />
+            <link rel="canonical" href="https://therapidhire.com/:type/" />
           <meta property="og:type" content="article" />
-          <meta property="og:title" content="Is Blockchain Secure your Data?" />
+          <meta property="og:title" content={users?.title} />
 
           <meta property="og:url" content={liveUrl} />
           <meta property="og:image" content={imageurl} />
           <meta
             property="og:description"
-            content="The security of non-public data, especially which is stored online, is vital and also somebody's right for many years, it’s been in danger and constantly deteriorated. Blockchain technology provides a chic solution to the present problem"
+            content={users?.description}
           />
-          <meta property="article:author" content="Muskan Sharma" />
+          <meta property="article:author" content={users?.author} />
           <meta
             property="article:published_time"
             content="2022-09-29T12:39:00.000+05:30"
@@ -241,7 +253,7 @@ function Blogdetail() {
               </h1>
               <span className="sub-text">
                 Most creative ideas in blog post of Cloud services , Designing ,
-                Development..{" "}
+                Development.{" "}
               </span>
             </div>
           </div>
@@ -286,7 +298,10 @@ function Blogdetail() {
                                   )}
                                 </>
                               ))}
-                            
+                            <div className="article-image">
+                                <img src={val.contentImages}  />
+                              </div>
+ 
                             </ul>
                           </div>
                         ))}

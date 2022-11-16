@@ -30,7 +30,7 @@ function Services() {
         <meta property="og:type" content="website" />       
         <meta
           property="og:title"
-          content="TheRapidHire - Software Development|IT outsourcing company"
+          content="Services - Software Development|IT outsourcing company"
         />
         <meta property="og:url" content="https://therapidhire.com/services" />
         <meta

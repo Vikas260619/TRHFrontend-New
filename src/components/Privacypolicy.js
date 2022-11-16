@@ -90,10 +90,10 @@ function Privacypolicy() {
             <div className="row">
               <div className="col-lg-12">
                 <div className="term12">
-                  <h5>What Occurs to the Personal Information We Gather?</h5>
+                  <h5>What occurs to the personal information we gather?</h5>
                   <p>
                     You will be asked to enter personal information in certain
-                    fields on this Website in order to use our Services. We only
+                    fields on this Website in order to use our services. We only
                     collect personal data for the purposes stated at the time of
                     collection or for the purposes listed below. Our
                     applications may include, but are not limited to, the
@@ -103,7 +103,7 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5> To carry out transactions </h5>
                   <p>
-                    THERAPIDHIRE website collects and uses personal data such as
+                    TheRapidHire website collects and uses personal data such as
                     your name, physical address, phone number, email address,
                     and company/institution to interact with you, including
                     contacting you about your transactions with the Website.
@@ -121,13 +121,13 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5>To provide assistance or other services.</h5>
                   <p>
-                    THERAPIDHIRE may use your personal information to provide
+                  TheRapidHire may use your personal information to provide
                     you with support or other services you have ordered or
-                    requested. THERAPIDHIRE website may also use your personal
+                    requested. TheRapidHire website may also use your personal
                     information to respond directly to your information
                     requests, such as newsletter subscriptions, webinar
                     registrations, or other specific requests, or to pass your
-                    contact information to the Website. THERAPIDHIRE website
+                    contact information to the Website. TheRapidHire website
                     distributor or reseller for additional follow-up on your
                     interests.
                   </p>
@@ -138,7 +138,7 @@ function Privacypolicy() {
                     respond to your inquiries.{" "}
                   </h5>
                   <p>
-                    THERAPIDHIRE's website may use your personal information to
+                  TheRapidHire's website may use your personal information to
                     send you notifications about new product releases and
                     service developments.
                   </p>
@@ -160,14 +160,14 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5>To Administor products.</h5>
                   <p>
-                    If you purchase products from THERAPIDHIRE, we may contact
+                    If you purchase products from TheRapidHire, we may contact
                     you to confirm certain information about your order (for
                     example, that you did not experience problems in the
                     download process). This information may also be used to
                     confirm compliance with licensing and other terms of use,
                     and it may be shared with your company/institution. To
                     select content, improve quality, and make the websites
-                    easier to use. THERAPIDHIRE website may use your personal
+                    easier to use. TheRapidHire website may use your personal
                     data, including information gathered as a result of site
                     navigation and electronic protocols and cookies (including
                     third-party cookies), to assist in the creation and
@@ -197,14 +197,14 @@ function Privacypolicy() {
                 </div>
                 <div className="term12">
                   <h5>
-                    To evaluate the use of THERAPIDHIRE's website products and
+                    To evaluate the use of TheRapidHire's website products and
                     services.{" "}
                   </h5>
                   <p>
-                    THERAPIDHIRE website may track your use of THERAPIDHIRE
+                  TheRapidHire website may track your use of TheRapidHire
                     website products and services in order to determine your
                     level of usage, and those usage statistics may be shared
-                    with THERAPIDHIRE website's content licensors and your
+                    with TheRapidHire website's content licensors and your
                     company/institution.
                   </p>
                 </div>
@@ -212,15 +212,15 @@ function Privacypolicy() {
                   <h5>To communicate with you about events. </h5>
                   <p>
                     We may contact you regarding events hosted or co-sponsored
-                    by the THERAPIDHIRE website or one of our business partners.
+                    by the TheRapidHire website or one of our business partners.
                     This may include information about the event's content,
                     event logistics, payment, updates, and other event-related
-                    information. Other than or in addition to the THERAPIDHIRE
+                    information. Other than or in addition to the TheRapidHire
                     website, information you provide when registering for or
                     participating in a conference managed or co-sponsored by
                     third parties may be shared with those third parties, and
                     the treatment of such information is subject to the privacy
-                    policies of those third parties. THERAPIDHIRE and its
+                    policies of those third parties. TheRapidHire and its
                     conference co-sponsors may contact you about the event,
                     subsequent iterations of the event, and related events after
                     the event.
@@ -228,11 +228,11 @@ function Privacypolicy() {
                 </div>
                 <div className="term12">
                   <h5>
-                    To keep you up to date on the latest THERAPIDHIRE WEBSITE
+                    To keep you up to date on the latest TheRapidHire website
                     benefits, programmes, and opportunities.{" "}
                   </h5>
                   <p>
-                    THERAPIDHIRE website may contact you about THERAPIDHIRE
+                  TheRapidHire website may contact you about TheRapidHire
                     website benefits, programmes, and opportunities that are
                     available to you.
                   </p>
@@ -240,34 +240,34 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5>To collaborate with third parties </h5>
                   <p>
-                    THERAPIDHIRE website may share your personal data with third
+                  TheRapidHire website may share your personal data with third
                     parties in connection with services performed for or by the
                     THERAPIDHIRE website. These third parties are prohibited
                     from using this data for any purpose other than providing
-                    services for the THERAPIDHIRE website or collaborating with
-                    THERAPIDHIRE website (for example, hosting a THERAPIDHIRE
+                    services for the TheRapidHire website or collaborating with
+                    THERAPIDHIRE website (for example, hosting a TheRapidHire
                     website database or engaging in data processing on
-                    THERAPIDHIRE website's behalf, or mailing you information
+                    TheRapidHire website's behalf, or mailing you information
                     that you requested).
                   </p>
                 </div>
                 <div className="term12">
                   <h5>
-                    To protect THERAPIDHIRE website's content and services.{" "}
+                    To protect TheRapidHire website's content and services.{" "}
                   </h5>
                   <p>
                     Your personal information may be used to prevent potentially
                     illegal activities and to enforce our terms and conditions.
                     We also employ a number of technological systems to detect
                     and respond to unusual activity, as well as to screen
-                    THERAPIDHIRE website may share your personal data with third
+                    TheRapidHire website may share your personal data with third
                     parties in connection with services performed for or by the
-                    THERAPIDHIRE website. These third parties are prohibited
+                    TheRapidHire website. These third parties are prohibited
                     from using this data for any purpose other than providing
-                    services for the THERAPIDHIRE website or collaborating with
-                    THERAPIDHIRE website (for example, hosting a THERAPIDHIRE
+                    services for the TheRapidHire website or collaborating with
+                    TheRapidHire website (for example, hosting a TheRapidHire
                     website database or engaging in data processing on
-                    THERAPIDHIRE website's behalf, or mailing you information
+                    TheRapidHire website's behalf, or mailing you information
                     that you requested).
                   </p>
                   <p>
@@ -303,13 +303,13 @@ function Privacypolicy() {
                 </div>
                 <div className="term12">
                   <h5>
-                    To protect THERAPIDHIRE website information assets as well
+                    To protect TheRapidHire website information assets as well
                     as your personal information.{" "}
                   </h5>
                   <p>
-                    THERAPIDHIRE website Information Security Program safeguards
+                  TheRapidHire website Information Security Program safeguards
                     the confidentiality, integrity, and availability of
-                    THERAPIDHIRE website information assets by implementing risk
+                    TheRapidHire website information assets by implementing risk
                     management policies, standards, guidelines, and procedures
                     to meet security objectives while supporting business and
                     operational objectives.
@@ -321,12 +321,12 @@ function Privacypolicy() {
                     We may buy, merge, or partner with other companies as we
                     grow our business. User information may be among the
                     transferred assets in such transactions (or in the
-                    contemplation of such transactions). If THERAPIDHIRE website
+                    contemplation of such transactions). If TheRapidHire website
                     assets are sold or transferred to a third party, customer
                     personal data (including your email address) is likely to be
                     one of the transferred business assets. If such transfer is
                     subject to additional mandatory restrictions imposed by
-                    Websitelicable laws, THERAPIDHIRE will adhere to such
+                    websitelicable laws, TheRapidHire will adhere to such
                     restrictions.
                   </p>
                   <p>
@@ -341,12 +341,12 @@ function Privacypolicy() {
                     by sending an email to info@therapidhire.com.
                   </p>
                   <p>
-                    When you browse the Website and request pages from our
+                    When you browse the website and request pages from our
                     servers, we do not collect personal data unless you
                     voluntarily and knowingly provide such information to us.
                     This means that we will not know your name, email address,
                     or any other personal data simply because you browse the
-                    Website unless you access the Website through a link in an
+                    website unless you access the Website through a link in an
                     email we sent to you, have created a profile, and either log
                     in to your account or choose to be remembered via your
                     cookie or web-enabled mobile device.
@@ -375,7 +375,7 @@ function Privacypolicy() {
                   </p>
                 </div>
                 <div className="term12">
-                  <h5> Who Can Use the Information We Collect and How? </h5>
+                  <h5> Who can use the information we collect and how? </h5>
                   <p>
                     We may disclose your personal information to third We
                     collect HTTP request header information so that our website
@@ -410,7 +410,7 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5>
                     {" "}
-                    What Do We Do with the Personal Information We Collect?{" "}
+                    What do we do with the personal information we collect?{" "}
                   </h5>
                   <h5>Personal Data Security</h5>
                   <p>
@@ -436,9 +436,9 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5>Personal Data Storage and Transfer </h5>
                   <p>
-                    THERAPIDHIRE website may store and process personal data
+                  TheRapidHire website may store and process personal data
                     collected in your region, the United States, or any other
-                    country where THERAPIDHIRE website, its affiliates, or
+                    country where TheRapidHire website, its affiliates, or
                     contractors maintain facilities, including outside the
                     European Union. We take steps to ensure that the data we
                     collect under this Privacy Policy is processed in accordance
@@ -446,11 +446,11 @@ function Privacypolicy() {
                     regardless of where the data is stored.
                   </p>
                   <p>
-                    THERAPIDHIRE WEBSITE also works with third parties around
+                  TheRapidHire website also works with third parties around
                     the world, such as cloud hosting services and suppliers, to
                     meet the needs of our business, workforce, and customers. In
                     some cases, we may need to disclose or transfer your
-                    personal data within THERAPIDHIRE or to third parties in
+                    personal data within TheRapidHire or to third parties in
                     countries other than your own. We take steps to ensure that
                     personal data is processed, secured, and transferred in
                     accordance with Websitelicable law when we do so.
@@ -463,7 +463,7 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5> Retention of Personal Data </h5>
                   <p>
-                    THERAPIDHIRE website keeps personal data for as long as it
+                  TheRapidHire website keeps personal data for as long as it
                     is necessary to provide the services and complete the
                     transactions you have requested, or for other business
                     purposes such as complying with our legal obligations,
@@ -476,7 +476,7 @@ function Privacypolicy() {
                   </p>
                 </div>
                 <div className="term12">
-                  <h5>What Are Your Rights Regarding Your Personal Data? </h5>
+                  <h5>What are your rights regarding your personal data? </h5>
                   <p>
                     We respect your right to control and access your personal
                     data. You have options regarding the data we collect. You
@@ -510,7 +510,7 @@ function Privacypolicy() {
                     be denied if your personal data is required to provide you
                     with the products or services you requested, such as
                     delivering a product or sending an invoice to your email
-                    address, or if the Websitelicable law requires it.
+                    address, or if the websitelicable law requires it.
                   </p>
                 </div>
                 <div className="term12">
@@ -525,19 +525,19 @@ function Privacypolicy() {
                     exemptions, such as identity verification procedures.
                     Marketing preferences If you have handed us your contact
                     information, we may communicate to you via dispatch, postal
-                    correspondence, or telephone about THERAPIDHIRE website
+                    correspondence, or telephone about TheRapidHire website
                     products, services, and events that may be of interest to
                     you, including newsletters, subject to any Website
                     applicable Spam Act or analogous regulation.
                   </p>
                   <p>
-                    E-mail dispatches from THERAPIDHIRE will generally include
+                    E-mail dispatches from TheRapidHire will generally include
                     an unsubscribe link that allows you to conclude- out of
                     entering unborn emails or change your contact preferences.
                     Dispatch dispatches may also contain a link that allows you
                     to directly modernize and manage your marketing preferences.
                     You can also change your contact preferences if you have an
-                    online account with THERAPIDHIRE. Please keep in mind that
+                    online account with TheRapidHire. Please keep in mind that
                     indeed if you conclude out of entering marketing emails, we
                     may still shoot you Service- related information to your
                     accounts. still, you have certain fresh sequestration rights
@@ -602,21 +602,21 @@ function Privacypolicy() {
                     our Services, features, and conditioning work and are used.
                     We'll also partake this information in an added-up or
                     anonymized form( i.e., no individual person can be linked)
-                    on THERAPIDHIRE's website.
+                    on TheRapidHire's website.
                   </p>
                   <p>
                     You can also unsubscribe from our marketing emails at any
                     time by emailing us atinfo@therapidhire.com or transferring
-                    us a card addressed to" conclude- OUT THERAPIDHIRE." 51,
+                    us a card addressed to" conclude- OUT TheRapidHire." 51,
                     Electronic Complex, Pardesipura, Indore, Madhya Pradesh
-                    452007 India THERAPIDHIRE 1309 Coffeen Avenue STE 1200,
+                    452007 India TheRapidHire 1309 Coffeen Avenue STE 1200,
                     Sheridan, Wyoming 82801 USA
                   </p>
                 </div>
                 <div className="term12">
                   <h5>
                     {" "}
-                    How Do You Update and Correct Your particular Information?{" "}
+                    How do you update and correct your particular information?{" "}
                   </h5>
                   <p>
                     We strive to keep all particular data in our possession
@@ -627,29 +627,29 @@ function Privacypolicy() {
                     on train for you is incorrect, deficient, or out of date.
                     You have the right to change or correct your particular
                     information at any time. Simply shoot an dispatch
-                    toinfo@therapidhire.com with the subject" Correction" with
+                    to info@therapidhire.com with the subject" Correction" with
                     your old information and corrections.
                   </p>
                 </div>
                 <div className="term12">
                   <h5>
                     {" "}
-                    What's Our sequestration Policy If You Are an Underage
-                    Child?{" "}
+                    What's our sequestration Policy if you are an underage
+                    child?{" "}
                   </h5>
                   <p>
                     We honor the significance of guarding the sequestration of
                     all individualities, particularly the veritably youthful.
                     Our services are intended for people over the age of 18 in
-                    the United States. Our Website and Services aren't intended
+                    the United States. Our website and services aren't intended
                     for children, and you aren't permitted to use them if you're
                     under the age of 13. You must also be of legal age in your
                     country to assent to the processing of your particular data(
                     in some countries we may allow your parent or guardian to do
-                    so on your behalf). To use the Website Forums, you must be
+                    so on your behalf). To use the website Forums, you must be
                     at least 16 times old. Subscribing to our Services is only
                     available to grown-ups who are 18 times of age or age, or as
-                    else defined by law. When You Link to a Third-Party Web
+                    else defined by law. When You Link to a Third-Party web
                     point still, you'll be subject to the sequestration programs
                     of that website, If you click on a link and visit another
                     website. We encourage you to read any website's posted
@@ -658,25 +658,25 @@ function Privacypolicy() {
                   </p>
                 </div>
                 <div className="term12">
-                  <h5>When We Update Our sequestration Policy? </h5>
+                  <h5>When we update our sequestration policy? </h5>
                   <p>
                     Our sequestration Policy may be streamlined from time to
                     time. Your continued use of our Services indicates your
                     acceptance of any minor changes to this sequestration
                     policy. However, we will post a notice in a prominent
                     position on our website, If we make significant changes to
-                    our sequestration Policy. We encourage you to review our
-                    Website and this sequestration Policy on a regular basis for
+                    our sequestration policy. We encourage you to review our
+                    Website and this sequestration policy on a regular basis for
                     any changes.
                   </p>
                   <p>
                     The GDPR protects you from the risk of a potentially harmful
                     decision being made without human intervention.
                   </p>
-                  <p>THERAPIDHIRE WEBSITE AI Google Action</p>
+                  <p>TheRapidHire website AI Google Action</p>
                   <p>
-                    THERAPIDHIRE WEBSITE ("us", "we", or "our") operates the
-                    Google Assistant Website "THERAPIDHIRE WEBSITE AI" (the
+                  TheRapidHire website ("us", "we", or "our") operates the
+                    Google Assistant Website "TheRapidHire website AI" (the
                     "Service").
                   </p>
                   <p>
@@ -747,13 +747,13 @@ function Privacypolicy() {
                     Do Not Track ("DNT") is not supported by us. Do Not Track is
                     a web browser preference that lets websites know you don't
                     want to be tracked. You can enable or disable Do Not Track
-                    by going to your web browser's Preferences or Settings page.
+                    by going to your web browser's preferences or settings page.
                   </p>
                 </div>
                 <div className="term12">
                   <h5>Security </h5>
                   <p>
-                    We care about the security of your Personal Information, and
+                    We care about the security of your personal information, and
                     we work hard to implement and maintain reasonable,
                     commercially acceptable security procedures and practises
                     that are appropriate to the nature of the information we
@@ -768,7 +768,7 @@ function Privacypolicy() {
                   </p>
                 </div>
                 <div className="term12">
-                  <h5>What If You Have Concerns? </h5>
+                  <h5>What if you have concerns? </h5>
                   <p>
                   If you have any questions or concerns about this statement, please contact us at info@therapidhire.com.
                   </p>

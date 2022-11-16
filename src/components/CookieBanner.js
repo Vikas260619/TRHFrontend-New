@@ -19,7 +19,7 @@ function CookieBanner() {
             cookies and how you can change your cookie settings, please refer to
             our{" "}
             <a className="cookiepvy" href="/privacy">
-              Privacy policy
+              Privacy Policy
             </a>{" "}
             Statement.
           </p>

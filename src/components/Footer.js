@@ -42,7 +42,7 @@ function Footer() {
                     <a href="/Pricing">Pricing</a>
                   </li> */}
                   <li>
-                    <a href="/sitemap">Site Map</a>
+                    <a href="/sitemap">Sitemap</a>
                   </li>
                 </ul>
               </div>
@@ -50,10 +50,10 @@ function Footer() {
                 <h3 className="footer-title">General Links</h3>
                 <ul className="site-map">
                   <li>
-                    <a href="termsofservices">Terms of Service</a>
+                    <a href="termsofservices">Terms of Services</a>
                   </li>
                   <li>
-                    <a href="/privacy">Privacy policy</a>
+                    <a href="/privacy">Privacy Policy</a>
                   </li>
                   <li>
                     <a href="/faq">FAQ</a>
@@ -96,7 +96,7 @@ function Footer() {
                 <p className="widget-desc white-color">
                   Stay up to update with our latest news and products.
                 </p>
-                <br />
+                <br/>
                 <div class="contentsubs">
                   <form class="subscription">
                     <input
@@ -104,7 +104,7 @@ function Footer() {
                       type="email"
                       placeholder="Email Address"
                     />
-                    <button class="submit-email" type="submit">
+                    <button class="submit-email">
                       <span class="before-submit">Subscribe</span>
                     </button>
                   </form>

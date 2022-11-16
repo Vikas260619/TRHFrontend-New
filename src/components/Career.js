@@ -32,7 +32,7 @@ function Career() {
         <meta name="twitter:site" content="@therapidhire" />
         <meta
           name="twitter:description"
-          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+          content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment."
         />
         <meta
           name="twitter:image"

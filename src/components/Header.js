@@ -108,7 +108,7 @@ function Header() {
 
                 <li>
                   <a className="dropdown-item" href="/workwithus">
-                    Work With Us
+                    Work with Us
                   </a>
                 </li>
               </ul>

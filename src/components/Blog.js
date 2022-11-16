@@ -12,7 +12,7 @@ function Blog() {
   const Navigate = useNavigate();
   useEffect(() => {
     axios({
-      url: baseURL + "blog/getall",
+      url: baseURL + "blog/getAll",
       method: "get",
     })
       .then((res) => {
@@ -31,18 +31,27 @@ function Blog() {
 
     setFilterData(EL);
   };
-
+  function getOne(id){
+    axios
+       .get('https://trhblogsnew.herokuapp.com/blog/getOne/' + id)
+       .then((response) => {
+           setUsers(response.data.message)
+       })
+       .catch((error) => {
+           console.log(error);
+       });
+}
+ 
   const newPage1 = (id, title) => {
-    let array = title.split("");
+    const array = title.split("");
     for (let i = 0; i < array.length; i++) {
-      if (array[i] === " ") {
-        array[i] = "-";
-      } 
+        if (array[i] == " ") {
+            array[i] = "-";
+        }
     }
-    let arr = array.join("");
-    Navigate("/" +arr ,{state: {userId: id }});
-  };
-
+    Navigate("/" + array.join(""), { state: { userId: id } }) 
+    getOne(id);
+}
   console.log();
   useEffect(() => {
     document.title = "Blog";
@@ -51,6 +60,8 @@ function Blog() {
   return (
     <div>
       <Helmet>
+        <meta name="description" content="TRH Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance." />
+          <meta name="keywords" content="blockchain, IoT, Internet of things, java, cloud computing, technology, business, software development, mobile application, android, ios, business, marketing, digital marketing, industry insights, cryptocurrency, bitcoin , NFT, fintech , AI, ML, DL, deep learning, python, programming" />
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
@@ -80,7 +91,7 @@ function Blog() {
               </h1>
               <span className="sub-text">
                 Most creative ideas in blog post of Cloud services , Designing ,
-                Development..{" "}
+                Development.{" "}
               </span>
             </div>
           </div>

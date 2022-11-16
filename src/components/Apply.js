@@ -105,22 +105,22 @@ function Apply() {
                   })
                   .catch((err) => console.log(err));
               } else {
-                toast("Please Fill the Technology field");
+                toast("Please fill the technology field");
               }
             } else {
-              toast("Please Fill the Resume field");
+              toast("Please fill the resume field");
             }
           } else {
-            toast("Please Fill the Apply Postion field");
+            toast("Please fill the apply position field");
           }
         } else {
-          toast("Please Fill the Phone number field");
+          toast("Please fill the Phone number field");
         }
       } else {
-        toast("Please Fill the email field");
+        toast("Please fill the Email field");
       }
     } else {
-      toast("Please Fill the Name field");
+      toast("Please fill the Name field");
     }
   };
 
@@ -171,7 +171,7 @@ function Apply() {
                       Experience with Test and defect management tools. An
                       innovator, always suggesting newer ways of improving
                       Productivity. Mentor and train team members. Identify and
-                      escalate Risks on time and suggest mitigation measures.
+                      escalate risks on time and suggest mitigation measures.
                     </p>
                   </div>
                 </div>

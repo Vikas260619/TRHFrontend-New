@@ -65,9 +65,9 @@ const TechnoData = [
    {
       imgsrc: 'images/techback.jpg',
       Numb: '04',
-      title: 'MERN STACK',
+      title: 'MEAN STACK',
       description: ' MEAN stack is a comprehensive set of JavaScript-based technologies and frameworks used to build full web and solution stacks. Our website development consultants were among the first to use the MEAN stack and scripting technologies. The team has extensive technology experience. ',
-      icon_imgsrc: 'images/mern.png'
+      icon_imgsrc: 'images/mean.png'
    },
    {
       imgsrc: 'images/techback.jpg',
@@ -93,9 +93,9 @@ const TechnoData = [
 
 const Teamdata=[
    {
-      imgsrc:'images/team5.jpg',
+      imgsrc:'images/team5.jpeg',
       title:'Vipin Joshi',
-      description:'HUMAN RESOURCE'
+      description:'HR MANAGER'
    },
    {
       imgsrc:'images/team1.jpg',
@@ -103,23 +103,23 @@ const Teamdata=[
       description:'BUSINESS DEVELOPMENT EXECUTIVE'
    },
    {
-      imgsrc:'images/team3.jpg',
+      imgsrc:'images/team3.jpeg',
       title:'Vikas Choudhary',
       description:'WEB DEVELOPER'
    },
    {
       imgsrc:'images/team2.jpg',
       title:'Nitin Vishvakarma',
-      description:'WEB DEVELOPER'
-   },
-   {
-      imgsrc:'images/team4.jpg',
-      title:'Narendra Singh Rajput',
       description:'SOFTWARE DEVELOPER'
    },
    {
-      imgsrc:'images/team6.jpg',
-      title:'Abhay Mourya',
+      imgsrc:'images/team4.jpeg',
+      title:'Sumit Tiwari',
+      description:'SOFTWARE DEVELOPER'
+   },
+   {
+      imgsrc:'images/team6.jpeg',
+      title:'Raghav Dubey',
       description:'SOFTWARE DEVELOPER'
    },
    {
@@ -129,9 +129,9 @@ const Teamdata=[
    },
    
    {
-      imgsrc:'images/team8.jpg',
-      title:'Govind Somani',
-      description:'SOFTWARE DEVELOPER'
+      imgsrc:'images/team8.jpeg',
+      title:'Navin Kukreja',
+      description:'WEB DEVELOPER'
    }
 ]
 

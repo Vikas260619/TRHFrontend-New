@@ -84,8 +84,8 @@ function Home() {
             <a href="/Services">AWS Services</a>
           </h3>
           <div className="desc">
-            Build, Deploy, and Manage Websites, Apps or Processes On AWS Secure,
-            Reliable Network.
+            Build, Deploy, and Manage websites, Apps or Processes on AWS secure,
+            reliable network.
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@ function Home() {
           </h3>
           <div className="desc">
             Transform your business and manage risk by partnering with
-            Therapidhire in cybersecurity consulting and managed security
+            TheRapidHire in Cyber security consulting and managed security
             services.
           </div>
         </div>
@@ -241,13 +241,13 @@ function Home() {
                 <div className="heading-border-line"></div>
               </div>
               <p className="pt-50 text-center para21">
-                Therapidhire is a software development and IT outsourcing
-                company based in India. Therapidhire takes an energetic,
+                TheRapidHire is a software development and IT outsourcing
+                company based in India. TheRapidHire takes an energetic,
                 collaborative strategy to create and customize solutions across
                 the digital value chain. We aim to create a network of
                 businesses that help each other to acquire more customers.
                 Giving a better idea of making your online presence better,
-                Therapidhire company helps you with quality service at minimal
+                TheRapidHire company helps you with quality service at minimal
                 prices and complimentary with great satisfaction.
               </p>
               <br />

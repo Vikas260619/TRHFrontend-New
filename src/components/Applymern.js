@@ -107,22 +107,22 @@ function Applymern() {
                   })
                   .catch((err) => console.log(err));
               } else {
-                toast("Please Fill the Technology field");
+                toast("Please Fill the technology field");
               }
             } else {
-              toast("Please Fill the Resume field");
+              toast("Please Fill the resume field");
             }
           } else {
-            toast("Please Fill the Apply Postion field");
+            toast("Please Fill the apply Position field");
           }
         } else {
-          toast("Please Fill the Phone number field");
+          toast("Please fill the Phone number field");
         }
       } else {
-        toast("Please Fill the email field");
+        toast("Please fill the Email field");
       }
     } else {
-      toast("Please Fill the Name field");
+      toast("Please fill the Name field");
     }                                                                               
   };
 
@@ -150,7 +150,7 @@ function Applymern() {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="sec-title3 text-center ">
-                    <h2 className="title ">Apply For MERN Developer</h2>
+                    <h2 className="title ">Apply for MERN Developer</h2>
                     <div className="heading-border-line"></div>
                   </div>
                 </div>
