@@ -7,7 +7,8 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import validator from "validator";
-
+import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 export default function Login() {
   const Navigate = useNavigate();
   const [errors, setErrors] = useState({});
@@ -16,6 +17,9 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [passwordType, setPasswordType] = useState("password");
+  useEffect(() => {
+    document.title = "Login";
+  });
   const togglePassword = () => {
     if (passwordType === "password") {
       setPasswordType("text");
@@ -40,21 +44,22 @@ export default function Login() {
           setErrors(newObj);
         }
         break;
-        case "password":
-          if (
-            !new RegExp(
-              /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/
-            ).test(value)
-          ) {
-            setErrors({
-              ...errors,
-              password: "Enter a min 8 character with at least one digit and one Special Characters",
-            });
-          } else {
-            let newObj = omit(errors, "password");
-            setErrors(newObj);
-          }
-          break;
+      case "password":
+        if (
+          !new RegExp(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/
+          ).test(value)
+        ) {
+          setErrors({
+            ...errors,
+            password:
+              "Enter a min 8 character with at least one digit and one Special Characters",
+          });
+        } else {
+          let newObj = omit(errors, "password");
+          setErrors(newObj);
+        }
+        break;
       default:
         break;
     }
@@ -114,7 +119,6 @@ export default function Login() {
       toast("Please Fill the email field");
     }
   };
- 
 
   const Forgethandle = (e) => {
     e.preventDefault();
@@ -138,6 +142,17 @@ export default function Login() {
 
   return (
     <div>
+      <Helmet>
+      <meta property="og:type" content="website"/>
+<meta property="og:title" content="Join us "/>
+<meta property="og:url" content="https://therapidhire.com/login"/>
+<meta property="og:image" content="https://therapidhire.com/images/ser6.png"/>
+<meta property="og:description" content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all times."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content=""/>
+
+
+      </Helmet>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
@@ -206,7 +221,6 @@ export default function Login() {
 
                         <div className="row">
                           <div className="col-lg-12 col-xs-12 ">
-
                             <Input
                               id="password"
                               name="password"
@@ -229,15 +243,15 @@ export default function Login() {
                             </span>
                           </div>
                           {errors.password && (
-                              <p
-                                style={{
-                                  color: errors.password ? "red" : "",
-                                  marginTop: "-4vh",
-                                }}
-                              >
-                                {errors.password}
-                              </p>
-                            )}
+                            <p
+                              style={{
+                                color: errors.password ? "red" : "",
+                                marginTop: "-4vh",
+                              }}
+                            >
+                              {errors.password}
+                            </p>
+                          )}
                         </div>
                         <div className="forgot">
                           <a href="" onClick={Forgethandle}>

@@ -14,7 +14,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/client1.png" alt="Counter" />
+            <img src="images/Mistminds.png" alt="Mistminds" />
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/client2.png" alt="Counter" />
+            <img src="images/trootech.png" alt="trootech" />
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/client3.png" alt="Counter" />
+            <img src="images/bynebits.png" alt="bynebits" />
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/client4.png" alt="Counter" />
+            <img src="images/coditas.png" alt="coditas" />
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/client5.png" alt="Counter" />
+            <img src="images/cloud9.png" alt="cloud9" />
           </div>
         </div>
       </div>

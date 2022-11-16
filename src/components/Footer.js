@@ -26,7 +26,7 @@ function Footer() {
                     <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="/about">About Us</a>
+                    <a href="/aboutus">About Us</a>
                   </li>
                   <li>
                     <a href="/services">Services</a>
@@ -41,22 +41,25 @@ function Footer() {
                   {/* <li>
                     <a href="/Pricing">Pricing</a>
                   </li> */}
+                  <li>
+                    <a href="/sitemap">Sitemap</a>
+                  </li>
                 </ul>
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 md-mb-10 pl-55 md-pl-15">
                 <h3 className="footer-title">General Links</h3>
                 <ul className="site-map">
                   <li>
-                    <a href="/terms">Terms of Service</a>
+                    <a href="termsofservices">Terms of Services</a>
                   </li>
                   <li>
-                    <a href="/privacy">Privacy policy</a>
+                    <a href="/privacy">Privacy Policy</a>
                   </li>
                   <li>
                     <a href="/faq">FAQ</a>
                   </li>
                   <li>
-                    <a href="/contactus">Contact Us</a>
+                    <a href="/getaenquiry">Contact Us</a>
                   </li>
                   <li></li>
                 </ul>
@@ -93,7 +96,7 @@ function Footer() {
                 <p className="widget-desc white-color">
                   Stay up to update with our latest news and products.
                 </p>
-                <br />
+                <br/>
                 <div class="contentsubs">
                   <form class="subscription">
                     <input
@@ -101,7 +104,7 @@ function Footer() {
                       type="email"
                       placeholder="Email Address"
                     />
-                    <button class="submit-email" type="submit">
+                    <button class="submit-email">
                       <span class="before-submit">Subscribe</span>
                     </button>
                   </form>

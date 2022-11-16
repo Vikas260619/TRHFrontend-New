@@ -1,6 +1,8 @@
 import React from "react";
+import { useEffect } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import { Helmet } from "react-helmet";
 
 function Aboutus() {
   const responsive = {
@@ -17,7 +19,7 @@ function Aboutus() {
             <div className="front-content-part">
               <div className="front-icon-part">
                 <div className="icon-part">
-                  <img src="images/rapid1.png" alt="vision" />
+                  <img src="images/rapid1.png" alt="rapid1" />
                 </div>
               </div>
               <div className="front-title-part">
@@ -46,7 +48,7 @@ function Aboutus() {
             <div className="front-content-part">
               <div className="front-icon-part">
                 <div className="icon-part">
-                  <img src="images/rapid2.png" alt="mission" />
+                  <img src="images/rapid2.png" alt="rapid2" />
                 </div>
               </div>
               <div className="front-title-part">
@@ -75,7 +77,7 @@ function Aboutus() {
             <div className="front-content-part">
               <div className="front-icon-part">
                 <div className="icon-part">
-                  <img src="images/rapid3.png" alt="values" />
+                  <img src="images/rapid3.png" alt="rapid3" />
                 </div>
               </div>
               <div className="front-title-part">
@@ -99,6 +101,54 @@ function Aboutus() {
   ];
   return (
     <div>
+      <Helmet>
+        <title>About us - TheRapidHire</title>
+
+        <meta
+          name="description"
+          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
+
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+          rel="canonical" href="https://therapidhire.com/aboutus/" /> 
+
+        
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="TheRapidHire - Software Development|IT outsourcing company"
+        />
+        <meta property="og:url" content="https://therapidhire.com/aboutus" />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/ser3.png"
+        />
+        <meta property="og:image:width" content="150" />
+        <meta property="og:image:height" content="150" />
+        <meta
+          property="og:description"
+          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="TheRapidHire - Software Development|IT outsourcing company"
+        />
+        <meta name="twitter:site" content="@therapidhire" />
+        <meta
+          name="twitter:description"
+          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+        />
+        <meta
+          name="twitter:image"
+          content="https://therapidhire.com/images/ser3.png"
+        />
+        <meta name="twitter:image:alt" content="therapidhire" />
+      </Helmet>
+
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
@@ -138,17 +188,19 @@ function Aboutus() {
                   <div className="heading-border-line"></div>
                 </div>
                 <p className="pt-50 text-center">
-                  Therapidhire is a software development and IT outsourcing
-                  company based in India. Therapidhire takes an energetic,
+                  TheRapidHire is a software development and IT outsourcing
+                  company based in India. TheRapidHire takes an energetic,
                   collaborative strategy to create and customize solutions
                   across the digital value chain. We aim to create a network of
                   businesses that help each other to acquire more customers.
                   Giving a better idea of making your online presence better,
-                  Therapidhire company helps you with quality service at minimal
+                  TheRapidHire company helps you with quality service at minimal
                   prices and complimentary with great satisfaction.
                 </p>
               </div>
-            </div><br/><br/>
+            </div>
+            <br />
+            <br />
             <div className="row">
               <AliceCarousel
                 autoPlay
@@ -174,7 +226,7 @@ function Aboutus() {
             <div className="sec-title3 text-center">
               <span className="sub-title">WHY CHOOSE US</span>
               <h2 className="title">
-                We Help You To Increase Your Product Through Solutions
+                We help you to increase your product through solutions.
               </h2>
               <div className="heading-border-line"></div>
             </div>
@@ -206,7 +258,7 @@ function Aboutus() {
                 <div className="single-choose-card">
                   <div className="choose-image">
                     <a href="/about">
-                      <img src="images/choose-2.png" alt="choose" />
+                      <img src="images/choose-2.png" alt="choose2" />
                     </a>
                   </div>
                   <div className="choose-content">
@@ -227,7 +279,7 @@ function Aboutus() {
                 <div className="single-choose-card">
                   <div className="choose-image">
                     <a href="/about">
-                      <img src="images/choose-3.png" alt="meeting" />
+                      <img src="images/choose-3.png" alt="choose3" />
                     </a>
                   </div>
                   <div className="choose-content">
@@ -247,7 +299,7 @@ function Aboutus() {
                 <div className="single-choose-card">
                   <div className="choose-image">
                     <a href="/about">
-                      <img src="images/choose-4.png" alt="plan" />
+                      <img src="images/choose-4.png" alt="choose4" />
                     </a>
                   </div>
                   <div className="choose-content">

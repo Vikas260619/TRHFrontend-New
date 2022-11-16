@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Input from "../Container/Input";
 import { baseURL } from "./Basepath";
 import { omit } from "lodash";
@@ -15,8 +15,11 @@ export default function Forgotpassword() {
   const [values, setValues] = useState({});
   const [passwordType, setPasswordType] = useState("password");
   const [showErrorMessage, setShowErrorMessage] = useState(false);
-  const [cPasswordClass, setCPasswordClass] = useState('form-control-mod');
+  const [cPasswordClass, setCPasswordClass] = useState("form-control-mod");
   const [isCPasswordDirty, setIsCPasswordDirty] = useState(false);
+  useEffect(() => {
+    document.title = "Forgotpassword";
+  });
 
   const togglePassword = () => {
     if (passwordType === "password") {
@@ -26,41 +29,39 @@ export default function Forgotpassword() {
     setPasswordType("password");
   };
 
-
   useEffect(() => {
     if (isCPasswordDirty) {
-        if (password === confirm_password) {
-            setShowErrorMessage(false);
-            setCPasswordClass('form-control-mod is-valid')
-        } else {
-            setShowErrorMessage(true)
-            setCPasswordClass('form-control-mod is-invalid')
-        }
+      if (password === confirm_password) {
+        setShowErrorMessage(false);
+        setCPasswordClass("form-control-mod is-valid");
+      } else {
+        setShowErrorMessage(true);
+        setCPasswordClass("form-control-mod is-invalid");
+      }
     }
-}, [confirm_password])
-const handleCPassword = (e) => {
+  }, [confirm_password]);
+  const handleCPassword = (e) => {
     setConfirm_password(e.target.value);
     setIsCPasswordDirty(true);
-}
-
+  };
 
   const validate = (event, name, value) => {
     switch (name) {
-        case "password":
-          if (
-            !new RegExp(
-              /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/
-            ).test(value)
-          ) {
-            setErrors({
-              ...errors,
-              password: "Enter a minimum 8 character with strong password ",
-            });
-          } else {
-            let newObj = omit(errors, "password");
-            setErrors(newObj);
-          }
-          break;
+      case "password":
+        if (
+          !new RegExp(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/
+          ).test(value)
+        ) {
+          setErrors({
+            ...errors,
+            password: "Enter a minimum 8 character with strong password ",
+          });
+        } else {
+          let newObj = omit(errors, "password");
+          setErrors(newObj);
+        }
+        break;
 
       default:
         break;
@@ -81,33 +82,29 @@ const handleCPassword = (e) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   
-      if (password !== "") {
-        if (confirm_password !== "") {
-      let data = {
-        password,
-        confirm_password, 
-      };
-      axios({
-        url: baseURL + "user/reset-pwd/"+id,
-        method: "post",
-        data: data,
-      })
-        .then((res) => {
-      
+
+    if (password !== "") {
+      if (confirm_password !== "") {
+        let data = {
+          password,
+          confirm_password,
+        };
+        axios({
+          url: baseURL + "user/reset-pwd/" + id,
+          method: "post",
+          data: data,
+        })
+          .then((res) => {
             toast(res.data.message);
             console.log(res.data.message);
-
-
-        })
-        .catch((err) => console.log(err));
+          })
+          .catch((err) => console.log(err));
       } else {
         toast("Please Fill the confirm password field");
       }
     } else {
       toast("Please Fill the  password field");
     }
-  
   };
   return (
     <div>
@@ -142,8 +139,10 @@ const handleCPassword = (e) => {
               <div className="row ">
                 <div className="col-lg-6 col-xs-12">
                   <div className="cont22">
-             
-                    <img   src={process.env.PUBLIC_URL + "/images/forgot.png"} alt="join" />
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/forgot.png"}
+                      alt="join"
+                    />
                   </div>
                 </div>
                 <div className="col-lg-6 col-xs-12">
@@ -198,10 +197,19 @@ const handleCPassword = (e) => {
                               value={confirm_password}
                               onChange={handleCPassword}
                             />
-                            {showErrorMessage && isCPasswordDirty ? <p  style={{
+                            {showErrorMessage && isCPasswordDirty ? (
+                              <p
+                                style={{
                                   color: "red",
                                   marginTop: "-4vh",
-                                }}> Passwords did not match </p> : ''}
+                                }}
+                              >
+                                {" "}
+                                Passwords did not match{" "}
+                              </p>
+                            ) : (
+                              ""
+                            )}
                           </div>
                         </div>
 
@@ -213,7 +221,7 @@ const handleCPassword = (e) => {
                               value="Reset Password"
                               onClick={(e) => handleSubmit(e)}
                             />
-                            <ToastContainer/>
+                            <ToastContainer />
                           </div>
                         </div>
                         <br />
@@ -222,7 +230,7 @@ const handleCPassword = (e) => {
                           <a href="/Login">Login</a>
                         </div>
                       </fieldset>
-                    </form> 
+                    </form>
                   </div>
                 </div>
               </div>

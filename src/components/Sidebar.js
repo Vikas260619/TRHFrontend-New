@@ -6,12 +6,12 @@ function Sidebar() {
         <div className="social">
           <ul>
             <li className="twit">
-              <a href="https://twitter.com/HireRapid" target="_blank">
+              <a href="https://twitter.com/therapidhire_" target="_blank">  
                 Twitter <i className="fa fa-twitter "></i>
               </a>
             </li>
             <li className="insta">
-              <a
+              <a  
                 href="https://www.instagram.com/therapidhire_/"
                 target="_blank"
               >

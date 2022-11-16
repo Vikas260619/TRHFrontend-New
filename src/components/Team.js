@@ -2,8 +2,13 @@ import React from "react";
 import Common from "../Container/Common.js";
 import CardTeam from "../Container/CardTeam.js";
 import { Teamdata } from "../Container/CardJSON.js";
+import { useEffect } from "react";
 
 function Team() {
+  useEffect(() => {
+    document.title="Team"
+    }, )
+ 
   return (
     <div>
       <div className="offwrap"></div>

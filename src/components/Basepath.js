@@ -1,3 +1,3 @@
-  export const baseURL = "https://trhblogsnew.herokuapp.com/";
+  export const baseURL = "https://therapidhiredevapi.therapidhire.com/";
 
   

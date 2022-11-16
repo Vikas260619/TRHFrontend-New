@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useEffect} from "react";
+
 export default function Faq() {
+  useEffect(() => {
+    document.title="Faq"
+    }, )
   return (
     <div>
       <div className="main-content">
@@ -24,13 +28,13 @@ export default function Faq() {
                
               />
               <h2 className="handle">
-                <label for="handle1">Q. What does Therapidhire do?</label>
+                <label for="handle1">Q. What does TheRapidHire do?</label>
               </h2>
               <div className="content">
                 <p>
                   <strong>TRH</strong> is a software development and IT
                   outsourcing company specializing in the design & development
-                  of customized mobile and web applications.
+                  of customized Mobile and Web applications.
                 </p>
               </div>
             </section>
@@ -73,7 +77,7 @@ export default function Faq() {
               <input type="checkbox" name="collapse2" id="handle3" />
               <h2 className="handle">
                 <label for="handle3">
-                  Q. Why should you go forward with Therapidhire?
+                  Q. Why should you go forward with The Rapid Hire?
                 </label>
               </h2>
               <div className="content faqlist">
@@ -108,12 +112,12 @@ export default function Faq() {
                   </li>
                   <li>
                     At the beginning of the project, a project plan with many
-                    Sprints is created and provided to the client. We have Scrum
+                    sprints is created and provided to the client. We have Scrum
                     meetings to monitor daily progress, spot hazards, and make
                     sure the deliverables adhere to the original project plan.
                   </li>
                   <li>
-                    A Functional Specification Document, which includes
+                    A functional specification document, which includes
                     wireframes and descriptions of each workflow, field
                     definitions, and use cases for all necessary
                     functionalities, is the initial step in the execution of any
@@ -151,13 +155,13 @@ export default function Faq() {
               <input type="checkbox" name="collapse2" id="handle5" />
               <h2 className="handle">
                 <label for="handle5">
-                  Q. Why Choose Therapidhire as a software development service
+                  Q. Why Choose TheRapidHire as a software development service
                   provider?
                 </label>
               </h2>
               <div className="content">
                 <p>
-                  Therapidhire is a well-known software and mobile app
+                  TheRapidHire is a well-known software and mobile app
                   development company when it comes to custom software
                   development. Numerous businesses have benefited from our
                   long-term experience and expertise in providing diverse custom

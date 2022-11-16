@@ -1,5 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
+
+
 function Features() {
+  useEffect(() => {
+    document.title="Features"
+    }, )
+  
   return (
     <div>
       <div className="main-content">

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { baseURL } from "./Basepath";
 import ScrollToTop from "react-scroll-to-top";
-
+import { Helmet } from "react-helmet";
 function Blog() {
   const [users, setUsers] = useState([]);
   const [data, setdata] = useState([]);
@@ -11,9 +11,8 @@ function Blog() {
   const [flag, setFlag] = useState(false);
   const Navigate = useNavigate();
   useEffect(() => {
-    console.log(baseURL);
     axios({
-      url: baseURL + "blog/getall",
+      url: baseURL + "blog/getAll",
       method: "get",
     })
       .then((res) => {
@@ -32,15 +31,55 @@ function Blog() {
 
     setFilterData(EL);
   };
-
-  const newPage1 = (id) => {
-    Navigate("/blogdetail/" + id);
-  };
-
+  function getOne(id){
+    axios
+       .get('https://trhblogsnew.herokuapp.com/blog/getOne/' + id)
+       .then((response) => {
+           setUsers(response.data.message)
+       })
+       .catch((error) => {
+           console.log(error);
+       });
+}
+ 
+  const newPage1 = (id, title) => {
+    const array = title.split("");
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == " ") {
+            array[i] = "-";
+        }
+    }
+    Navigate("/" + array.join(""), { state: { userId: id } }) 
+    getOne(id);
+}
   console.log();
+  useEffect(() => {
+    document.title = "Blog";
+  });
 
   return (
     <div>
+      <Helmet>
+        <meta name="description" content="TRH Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance." />
+          <meta name="keywords" content="blockchain, IoT, Internet of things, java, cloud computing, technology, business, software development, mobile application, android, ios, business, marketing, digital marketing, industry insights, cryptocurrency, bitcoin , NFT, fintech , AI, ML, DL, deep learning, python, programming" />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://therapidhire.com/blog/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Blog" />
+        <meta property="og:url" content="https://therapidhire.com/blog" />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/ser6.png"
+        />
+        <meta
+          property="og:description"
+          content="TRH Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."
+        />
+      </Helmet>
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
@@ -52,7 +91,7 @@ function Blog() {
               </h1>
               <span className="sub-text">
                 Most creative ideas in blog post of Cloud services , Designing ,
-                Development..{" "}
+                Development.{" "}
               </span>
             </div>
           </div>
@@ -69,7 +108,7 @@ function Blog() {
                           <div className="col-lg-6 col-md-6">
                             <div className="single-blog-card">
                               <div className="blog-image">
-                                <a href="//">
+                                <a>
                                   <img src={item.bannerImage} alt="image" />
                                 </a>
                                 {item.date && (
@@ -82,7 +121,7 @@ function Blog() {
                                 </h3>
                                 <p>{item.mainDesc.slice(0, 124)}</p>
                                 <button
-                                  onClick={() => newPage1(item._id)}
+                                  onClick={() => newPage1(item._id, item.title)}
                                   className="blogbtn"
                                 >
                                   View more...
@@ -110,7 +149,7 @@ function Blog() {
                                 <p>{item.mainDesc.slice(0, 124)}</p>
                                 <button
                                   className="blogbtn"
-                                  onClick={() => newPage1(item._id)}
+                                  onClick={() => newPage1(item._id, item.title)}
                                 >
                                   View more...
                                 </button>
@@ -129,16 +168,16 @@ function Blog() {
                       {data
                         ? data.slice(0, 3).map((val) => (
                             <article className="item">
-                              <a href="#" className="thumb">
+                              <a className="thumb" onClick={() => newPage1(val._id, val.title)}>
                                 <img src={val.bannerImage} alt="image" />
                               </a>
                               <div className="info">
-                                <span>{val.date}</span>
+                                <span  onClick={() => newPage1(val._id, val.title)}>{val.date}</span>
                                 <h4
                                   className="title usmall"
-                                  onClick={() => newPage1(val._id)}
+                                  onClick={() => newPage1(val._id, val.title)}
                                 >
-                                  <a href="#">{val.title}</a>
+                                  <a  onClick={() => newPage1(val._id, val.title)}>{val.title}</a>
                                 </h4>
                               </div>
                             </article>
