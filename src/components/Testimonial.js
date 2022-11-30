@@ -13,7 +13,7 @@ function Testimonial() {
     <div className="item" data-value="1">
       <div className="item text-center">
         <div className="testi-img">
-          <img src="images/testimonial2.png" alt="" />
+          <img src="images/testimonial2.webp" alt="" />
         </div>
         <ul className="rating">
           <li>
@@ -47,7 +47,7 @@ function Testimonial() {
     <div className="item" data-value="2">
       <div className="item text-center">
         <div className="testi-img">
-          <img src="images/testimonial3.png" alt="" />
+          <img src="images/testimonial3.webp" alt="" />
         </div>
         <ul className="rating">
           <li>
@@ -77,7 +77,7 @@ function Testimonial() {
     <div className="item" data-value="3">
       <div className="item text-center">
         <div className="testi-img">
-          <img src="images/testimonial1.png" alt="" />
+          <img src="images/testimonial1.webp" alt="" />
         </div>
         <ul className="rating">
           <li>
@@ -138,8 +138,8 @@ function Testimonial() {
               />
             </div>
             <div className="pattern-img">
-              <img className="img2 common" src="images/pattern2.png" alt="" />
-              <img className="img3 common" src="images/pattern3.png" alt="" />
+              <img className="img2 common" src="images/pattern2.webp" alt="" />
+              <img className="img3 common" src="images/pattern3.webp" alt="" />
             </div>
           </div>
         </div>

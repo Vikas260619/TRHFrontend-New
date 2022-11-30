@@ -14,14 +14,14 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            <a href="/">
-              <img src="images/team1.jpg" alt="Shraddha_Sharma" />
-            </a>
+            
+              <img src="images/team1.webp" alt="Shraddha_Sharma" />
+          
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Shraddha Sharma</a>
+            Shraddha Sharma
           </h4>
           <span className="designation">BUSINESS DEVELOPMENT EXECUTIVE</span>
         </div>
@@ -31,14 +31,14 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            <a href="/">
-              <img src="images/team2.jpg" alt="Nitin_Vishvakarma" />
-            </a>
+            
+              <img src="images/team2.webp" alt="Nitin_Vishvakarma" />
+            
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Nitin Vishvakarma</a>
+          Nitin Vishvakarma
           </h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
@@ -48,14 +48,14 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            <a href="/">
-              <img src="images/team3.jpeg" alt="Vikas_Choudhary" />
-            </a>
+            
+              <img src="images/team3.webp" alt="Vikas_Choudhary" />
+            
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Vikas Choudhary</a>
+            Vikas Choudhary
           </h4>
           <span className="designation">WEB DEVELOPER</span>
         </div>
@@ -65,14 +65,14 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            <a href="/">
-              <img src="images/team4.jpeg" alt="Sumut__Tiwari" />
-            </a>
+           
+              <img src="images/team4.webp" alt="Sumit__Tiwari" />
+           
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Sumit Tiwari</a>
+           Sumit Tiwari
           </h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
@@ -82,14 +82,14 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            <a href="/">
-              <img src="images/team7.jpg" alt="Yogita Saxena" />
-            </a>
+          
+              <img src="images/team7.webp" alt="Yogita Saxena" />
+           
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Yogita Saxena</a>
+            Yogita Saxena
           </h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
@@ -99,14 +99,14 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            <a href="/">
-              <img src="images/team6.jpeg" alt="raghav dubey" />
-            </a>
+           
+              <img src="images/team6.webp" alt="raghav dubey" />
+          
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Raghav Dubey</a>
+            Raghav Dubey
           </h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
@@ -116,14 +116,14 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            <a href="/">
-              <img src="images/team5.jpeg" alt="" />
-            </a>
+          
+              <img src="images/team5.webp" alt="" />
+           
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Vipin Joshi</a>
+            Vipin Joshi
           </h4>
           <span className="designation">HR MANAGER</span>
         </div>
@@ -133,14 +133,14 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            <a href="/">
-              <img src="images/team8.jpeg" alt="Navin_Kukreja" />
-            </a>
+           
+              <img src="images/team8.webp" alt="Navin_Kukreja" />
+           
           </div>
         </div>
         <div className="team-content text-center">
           <h4 className="person-name">
-            <a href="/">Navin Kukreja</a>
+          Navin Kukreja
           </h4>
           <span className="designation">WEB DEVELOPER</span>
         </div>
@@ -184,13 +184,13 @@ function Expertteam() {
           </div>
           <div className="row certifite text-center">
             <div className="col-xs-12 col-md-4">
-              <img src="images/rqc.png" alt="rqc" />
+              <img src="images/rqc.webp" alt="rqc" />
             </div>
             <div className="col-xs-12 col-md-4">
-              <img src="images/ukasl.png" alt="ukas" />
+              <img src="images/ukasl.webp" alt="ukas" />
             </div>
             <div className="col-xs-12 col-md-4">
-              <img src="images/cmmi.png" alt="cmmi" />
+              <img src="images/cmmi.webp" alt="cmmi" />
             </div>
           </div>
         </div>

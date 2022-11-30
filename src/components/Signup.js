@@ -18,16 +18,13 @@ export default function Signup() {
   const [values, setValues] = useState({});
 
   const [passwordType, setPasswordType] = useState("password");
-  const [confirm_passwordType, setConfirm_passwordType] =
-    useState("Confirm password");
 
   const [showErrorMessage, setShowErrorMessage] = useState(false);
   const [cPasswordClass, setCPasswordClass] = useState("form-control-mod");
   const [isCPasswordDirty, setIsCPasswordDirty] = useState(false);
   useEffect(() => {
-    document.title="Singup"
-    }, )
- 
+    document.title = "Signup";
+  });
 
   const togglePassword = () => {
     if (passwordType === "password") {
@@ -39,7 +36,7 @@ export default function Signup() {
 
   const [cpasswordType, setCPasswordType] = useState("password");
   const toggleCPassword = () => {
-    if (passwordType === "password") {
+    if (cpasswordType === "password") {
       setCPasswordType("text");
       return;
     }
@@ -133,6 +130,13 @@ export default function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isNaN(name)) {
+      document.getElementById("blankMsg").innerHTML =
+        "**Only characters are allowed";
+      return false;
+    } else {
+      document.getElementById("blankMsg").innerHTML = "";
+    }
     if (name !== "") {
       if (email !== "") {
         if (password !== "") {
@@ -224,7 +228,7 @@ export default function Signup() {
               <div className="row ">
                 <div className="col-lg-6 col-xs-12">
                   <div className="cont22">
-                    <img src="images/signup.png" alt="join" />
+                    <img src="images/signup.webp" alt="join" />
                   </div>
                 </div>
                 <div className="col-lg-6 col-xs-12 ">
@@ -242,6 +246,7 @@ export default function Signup() {
                               value={name}
                               onChange={(e) => setName(e.target.value)}
                             />
+                            <span id="blankMsg" style={{ color: "red" }} />
                           </div>
                           <div className="col-lg-6 col-xs-12">
                             <Input
@@ -274,17 +279,19 @@ export default function Signup() {
                               placeholder="Phone No."
                               value={mobile}
                               minLength={9}
-                              maxLength={10}
+                              maxLength={12}
                               onChange={(e) => checkInput(e)}
                             />
                           </div>
                           <div className="col-lg-6 col-xs-12">
                             <select
+                              name="drop"
                               class="form-select occu"
                               aria-label="Default select example"
                               value={occupation}
                               onChange={(e) => setOccupation(e.target.value)}
                             >
+                              <label selected>fdsf</label>
                               <option selected>Occupation</option>
                               <option value="Student">Student</option>
                               <option value="Fresher">Fresher</option>
@@ -361,7 +368,7 @@ export default function Signup() {
                                 }}
                               >
                                 {" "}
-                                Passwords did not match{" "}
+                                Password did not match{" "}
                               </p>
                             ) : (
                               ""
@@ -371,7 +378,7 @@ export default function Signup() {
                         <div className="row">
                           <div className="col-lg-12">
                             <textarea
-                              class="form-control occu"
+                              class="form-control"
                               id="address"
                               rows="2"
                               placeholder="Address"
@@ -391,11 +398,13 @@ export default function Signup() {
                                 id="flexCheckDefault"
                               />
                               <label
-                                class="form-check-label"
+                                class="form-check-label createtext"
                                 for="flexCheckDefault"
                               >
-                                I agree all statements in{" "}
-                                <a href="/Terms">Terms of service</a>
+                                By clicking 'Create Account', I agree to
+                                TheRapidHire's{" "}
+                                <a href="/termsofservices">Terms of service </a> 
+                                 and acknowledge <a href="/privacy">Privacy Policy</a>.{" "}
                               </label>
                             </div>
                           </div>

@@ -6,7 +6,6 @@ import { baseURL } from "./Basepath";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import validator from "validator";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 export default function Login() {
@@ -15,7 +14,6 @@ export default function Login() {
   const [values, setValues] = useState({});
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
   const [passwordType, setPasswordType] = useState("password");
   useEffect(() => {
     document.title = "Login";
@@ -113,10 +111,10 @@ export default function Login() {
           })
           .catch((err) => console.log(err));
       } else {
-        toast("Please Fill the password field");
+        toast("Please fill the Password field");
       }
     } else {
-      toast("Please Fill the email field");
+      toast("Please fill the Email field");
     }
   };
 
@@ -132,11 +130,12 @@ export default function Login() {
         data: data,
       })
         .then((res) => {
+          console.log(res)
           toast(res.data.message);
         })
         .catch((err) => console.log(err));
     } else {
-      toast("Please Fill the email field");
+      toast("Please fill the Email field");
     }
   };
 
@@ -157,10 +156,10 @@ export default function Login() {
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Join Our Team
                 <span className="watermark">Login</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 At TheRapidHire, we believe in hard work and transparency. We
                 encourage professionalism and clarity of thought at all times.{" "}
@@ -200,7 +199,7 @@ export default function Login() {
                               name="email"
                               placeholder="Email"
                               value={email}
-                              // onChange={(e) => setEmail(e.target.value)}
+                            
                               style={{
                                 borderBottomColor: errors.email ? "red" : "",
                               }}
@@ -262,11 +261,11 @@ export default function Login() {
                         </div>
                         <div className="btn-part">
                           <div className="form-group mb-0">
-                            <input
+                            <button
                               className="readon submit"
                               type="submit"
                               onClick={(e) => handleSubmit(e)}
-                            />
+                            >Login</button>
                           </div>
                         </div>
                         <br />

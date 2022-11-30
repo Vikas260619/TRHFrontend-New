@@ -5,10 +5,10 @@ const Common = (props) => {
     <div className="rs-breadcrumbs img1">
     <div className="container-fluid">
       <div className="breadcrumbs-inner">
-        <h1 className="page-title">
+        <h2 className="page-title">
           {props.name}
           <span className="watermark">{props.background}</span>
-        </h1>
+        </h2>
         <span className="sub-text">
           {props.description}
         </span>

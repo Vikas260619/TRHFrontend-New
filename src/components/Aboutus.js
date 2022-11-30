@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Helmet } from "react-helmet";
@@ -19,7 +18,7 @@ function Aboutus() {
             <div className="front-content-part">
               <div className="front-icon-part">
                 <div className="icon-part">
-                  <img src="images/rapid1.png" alt="rapid1" />
+                  <img src="images/rapid1.webp" alt="rapid1" />
                 </div>
               </div>
               <div className="front-title-part">
@@ -48,7 +47,7 @@ function Aboutus() {
             <div className="front-content-part">
               <div className="front-icon-part">
                 <div className="icon-part">
-                  <img src="images/rapid2.png" alt="rapid2" />
+                  <img src="images/rapid2.webp" alt="rapid2" />
                 </div>
               </div>
               <div className="front-title-part">
@@ -77,7 +76,7 @@ function Aboutus() {
             <div className="front-content-part">
               <div className="front-icon-part">
                 <div className="icon-part">
-                  <img src="images/rapid3.png" alt="rapid3" />
+                  <img src="images/rapid3.webp" alt="rapid3" />
                 </div>
               </div>
               <div className="front-title-part">
@@ -102,19 +101,18 @@ function Aboutus() {
   return (
     <div>
       <Helmet>
-        <title>About us - TheRapidHire</title>
+        <title>About us - TheRapidHire | CMMI Level 5</title>
 
         <meta
           name="description"
           content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
-
         />
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-          rel="canonical" href="https://therapidhire.com/aboutus/" /> 
+        />
+        <link rel="canonical" href="https://therapidhire.com/aboutus/" />
 
-        
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
@@ -153,10 +151,7 @@ function Aboutus() {
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
-                About Us
-                <span className="watermark">About</span>
-              </h1>
+              <h2 className="page-title">About Us</h2>
               <span className="sub-text">
                 At TheRapidHire, we believe in hard work and transparency. We
                 encourage professionalism and clarity of thought at all times.{" "}
@@ -171,9 +166,13 @@ function Aboutus() {
         >
           <div className="container">
             <div className="animat-rat">
-              <img src="images/sib-1.png" className="rat-sib" alt="icon1" />
-              <img src="images/round-2.png" className="rat-round" alt="icon2" />
-              <img src="images/ract.png" className="rat-ract" alt="icon3" />
+              <img src="images/sib-1.webp" className="rat-sib" alt="icon1" />
+              <img
+                src="images/round-2.webp"
+                className="rat-round"
+                alt="icon2"
+              />
+              <img src="images/ract.webp" className="rat-ract" alt="icon3" />
               <img src="images/squar.png" className="rat-squar1" alt="icon4" />
               <img src="images/squar.png" className="rat-squar2" alt="icon5" />
             </div>
@@ -183,19 +182,26 @@ function Aboutus() {
                 <div className="sec-title3 text-center">
                   <span className="sub-title">WHO WE ARE</span>
                   <h2 className="title">
-                    Your Trusted Partner For All IT Solutions
+                    Your Trustworthy IT Solutions Partner
                   </h2>
                   <div className="heading-border-line"></div>
                 </div>
                 <p className="pt-50 text-center">
-                  TheRapidHire is a software development and IT outsourcing
-                  company based in India. TheRapidHire takes an energetic,
-                  collaborative strategy to create and customize solutions
-                  across the digital value chain. We aim to create a network of
-                  businesses that help each other to acquire more customers.
-                  Giving a better idea of making your online presence better,
-                  TheRapidHire company helps you with quality service at minimal
-                  prices and complimentary with great satisfaction.
+                  TheRapidHire Pvt. Ltd. is a CMMI Level-5 software development,
+                  IT outsourcing, and human resource consulting firm. We are a
+                  CMMI 5-level certified and acclaimed organization that
+                  provides quality products and professionals on a contract
+                  basis. With a mission to deliver quality services at a
+                  reasonable cost, The Rapid Hire takes an agile, collaborative
+                  approach to create customized solutions across the digital
+                  value chain. Our deep expertise in web development and
+                  application development, cloud services, database management,
+                  cyber security, and payroll management transforms your ideas
+                  into reality. We aim to create a network of businesses that
+                  help each other acquire more customers. The Rapid Hire company
+                  helps you with quality service at low prices and great
+                  satisfaction, giving you a better idea of how to improve your
+                  online presence.
                 </p>
               </div>
             </div>
@@ -216,7 +222,7 @@ function Aboutus() {
               />
             </div>
             <div className="about-circle-shape">
-              <img src="images/about-circle.png" alt="imagecircle" />
+              <img src="images/about-circle.webp" alt="imagecircle" />
             </div>
           </div>
         </div>
@@ -238,13 +244,11 @@ function Aboutus() {
                 <div className="single-choose-card">
                   <div className="choose-image">
                     <a href="/about">
-                      <img src="images/choose-1.png" alt="imagechoose" />
+                      <img src="images/choose-1.webp" alt="imagechoose" />
                     </a>
                   </div>
                   <div className="choose-content">
-                    <h3>
-                      <a href="/about">Client Oriented</a>
-                    </h3>
+                    <h3 className="headingcolor">Client Oriented</h3>
                     <p>
                       Being customer-oriented is an approach in which, rather
                       than solving for the business’s needs, our company solves
@@ -258,15 +262,13 @@ function Aboutus() {
                 <div className="single-choose-card">
                   <div className="choose-image">
                     <a href="/about">
-                      <img src="images/choose-2.png" alt="choose2" />
+                      <img src="images/choose-2.webp" alt="choose2" />
                     </a>
                   </div>
                   <div className="choose-content">
-                    <h3>
-                      <a href="/about">Creativity</a>
-                    </h3>
+                    <h3 className="headingcolor">Creativity</h3>
                     <p>
-                      Our Creative thinking can also lead to innovation that
+                      Our creative thinking can also lead to innovation that
                       will grow our business through increased productivity.
                       When we “focus on what things we can streamline and what
                       things we need to cut out”
@@ -279,17 +281,15 @@ function Aboutus() {
                 <div className="single-choose-card">
                   <div className="choose-image">
                     <a href="/about">
-                      <img src="images/choose-3.png" alt="choose3" />
+                      <img src="images/choose-3.webp" alt="choose3" />
                     </a>
                   </div>
                   <div className="choose-content">
-                    <h3>
-                      <a href="/about">Meeting Deadlines</a>
-                    </h3>
+                    <h3 className="headingcolor">Meeting Deadlines</h3>
                     <p>
-                      Meeting Deadlines help us to collaborate toward achieving
+                      Meeting deadlines help us to collaborate toward achieving
                       a shared goal, and to keep complex,we work multi stage
-                      projects on track. we set all expectations
+                      projects on track. We set all expectations.
                     </p>
                   </div>
                 </div>
@@ -299,13 +299,11 @@ function Aboutus() {
                 <div className="single-choose-card">
                   <div className="choose-image">
                     <a href="/about">
-                      <img src="images/choose-4.png" alt="choose4" />
+                      <img src="images/choose-4.webp" alt="choose4" />
                     </a>
                   </div>
                   <div className="choose-content">
-                    <h3>
-                      <a href="/about">A Plan for Success</a>
-                    </h3>
+                    <h3 className="headingcolor">A Plan for Success</h3>
                     <p>
                       Our Planning helps to critically assess the goal to see in
                       realistic. It facilitates decision making and allows

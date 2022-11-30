@@ -5,7 +5,7 @@ import axios from "axios";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function Applymern() {
   const [candidateName, setCandidateName] = useState("");
@@ -18,9 +18,7 @@ function Applymern() {
   const [inputFile, setInputFile] = useState(false);
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
-  useEffect(() => {
-    document.title="Apply Mern"
-    }, )
+ 
   
 
   const validate = (event, name, value) => {
@@ -72,6 +70,12 @@ function Applymern() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isNaN(candidateName)) {
+      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+      return false;
+  } else {
+      document.getElementById("blankMsg").innerHTML = "";
+  }
 
     if (candidateName !== "") {
       if (email !== "") {
@@ -127,16 +131,44 @@ function Applymern() {
   };
 
   return (
+   
     <div>
+      <Helmet>
+        <title>
+        Apply For Mern Developers
+        </title>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="canonical" href="https://therapidhire.com/applymern/" />
+
+
+
+<meta property="og:url" content="https://therapidhire.com/applymern"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Apply For MERN Stack Developer -The Rapid Hire "/>
+  <meta property="og:description" content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment.
+
+"/>
+  <meta property="og:image" content="https://therapidhire.com/images/job2.png"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:domain" content="therapidhire.com"/>
+  <meta property="twitter:url" content="https://therapidhire.com/applymern"/>
+  <meta name="twitter:title" content="Apply For MERN Stack Developer -The Rapid Hire "/>
+  <meta name="twitter:description" content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment.
+
+"/>
+  <meta name="twitter:image" content="https://therapidhire.com/images/job2.png"/>
+
+        
+      </Helmet>
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid"> 
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Explore Opportunities
-                <span className="watermark">Apply Now</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 If you're enthusiastic, inquisitive, and enjoy using your ideas
                 to overcome problems, this is the place for you.
@@ -181,6 +213,8 @@ function Applymern() {
                               value={candidateName}
                               onChange={(e) => setCandidateName(e.target.value)}
                             />
+                             <span id="blankMsg" style={{ color: "red" }} />
+
                           </div>
                           <div className="col-lg-6">
                             <Input
@@ -213,7 +247,7 @@ function Applymern() {
                               placeholder="Phone No."
                               value={phone_number}
                               minLength={9}
-                              maxLength={10}
+                              maxLength={12}
                               onChange={(e) => checkInput(e)}
                             />
                           </div>

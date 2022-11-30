@@ -96,14 +96,14 @@ export default function Forgotpassword() {
         })
           .then((res) => {
             toast(res.data.message);
-            console.log(res.data.message);
+    
           })
           .catch((err) => console.log(err));
       } else {
-        toast("Please Fill the confirm password field");
+        toast("Please fill the confirm password field");
       }
     } else {
-      toast("Please Fill the  password field");
+      toast("Please fill the  password field");
     }
   };
   return (
@@ -112,10 +112,10 @@ export default function Forgotpassword() {
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Forgot Password{" "}
                 <span className="watermark">Forgotpassword</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 At TheRapidHire, we believe in hard work and transparency. We
                 encourage professionalism and clarity of thought at all times.{" "}
@@ -140,7 +140,7 @@ export default function Forgotpassword() {
                 <div className="col-lg-6 col-xs-12">
                   <div className="cont22">
                     <img
-                      src={process.env.PUBLIC_URL + "/images/forgot.png"}
+                      src={process.env.PUBLIC_URL + "/images/forgot.webp"}
                       alt="join"
                     />
                   </div>
@@ -205,7 +205,7 @@ export default function Forgotpassword() {
                                 }}
                               >
                                 {" "}
-                                Passwords did not match{" "}
+                                Password did not match{" "}
                               </p>
                             ) : (
                               ""
@@ -241,3 +241,4 @@ export default function Forgotpassword() {
     </div>
   );
 }
+

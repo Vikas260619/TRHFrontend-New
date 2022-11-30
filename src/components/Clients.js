@@ -14,7 +14,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/Mistminds.png" alt="Mistminds" />
+            <img src="images/Mistminds.webp" alt="Mistminds" />
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/trootech.png" alt="trootech" />
+            <img src="images/trootech.webp" alt="trootech" />
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/bynebits.png" alt="bynebits" />
+            <img src="images/bynebits.webp" alt="bynebits" />
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/coditas.png" alt="coditas" />
+            <img src="images/coditas.webp" alt="coditas" />
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ function Clients() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/cloud9.png" alt="cloud9" />
+            <img src="images/cloud9.webp" alt="cloud9" />
           </div>
         </div>
       </div>

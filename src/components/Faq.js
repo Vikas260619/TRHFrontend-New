@@ -1,38 +1,63 @@
-import React, { useEffect} from "react";
+import { Helmet } from "react-helmet";
 
 export default function Faq() {
-  useEffect(() => {
-    document.title="Faq"
-    }, )
   return (
     <div>
+      <Helmet>
+        <title>FAQ - TheRapidHire</title>
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://therapidhire.com/faq/" />
+        <meta property="og:url" content="https://therapidhire.com/faq" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FAQ - TheRapidHire" />
+        <meta
+          property="og:description"
+          content="How can we help you ? What does TheRapidHire do?  
+"
+        />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/faq.webp"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="therapidhire.com" />
+        <meta property="twitter:url" content="https://therapidhire.com/faq" />
+        <meta name="twitter:title" content="FAQ - TheRapidHire" />
+        <meta
+          name="twitter:description"
+          content="How can we help you ? What does TheRapidHire do?  
+"
+        />
+        <meta
+          name="twitter:image"
+          content="https://therapidhire.com/images/faq.webp"
+        />
+      </Helmet>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Frequently Asked Questions
-                <span className="watermark">FAQ</span>
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
         <div className="faq  pb-25">
           <div className="container">
-            <img src="images/faq.png" alt="faq" />
+            <img src="images/faq.webp" alt="faq" />
             <section className="accordion">
-              <input
-                type="checkbox"
-                name="collapse"
-                id="handle1"
-               
-              />
+              <input type="checkbox" name="collapse" id="handle1" />
               <h2 className="handle">
                 <label for="handle1">Q. What does TheRapidHire do?</label>
               </h2>
               <div className="content">
                 <p>
-                  <strong>TRH</strong> is a software development and IT
+                  <strong>TheRapidHire</strong> is a software development and IT
                   outsourcing company specializing in the design & development
                   of customized Mobile and Web applications.
                 </p>

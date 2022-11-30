@@ -6,30 +6,32 @@ function Career() {
     <div>
       <Helmet>
         <title>Work with Us - TheRapidHire</title>
-        <meta
-          name="description"
-          content="We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment."
-        />
+
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
         <link rel="canonical" href="https://therapidhire.com/workwithus/" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Work with us" />
+
         <meta property="og:url" content="https://therapidhire.com/workwithus" />
-        <meta
-          property="og:image"
-          content="https://therapidhire.com/images/ser3.png"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Work with Us - TheRapidHire" />
         <meta
           property="og:description"
           content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment."
         />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Work with us- TheRapidHire" />
-        <meta name="twitter:site" content="@therapidhire" />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/ser3.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="therapidhire.com" />
+        <meta
+          property="twitter:url"
+          content="https://therapidhire.com/workwithus"
+        />
+        <meta name="twitter:title" content="Work with Us - TheRapidHire" />
         <meta
           name="twitter:description"
           content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment."
@@ -38,7 +40,6 @@ function Career() {
           name="twitter:image"
           content="https://therapidhire.com/images/ser3.png"
         />
-        <meta name="twitter:image:alt" content="workwithus" />
       </Helmet>
 
       <div className="offwrap"></div>
@@ -47,10 +48,9 @@ function Career() {
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Explore Opportunities
-                <span className="watermark">Career</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 We consider our employees to be our most valuable asset! We
                 strive to provide them with new and challenging opportunities to
@@ -213,7 +213,7 @@ function Career() {
                     </div>
                     <div className="job-instructor-title">
                       <h4>
-                        <a href="/career">Java Developer</a>
+                        Java Developer
                       </h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
@@ -228,7 +228,7 @@ function Career() {
                       and anti-patterns.
                     </p>
                     <div className="job-salary">
-                      <a href="/apply">
+                      <a href="/applyjava">
                         Apply Now <i className="fa fa-arrow-right"></i>
                       </a>
                     </div>
@@ -250,7 +250,7 @@ function Career() {
                     </div>
                     <div className="job-instructor-title">
                       <h4>
-                        <a href="/career">MERN Stack Developer</a>
+                        MERN Stack Developer
                       </h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
@@ -288,7 +288,7 @@ function Career() {
                     </div>
                     <div className="job-instructor-title">
                       <h4>
-                        <a href="/career">MEAN Stack Developer</a>
+                        MEAN Stack Developer
                       </h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
@@ -330,14 +330,3 @@ function Career() {
 }
 
 export default Career;
-
-
-
-
-
-
-
-
-
-
-

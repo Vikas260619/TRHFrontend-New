@@ -1,22 +1,40 @@
 import React from "react";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 function Terms() {
-  useEffect(() => {
-    document.title="Terms of Services"
-    }, )
+ 
  
   return (
     <div>
+      <Helmet>
+        <title>Terms of Services-TheRapidHire</title>
+        <link rel="canonical" href="https://therapidhire.com/termsofservices/" />
+
+  <meta property="og:url" content="https://therapidhire.com/termsofservices"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Terms of Services -TheRapidHire"/>
+  <meta property="og:description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us.
+"/>
+  <meta property="og:image" content="https://therapidhire.com/images/choose-3.png"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:domain" content="therapidhire.com"/>
+  <meta property="twitter:url" content="https://therapidhire.com/termsofservices"/>
+  <meta name="twitter:title" content="Terms of Services -TheRapidHire"/>
+  <meta name="twitter:description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us.
+"/>
+  <meta name="twitter:image" content="https://therapidhire.com/images/choose-3.png"/>
+
+        
+      </Helmet>
       <div className="offwrap"></div>
 
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Terms of Services
-                <span className="watermark">Terms</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 {" "}
                 We use our website to communicate with the valuable customers

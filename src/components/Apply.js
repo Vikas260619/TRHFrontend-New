@@ -5,7 +5,7 @@ import axios from "axios";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function Apply() {
   const [candidateName, setCandidateName] = useState("");
@@ -17,9 +17,7 @@ function Apply() {
   const [inputFile, setInputFile] = useState(false);
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
-  useEffect(() => {
-    document.title = "Apply";
-  });
+
 
   const validate = (event, name, value) => {
     switch (name) {
@@ -31,7 +29,7 @@ function Apply() {
         ) {
           setErrors({
             ...errors,
-            email: "Enter a valid email address",
+            email: "Enter a valid Email address",
           });
         } else {
           let newObj = omit(errors, "email");
@@ -70,7 +68,12 @@ function Apply() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    if (!isNaN(candidateName)) {
+      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+      return false;
+  } else {
+      document.getElementById("blankMsg").innerHTML = "";
+  }
     if (candidateName !== "") {
       if (email !== "") {
         if (phone_number !== "") {
@@ -126,15 +129,49 @@ function Apply() {
 
   return (
     <div>
+      <Helmet>
+        <title>Apply For Java Developers</title>
+        
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="canonical" href="https://therapidhire.com/applyjava/" />
+
+ <meta property="og:url" content="https://therapidhire.com/applyjava"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Apply for Java Developer -The Rapid Hire "/>
+  <meta property="og:description" content="Experience in core Java advanced programming. Experience in Spring & 
+  Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and 
+  anti-patterns. Good in algorithms and data structures. Good understanding of Database concepts and Experience in 
+  SQL, PLSQL and NoSQL. Excellent Analytical and program solving skills Excellent written and oral communication
+   skills self-starter and highly motivated Work in a dynamic environment and ability to adapt quickly to changes.
+    Experience with Test and defect management tools. An innovator, always suggesting newer ways of improving 
+    Productivity. Mentor and train team members. Identify and escalate risks on time and suggest mitigation measures."/>
+  <meta property="og:image" content="https://therapidhire.com/images/java.png"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:domain" content="therapidhire.com"/>
+  <meta property="twitter:url" content="https://therapidhire.com/applyjava"/>
+  <meta name="twitter:title" content="Apply for Java Developer -The Rapid Hire "/>
+  <meta name="twitter:description" content="Experience in core Java advanced programming. Experience in Spring & 
+  Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and 
+  anti-patterns. Good in algorithms and data structures. Good understanding of Database concepts and Experience
+   in SQL, PLSQL and NoSQL. Excellent Analytical and program  solving  skills Excellent written and oral 
+   communication skills self-starter and highly motivated Work in a dynamic environment and ability to adapt 
+   quickly to changes. Experience with Test and defect management tools. An innovator, always suggesting newer
+    ways of improving Productivity. Mentor and train team members. Identify and escalate risks on time and
+     suggest mitigation measures."/>
+  <meta name="twitter:image" content="https://therapidhire.com/images/java.png"/>
+
+        
+        
+      </Helmet>
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Explore Opportunities
-                <span className="watermark">Apply Now</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 If you're enthusiastic, inquisitive, and enjoy using your ideas
                 to overcome problems, this is the place for you.
@@ -188,8 +225,8 @@ function Apply() {
                               name="name"
                               placeholder="Name"
                               value={candidateName}
-                              onChange={(e) => setCandidateName(e.target.value)}
-                            />
+                              onChange={(e) => setCandidateName(e.target.value)} />
+                              <span id="blankMsg" style={{ color: "red" }} />
                           </div>
                           <div className="col-lg-6">
                             <Input
@@ -222,7 +259,7 @@ function Apply() {
                               placeholder="Phone No."
                               value={phone_number}
                               minLength={9}
-                              maxLength={10}
+                              maxLength={12}
                               onChange={(e) => checkInput(e)}
                             />
                           </div>

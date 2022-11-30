@@ -1,23 +1,52 @@
 import React from "react";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function Privacypolicy() {
-  useEffect(() => {
-    document.title="Privacypolicy"
-    }, )
- 
   return (
     <div>
+      <Helmet>
+        <title>Privacy Policy-TheRapidHire</title>
+      
+        <link rel="canonical" href="https://therapidhire.com/privacy/" />
+        <meta property="og:url" content="https://therapidhire.com/privacy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Privacy Policy - TheRapidHire" />
+        <meta
+          property="og:description"
+          content="What kind of data do we collect?
+"
+        />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/choose-2.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="therapidhire.com" />
+        <meta
+          property="twitter:url"
+          content="https://therapidhire.com/privacy"
+        />
+        <meta name="twitter:title" content="Privacy Policy - TheRapidHire" />
+        <meta
+          name="twitter:description"
+          content="What kind of data do we collect?
+"
+        />
+        <meta
+          name="twitter:image"
+          content="https://therapidhire.com/images/choose-2.png"
+        />
+      </Helmet>
       <div className="offwrap"></div>
 
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Privacy Policy
-                <span className="watermark">Privacy</span>
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -40,11 +69,11 @@ function Privacypolicy() {
                 </p>
                 <p>
                   Name, company, and job title, as well as contact information
-                  (email address and cell phone number).
+                  (Email address and phone number).
                 </p>
                 <p>
                   Demographic data such as postal code, product preferences, and
-                  interests We will collect information about the transactions
+                  interests. We will collect information about the transactions
                   you engage in while on the website and other potential
                   activities on the website if you become a registered user or
                   if you conduct transactions through this website.
@@ -121,7 +150,7 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5>To provide assistance or other services.</h5>
                   <p>
-                  TheRapidHire may use your personal information to provide
+                    TheRapidHire may use your personal information to provide
                     you with support or other services you have ordered or
                     requested. TheRapidHire website may also use your personal
                     information to respond directly to your information
@@ -138,7 +167,7 @@ function Privacypolicy() {
                     respond to your inquiries.{" "}
                   </h5>
                   <p>
-                  TheRapidHire's website may use your personal information to
+                    TheRapidHire's website may use your personal information to
                     send you notifications about new product releases and
                     service developments.
                   </p>
@@ -149,8 +178,8 @@ function Privacypolicy() {
                   </h5>
                   <p>
                     If you have any questions feel free to contact directly
-                    here: mail to Data privacy is important to Therapidhire.
-                    Therapidhire has a detailed Data Privacy Policy that is
+                    here: mail to info@therapidhire. Data privacy is important to TheRapidHire.
+                    TheRapidHire has a detailed Data Privacy Policy that is
                     available on the link Privacy Notice. Therapidhire’s Data
                     Privacy Policy describes how we collect, use and disclose
                     information that we may obtain through this Website or as a
@@ -201,7 +230,7 @@ function Privacypolicy() {
                     services.{" "}
                   </h5>
                   <p>
-                  TheRapidHire website may track your use of TheRapidHire
+                    TheRapidHire website may track your use of TheRapidHire
                     website products and services in order to determine your
                     level of usage, and those usage statistics may be shared
                     with TheRapidHire website's content licensors and your
@@ -232,7 +261,7 @@ function Privacypolicy() {
                     benefits, programmes, and opportunities.{" "}
                   </h5>
                   <p>
-                  TheRapidHire website may contact you about TheRapidHire
+                    TheRapidHire website may contact you about TheRapidHire
                     website benefits, programmes, and opportunities that are
                     available to you.
                   </p>
@@ -240,7 +269,7 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5>To collaborate with third parties </h5>
                   <p>
-                  TheRapidHire website may share your personal data with third
+                    TheRapidHire website may share your personal data with third
                     parties in connection with services performed for or by the
                     THERAPIDHIRE website. These third parties are prohibited
                     from using this data for any purpose other than providing
@@ -271,7 +300,7 @@ function Privacypolicy() {
                     that you requested).
                   </p>
                   <p>
-                    content to prevent abuse, such as spam. On occasion, these
+                    Content to prevent abuse, such as spam. On occasion, these
                     efforts may result in the temporary or permanent suspension
                     or termination of some functions for some users. By using
                     our website, you acknowledge and agree that we may access,
@@ -307,7 +336,7 @@ function Privacypolicy() {
                     as your personal information.{" "}
                   </h5>
                   <p>
-                  TheRapidHire website Information Security Program safeguards
+                    TheRapidHire website Information Security Program safeguards
                     the confidentiality, integrity, and availability of
                     TheRapidHire website information assets by implementing risk
                     management policies, standards, guidelines, and procedures
@@ -436,7 +465,7 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5>Personal Data Storage and Transfer </h5>
                   <p>
-                  TheRapidHire website may store and process personal data
+                    TheRapidHire website may store and process personal data
                     collected in your region, the United States, or any other
                     country where TheRapidHire website, its affiliates, or
                     contractors maintain facilities, including outside the
@@ -446,7 +475,7 @@ function Privacypolicy() {
                     regardless of where the data is stored.
                   </p>
                   <p>
-                  TheRapidHire website also works with third parties around
+                    TheRapidHire website also works with third parties around
                     the world, such as cloud hosting services and suppliers, to
                     meet the needs of our business, workforce, and customers. In
                     some cases, we may need to disclose or transfer your
@@ -463,7 +492,7 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5> Retention of Personal Data </h5>
                   <p>
-                  TheRapidHire website keeps personal data for as long as it
+                    TheRapidHire website keeps personal data for as long as it
                     is necessary to provide the services and complete the
                     transactions you have requested, or for other business
                     purposes such as complying with our legal obligations,
@@ -626,8 +655,8 @@ function Privacypolicy() {
                     info@therapidhire.com if you believe the information we've
                     on train for you is incorrect, deficient, or out of date.
                     You have the right to change or correct your particular
-                    information at any time. Simply shoot an dispatch
-                    to info@therapidhire.com with the subject" Correction" with
+                    information at any time. Simply shoot an dispatch to
+                    info@therapidhire.com with the subject" Correction" with
                     your old information and corrections.
                   </p>
                 </div>
@@ -675,7 +704,7 @@ function Privacypolicy() {
                   </p>
                   <p>TheRapidHire website AI Google Action</p>
                   <p>
-                  TheRapidHire website ("us", "we", or "our") operates the
+                    TheRapidHire website ("us", "we", or "our") operates the
                     Google Assistant Website "TheRapidHire website AI" (the
                     "Service").
                   </p>
@@ -770,7 +799,8 @@ function Privacypolicy() {
                 <div className="term12">
                   <h5>What if you have concerns? </h5>
                   <p>
-                  If you have any questions or concerns about this statement, please contact us at info@therapidhire.com.
+                    If you have any questions or concerns about this statement,
+                    please contact us at info@therapidhire.com.
                   </p>
                 </div>
               </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { omit } from "lodash";
-import { useParams } from "react-router-dom";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,7 +10,6 @@ import ScrollToTop from "react-scroll-to-top";
 import { Helmet } from "react-helmet";
 
 function Blogdetail() {
-  const { id } = useParams();
 
   const [users, setUsers] = useState("");
   const [data, setdata] = useState([]);
@@ -32,9 +30,10 @@ function Blogdetail() {
   const { userId } = state;
 
   const [errors, setErrors] = useState({});
+  
+  
   useEffect(() => {
     setImageUrl(users.bannerImage);
-    document.title = "Blogdetail";
     const url = window.location.href;
     const url1 =
       "https://www.linkedin.com/cws/share?url=" +
@@ -58,6 +57,7 @@ function Blogdetail() {
     setTwitterUrl(newUrl2);
     setLinkdinUrl(url1);
   });
+  
 
   const Navigate = useNavigate();
   let blog_id = userId;
@@ -100,9 +100,18 @@ function Blogdetail() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isNaN(fullname)) {
+      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+      return false;
+  } else {
+      document.getElementById("blankMsg").innerHTML = "";
+  }
     if (fullname !== "") {
+      if(fullname.length>20){}
       if (email !== "") {
-        if (comment !== "") {
+        if (comment !== "") 
+        
+        {
           let data = {
             fullname,
             email,
@@ -128,10 +137,12 @@ function Blogdetail() {
       } else {
         toast("Please Fill the email field ");
       }
-    } else {
+    } 
+    else {
       toast("Please Fill the name field ");
     }
   };
+
 
   useEffect(() => {
     axios({
@@ -166,7 +177,7 @@ function Blogdetail() {
       method: "get",
     })
       .then((result) => {
-        console.log(result)
+      
         setComments(result.data.message.reverse());
         if (result.data.message.length > 0) {
           setCommentFlag(1);
@@ -181,6 +192,7 @@ function Blogdetail() {
     allComment === 0 ? setAllComment(1) : setAllComment(0);
     setShow(!show);
   };
+  
   function getOne(id){
     axios
        .get('https://trhblogsnew2.herokuapp.com/blog/getOne/' + id)
@@ -231,6 +243,8 @@ function Blogdetail() {
             property="article:published_time"
             content="2022-09-29T12:39:00.000+05:30"
           />
+          
+
           <meta property="article:section" content="Technology" />
           <meta property="article:tag" content="blockchain" />
           <meta property="article:tag" content="blockchain technology" />
@@ -247,10 +261,9 @@ function Blogdetail() {
         <div className="rs-breadcrumbs img1">
           <div className="container">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Creative Ideas - Blogs
-                <span className="watermark">Blog</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 Most creative ideas in blog post of Cloud services , Designing ,
                 Development.{" "}
@@ -270,10 +283,11 @@ function Blogdetail() {
                     </div>
 
                     <div className="article-content">
-                      {console.log(users)}
+                    
                       <ul className="entry-list">
+                        <li>Author</li>
                         <li>
-                          By <a href="/">{users.author}</a>
+                          By{users.author}
                         </li>
                         {users.date && <li>{users.date}</li>}
                       </ul>
@@ -447,11 +461,17 @@ function Blogdetail() {
                             <div className="form-group">
                               <input
                                 type="text"
+                                id="User_name"
+                                name="Name"
                                 value={fullname}
                                 onChange={(e) => setFullname(e.target.value)}
                                 className="form-control"
                                 placeholder="Enter name"
+                                
+                                
                               />
+                             <span id="blankMsg" style={{ color: "red" }} />
+
                             </div>
                           </div>
 
