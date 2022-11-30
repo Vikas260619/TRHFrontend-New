@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Common from "../Container/Common.js";
 import axios from "axios";
 import { baseURL } from "./Basepath.js";
@@ -15,9 +15,7 @@ function Contactus() {
   const [website, setwebsite] = useState("");
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
-  useEffect(() => {
-    document.title = "Get a enquiry";
-  });
+
   const validate = (event, name, value) => {
     switch (name) {
       case "email":
@@ -63,6 +61,12 @@ function Contactus() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isNaN(name)) {
+      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+      return false;
+  } else {
+      document.getElementById("blankMsg").innerHTML = "";
+  }
 
     if (name !== "") {
       if (email !== "") {
@@ -104,7 +108,7 @@ function Contactus() {
           toast("Please Fill the Phone Number field");
         }
       } else {
-        toast("Please Fill the email field");
+        toast("Please Fill the Email field");
       }
     } else {
       toast("Please Fill the Name field");
@@ -114,44 +118,52 @@ function Contactus() {
   return (
     <div>
       <Helmet>
+        <title>Let's Connect- TheRapidHire</title>
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <link rel="canonical" href="https://therapidhire.com/getaenquiry/" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Get a Enquiry" />
-        <meta property="og:url" content="https://therapidhire.com/getaenquiry/" />
+        <link rel="canonical" href="https://therapidhire.com/letsconnect/" />
+
         <meta
-          property="og:image"
-          content="https://therapidhire.com/images/ser3.png"
+          property="og:url"
+          content="https://therapidhire.com/letsconnect"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Let's Connect - TheRapidHire" />
         <meta
           property="og:description"
           content="Get in touch with us and discuss the needs and requirements of your development project.
 "
         />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/choose-1.png"
+        />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Get a Enquiry" />
-        <meta name="twitter:site" content="@therapidhire" />
+        <meta property="twitter:domain" content="therapidhire.com" />
+        <meta
+          property="twitter:url"
+          content="https://therapidhire.com/letsconnect"
+        />
+        <meta name="twitter:title" content="Let's Connect - TheRapidHire" />
         <meta
           name="twitter:description"
-          content="Get in touch with us and discuss the needs and requirements of your development project."
+          content="Get in touch with us and discuss the needs and requirements of your development project.
+"
         />
         <meta
           name="twitter:image"
-          content="https://therapidhire.com/images/ser3.png"
+          content="https://therapidhire.com/images/choose-1.png"
         />
-
-        <meta name="twitter:image:alt" content="Getintouch" />
       </Helmet>
       <div className="offwrap"></div>
 
       <div className="main-content">
         <Common
           name="Get in touch"
-          background="Contact"
+        
           description="Get in touch with us and discuss the needs and requirements of
          your development project."
         />
@@ -190,6 +202,7 @@ function Contactus() {
                             onChange={(e) => setName(e.target.value)}
                             placeholder="Name"
                           />
+                            <span id="blankMsg" style={{ color: "red" }} />
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-30">
                           <input
@@ -221,7 +234,7 @@ function Contactus() {
                             type="tel"
                             value={phone}
                             minLength={9}
-                            maxLength={10}
+                            maxLength={12}
                             placeholder="Phone Number"
                             onChange={(e) => checkInput(e)}
                           />
@@ -256,7 +269,7 @@ function Contactus() {
                             className="readon submit"
                             type="submit"
                             onClick={handleSubmit}
-                            value="Contact Us"
+                            value="Lets Connect"
                           />
                           <ToastContainer />
                         </div>
@@ -279,7 +292,7 @@ function Contactus() {
                           <img src="images/usa.png" alt="usaflag" />
                         </div>
                         <h2 className="title">
-                          <a href="#">USA Office</a>
+                          USA Office
                         </h2>
                         <p className="services-txt">
                           1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801
@@ -296,7 +309,7 @@ function Contactus() {
                           <img src="images/indiaflag.png" alt="indiaflag" />
                         </div>
                         <h2 className="title">
-                          <a href="/">India Office</a>
+                          India Office
                         </h2>
                         <p className="services-txt">
                           51, Electronic Complex, Pardesi Pura Main Road,
@@ -313,7 +326,7 @@ function Contactus() {
                           <i className="fa fa-envelope"></i>
                         </div>
                         <h2 className="title">
-                          <a href="#">Email Us</a>
+                          Email Us
                         </h2>
                         <a href="mailto:sales@therapidhire.com">
                           sales@therapidhire.com
@@ -332,7 +345,7 @@ function Contactus() {
                           <i className="fa fa-phone"></i>
                         </div>
                         <h2 className="title">
-                          <a href="#">Call Us</a>
+                          Call Us
                         </h2>
                         <a href="tel:+1 (917) 628 2406">+1 (917) 628 2406</a>
                         <br />

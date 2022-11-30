@@ -1,5 +1,33 @@
-import React from "react";
+import { baseURL } from "./Basepath.js";
+
+import React, { useState } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post(baseURL + "SubScrition/UserSubscription",{email: email})
+      .then((res) => {
+       
+       toast(res.data.message);
+
+        setTimeout(() => {
+          setEmail("");
+        }, 3000); 
+      
+      })
+      .catch((err) => console.log("error"))
+
+  }
+
+
+
+
+
   return (
     <div>
       <footer
@@ -34,8 +62,7 @@ function Footer() {
                   <li>
                     <a href="/technology">Technology</a>
                   </li>
-
-                  <li>
+                   <li>
                     <a href="/team">Team</a>
                   </li>
                   {/* <li>
@@ -59,7 +86,7 @@ function Footer() {
                     <a href="/faq">FAQ</a>
                   </li>
                   <li>
-                    <a href="/getaenquiry">Contact Us</a>
+                    <a href="/letsconnect">Contact Us</a>
                   </li>
                   <li></li>
                 </ul>
@@ -102,13 +129,19 @@ function Footer() {
                     <input
                       class="add-email"
                       type="email"
-                      placeholder="Email Address"
+                      name="email"
+                      placeholder="Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
-                    <button class="submit-email">
-                      <span class="before-submit">Subscribe</span>
-                    </button>
+                   
                   </form>
+              
                 </div>
+              
+                <button className="subbtn" onClick={(e)=>handleSubmit(e)} >
+                      Subscribe
+                    </button>
               </div>
             </div>
           </div>

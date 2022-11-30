@@ -11,25 +11,25 @@ function Home() {
   const list = [
     {
       item: "Cloud Services",
-      image: "images/slider1.jpg",
+      image: "images/slider1.webp",
       descp:
-        "We can assist you in identifying and implementing the appropriate Cloud solution to meet your critical application and ERP migration goals and business circumstances.",
+        "We can assist you in identifying and implementing the appropriate cloud solution to meet your critical application and ERP migration goals and business circumstances.",
     },
     {
       item: "Web Development",
-      image: "images/slider2.jpg",
+      image: "images/slider2.webp",
       descp:
-        "With a broad selection of web application services, we guarantee to best meet all of your business needs. Our web developers are driven to produce outcomes that assist you in growing your company.",
+        "With a broad selection of web application services, we guarantee to meet all of your business needs. Our web developers are driven to produce outcomes that assist you in growing your company.",
     },
     {
       item: "Mobile App Development",
-      image: "images/slider3.jpg",
+      image: "images/slider3.webp",
       descp:
-        "We provide complete application design, integration, and management services.Whether it's a consumer-oriented app or a transformative enterprise-class solution.",
+        "We provide complete application design, integration, and management services. Whether it's a consumer-oriented app or a transformative enterprise-class solution",
     },
     {
       item: "Agile Team Deployment",
-      image: "images/slider4.jpg",
+      image: "images/slider4.webp",
       descp:
         "We have the ability to respond quickly to the growing demand for Agile Team Deployment in the business sector through continuous training and procedure upgrades.",
     },
@@ -45,7 +45,7 @@ function Home() {
     <div className="item" data-value="1">
       <div className="service-wrap">
         <div className="image-part">
-          <img src="images/services1.jpg" alt="" />
+          <img src="images/services1.webp" alt="CloudServices" />
         </div>
         <div className="content-part">
           <h3 className="title">
@@ -61,7 +61,7 @@ function Home() {
     <div className="item" data-value="2">
       <div className="service-wrap">
         <div className="image-part">
-          <img src="images/services2.jpg" alt="" />
+          <img src="images/services2.webp" alt="WebDevelopment" />
         </div>
         <div className="content-part">
           <h3 className="title">
@@ -77,7 +77,7 @@ function Home() {
     <div className="item" data-value="3">
       <div className="service-wrap">
         <div className="image-part">
-          <img src="images/services3.jpg" alt="" />
+          <img src="images/services3.webp" alt="AWS Services" />
         </div>
         <div className="content-part">
           <h3 className="title">
@@ -93,7 +93,7 @@ function Home() {
     <div className="item" data-value="4">
       <div className="service-wrap">
         <div className="image-part">
-          <img src="images/services4.jpg" alt="" />
+          <img src="images/services4.webp" alt="Web Designing" />
         </div>
         <div className="content-part">
           <h3 className="title">
@@ -109,15 +109,16 @@ function Home() {
     <div className="item" data-value="5">
       <div className="service-wrap">
         <div className="image-part">
-          <img src="images/services5.jpg" alt="" />
+          <img src="images/services5.webp" alt="DatabaseManagement" />
         </div>
         <div className="content-part">
           <h3 className="title">
             <a href="/Services">Database Management</a>
           </h3>
           <div className="desc">
-            In today’s business landscape, every CXO is in theprocess or
-            planning on implementing CASS– Cloud,Analytics
+            Database Management Services experts can provide administration,
+            backup and recovery services, and performance troubleshooting for
+            clients who use Microsoft SQL Server and MySQL.
           </div>
         </div>
       </div>
@@ -125,7 +126,7 @@ function Home() {
     <div className="item" data-value="5">
       <div className="service-wrap">
         <div className="image-part">
-          <img src="images/services6.jpg" alt="" />
+          <img src="images/services6.webp" alt="cybersecurity" />
         </div>
         <div className="content-part">
           <h3 className="title">
@@ -144,42 +145,45 @@ function Home() {
   return (
     <div>
       <Helmet>
+        <title>Software Development | IT outsourcing Company - TheRapidHire</title>
+
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <meta property="og:locale" content="en_US" />
+        <link rel="canonical" href="https://therapidhire.com/" />
+
+        <meta property="og:url" content="https://therapidhire.com" />
         <meta property="og:type" content="website" />
+
         <meta
           property="og:title"
-          content="TheRapidHire - Software Development|IT outsourcing company"
+          content="TheRapidHire - Software Development and IT outsourcing company"
         />
-        <meta property="og:url" content="https://therapidhire.com/" />
-        <meta
-          property="og:image"
-          content="https://therapidhire.com/images/ser3.png"
-        />
-        <meta property="og:image:width" content="150" />
-        <meta property="og:image:height" content="150" />
         <meta
           property="og:description"
           content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
         />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/services2.jpg"
+        />
+
         <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="therapidhire.com" />
+        <meta property="twitter:url" content="https://therapidhire.com" />
         <meta
           name="twitter:title"
-          content="TheRapidHire - Software Development|IT outsourcing company"
+          content="TheRapidHire - Software Development and IT outsourcing company"
         />
-        <meta name="twitter:site" content="@therapidhire" />
         <meta
           name="twitter:description"
           content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
         />
         <meta
           name="twitter:image"
-          content="https://therapidhire.com/images/ser3.png"
+          content="https://therapidhire.com/images/services2.jpg"
         />
-        <meta name="twitter:image:alt" content="therapidhire" />
       </Helmet>
 
       <AliceCarousel
@@ -226,8 +230,8 @@ function Home() {
         <div className="container">
           <div className="animat-rat">
             <img src="images/squar.png" className="rat-sib" alt="squre" />
-            <img src="images/round-2.png" className="rat-round" alt="round" />
-            <img src="images/ract.png" className="rat-ract" alt="ract" />
+            <img src="images/round-2.webp" className="rat-round" alt="round" />
+            <img src="images/ract.webp" className="rat-ract" alt="ract" />
             <img src="images/squar.png" className="rat-squar1" alt="squar1" />
             <img src="images/squar.png" className="rat-squar2" alt="squar2" />
           </div>
@@ -236,7 +240,7 @@ function Home() {
               <div className="sec-title3 text-center ">
                 <span className="sub-title">ABOUT US</span>
                 <h2 className="title ">
-                  We Are All In One IT Solution & Technology Company
+                  We are a complete IT solutions and technology firm.
                 </h2>
                 <div className="heading-border-line"></div>
               </div>
@@ -254,32 +258,32 @@ function Home() {
               <div className="row">
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat1.png" alt="feat1" />
+                    <img src="images/feat1.webp" alt="feat1" />
                     <h3>DEDICATED TEAM</h3>
                     <p>
                       Our team provides you with a comprehensive solution using
-                      innovative technique and great reliability. We work with
-                      incredible passion and let that passion stay with us.
+                      innovative techniques and great reliability. We work with
+                      incredible passion, and we let that passion stay with us.
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat2.png" alt="feat2" />
+                    <img src="images/feat2.webp" alt="feat2" />
 
                     <h3>DIVERSE TECHNOLOGY</h3>
                     <p>
                       Our team assists you in gaining control of your small
                       business through software designed to grow with you,
-                      streamline all processes, gain greater insight into your
-                      business.
+                      streamline all processes, and provide greater insight into
+                      your business.
                     </p>
                   </div>
                 </div>
 
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat3.png" alt="feat3" />
+                    <img src="images/feat3.webp" alt="feat3" />
 
                     <h3>RESEARCH AND DEVELOPMENT</h3>
                     <p>
@@ -292,7 +296,7 @@ function Home() {
                 </div>
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat4.png" alt="faet4" />
+                    <img src="images/feat4.webp" alt="faet4" />
 
                     <h3>CUSTOMER ACCOMPLISHMENT</h3>
                     <p>
@@ -304,7 +308,7 @@ function Home() {
                 </div>
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat5.png" alt="feat5" />
+                    <img src="images/feat5.webp" alt="feat5" />
 
                     <h3>COMMITTED ASSISTANCE</h3>
                     <p>
@@ -316,7 +320,7 @@ function Home() {
                 </div>
                 <div className="col-lg-4 col-md-6 col-xs-12">
                   <div className="single-services">
-                    <img src="images/feat6.png" alt="feat6" />
+                    <img src="images/feat6.webp" alt="feat6" />
 
                     <h3>EXPERTISE</h3>
                     <p>

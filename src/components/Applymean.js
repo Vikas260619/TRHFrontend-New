@@ -5,7 +5,7 @@ import axios from "axios";
 import { baseURL } from "./Basepath";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function Applymean() {
   const [candidateName, setCandidateName] = useState("");
@@ -17,9 +17,6 @@ function Applymean() {
   const [inputFile, setInputFile] = useState(false);
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
-  useEffect(() => {
-    document.title = "Apply Mean";
-  });
 
   const validate = (event, name, value) => {
     switch (name) {
@@ -45,6 +42,12 @@ function Applymean() {
   };
 
   const handleFileChange = (e) => {
+    if (!isNaN(candidateName)) {
+      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+      return false;
+  } else {
+      document.getElementById("blankMsg").innerHTML = "";
+  }
     if (inputFile === false) {
       setResume(e.target.files[0]);
     } else {
@@ -70,6 +73,12 @@ function Applymean() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isNaN(candidateName)) {
+      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+      return false;
+  } else {
+      document.getElementById("blankMsg").innerHTML = "";
+  }
 
     if (candidateName !== "") {
       if (email !== "") {
@@ -126,15 +135,56 @@ function Applymean() {
 
   return (
     <div>
+      <Helmet>
+        <title>Apply For Mean Developers</title>
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://therapidhire.com/applymean/" />
+        <meta property="og:url" content="https://therapidhire.com/applymean" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Apply for MEAN Stack - TheRapidHire"
+        />
+        <meta
+          property="og:description"
+          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through Node.js."
+        />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/mean.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="therapidhire.com" />
+        <meta
+          property="twitter:url"
+          content="https://therapidhire.com/applymean"
+        />
+        <meta
+          name="twitter:title"
+          content="Apply for MEAN Stack - TheRapidHire"
+        />
+        <meta
+          name="twitter:description"
+          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through Node.js."
+        />
+        <meta
+          name="twitter:image"
+          content="https://therapidhire.com/images/mean.png"
+        />
+      </Helmet>
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Explore Opportunities
-                <span className="watermark">Apply Now</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 If you're enthusiastic, inquisitive, and enjoy using your ideas
                 to overcome problems, this is the place for you.
@@ -190,6 +240,8 @@ function Applymean() {
                               value={candidateName}
                               onChange={(e) => setCandidateName(e.target.value)}
                             />
+                             <span id="blankMsg" style={{ color: "red" }} />
+
                           </div>
                           <div className="col-lg-6">
                             <Input
@@ -222,7 +274,7 @@ function Applymean() {
                               placeholder="Phone No."
                               value={phone_number}
                               minLength={9}
-                              maxLength={10}
+                              maxLength={12}
                               onChange={(e) => checkInput(e)}
                             />
                           </div>

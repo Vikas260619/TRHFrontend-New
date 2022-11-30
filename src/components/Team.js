@@ -2,15 +2,45 @@ import React from "react";
 import Common from "../Container/Common.js";
 import CardTeam from "../Container/CardTeam.js";
 import { Teamdata } from "../Container/CardJSON.js";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function Team() {
-  useEffect(() => {
-    document.title="Team"
-    }, )
- 
   return (
     <div>
+      <Helmet>
+        <title>Meet Our Team - TheRapidHire</title>
+        <meta
+          name="robots"
+          content="noindex, nofollow"/>
+        <link rel="canonical" href="https://therapidhire.com/team/"/>
+
+        <meta property="og:url" content="https://therapidhire.com/team"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Meet Our Team - TheRapidHire"/>
+        <meta
+          property="og:description"
+          content="A team's success is determined by how well it plays as a whole. You could have the world's best collection of individual stars. We can all do little things with great love, and together we can accomplish great things.
+"
+        />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/ser1.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="therapidhire.com" />
+        <meta property="twitter:url" content="https://therapidhire.com/team" />
+        <meta name="twitter:title" content="Meet Our Team - TheRapidHire" />
+        <meta
+          name="twitter:description"
+          content="A team's success is determined by how well it plays as a whole. You could have the world's best collection of individual stars. We can all do little things with great love, and together we can accomplish great things.
+"
+        />
+        <meta
+          name="twitter:image"
+          content="https://therapidhire.com/images/ser1.png"
+        />
+      </Helmet>
       <div className="offwrap"></div>
 
       <div className="main-content">

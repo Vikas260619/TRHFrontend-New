@@ -12,10 +12,10 @@ function Features() {
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Features
                 <span className="watermark">Features</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 Technology is transforming the way we buy, sell, and do
                 everything. We help clients unlock potential and fuel growth

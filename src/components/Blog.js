@@ -52,15 +52,13 @@ function Blog() {
     Navigate("/" + array.join(""), { state: { userId: id } }) 
     getOne(id);
 }
-  console.log();
-  useEffect(() => {
-    document.title = "Blog";
-  });
+  
 
   return (
     <div>
       <Helmet>
-        <meta name="description" content="TRH Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance." />
+        <title>Get the latest updates of Technology | Business | Industry insights</title>
+        <meta name="description" content=" Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance." />
           <meta name="keywords" content="blockchain, IoT, Internet of things, java, cloud computing, technology, business, software development, mobile application, android, ios, business, marketing, digital marketing, industry insights, cryptocurrency, bitcoin , NFT, fintech , AI, ML, DL, deep learning, python, programming" />
         <meta
           name="robots"
@@ -77,7 +75,7 @@ function Blog() {
         />
         <meta
           property="og:description"
-          content="TRH Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."
+          content="Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."
         />
       </Helmet>
       <div className="offwrap"></div>
@@ -85,10 +83,9 @@ function Blog() {
         <div className="rs-breadcrumbs img1">
           <div className="container">
             <div className="breadcrumbs-inner">
-              <h1 className="page-title">
+              <h2 className="page-title">
                 Creative Ideas - Blogs
-                <span className="watermark">Blog</span>
-              </h1>
+              </h2>
               <span className="sub-text">
                 Most creative ideas in blog post of Cloud services , Designing ,
                 Development.{" "}
@@ -108,16 +105,16 @@ function Blog() {
                           <div className="col-lg-6 col-md-6">
                             <div className="single-blog-card">
                               <div className="blog-image">
-                                <a>
+                                
                                   <img src={item.bannerImage} alt="image" />
-                                </a>
+                                
                                 {item.date && (
                                   <div className="date">{item.date}</div>
                                 )}
                               </div>
                               <div className="blog-content">
                                 <h3>
-                                  <a href="#">{item.title}</a>
+                                  {item.title}
                                 </h3>
                                 <p>{item.mainDesc.slice(0, 124)}</p>
                                 <button
@@ -135,9 +132,9 @@ function Blog() {
                           <div className="col-lg-6 col-md-6">
                             <div className="single-blog-card">
                               <div className="blog-image">
-                                <a href="//">
+                               
                                   <img src={item.bannerImage} alt="image" />
-                                </a>
+                              
 
                                 <div className="date">{item.date}</div>
                               </div>

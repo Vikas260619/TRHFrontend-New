@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { useParams, useNavigate } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 function Header() {
   const Navigate = useNavigate();
   const [token, setToken] = useState("");
@@ -114,15 +115,15 @@ function Header() {
               </ul>
             </li>
           </ul>
-          <a href="/getaenquiry" className="enquirebtn">
-            Get A Enquiry
+          <a href="/letsconnect" className="enquirebtn">
+            Let's Connect
           </a>
           {token ? (
             <button className="loginbtn" onClick={logoutBtn}>
               <span>
                 <i className="fa fa-user" />
               </span>
-              Logout
+              Logout 
             </button>
           ) : (
             <a href="/login" className="loginbtn">
