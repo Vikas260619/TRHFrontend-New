@@ -10,23 +10,21 @@ function Footer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(baseURL + "SubScrition/UserSubscription",{email: email})
-      .then((res) => {
-       
-       toast(res.data.message);
+    if (email !== "") {
+      axios
+        .post(baseURL + "SubScrition/UserSubscription", { email: email })
+        .then((res) => {
+          toast(res.data.message);
 
-        setTimeout(() => {
-          setEmail("");
-        }, 3000); 
-      
-      })
-      .catch((err) => console.log("error"))
-
-  }
-
-
-
-
+          setTimeout(() => {
+            setEmail("");
+          }, 1000);
+        })
+        .catch((err) => console.log("error"));
+    } else {
+      toast("Please fill the Email field");
+    }
+  };
 
   return (
     <div>
@@ -62,7 +60,7 @@ function Footer() {
                   <li>
                     <a href="/technology">Technology</a>
                   </li>
-                   <li>
+                  <li>
                     <a href="/team">Team</a>
                   </li>
                   {/* <li>
@@ -105,7 +103,7 @@ function Footer() {
                   <li>
                     <i className="fa fa-phone"></i>
                     <div className="desc">
-                      <a href="tel:+1 (917) 628 2406">+1 (917) 628 2406</a>
+                      <a href="tel:+1 (917) 628 2406">+0731 426 8367</a>
                     </div>
                   </li>
                   <li>
@@ -123,7 +121,7 @@ function Footer() {
                 <p className="widget-desc white-color">
                   Stay up to update with our latest news and products.
                 </p>
-                <br/>
+                <br />
                 <div class="contentsubs">
                   <form class="subscription">
                     <input
@@ -134,14 +132,11 @@ function Footer() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
-                   
                   </form>
-              
                 </div>
-              
-                <button className="subbtn" onClick={(e)=>handleSubmit(e)} >
-                      Subscribe
-                    </button>
+                <button className="subbtn" onClick={(e) => handleSubmit(e)}>
+                  Subscribe
+                </button>
               </div>
             </div>
           </div>

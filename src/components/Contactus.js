@@ -94,7 +94,7 @@ function Contactus() {
                     setEmail("");
                     setPhone("");
                     setwebsite("");
-                  }, 3000);
+                  }, 1000);
                 })
 
                 .catch((err) => console.log(err));
@@ -349,7 +349,7 @@ function Contactus() {
                         </h2>
                         <a href="tel:+1 (917) 628 2406">+1 (917) 628 2406</a>
                         <br />
-                        <a href="tel:073135620055">+0731 356 20055</a>
+                        <a href="tel:073135620055">+0731 426 8367</a>
                       </div>
                     </div>
                   </div>

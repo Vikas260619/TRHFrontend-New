@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Input from "../Container/Input";
 import axios from "axios";
 import { baseURL } from "./Basepath";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

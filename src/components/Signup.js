@@ -168,7 +168,7 @@ export default function Signup() {
                         setPassword("");
                         setConfirm_password("");
                         setAddress("");
-                      }, 3000);
+                      }, 1000);
                     })
 
                     .catch((err) => console.log(err));
@@ -308,7 +308,7 @@ export default function Signup() {
                               className="form-control-mod"
                               placeholder="Password"
                               value={password}
-                              minLength={7}
+                              minLength={8}
                               style={{
                                 borderBottomColor: errors.password ? "red" : "",
                               }}
