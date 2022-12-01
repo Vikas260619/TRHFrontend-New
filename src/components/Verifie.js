@@ -1,8 +1,24 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { baseURL } from "./Basepath";
+import { useParams } from "react-router-dom";
+import React, { useEffect} from "react";
 
 function Verifie() {
+  const { id } = useParams();
+
   const Navigate = useNavigate();
+  useEffect(() => {
+    axios({
+      url: baseURL + "user/emailstatus/" + id,
+      method: "get",
+    })
+      .then((res) => {
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const Loginhandle = (e) => {
     Navigate("/login");

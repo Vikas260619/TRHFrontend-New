@@ -106,7 +106,7 @@ export default function Login() {
             setTimeout(() => {
               Navigate("/profile/" + res.data.Data._id);
               window.location.reload();
-            }, 3000);
+            }, 1000);
             toast(res.data.message);
           })
           .catch((err) => console.log(err));

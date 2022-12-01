@@ -104,7 +104,7 @@ function Apply() {
                       setTechnology("");
                       setInputFile(true);
                       setResume(null);
-                    }, 3000);
+                    }, 1000);
                   })
                   .catch((err) => console.log(err));
               } else {

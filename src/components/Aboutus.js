@@ -22,9 +22,7 @@ function Aboutus() {
                 </div>
               </div>
               <div className="front-title-part">
-                <h3 className="title">
-                  <a href="/about">Vision</a>
-                </h3>
+                <h3 className="title">Vision</h3>
               </div>
               <div className="front-desc-part">
                 <p>
@@ -51,9 +49,7 @@ function Aboutus() {
                 </div>
               </div>
               <div className="front-title-part">
-                <h3 className="title">
-                  <a href="/about">Mission</a>
-                </h3>
+                <h3 className="title">Mission</h3>
               </div>
               <div className="front-desc-part">
                 <p>
@@ -80,9 +76,7 @@ function Aboutus() {
                 </div>
               </div>
               <div className="front-title-part">
-                <h3 className="title">
-                  <a href="/about">Values</a>
-                </h3>
+                <h3 className="title">Values</h3>
               </div>
               <div className="front-desc-part">
                 <p>
@@ -243,9 +237,7 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="/about">
-                      <img src="images/choose-1.webp" alt="imagechoose" />
-                    </a>
+                    <img src="images/choose-1.webp" alt="imagechoose" />
                   </div>
                   <div className="choose-content">
                     <h3 className="headingcolor">Client Oriented</h3>
@@ -261,9 +253,7 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="/about">
-                      <img src="images/choose-2.webp" alt="choose2" />
-                    </a>
+                    <img src="images/choose-2.webp" alt="choose2" />
                   </div>
                   <div className="choose-content">
                     <h3 className="headingcolor">Creativity</h3>
@@ -280,9 +270,7 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="/about">
-                      <img src="images/choose-3.webp" alt="choose3" />
-                    </a>
+                    <img src="images/choose-3.webp" alt="choose3" />
                   </div>
                   <div className="choose-content">
                     <h3 className="headingcolor">Meeting Deadlines</h3>
@@ -298,9 +286,7 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <a href="/about">
-                      <img src="images/choose-4.webp" alt="choose4" />
-                    </a>
+                    <img src="images/choose-4.webp" alt="choose4" />
                   </div>
                   <div className="choose-content">
                     <h3 className="headingcolor">A Plan for Success</h3>

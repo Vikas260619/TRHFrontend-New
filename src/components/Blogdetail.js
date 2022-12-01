@@ -128,7 +128,7 @@ function Blogdetail() {
               toast("Comment Submited Sucessfully");
               setTimeout(() => {
                 window.location.reload();
-              }, 5000);
+              }, 1000);
             })
             .catch((err) => console.log(err));
         } else {
@@ -385,12 +385,12 @@ function Blogdetail() {
                                           </span>
                                         </h5>
                                         <p> {comt.comment} </p>
-                                        <a
+                                        {/* <a
                                           href="javaScript:void(0)"
                                           className="reply-btn"
                                         >
                                           Reply
-                                        </a>
+                                        </a> */}
                                       </>
                                     ))
                                   : ""}
@@ -425,12 +425,12 @@ function Blogdetail() {
                                           </span>
                                         </h5>
                                         <p> {comt.comment} </p>
-                                        <a
+                                        {/* <a
                                           href="javaScript:void(0)"
                                           className="reply-btn"
                                         >
                                           Reply
-                                        </a>
+                                        </a> */}
                                       </>
                                     ))
                                   : ""}
