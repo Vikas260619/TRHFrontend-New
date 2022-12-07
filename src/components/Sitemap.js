@@ -20,7 +20,7 @@ function Sitemap() {
         />
         <meta
           property="og:image"
-          content="https://therapidhire.com/images/siitemap.webp"
+          content="https://therapidhire.com/images/siitemap.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -37,7 +37,7 @@ function Sitemap() {
         />
         <meta
           name="twitter:image"
-          content="https://therapidhire.com/images/siitemap.webp"
+          content="https://therapidhire.com/images/siitemap.png"
         />
       </Helmet>
 
@@ -129,7 +129,7 @@ function Sitemap() {
                 </div>
                 <div className="col-lg-6 col-xs-12  col-md-6">
                   <div className="cont22">
-                    <img src="images/siitemap.webp" alt="sitemap" />
+                    <img src="images/siitemap.png" alt="sitemap" />
                   </div>
                 </div>
               </div>

@@ -2,7 +2,7 @@
 const CardData = [
 
    {
-      imgsrc: "images/ser1.webp",
+      imgsrc: "images/ser1.png",
       title: "CLOUD SERVICES",
       description: "Our cloud services provide the options of availing remote services via cloud computing servers. Services include dare computing resources, data resources and communication resources. Further more, IaaS, PaaS and SaaS platforms area also available for services"
 
@@ -13,7 +13,7 @@ const CardData = [
       description: " We are looking for a web designer who will be responsible for creating great websites for our clients. Primary duties include conceptualizing and implementing creative ideas for client websites, as well as creating visual elements that are in line with our clients' branding."
    },
    {
-      imgsrc: "images/ser3.webp",
+      imgsrc: "images/ser3.png",
       title: "WEB DEVELOPMENT",
       description: " An interactive web application readily amplifies use engagement. Our user-centred web app is feature-rich,intuitive, and performs exceedingly well. We craft your web destination with a clear view of the business goal and ensure that it supports the user-journey."
    },
@@ -28,7 +28,7 @@ const CardData = [
       description: "Our team follows MVP development technique in which it introduces a new product in the market with basic features, but enough to get the attention of the Consumers. We launch the final product after sufficient feedback from our product’s initial clients."
    },
    {
-      imgsrc: "images/ser6.webp",
+      imgsrc: "images/ser6.png",
       title: "PRODUCT DEVELOPMENT",
       description: "  We believe in bringing new product to the market place by implementing innovative businesses thrive by understanding our marketeers wants, making smart product improvements, and developing new products that meet and exceed their customer’s expectations"
    }
@@ -43,7 +43,7 @@ const TechnoData = [
       title: 'JAVA',
       description: ' Our Java Web Application Development specialists create programs that are scalable taking advantage of Javas cross-platform capabilities.A Java application development firm that develops both general-purpose and business-oriented Java solutions (J2EE). The J2EE and J2SE environments, tools like JSP, SWING, Servlets, Struts, XML EJB, Hibernate Technologies, etc.',
 
-      icon_imgsrc: 'images/java.webp'
+      icon_imgsrc: 'images/java.png'
    },
    {
       imgsrc: 'images/techback.webp',
@@ -60,14 +60,14 @@ const TechnoData = [
       title: '.NET MVC',
       description: ' TheRapidHire offers a full suite of.NET MVC development services. We provide.NET MVC web portal and web app development,.NET MVC e-commerce solutions,.NET MVC mobile solutions, and.NET MVC content management system development, among other services.      .',
 
-      icon_imgsrc: 'images/mvc.webp'
+      icon_imgsrc: 'images/mvc.png'
    },
    {
       imgsrc: 'images/techback.webp',
       Numb: '04',
       title: 'MEAN STACK',
       description: ' MEAN stack is a comprehensive set of JavaScript-based technologies and frameworks used to build full web and solution stacks. Our website development consultants were among the first to use the MEAN stack and scripting technologies. The team has extensive technology experience. ',
-      icon_imgsrc: 'images/mean.webp'
+      icon_imgsrc: 'images/mean.png'
    },
    {
       imgsrc: 'images/techback.webp',
@@ -80,10 +80,10 @@ const TechnoData = [
    {
       imgsrc: 'images/techback.webp',
       Numb: '06',
-      title: 'React Native ',
-      description: 'TheRapidHire creates incredibly fantastic mobile and web applications with React Native, providing plenty of possibilities to experiment with different app development models. We are one of the most expedient and quick to embrace React Native, and our team is designed to consistently outperform expectations for quality and customization.',
+      title: 'MERN STACK',
+      description: 'The MERN stack is one of the best-packaged collections of Javascript Frameworks in the field of contemporary full-stack development. Four incredible technologies make up the MERN Stack Development: MongoDB, Express.Js, React.Js, and Node.Js. With a team of committed industry experts, we at TheRapidHire are pioneers in MERN Stack Development.',
 
-      icon_imgsrc: 'images/Reactnative.webp'
+      icon_imgsrc: 'images/mern.png'
    }
 ]
 
@@ -100,12 +100,12 @@ const Teamdata=[
    {
       imgsrc:'images/team1.webp',
       title:'Shraddha Sharma',
-      description:'BUSINESS DEVELOPMENT EXECUTIVE'
+      description:'BUSINESS DEVELOPMENT'
    },
    {
       imgsrc:'images/team3.webp',
       title:'Vikas Choudhary',
-      description:'WEB DEVELOPER'
+      description:'SOFTWARE DEVELOPER'
    },
    {
       imgsrc:'images/team2.webp',
@@ -131,7 +131,7 @@ const Teamdata=[
    {
       imgsrc:'images/team8.webp',
       title:'Navin Kukreja',
-      description:'WEB DEVELOPER'
+      description:'SOFTWARE DEVELOPER'
    }
 ]
 

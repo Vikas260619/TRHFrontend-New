@@ -107,7 +107,7 @@ function Applymern() {
                       setTechnology("");
                       setInputFile(true);
                       setResume(null);
-                    }, 1000);
+                    }, 500);
                   })
                   .catch((err) => console.log(err));
               } else {

@@ -85,30 +85,28 @@ function App() {
   };
   const schemaOrganization_JSON = JSON.stringify(schemaOrganization);
 
-  const schemaBreadcrumb = {
-    "@context": "https://schema.org/",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Work with Us",
-        item: "https://therapidhire.com/workwithus",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Contact us",
-        item: "https://therapidhire.com/contactus",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Services",
-        item: "https://therapidhire.com/services",
-      },
-    ],
-  };
+  const schemaBreadcrumb =
+  {
+    "@context": "https://schema.org/", 
+    "@type": "BreadcrumbList", 
+    "itemListElement": [{
+      "@type": "ListItem", 
+      "position": 1, 
+      "name": "Home",
+      "item": "https://therapidhire.com/aboutus"  
+    },{
+      "@type": "ListItem", 
+      "position": 2, 
+      "name": "Services",
+      "item": "https://therapidhire.com/services"  
+    },{
+      "@type": "ListItem", 
+      "position": 3, 
+      "name": "Work with us",
+      "item": "https://therapidhire.com/workwithus"  
+    }]
+  }
+  
   const schemaBreadcrumb_JSON = JSON.stringify(schemaBreadcrumb);
 
   const schemaWebSite = {
@@ -164,16 +162,7 @@ function App() {
         <script type="application/ld+json">{schemaBreadcrumb_JSON}</script>
         <script type="application/ld+json">{schemaWebSite_JSON}</script>
         <script type="application/ld+json">{schemaFaq_JSON}</script>
-        <title>Software Development |IT outsourcing</title>
-        <meta
-          name="description"
-          content="TheRapidHire Pvt Ltd is a CMMI Level-5 software development, IT outsourcing & HR company. We are a government-certified acclaimed organization providing"
-        />
-        <meta
-          name="Keywords"
-          content="Website Development, Cloud Services, Business Consulting,Software Development, It Services, Java, Php, Aws, Python, Wordpress, Blockchain, System Developer,IT outsourcing, hr outsourcing offshore development,,Mobile App Development, Minimum Viable Product,Data Engineering, New Product Development."
-        />
-
+     
        
       </Helmet>
 
@@ -222,6 +211,8 @@ function App() {
             <Route exact path="/applymean" element={<Applymean />}></Route>
             <Route exact path="*" element={<Pagefound />}></Route>
             <Route exact path="/sitemap" element={<Sitemap />}></Route>
+            <Route exact path="/sitemap.xml" element={<Sitemap />}></Route>
+
           </Routes>
           <Footer />
           <Sidebar />

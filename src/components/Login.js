@@ -106,10 +106,10 @@ export default function Login() {
             setTimeout(() => {
               Navigate("/profile/" + res.data.Data._id);
               window.location.reload();
-            }, 1000);
+            }, 500);
             toast(res.data.message);
           })
-          .catch((err) => console.log(err));
+          .catch((err) => toast(err.response.data.message));
       } else {
         toast("Please fill the Password field");
       }
@@ -130,10 +130,10 @@ export default function Login() {
         data: data,
       })
         .then((res) => {
-          console.log(res)
+          console.log(res);
           toast(res.data.message);
         })
-        .catch((err) => console.log(err));
+        .catch((err) => toast(err.response.data.message));
     } else {
       toast("Please fill the Email field");
     }
@@ -142,15 +142,19 @@ export default function Login() {
   return (
     <div>
       <Helmet>
-      <meta property="og:type" content="website"/>
-<meta property="og:title" content="Join us "/>
-<meta property="og:url" content="https://therapidhire.com/login"/>
-<meta property="og:image" content="https://therapidhire.com/images/ser6.png"/>
-<meta property="og:description" content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all times."/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content=""/>
-
-
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Join Our Team " />
+        <meta property="og:url" content="https://therapidhire.com/login" />
+        <meta
+          property="og:image"
+          content="https://therapidhire.com/images/ser6.png"
+        />
+        <meta
+          property="og:description"
+          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all times."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="" />
       </Helmet>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
@@ -199,7 +203,6 @@ export default function Login() {
                               name="email"
                               placeholder="Email"
                               value={email}
-                            
                               style={{
                                 borderBottomColor: errors.email ? "red" : "",
                               }}
@@ -265,7 +268,9 @@ export default function Login() {
                               className="readon submit"
                               type="submit"
                               onClick={(e) => handleSubmit(e)}
-                            >Login</button>
+                            >
+                              Login
+                            </button>
                           </div>
                         </div>
                         <br />

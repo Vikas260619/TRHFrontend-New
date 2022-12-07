@@ -95,7 +95,7 @@ function Aboutus() {
   return (
     <div>
       <Helmet>
-        <title>About us - TheRapidHire | CMMI Level 5</title>
+        <title>About us - TheRapidHire | CMMI Level 5</title> 
 
         <meta
           name="description"
@@ -105,7 +105,7 @@ function Aboutus() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <link rel="canonical" href="https://therapidhire.com/aboutus/" />
+        <link rel="canonical" href="https://therapidhire.com/aboutus" />
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
@@ -124,7 +124,7 @@ function Aboutus() {
           property="og:description"
           content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
         />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image"/>
         <meta
           name="twitter:title"
           content="TheRapidHire - Software Development|IT outsourcing company"
@@ -237,7 +237,7 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <img src="images/choose-1.webp" alt="imagechoose" />
+                    <img src="images/choose-1.png" alt="imagechoose" />
                   </div>
                   <div className="choose-content">
                     <h3 className="headingcolor">Client Oriented</h3>
@@ -245,7 +245,7 @@ function Aboutus() {
                       Being customer-oriented is an approach in which, rather
                       than solving for the business’s needs, our company solves
                       the customer’s problems first.
-                    </p>
+                    </p>  
                   </div>
                 </div>
               </div>
@@ -253,7 +253,7 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <img src="images/choose-2.webp" alt="choose2" />
+                    <img src="images/choose-2.png" alt="choose2" />
                   </div>
                   <div className="choose-content">
                     <h3 className="headingcolor">Creativity</h3>
@@ -268,9 +268,9 @@ function Aboutus() {
               </div>
 
               <div className="col-lg-3 col-md-6">
-                <div className="single-choose-card">
+                <div className="single-choose-card">  
                   <div className="choose-image">
-                    <img src="images/choose-3.webp" alt="choose3" />
+                    <img src="images/choose-3.png" alt="choose3" />
                   </div>
                   <div className="choose-content">
                     <h3 className="headingcolor">Meeting Deadlines</h3>
@@ -279,7 +279,7 @@ function Aboutus() {
                       a shared goal, and to keep complex,we work multi stage
                       projects on track. We set all expectations.
                     </p>
-                  </div>
+                  </div>  
                 </div>
               </div>
 
@@ -308,3 +308,5 @@ function Aboutus() {
 }
 
 export default Aboutus;
+
+

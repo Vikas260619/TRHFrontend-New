@@ -97,8 +97,8 @@ function Contactus() {
                   }, 1000);
                 })
 
-                .catch((err) => console.log(err));
-            } else {
+                .catch((err) => console.log(err.response.data.message));
+              } else {
               toast("Please Fill the Message field");
             }
           } else {

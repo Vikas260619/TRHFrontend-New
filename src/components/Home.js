@@ -61,7 +61,7 @@ function Home() {
     <div className="item" data-value="2">
       <div className="service-wrap">
         <div className="image-part">
-          <img src="images/services2.webp" alt="WebDevelopment" />
+          <img src="images/services2.jpeg" alt="WebDevelopment" />
         </div>
         <div className="content-part">
           <h3 className="title">
@@ -145,7 +145,19 @@ function Home() {
   return (
     <div>
       <Helmet>
-        <title>Software Development | IT outsourcing Company - TheRapidHire</title>
+        <title>
+          Software Development | IT outsourcing Company - TheRapidHire    
+        </title>
+
+        <meta
+          name="description"
+          content="TheRapidHire Pvt Ltd is a CMMI Level-5 software development, IT outsourcing & HR company. We are a government-certified acclaimed organization providing"
+        />
+        <meta
+          name="Keywords"
+          content="Website Development, Cloud Services, Business Consulting,Software Development, It Services, Java, Php, Aws, Python, Wordpress, Blockchain, System Developer,IT outsourcing, hr outsourcing offshore development,,Mobile App Development, Minimum Viable Product,Data Engineering, New Product Development."
+        />
+
 
         <meta
           name="robots"
@@ -166,7 +178,7 @@ function Home() {
         />
         <meta
           property="og:image"
-          content="https://therapidhire.com/images/services2.jpg"
+          content="https://therapidhire.com/images/services2.jpeg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -182,11 +194,13 @@ function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://therapidhire.com/images/services2.jpg"
+          content="https://therapidhire.com/images/services2.jpeg"
         />
       </Helmet>
 
       <AliceCarousel
+        mouseTracking
+        controlsStrategy="alternate"
         autoPlay
         autoPlayStrategy="none"
         autoPlayInterval={3000}
@@ -202,7 +216,7 @@ function Home() {
               style={{ position: "relative", overflow: "hidden" }}
             >
               <div className="bend niceties">
-                <div id="nivoSlider" className="slides"></div>
+                {/* <div id="nivoSlider" className="slides"></div> */}
                 <img src={items.image} alt="trhslider" title="" />
               </div>
               <div className="wave"></div>
