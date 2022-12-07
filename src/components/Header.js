@@ -18,7 +18,7 @@ function Header() {
     setToken(val);
   }, []);
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light navtrh">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top navtrh">
       <div className="container-fluid navihead">
         <a className="navbar-brand" href="/">
           <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="TRH" />

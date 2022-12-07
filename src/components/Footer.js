@@ -18,9 +18,9 @@ function Footer() {
 
           setTimeout(() => {
             setEmail("");
-          }, 1000);
+          }, 500);
         })
-        .catch((err) => console.log("error"));
+        .catch((err) => toast(err.response.data.message));
     } else {
       toast("Please fill the Email field");
     }
@@ -93,7 +93,8 @@ function Footer() {
                 <h3 className="footer-title">Contact Info</h3>
                 <ul className="address-widget">
                   <li>
-                    <i className="fa fa-map marker"></i>
+                    <a  target="_blank" href="https://www.google.com/maps/place/TheRapidHire+-Software+,Website+%26+Mobile+App+Development+Company+in+India,+USA/@22.7528269,75.8651923,17z/data=!3m1!4b1!4m5!3m4!1s0x3962e32b2894590f:0x4e73ebc1261cc50!8m2!3d22.752822!4d75.867381">
+                      <i className="fa fa-map-marker"></i></a>
                     <div className="desc">
                       51, Electronic Complex, Pardesipura,
                       <br />

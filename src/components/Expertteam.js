@@ -23,7 +23,8 @@ function Expertteam() {
           <h4 className="person-name">
             Shraddha Sharma
           </h4>
-          <span className="designation">BUSINESS DEVELOPMENT EXECUTIVE</span>
+          <span className="designation">BUSINESS DEVELOPMENT</span>   
+          {/* <div> EXECUTIVE</div> */}
         </div>
       </div>
     </div>,
@@ -57,7 +58,7 @@ function Expertteam() {
           <h4 className="person-name">
             Vikas Choudhary
           </h4>
-          <span className="designation">WEB DEVELOPER</span>
+          <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
       </div>
     </div>,
@@ -142,7 +143,7 @@ function Expertteam() {
           <h4 className="person-name">
           Navin Kukreja
           </h4>
-          <span className="designation">WEB DEVELOPER</span>
+          <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
       </div>
     </div>,

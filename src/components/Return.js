@@ -28,7 +28,7 @@ function Return(props) {
                 <div className="term12">
                   <ul>
                     <li>
-                      In certain cases and within certain limits, some amount
+                      In certain cases and within certain limits, some amount 
                       may be refunded if the permitted work will not be
                       completed as per the NDA made with an individual.
                     </li>

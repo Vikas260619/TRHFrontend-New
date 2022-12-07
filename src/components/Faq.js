@@ -6,6 +6,10 @@ export default function Faq() {
       <Helmet>
         <title>FAQ - TheRapidHire</title>
         <meta
+          name="description"
+          content="TheRapidHire is a software development and IT outsourcing company specializing in the design & development of customized Mobile and Web applications."
+        />
+        <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
@@ -20,7 +24,7 @@ export default function Faq() {
         />
         <meta
           property="og:image"
-          content="https://therapidhire.com/images/faq.webp"
+          content="https://therapidhire.com/images/faq.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -34,7 +38,7 @@ export default function Faq() {
         />
         <meta
           name="twitter:image"
-          content="https://therapidhire.com/images/faq.webp"
+          content="https://therapidhire.com/images/faq.png"
         />
       </Helmet>
       <div className="main-content">
@@ -49,7 +53,7 @@ export default function Faq() {
         </div>
         <div className="faq  pb-25">
           <div className="container">
-            <img src="images/faq.webp" alt="faq" />
+            <img src="images/faq.png" alt="faq" />
             <section className="accordion">
               <input type="checkbox" name="collapse" id="handle1" />
               <h2 className="handle">

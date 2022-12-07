@@ -6,6 +6,10 @@ function Career() {
     <div>
       <Helmet>
         <title>Work with Us - TheRapidHire</title>
+        <meta
+          name="description"
+          content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology"
+        />
 
         <meta
           name="robots"

@@ -10,6 +10,10 @@ function Technology() {
     <div>
       <Helmet>
       <title>Technology- Java | AngularJs | MernStack | Python | React</title>
+      <meta
+          name="description"
+          content="We Work on the technology Java, React, Vue.js, python, salesforce , MEAN , MERN , .net , angular , C#"
+        />
        
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 <link rel="canonical" href="https://therapidhire.com/technology/" /> 

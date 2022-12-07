@@ -7655,7 +7655,7 @@ div.job-tag span {
   border-width: 0;
   box-shadow: 0 0 10px 0 #eee;
   margin: 0 10px 10px;
-  height: 357px;
+  height: 357px;margin-top: 10px;
 }
 .certifite img,
 .loader,

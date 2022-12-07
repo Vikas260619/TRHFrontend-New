@@ -168,10 +168,9 @@ export default function Signup() {
                         setPassword("");
                         setConfirm_password("");
                         setAddress("");
-                      }, 1000);
+                      }, 500);
                     })
-
-                    .catch((err) => console.log(err));
+                    .catch((err) => toast(err.response.data.message));
                 } else {
                   toast("Please fill the address field ");
                 }
