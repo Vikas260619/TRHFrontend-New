@@ -17,6 +17,7 @@ function Applymean() {
   const [inputFile, setInputFile] = useState(false);
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
+  const [message, setMessage] = useState("");
 
   const validate = (event, name, value) => {
     switch (name) {
@@ -28,10 +29,21 @@ function Applymean() {
         ) {
           setErrors({
             ...errors,
-            email: "Enter a valid email address",
+            email: "Enter a valid Email address",
           });
         } else {
           let newObj = omit(errors, "email");
+          setErrors(newObj);
+        }
+        break;
+      case "name":
+        if (!new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(value)) {
+          setErrors({
+            ...errors,
+            candidateName: "Enter a valid Name",
+          });
+        } else {
+          let newObj = omit(errors, "candidateName");
           setErrors(newObj);
         }
         break;
@@ -42,14 +54,8 @@ function Applymean() {
   };
 
   const handleFileChange = (e) => {
-    if (!isNaN(candidateName)) {
-      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
-      return false;
-  } else {
-      document.getElementById("blankMsg").innerHTML = "";
-  }
     if (inputFile === false) {
-      setResume(e.target.files[0]);
+      setResume(e.target.files[1]);
     } else {
       e.target.files = null;
     }
@@ -59,7 +65,11 @@ function Applymean() {
     let name = event.target.name;
     let val = event.target.value;
     validate(event, name, val);
-    setEmail(val);
+    if (name === "email") {
+      setEmail(val);
+    } else if (name === "name") {
+      setCandidateName(val);
+    }
     setValues({
       ...values,
       [name]: val,
@@ -73,15 +83,29 @@ function Applymean() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!isNaN(candidateName)) {
-      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
-      return false;
-  } else {
-      document.getElementById("blankMsg").innerHTML = "";
-  }
 
-    if (candidateName !== "") {
-      if (email !== "") {
+    const regExp = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+    if (regExp.test(candidateName)) {
+      setMessage("");
+    } else if (!regExp.test(candidateName) && candidateName !== "") {
+      setMessage("Please enter a valid Name");
+    } else {
+      setMessage("");
+    }
+
+    //   if (!isNaN(candidateName)) {/*0*
+    //     document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+    //     return false;
+    // } else {
+    //     document.getElementById("blankMsg").innerHTML = "";
+    // }
+
+    if (new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(candidateName)) {
+      if (
+        new RegExp(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        ).test(email)
+      ) {
         if (phone_number !== "") {
           if (applypostion !== "") {
             if (resume !== "") {
@@ -114,77 +138,107 @@ function Applymean() {
                   })
                   .catch((err) => console.log(err));
               } else {
-                toast("Please Fill the Technology field");
+                toast("Please fill the technology field");
               }
             } else {
-              toast("Please Fill the Resume field");
+              toast("Please fill the resume field");
             }
           } else {
-            toast("Please Fill the Apply Postion field");
+            toast("Please fill the apply position field");
           }
         } else {
-          toast("Please Fill the Phone number field");
+          toast("Please fill the Phone number field");
         }
       } else {
-        toast("Please Fill the email field");
+        if (email === "") {
+          toast("Please fill the Email field");
+        }
       }
     } else {
-      toast("Please Fill the Name field");
+      if (candidateName === "") {
+        toast("Please fill the Name field");
+      }
     }
   };
 
   return (
     <div>
       <Helmet>
+        <meta charset="utf-8" />
         <title>Apply For Mean Developers</title>
 
         <meta
+          name="description"
+          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
+        />
+        <meta
           name="robots"
-          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-        />
-        <link rel="canonical" href="https://therapidhire.com/applymean/" />
-        <meta property="og:url" content="https://therapidhire.com/applymean" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Apply for MEAN Stack - TheRapidHire"
+          content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
         <meta
-          property="og:description"
-          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through Node.js."
+          name="image"
+          content="https://www.therapidhire.com/images/mean.png"
+        />
+        <meta itemprop="name" content="Apply For Mean Developers" />
+        <meta
+          itemprop="description"
+          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
         />
         <meta
-          property="og:image"
-          content="https://therapidhire.com/images/mean.png"
+          itemprop="image"
+          content="https://www.therapidhire.com/images/mean.png"
         />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="therapidhire.com" />
-        <meta
-          property="twitter:url"
-          content="https://therapidhire.com/applymean"
-        />
-        <meta
-          name="twitter:title"
-          content="Apply for MEAN Stack - TheRapidHire"
-        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Apply For Mean Developers" />
         <meta
           name="twitter:description"
-          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through Node.js."
+          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
+        />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
+        <meta
+          name="twitter:image:src"
+          content="https://www.therapidhire.com/images/services2.jpeg"
+        />
+        <meta name="og:title" content="Apply For Mean Developers" />
+        <meta
+          name="og:description"
+          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
         />
         <meta
-          name="twitter:image"
-          content="https://therapidhire.com/images/mean.png"
+          name="og:image"
+          content="https://www.therapidhire.com/images/logo.png"
         />
+        <meta name="og:url" content="https://therapidhire.com/applymean" />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+        <meta name="article:section" content="software development" />
+        <meta
+          name="article:author"
+          content="https://www.facebook.com/profile.php?id=100054281690679"
+        />
+        <meta name="article:tag" content="software development " />
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
+        />
+        <link rel="canonical" href="https://www.therapidhire.com/applymean" />
+        <meta
+          property="og:url"
+          content="https://www.therapidhire.com/applymean"
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
+
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h2 className="page-title">
-                Explore Opportunities
-              </h2>
+              <h2 className="page-title">Explore Opportunities</h2>
               <span className="sub-text">
                 If you're enthusiastic, inquisitive, and enjoy using your ideas
                 to overcome problems, this is the place for you.
@@ -192,7 +246,7 @@ function Applymean() {
             </div>
           </div>
         </div>
-        <div className="rs-appointment style1 apply-career bg17 pt-95  pb-95">
+        <div className="rs-appointment style1 apply-career bg17 pt-95 pb-95">
           <div className="container">
             <div className="appoint-schedule">
               <div className="row">
@@ -238,10 +292,26 @@ function Applymean() {
                               name="name"
                               placeholder="Name"
                               value={candidateName}
-                              onChange={(e) => setCandidateName(e.target.value)}
+                              style={{
+                                borderBottomColor: errors.candidateName
+                                  ? "red"
+                                  : "",
+                              }}
+                              onChange={handleChange}
                             />
-                             <span id="blankMsg" style={{ color: "red" }} />
 
+                            {errors.candidateName && (
+                              <p
+                                style={{
+                                  color: errors.candidateName ? "red" : "",
+                                  marginTop: "-4vh",
+                                }}
+                              >
+                                {errors.candidateName}
+                              </p>
+                            )}
+
+                            {/* <p className="validation">{message}</p> */}
                           </div>
                           <div className="col-lg-6">
                             <Input
@@ -323,6 +393,7 @@ function Applymean() {
                               type="submit"
                               onClick={(e) => handleSubmit(e)}
                             />
+
                             <ToastContainer />
                           </div>
                         </div>

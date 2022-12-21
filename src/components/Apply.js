@@ -18,14 +18,13 @@ function Apply() {
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
 
-
   const validate = (event, name, value) => {
     switch (name) {
       case "email":
         if (
-          !new RegExp(
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-          ).test(value)
+          !new RegExp(/^([\w\.\+]{1,})([^\W])(@)([\w]{1,})(\.[\w]{1,})+$/).test(
+            value
+          )
         ) {
           setErrors({
             ...errors,
@@ -33,6 +32,17 @@ function Apply() {
           });
         } else {
           let newObj = omit(errors, "email");
+          setErrors(newObj);
+        }
+        break;
+      case "name":
+        if (!new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(value)) {
+          setErrors({
+            ...errors,
+            candidateName: "Enter a valid Name",
+          });
+        } else {
+          let newObj = omit(errors, "candidateName");
           setErrors(newObj);
         }
         break;
@@ -44,7 +54,7 @@ function Apply() {
 
   const handleFileChange = (e) => {
     if (inputFile === false) {
-      setResume(e.target.files[0]);
+      setResume(e.target.files[1]);
     } else {
       e.target.files = null;
     }
@@ -54,7 +64,11 @@ function Apply() {
     let name = event.target.name;
     let val = event.target.value;
     validate(event, name, val);
-    setEmail(val);
+    if (name === "email") {
+      setEmail(val);
+    } else if (name === "name") {
+      setCandidateName(val);
+    }
     setValues({
       ...values,
       [name]: val,
@@ -68,14 +82,13 @@ function Apply() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!isNaN(candidateName)) {
-      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
-      return false;
-  } else {
-      document.getElementById("blankMsg").innerHTML = "";
-  }
-    if (candidateName !== "") {
-      if (email !== "") {
+
+    if (new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(candidateName)) {
+      if (
+        new RegExp(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        ).test(email)
+      ) {
         if (phone_number !== "") {
           if (applypostion !== "") {
             if (resume !== "") {
@@ -107,9 +120,6 @@ function Apply() {
                     }, 500);
                   })
                   .catch((err) => console.log(err));
-
-                  
-
               } else {
                 toast("Please fill the technology field");
               }
@@ -123,58 +133,94 @@ function Apply() {
           toast("Please fill the Phone number field");
         }
       } else {
-        toast("Please fill the Email field");
+        if (email === "") {
+          toast("Please fill the Email field");
+        }
       }
     } else {
-      toast("Please fill the Name field");
+      if (candidateName === "") {
+        toast("Please fill the Name field");
+      }
     }
   };
 
   return (
     <div>
       <Helmet>
-        <title>Apply For Java Developers</title>
-        
-<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-<link rel="canonical" href="https://therapidhire.com/applyjava/" />
+        <meta charset="utf-8" />
+        <title>Apply for Java Developer -TheRapidHire</title>
 
- <meta property="og:url" content="https://therapidhire.com/applyjava"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Apply for Java Developer -The Rapid Hire "/>
-  <meta property="og:description" content="Experience in core Java advanced programming. Experience in Spring & 
-  Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and 
-  anti-patterns. Good in algorithms and data structures. Good understanding of Database concepts and Experience in 
-  SQL, PLSQL and NoSQL. Excellent Analytical and program solving skills Excellent written and oral communication
-   skills self-starter and highly motivated Work in a dynamic environment and ability to adapt quickly to changes.
-    Experience with Test and defect management tools. An innovator, always suggesting newer ways of improving 
-    Productivity. Mentor and train team members. Identify and escalate risks on time and suggest mitigation measures."/>
-  <meta property="og:image" content="https://therapidhire.com/images/java.png"/>
+        <meta
+          name="description"
+          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and anti-patterns. Good in algorithms and data structures."
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
+        />
+        <meta
+          name="image"
+          content="https://www.therapidhire.com/images/java.png"
+        />
+        <meta
+          itemprop="name"
+          content="Apply for Java Developer -TheRapidHire"
+        />
+        <meta
+          itemprop="description"
+          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and anti-patterns. Good in algorithms and data structures."
+        />
+        <meta
+          itemprop="image"
+          content="https://www.therapidhire.com/images/java.png"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:title"
+          content="Apply for Java Developer -TheRapidHire"
+        />
+        <meta
+          name="twitter:description"
+          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and anti-patterns. Good in algorithms and data structures."
+        />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
+        <meta
+          name="twitter:image:src"
+          content="https://www.therapidhire.com/images/services2.jpeg"
+        />
+        <meta
+          name="og:title"
+          content="Apply for Java Developer -TheRapidHire"
+        />
+        <meta
+          name="og:description"
+          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and anti-patterns. Good in algorithms and data structures."
+        />
+        <meta
+          name="og:image"
+          content="https://www.therapidhire.com/images/logo.png"
+        />
+        <meta name="og:url" content="https://www.therapidhire.com/applyjava" />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+        <meta name="article:section" content="software development" />
+        <meta
+          name="article:author"
+          content="https://www.facebook.com/profile.php?id=100054281690679"
+        />
+        <meta name="article:tag" content="software development " />
 
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:domain" content="therapidhire.com"/>
-  <meta property="twitter:url" content="https://therapidhire.com/applyjava"/>
-  <meta name="twitter:title" content="Apply for Java Developer -The Rapid Hire "/>
-  <meta name="twitter:description" content="Experience in core Java advanced programming. Experience in Spring & 
-  Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and 
-  anti-patterns. Good in algorithms and data structures. Good understanding of Database concepts and Experience
-   in SQL, PLSQL and NoSQL. Excellent Analytical and program  solving  skills Excellent written and oral 
-   communication skills self-starter and highly motivated Work in a dynamic environment and ability to adapt 
-   quickly to changes. Experience with Test and defect management tools. An innovator, always suggesting newer
-    ways of improving Productivity. Mentor and train team members. Identify and escalate risks on time and
-     suggest mitigation measures."/>
-  <meta name="twitter:image" content="https://therapidhire.com/images/java.png"/>
-
-        
-        
+        <link rel="canonical" href="https://www.therapidhire.com/applyjava" />
       </Helmet>
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h2 className="page-title">
-                Explore Opportunities
-              </h2>
+              <h2 className="page-title">Explore Opportunities</h2>
               <span className="sub-text">
                 If you're enthusiastic, inquisitive, and enjoy using your ideas
                 to overcome problems, this is the place for you.
@@ -228,8 +274,24 @@ function Apply() {
                               name="name"
                               placeholder="Name"
                               value={candidateName}
-                              onChange={(e) => setCandidateName(e.target.value)} />
-                              <span id="blankMsg" style={{ color: "red" }} />
+                              style={{
+                                borderBottomColor: errors.candidateName
+                                  ? "red"
+                                  : "",
+                              }}
+                              onChange={handleChange}
+                            />
+
+                            {errors.candidateName && (
+                              <p
+                                style={{
+                                  color: errors.candidateName ? "red" : "",
+                                  marginTop: "-4vh",
+                                }}
+                              >
+                                {errors.candidateName}
+                              </p>
+                            )}
                           </div>
                           <div className="col-lg-6">
                             <Input
@@ -311,6 +373,7 @@ function Apply() {
                               type="submit"
                               onClick={(e) => handleSubmit(e)}
                             />
+
                             <ToastContainer />
                           </div>
                         </div>

@@ -15,6 +15,7 @@ function Contactus() {
   const [website, setwebsite] = useState("");
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
+  const [nameerror, setNameerror] = useState("");
 
   const validate = (event, name, value) => {
     switch (name) {
@@ -61,15 +62,22 @@ function Contactus() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!isNaN(name)) {
-      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
-      return false;
-  } else {
-      document.getElementById("blankMsg").innerHTML = "";
-  }
+    const regExp = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
 
-    if (name !== "") {
-      if (email !== "") {
+    if (regExp.test(name)) {
+      setNameerror("");
+    } else if (!regExp.test(name) && name !== "") {
+      setNameerror("Please enter a valid Name");
+    } else {
+      setNameerror("");
+    }
+
+    if (new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(name)) {
+      if (
+        new RegExp(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        ).test(email)
+      ) {
         if (phone !== "") {
           if (website !== "") {
             if (message !== "") {
@@ -98,7 +106,7 @@ function Contactus() {
                 })
 
                 .catch((err) => console.log(err.response.data.message));
-              } else {
+            } else {
               toast("Please Fill the Message field");
             }
           } else {
@@ -108,9 +116,11 @@ function Contactus() {
           toast("Please Fill the Phone Number field");
         }
       } else {
-        toast("Please Fill the Email field");
+        if (email === "") {
+          toast("Please Fill the Email field");
+        }
       }
-    } else {
+    } else if (name === "") {
       toast("Please Fill the Name field");
     }
   };
@@ -118,44 +128,87 @@ function Contactus() {
   return (
     <div>
       <Helmet>
-        <title>Let's Connect- TheRapidHire</title>
+        <meta charset="utf-8" />
+        <title>Let's Connect - TheRapidHire</title>
+        <meta
+          name="description"
+          content="Get in touch with us and discuss the needs and requirements of your development project."
+        />
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <link rel="canonical" href="https://therapidhire.com/letsconnect/" />
-
         <meta
-          property="og:url"
-          content="https://therapidhire.com/letsconnect"
+          name="image"
+          content="https://www.therapidhire.com/images/choose-1.png"
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Let's Connect - TheRapidHire" />
+        <meta itemprop="name" content="Let's Connect - TheRapidHire" />
         <meta
-          property="og:description"
-          content="Get in touch with us and discuss the needs and requirements of your development project.
-"
+          itemprop="description"
+          content="Get in touch with us and discuss the needs and requirements of your development project."
         />
         <meta
-          property="og:image"
-          content="https://therapidhire.com/images/choose-1.png"
+          itemprop="image"
+          content="https://www.therapidhire.com/images/choose-1.png"
         />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="therapidhire.com" />
-        <meta
-          property="twitter:url"
-          content="https://therapidhire.com/letsconnect"
-        />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Let's Connect - TheRapidHire" />
         <meta
           name="twitter:description"
-          content="Get in touch with us and discuss the needs and requirements of your development project.
-"
+          content="Get in touch with us and discuss the needs and requirements of your development project."
         />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
         <meta
-          name="twitter:image"
-          content="https://therapidhire.com/images/choose-1.png"
+          name="twitter:image:src"
+          content="https://www.therapidhire.com/images/choose-1.png"
+        />
+        <meta name="og:title" content="Let's Connect - TheRapidHire" />
+        <meta
+          name="og:description"
+          content="Get in touch with us and discuss the needs and requirements of your development project."
+        />
+        <meta name="og:image" content="https://www.therapidhire.com/logo.png" />
+        <meta
+          name="og:url"
+          content="https://www.therapidhire.com/letsconnect"
+        />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+        <meta name="article:section" content="Software development" />
+        <meta
+          name="article:author"
+          content="https://www.facebook.com/profile.php?id=100054281690679"
+        />
+        <meta name="article:tag" content="Software development" />
+
+        <link rel="canonical" href="https://www.therapidhire.com/letsconnect" />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/letsconnect"
+          hreflang="x-default"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/letsconnect/en"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/letsconnect/fr"
+          hreflang="fr"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/letsconnect/es"
+          hreflang="es"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/letsconnect/mx"
+          hreflang="es-mx"
         />
       </Helmet>
       <div className="offwrap"></div>
@@ -163,7 +216,6 @@ function Contactus() {
       <div className="main-content">
         <Common
           name="Get in touch"
-        
           description="Get in touch with us and discuss the needs and requirements of
          your development project."
         />
@@ -183,9 +235,9 @@ function Contactus() {
               </div>
               <div className="col-lg-6">
                 <div className="sec-title mb-45 md-mb-25">
-                  <h2 className="title pb-20">
+                  <h1 className="title pb-20">
                     Let us help your business to move <span>forward.</span>
-                  </h2>
+                  </h1>
                   <br />
                 </div>
                 <div className="contact-wrap">
@@ -202,7 +254,7 @@ function Contactus() {
                             onChange={(e) => setName(e.target.value)}
                             placeholder="Name"
                           />
-                            <span id="blankMsg" style={{ color: "red" }} />
+                          <span className="validation">{nameerror}</span>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-30">
                           <input
@@ -291,9 +343,7 @@ function Contactus() {
                         <div className="contact-icon">
                           <img src="images/usa.png" alt="usaflag" />
                         </div>
-                        <h2 className="title">
-                          USA Office
-                        </h2>
+                        <h2 className="title">USA Office</h2>
                         <p className="services-txt">
                           1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801
                           <br />
@@ -308,9 +358,7 @@ function Contactus() {
                         <div className="contact-icon">
                           <img src="images/indiaflag.png" alt="indiaflag" />
                         </div>
-                        <h2 className="title">
-                          India Office
-                        </h2>
+                        <h2 className="title">India Office</h2>
                         <p className="services-txt">
                           51, Electronic Complex, Pardesi Pura Main Road,
                           <br />
@@ -325,9 +373,7 @@ function Contactus() {
                         <div className="contact-icon">
                           <i className="fa fa-envelope"></i>
                         </div>
-                        <h2 className="title">
-                          Email Us
-                        </h2>
+                        <h3 className="title">Email Us</h3>
                         <a href="mailto:sales@therapidhire.com">
                           sales@therapidhire.com
                         </a>
@@ -344,9 +390,7 @@ function Contactus() {
                         <div className="contact-icon">
                           <i className="fa fa-phone"></i>
                         </div>
-                        <h2 className="title">
-                          Call Us
-                        </h2>
+                        <h4 className="title">Call Us</h4>
                         <a href="tel:+1 (917) 628 2406">+1 (917) 628 2406</a>
                         <br />
                         <a href="tel:073135620055">+0731 426 8367</a>

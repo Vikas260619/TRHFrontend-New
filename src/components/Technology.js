@@ -1,4 +1,3 @@
-
 import Common from "../Container/Common.js";
 import { TechnoData } from "../Container/CardJSON";
 import CardTechno from "../Container/CardTechno.js";
@@ -6,41 +5,104 @@ import Marquee from "react-fast-marquee";
 import { Helmet } from "react-helmet";
 
 function Technology() {
-   return (
+  return (
     <div>
       <Helmet>
-      <title>Technology- Java | AngularJs | MernStack | Python | React</title>
-      <meta
+        <meta charset="utf-8" />
+        <title>Technology- Java | AngularJs | MernStack | Python | React</title>
+        <meta
           name="description"
           content="We Work on the technology Java, React, Vue.js, python, salesforce , MEAN , MERN , .net , angular , C#"
         />
-       
-<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-<link rel="canonical" href="https://therapidhire.com/technology/" /> 
-  <meta property="og:url" content="https://therapidhire.com/technology"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="TheRapidHire- Software Development and IT outsourcing company"/>
-  <meta property="og:description" content="The way we buy, sell, and do everything is changing as a result of technological advancements. With software development services, we help clients realize their full potential and accelerate their growth.
-"/>
-  <meta property="og:image" content="https://therapidhire.com/images/ser3.png"/>
-
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:domain" content="therapidhire.com"/>
-  <meta property="twitter:url" content="https://therapidhire.com/technology"/>
-  <meta name="twitter:title" content="TheRapidHire- Software Development and IT outsourcing company"/>
-  <meta name="twitter:description" content="The way we buy, sell, and do everything is changing as a result of technological advancements. With software development services, we help clients realize their full potential and accelerate their growth.
-"/>
-  <meta name="twitter:image" content="https://therapidhire.com/images/ser3.png"/>
-
-
-
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <meta
+          name="image"
+          content="https://www.therapidhire.com/images/ser3.png"
+        />
+        <meta
+          itemprop="name"
+          content="Technology- Java | AngularJs | MernStack | Python | React"
+        />
+        <meta
+          itemprop="description"
+          content="We Work on the technology Java, React, Vue.js, python, salesforce , MEAN , MERN , .net , angular , C#"
+        />
+        <meta
+          itemprop="image"
+          content="https://www.therapidhire.com/images/ser3.png"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:title"
+          content="Technology- Java | AngularJs | MernStack | Python | React"
+        />
+        <meta
+          name="twitter:description"
+          content="We Work on the technology Java, React, Vue.js, python, salesforce , MEAN , MERN , .net , angular , C#"
+        />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
+        <meta
+          name="twitter:image:src"
+          content="https://www.therapidhire.com/images/ser3.png"
+        />
+        <meta
+          name="og:title"
+          content="Technology- Java | AngularJs | MernStack | Python | React"
+        />
+        <meta
+          name="og:description"
+          content="We Work on the technology Java, React, Vue.js, python, salesforce , MEAN , MERN , .net , angular , C#"
+        />
+        <meta name="og:image" content="https://www.therapidhire.com/logo.png" />
+        <meta name="og:url" content="https://www.therapidhire.com/technology" />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+        <meta name="article:section" content="Software development" />
+        <meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679" />
+        <meta name="article:tag" content="Software development" />
+        <link rel="canonical" href="https://www.therapidhire.com/technology" />
+        .
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/technology"
+          hreflang="x-default"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/technology/en"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/technology/fr"
+          hreflang="fr"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/technology/es"
+          hreflang="es"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/technology/mx"
+          hreflang="es-mx"
+        />
+        <meta
+          property="og:url"
+          content="https://www.therapidhire.com/technology"
+        />
       </Helmet>
       <div className="offwrap"></div>
 
       <div className="main-content">
         <Common
           name="Technology"
-          background="Technology"
           description=" The way we buy, sell, and do everything is changing as a result of technological advancements. With software development services, we help clients realize their full potential and accelerate their growth.	"
         />
 
@@ -71,10 +133,10 @@ function Technology() {
               <div className="col-lg-12  col-md-12 ">
                 <div className="sec-title3 text-center mb-35">
                   <span className="sub-title">OUR EXPERTISE</span>
-                  <h2 className="title pb-25 ">
+                  <h1 className="title pb-25 ">
                     We help clients harness the power and scope of the digital
                     world for enhanced business performance and awareness.
-                  </h2>
+                  </h1>
                   <div className="heading-border-line"></div>
                 </div>
               </div>
@@ -107,7 +169,7 @@ function Technology() {
                   <img src="images/terraform.png" alt="terraform" />
                 </div>
                 <div>
-                  <img src="images/mern.webp" alt="mern" />
+                  <img src="images/mern.png" alt="mern" />
                 </div>
               </Marquee>
             </div>

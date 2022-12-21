@@ -85,38 +85,17 @@ function App() {
   };
   const schemaOrganization_JSON = JSON.stringify(schemaOrganization);
 
-  const schemaBreadcrumb =
-  {
-    "@context": "https://schema.org/", 
-    "@type": "BreadcrumbList", 
-    "itemListElement": [{
-      "@type": "ListItem", 
-      "position": 1, 
-      "name": "Home",
-      "item": "https://therapidhire.com/aboutus"  
-    },{
-      "@type": "ListItem", 
-      "position": 2, 
-      "name": "Services",
-      "item": "https://therapidhire.com/services"  
-    },{
-      "@type": "ListItem", 
-      "position": 3, 
-      "name": "Work with us",
-      "item": "https://therapidhire.com/workwithus"  
-    }]
-  }
-  
-  const schemaBreadcrumb_JSON = JSON.stringify(schemaBreadcrumb);
+ 
+
 
   const schemaWebSite = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     name: "TheRapidHire",
-    url: "https://therapidhire.com",
+    url: "https://www.therapidhire.com",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://therapidhire.com/blog{search_term_string}",
+      target: "https://www.therapidhire.com/blog{search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -157,13 +136,10 @@ function App() {
   return (
     <div>
       <Helmet>
-      <script type="application/ld+json">{schemaLocalBusiness_JSON}</script>
+        <script type="application/ld+json">{schemaLocalBusiness_JSON}</script>
         <script type="application/ld+json">{schemaOrganization_JSON}</script>
-        <script type="application/ld+json">{schemaBreadcrumb_JSON}</script>
         <script type="application/ld+json">{schemaWebSite_JSON}</script>
         <script type="application/ld+json">{schemaFaq_JSON}</script>
-     
-       
       </Helmet>
 
       <ScrollToTop />
@@ -184,7 +160,7 @@ function App() {
             <Route exact path="/letsconnect" element={<Contactus />}></Route>
             <Route exact path="/services" element={<Services />}></Route>
             <Route exact path="/technology" element={<Technology />}></Route>
-            <Route exact path="/pricing" element={<Pricing />}></Route>
+            {/* <Route exact path="/pricing" element={<Pricing />}></Route> */}
             <Route exact path="/team" element={<Team />}></Route>
             <Route exact path="/workwithus" element={<Career />}></Route>
             <Route exact path="/privacy" element={<Privacypolicy />}></Route>
@@ -211,8 +187,6 @@ function App() {
             <Route exact path="/applymean" element={<Applymean />}></Route>
             <Route exact path="*" element={<Pagefound />}></Route>
             <Route exact path="/sitemap" element={<Sitemap />}></Route>
-            <Route exact path="/sitemap.xml" element={<Sitemap />}></Route>
-
           </Routes>
           <Footer />
           <Sidebar />

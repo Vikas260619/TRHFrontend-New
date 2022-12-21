@@ -13,7 +13,7 @@ function Testimonial() {
     <div className="item" data-value="1">
       <div className="item text-center">
         <div className="testi-img">
-          <img src="images/testimonial2.webp" alt="" />
+          <img src="images/testimonial2.webp" alt="agile team development" />
         </div>
         <ul className="rating">
           <li>
@@ -47,7 +47,7 @@ function Testimonial() {
     <div className="item" data-value="2">
       <div className="item text-center">
         <div className="testi-img">
-          <img src="images/testimonial3.webp" alt="" />
+          <img src="images/testimonial3.webp" alt="mobile app development" />
         </div>
         <ul className="rating">
           <li>
@@ -68,7 +68,11 @@ function Testimonial() {
         </ul>
         <div className="author-detail">
           <div className="desc">
-          A successful project always requires the best team. Together with Therapidhire, we at Softing have already been able to work on various projects with highly professional, flexible, and motivated people who deliver first-class results in complex environments.  </div>
+            A successful project always requires the best team. Together with
+            Therapidhire, we at Softing have already been able to work on
+            various projects with highly professional, flexible, and motivated
+            people who deliver first-class results in complex environments.{" "}
+          </div>
           <h4 className="name">Paul Munni</h4>
           <span className="designation">Developer Of Softing</span>
         </div>
@@ -77,7 +81,10 @@ function Testimonial() {
     <div className="item" data-value="3">
       <div className="item text-center">
         <div className="testi-img">
-          <img src="images/testimonial1.webp" alt="" />
+          <img
+            src="images/testimonial1.webp"
+            alt="software development service client"
+          />
         </div>
         <ul className="rating">
           <li>
@@ -105,12 +112,11 @@ function Testimonial() {
             through the project.
           </div>
           <h4 className="name">Junl Sarukh</h4>
-          <span className="designation">CEO Of Softing</span>
+          <span className="designation">CEO of Softing</span>
         </div>
       </div>
     </div>,
-   
-    ];
+  ];
   return (
     <div>
       <div className="rs-testimonial style1">
@@ -138,8 +144,16 @@ function Testimonial() {
               />
             </div>
             <div className="pattern-img">
-              <img className="img2 common" src="images/pattern2.webp" alt="" />
-              <img className="img3 common" src="images/pattern3.webp" alt="" />
+              <img
+                className="img2 common"
+                src="images/pattern2.webp"
+                alt="itsourcing"
+              />
+              <img
+                className="img3 common"
+                src="images/pattern3.webp"
+                alt="database management"
+              />
             </div>
           </div>
         </div>

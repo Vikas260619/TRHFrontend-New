@@ -31,6 +31,11 @@ function Sidebar() {
                 Facebook <i className="fa fa-facebook"></i>
               </a>
             </li>
+            <li className="youtube">
+              <a href="https://www.youtube.com/@therapidhire_" target="_blank">
+                Youtube <i className="fa fa-youtube-play" ></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

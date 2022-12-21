@@ -9,7 +9,6 @@ import { Helmet } from "react-helmet";
 
 function Applymern() {
   const [candidateName, setCandidateName] = useState("");
-  
   const [email, setEmail] = useState("");
   const [phone_number, setPhone_number] = useState("");
   const [applypostion, setApplypostion] = useState("");
@@ -18,23 +17,33 @@ function Applymern() {
   const [inputFile, setInputFile] = useState(false);
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
- 
-  
+  const [message, setMessage] = useState("");
 
   const validate = (event, name, value) => {
     switch (name) {
       case "email":
         if (
-          !new RegExp(
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-          ).test(value)
+          !new RegExp(/^([\w\.\+]{1,})([^\W])(@)([\w]{1,})(\.[\w]{1,})+$/).test(
+            value
+          )
         ) {
           setErrors({
             ...errors,
-            email: "Enter a valid email address",
+            email: "Enter a valid Email address",
           });
         } else {
           let newObj = omit(errors, "email");
+          setErrors(newObj);
+        }
+        break;
+      case "name":
+        if (!new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(value)) {
+          setErrors({
+            ...errors,
+            candidateName: "Enter a valid Name",
+          });
+        } else {
+          let newObj = omit(errors, "candidateName");
           setErrors(newObj);
         }
         break;
@@ -46,7 +55,7 @@ function Applymern() {
 
   const handleFileChange = (e) => {
     if (inputFile === false) {
-      setResume(e.target.files[0]);
+      setResume(e.target.files[1]);
     } else {
       e.target.files = null;
     }
@@ -56,7 +65,11 @@ function Applymern() {
     let name = event.target.name;
     let val = event.target.value;
     validate(event, name, val);
-    setEmail(val);
+    if (name === "email") {
+      setEmail(val);
+    } else if (name === "name") {
+      setCandidateName(val);
+    }
     setValues({
       ...values,
       [name]: val,
@@ -70,15 +83,29 @@ function Applymern() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!isNaN(candidateName)) {
-      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
-      return false;
-  } else {
-      document.getElementById("blankMsg").innerHTML = "";
-  }
 
-    if (candidateName !== "") {
-      if (email !== "") {
+    const regExp = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+    if (regExp.test(candidateName)) {
+      setMessage("");
+    } else if (!regExp.test(candidateName) && candidateName !== "") {
+      setMessage("Please enter a valid Name");
+    } else {
+      setMessage("");
+    }
+
+    //   if (!isNaN(candidateName)) {/*0*
+    //     document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+    //     return false;
+    // } else {
+    //     document.getElementById("blankMsg").innerHTML = "";
+    // }
+
+    if (new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(candidateName)) {
+      if (
+        new RegExp(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        ).test(email)
+      ) {
         if (phone_number !== "") {
           if (applypostion !== "") {
             if (resume !== "") {
@@ -111,64 +138,101 @@ function Applymern() {
                   })
                   .catch((err) => console.log(err));
               } else {
-                toast("Please Fill the technology field");
+                toast("Please fill the technology field");
               }
             } else {
-              toast("Please Fill the resume field");
+              toast("Please fill the resume field");
             }
           } else {
-            toast("Please Fill the apply Position field");
+            toast("Please fill the apply position field");
           }
         } else {
           toast("Please fill the Phone number field");
         }
       } else {
-        toast("Please fill the Email field");
+        if (email === "") {
+          toast("Please fill the Email field");
+        }
       }
     } else {
-      toast("Please fill the Name field");
-    }                                                                               
+      if (candidateName === "") {
+        toast("Please fill the Name field");
+      }
+    }
   };
 
   return (
-   
     <div>
       <Helmet>
-        <title>
-        Apply For Mern Developers
-        </title>
-<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-<link rel="canonical" href="https://therapidhire.com/applymern/" />
+        <meta charset="utf-8" />
+        <title>Apply For Mern Developers</title>
+        <meta
+          name="description"
+          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to "
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
+        />
+        <meta
+          name="image"
+          content="https://www.therapidhire.com/images/job2.png"
+        />
+        <meta itemprop="name" content="Apply For Mern Developers" />
+        <meta
+          itemprop="description"
+          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to "
+        />
+        <meta
+          itemprop="image"
+          content="https://www.therapidhire.com/images/job2.png"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Apply For Mern Developers" />
+        <meta
+          name="twitter:description"
+          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to "
+        />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
+        <meta
+          name="twitter:image:src"
+          content="https://www.therapidhire.com/images/job2.png"
+        />
+        <meta name="og:title" content="Apply For Mern Developers" />
+        <meta
+          name="og:description"
+          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to "
+        />
+        <meta
+          name="og:image"
+          content="https://www.therapidhire.com/images/logo.png"
+        />
+        <meta name="og:url" content="https://www.therapidhire.com/applymern" />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+        <meta name="article:section" content="software development" />
+        <meta
+          name="article:author"
+          content="https://www.facebook.com/profile.php?id=100054281690679"
+        />
+        <meta name="article:tag" content="software development" />
 
-
-
-<meta property="og:url" content="https://therapidhire.com/applymern"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Apply For MERN Stack Developer -The Rapid Hire "/>
-  <meta property="og:description" content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment.
-
-"/>
-  <meta property="og:image" content="https://therapidhire.com/images/job2.png"/>
-
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:domain" content="therapidhire.com"/>
-  <meta property="twitter:url" content="https://therapidhire.com/applymern"/>
-  <meta name="twitter:title" content="Apply For MERN Stack Developer -The Rapid Hire "/>
-  <meta name="twitter:description" content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment.
-
-"/>
-  <meta name="twitter:image" content="https://therapidhire.com/images/job2.png"/>
-
-        
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://www.therapidhire.com/applymern" />
       </Helmet>
+
       <div className="offwrap"></div>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
-          <div className="container-fluid"> 
+          <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h2 className="page-title">
-                Explore Opportunities
-              </h2>
+              <h2 className="page-title">Explore Opportunities</h2>
               <span className="sub-text">
                 If you're enthusiastic, inquisitive, and enjoy using your ideas
                 to overcome problems, this is the place for you.
@@ -182,7 +246,7 @@ function Applymern() {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="sec-title3 text-center ">
-                    <h2 className="title ">Apply for MERN Developer</h2>
+                    <h2 className="title "> Apply For Mern Developers</h2>
                     <div className="heading-border-line"></div>
                   </div>
                 </div>
@@ -193,8 +257,23 @@ function Applymern() {
                 <div className="col-lg-6 ">
                   <div className="cont22">
                     <p>
-                    Ability to translate Wireframes and PSD Designs into functional web apps using HTML5, AngularJS, React, Node.js, and Mongo. Binding of UI elements to JavaScript object models. Creating RESTful services with Node.js. Architect scalable web architectures. Work in a cross-functional team to deliver a complete user experience. Create Unit and Integration tests to ensure the quality of code. Be responsive to change requests and feature requests. Write code that is cross-platform and cross-device compatible. Ability to wear many hats and learn new technologies quickly. creating complex HTML-based solutions. Detail-oriented experience as a Web Developer creating Angular-based solutions with Node.js and Express. Ability to work both independently and in collaborative teams to communicate design and build ideas effectively. Experience using asynchronous RESTful services (JSON).
-
+                      Ability to translate Wireframes and PSD Designs into
+                      functional web apps using HTML5, AngularJS, React,
+                      Node.js, and Mongo. Binding of UI elements to JavaScript
+                      object models. Creating RESTful services with Node.js.
+                      Architect scalable web architectures. Work in a
+                      cross-functional team to deliver a complete user
+                      experience. Create Unit and Integration tests to ensure
+                      the quality of code. Be responsive to change requests and
+                      feature requests. Write code that is cross-platform and
+                      cross-device compatible. Ability to wear many hats and
+                      learn new technologies quickly. creating complex
+                      HTML-based solutions. Detail-oriented experience as a Web
+                      Developer creating Angular-based solutions with Node.js
+                      and Express. Ability to work both independently and in
+                      collaborative teams to communicate design and build ideas
+                      effectively. Experience using asynchronous RESTful
+                      services (JSON).
                     </p>
                   </div>
                 </div>
@@ -211,10 +290,26 @@ function Applymern() {
                               name="name"
                               placeholder="Name"
                               value={candidateName}
-                              onChange={(e) => setCandidateName(e.target.value)}
+                              style={{
+                                borderBottomColor: errors.candidateName
+                                  ? "red"
+                                  : "",
+                              }}
+                              onChange={handleChange}
                             />
-                             <span id="blankMsg" style={{ color: "red" }} />
 
+                            {errors.candidateName && (
+                              <p
+                                style={{
+                                  color: errors.candidateName ? "red" : "",
+                                  marginTop: "-4vh",
+                                }}
+                              >
+                                {errors.candidateName}
+                              </p>
+                            )}
+
+                            {/* <p className="validation">{message}</p> */}
                           </div>
                           <div className="col-lg-6">
                             <Input
@@ -296,6 +391,7 @@ function Applymern() {
                               type="submit"
                               onClick={(e) => handleSubmit(e)}
                             />
+
                             <ToastContainer />
                           </div>
                         </div>

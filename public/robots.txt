@@ -1,7 +1,7 @@
 User-agent: *
 
 Allow: /
-Sitemap: https://therapidhire.com/sitemap.xml
+Sitemap: https://www.therapidhire.com/sitemap.xml
 
 Disallow: /login
 Disallow: /team

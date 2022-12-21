@@ -50,7 +50,7 @@ function Expertteam() {
         <div className="team-wrap">
           <div className="image-inner">
             
-              <img src="images/team3.webp" alt="Vikas_Choudhary" />
+              <img src="images/team3.webp" alt="Vikas Choudhary" />
             
           </div>
         </div>
@@ -67,7 +67,7 @@ function Expertteam() {
         <div className="team-wrap">
           <div className="image-inner">
            
-              <img src="images/team4.webp" alt="Sumit__Tiwari" />
+              <img src="images/team4.webp" alt="Sumit Tiwari" />
            
           </div>
         </div>
@@ -118,7 +118,7 @@ function Expertteam() {
         <div className="team-wrap">
           <div className="image-inner">
           
-              <img src="images/team5.webp" alt="" />
+              <img src="images/team5.webp" alt="vipin joshi" />
            
           </div>
         </div>
@@ -135,7 +135,7 @@ function Expertteam() {
         <div className="team-wrap">
           <div className="image-inner">
            
-              <img src="images/team8.webp" alt="Navin_Kukreja" />
+              <img src="images/team8.webp" alt="Navin Kukreja" />
            
           </div>
         </div>

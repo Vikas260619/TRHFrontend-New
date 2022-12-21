@@ -10,7 +10,6 @@ import ScrollToTop from "react-scroll-to-top";
 import { Helmet } from "react-helmet";
 
 function Blogdetail() {
-
   const [users, setUsers] = useState("");
   const [data, setdata] = useState([]);
   const [comments, setComments] = useState([]);
@@ -26,12 +25,13 @@ function Blogdetail() {
   const [facebookUrl, setFacebookUrl] = useState();
   const [linkdinUrl, setLinkdinUrl] = useState();
   const [imageurl, setImageUrl] = useState();
+  const [message, setMessage] = useState("");
+
   const { state } = useLocation();
   const { userId } = state;
 
   const [errors, setErrors] = useState({});
-  
-  
+
   useEffect(() => {
     setImageUrl(users.bannerImage);
     const url = window.location.href;
@@ -57,7 +57,6 @@ function Blogdetail() {
     setTwitterUrl(newUrl2);
     setLinkdinUrl(url1);
   });
-  
 
   const Navigate = useNavigate();
   let blog_id = userId;
@@ -100,18 +99,32 @@ function Blogdetail() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!isNaN(fullname)) {
-      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
-      return false;
-  } else {
-      document.getElementById("blankMsg").innerHTML = "";
-  }
-    if (fullname !== "") {
-      if(fullname.length>20){}
-      if (email !== "") {
-        if (comment !== "") 
-        
-        {
+
+    const regExp = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+
+    if (regExp.test(fullname)) {
+      setMessage("");
+    } else if (!regExp.test(fullname) && fullname !== "") {
+      setMessage("Please enter a valid Name");
+    } else {
+      setMessage("");
+    }
+
+    //   if (!isNaN(fullname)) {
+    //     document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+    //     return false;
+    // } else {
+    //     document.getElementById("blankMsg").innerHTML = "";
+    // }
+    if (new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(fullname)) {
+      if (fullname.length > 20) {
+      }
+      if (
+        new RegExp(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        ).test(email)
+      ) {
+        if (comment !== "") {
           let data = {
             fullname,
             email,
@@ -132,17 +145,19 @@ function Blogdetail() {
             })
             .catch((err) => console.log(err));
         } else {
-          toast("Please Fill the massage field ");
+          toast("Please fill the message field ");
         }
       } else {
-        toast("Please Fill the email field ");
+        if (email === "") {
+          toast("Please fill the Email field");
+        }
       }
-    } 
-    else {
-      toast("Please Fill the name field ");
+    } else {
+      if (fullname === "") {
+        toast("Please fill the Name field");
+      }
     }
   };
-
 
   useEffect(() => {
     axios({
@@ -177,7 +192,6 @@ function Blogdetail() {
       method: "get",
     })
       .then((result) => {
-      
         setComments(result.data.message.reverse());
         if (result.data.message.length > 0) {
           setCommentFlag(1);
@@ -192,67 +206,111 @@ function Blogdetail() {
     allComment === 0 ? setAllComment(1) : setAllComment(0);
     setShow(!show);
   };
-  
-  function getOne(id){
+
+  function getOne(id) {
     axios
-       .get('https://trhblogsnew2.herokuapp.com/blog/getOne/' + id)
-       .then((response) => {
-           setUsers(response.data.message)
-       })
-       .catch((error) => {
-           console.log(error);
-       });
-}
- 
- 
+      .get("https://trhblogsnew2.herokuapp.com/blog/getOne/" + id)
+      .then((response) => {
+        setUsers(response.data.message);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   const newPage = (id, title) => {
     const array = title.split("");
     for (let i = 0; i < array.length; i++) {
-        if (array[i] == " ") {
-            array[i] = "-";
-        }
+      if (array[i] == " ") {
+        array[i] = "-";
+      }
     }
-    Navigate("/" + array.join(""), { state: { userId: id } }) 
+    Navigate("/" + array.join(""), { state: { userId: id } });
     getOne(id);
-}
+  };
 
   return (
     <div>
       {users ? (
         <Helmet>
+          <meta charset="utf-8" />
           <title>{users?.title}</title>
-
           <meta name="description" content={users?.metaDesc} />
           <meta name="keywords" content={users?.keywords} />
           <meta
             name="robots"
             content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
           />
-            <link rel="canonical" href="https://therapidhire.com/:type/" />
-          <meta property="og:type" content="article" />
-          <meta property="og:title" content={users?.title} />
 
-          <meta property="og:url" content={liveUrl} />
-          <meta property="og:image" content={imageurl} />
           <meta
-            property="og:description"
-            content={users?.description}
+            name="image"
+            content="https://www.therapidhire.com/images/ser6.png"
           />
-          <meta property="article:author" content={users?.author} />
+          <meta itemprop="name" content={users?.title} />
+          <meta itemprop="description" content={users?.metaDesc} />
           <meta
-            property="article:published_time"
-            content="2022-09-29T12:39:00.000+05:30"
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
           />
-          
+          <meta name="keywords" content={users?.keywords} />
+          <meta
+            itemprop="image"
+            content="https://www.therapidhire.com/images/ser6.png"
+          />
+          <meta name="twitter:card" content="summary" />
+          <meta
+            name="twitter:title"
+            content="Get the latest updates of Technology | Business | Industry insights"
+          />
+          <meta
+            name="twitter:description"
+            content="Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."
+          />
+          <meta name="twitter:site" content="@therapidhire_" />
+          <meta name="twitter:creator" content="@therapidhire_" />
+          <meta name="twitter:image:src" content={imageurl} />
+          <meta name="og:title" content={users?.title} />
+          <meta name="og:description" content={users?.description} />
+          <meta name="og:image" content={imageurl} />
+          <meta name="og:url" content={liveUrl} />
+          <meta name="og:site_name" content="therapidhire" />
+          <meta name="og:locale" content="en_US" />
+          <meta name="fb:app_id" content="1369882117133030" />
+          <meta name="og:type" content="article" />
+          <meta name="article:section" content="technology" />
+          <meta
+            name="article:author"
+            content="https://www.facebook.com/profile.php?id=100054281690679"
+          />
+          <meta name="article:tag" content="software development" />
 
-          <meta property="article:section" content="Technology" />
-          <meta property="article:tag" content="blockchain" />
-          <meta property="article:tag" content="blockchain technology" />
-          <meta property="article:tag" content="cryptocurrency" />
-          <meta property="article:tag" content="bitcoin" />
-          <meta property="article:tag" content="membership service provider " />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="" />
+          <link rel="canonical" href="https://www.therapidhire.com/:type/" />
+
+          <link
+            rel="alternate"
+            href="https://www.therapidhire.com/:type/"
+            hreflang="x-default"
+          />
+          <link
+            rel="alternate"
+            href="https://www.therapidhire.com/:type/en"
+            hreflang="en"
+          />
+          <link
+            rel="alternate"
+            href="https://www.therapidhire.com/:type/fr"
+            hreflang="fr"
+          />
+          <link
+            rel="alternate"
+            href="https://www.therapidhire.com/:type/es"
+            hreflang="es"
+          />
+          <link
+            rel="alternate"
+            href="https://www.therapidhire.com/:type/mx"
+            hreflang="es-mx"
+          />
         </Helmet>
       ) : (
         ""
@@ -261,9 +319,7 @@ function Blogdetail() {
         <div className="rs-breadcrumbs img1">
           <div className="container">
             <div className="breadcrumbs-inner">
-              <h2 className="page-title">
-                Creative Ideas - Blogs
-              </h2>
+              <h2 className="page-title">Creative Ideas - Blogs</h2>
               <span className="sub-text">
                 Most creative ideas in blog post of Cloud services , Designing ,
                 Development.{" "}
@@ -283,12 +339,9 @@ function Blogdetail() {
                     </div>
 
                     <div className="article-content">
-                    
                       <ul className="entry-list">
                         <li>Author</li>
-                        <li>
-                          By{users.author}
-                        </li>
+                        <li>By{users.author}</li>
                         {users.date && <li>{users.date}</li>}
                       </ul>
                       <h3>{users.title}</h3>
@@ -312,10 +365,9 @@ function Blogdetail() {
                                   )}
                                 </>
                               ))}
-                            <div className="article-image">
-                                <img src={val.contentImages}  />
+                              <div className="article-image">
+                                <img src={val.contentImages} />
                               </div>
- 
                             </ul>
                           </div>
                         ))}
@@ -467,11 +519,9 @@ function Blogdetail() {
                                 onChange={(e) => setFullname(e.target.value)}
                                 className="form-control"
                                 placeholder="Enter name"
-                                
-                                
                               />
-                             <span id="blankMsg" style={{ color: "red" }} />
-
+                              {/* <span id="blankMsg" style={{ color: "red" }} /> */}
+                              <span className="validation">{message}</span>
                             </div>
                           </div>
 
@@ -490,14 +540,14 @@ function Blogdetail() {
                                 onChange={handleChange}
                               />
                               {errors.email && (
-                                <p
+                                <span
                                   style={{
                                     color: errors.email ? "red" : "",
                                     marginTop: "-4vh",
                                   }}
                                 >
                                   {errors.email}
-                                </p>
+                                </span>
                               )}
                             </div>
                           </div>
@@ -537,7 +587,10 @@ function Blogdetail() {
                       {data &&
                         data.slice(0, 3).map((val) => (
                           <article className="item">
-                            <a className="thumb"  onClick={() => newPage(val._id, val.title)}>
+                            <a
+                              className="thumb"
+                              onClick={() => newPage(val._id, val.title)}
+                            >
                               <img src={val.bannerImage} alt="image" />
                             </a>
                             <div className="info">
@@ -546,7 +599,9 @@ function Blogdetail() {
                                 className="title usmall"
                                 onClick={() => newPage(val._id, val.title)}
                               >
-                                <a onClick={() => newPage(val._id, val.title)}>{val.title}</a>
+                                <a onClick={() => newPage(val._id, val.title)}>
+                                  {val.title}
+                                </a>
                               </h4>
                             </div>
                           </article>

@@ -4,50 +4,58 @@ export default function Faq() {
   return (
     <div>
       <Helmet>
-        <title>FAQ - TheRapidHire</title>
-        <meta
-          name="description"
-          content="TheRapidHire is a software development and IT outsourcing company specializing in the design & development of customized Mobile and Web applications."
-        />
-        <meta
+      <meta charset="utf-8"/>
+<title>FAQ - TheRapidHire</title>
+<meta name="description" content="How can we help you ? What does TheRapidHire do ?"/>
+<meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <link rel="canonical" href="https://therapidhire.com/faq/" />
-        <meta property="og:url" content="https://therapidhire.com/faq" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="FAQ - TheRapidHire" />
-        <meta
-          property="og:description"
-          content="How can we help you ? What does TheRapidHire do?  
-"
-        />
-        <meta
-          property="og:image"
-          content="https://therapidhire.com/images/faq.png"
-        />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="therapidhire.com" />
-        <meta property="twitter:url" content="https://therapidhire.com/faq" />
-        <meta name="twitter:title" content="FAQ - TheRapidHire" />
-        <meta
-          name="twitter:description"
-          content="How can we help you ? What does TheRapidHire do?  
-"
-        />
-        <meta
-          name="twitter:image"
-          content="https://therapidhire.com/images/faq.png"
-        />
+<meta name="image" content="https://www.therapidhire.com/images/faq.png"/>
+<meta itemprop="name" content="FAQ - TheRapidHire"/>
+<meta itemprop="description" content="How can we help you ? What does TheRapidHire do ?"/>
+<meta itemprop="image" content="https://www.therapidhire.com/images/faq.png"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="FAQ - TheRapidHire"/>
+<meta name="twitter:description" content="How can we help you ? What does TheRapidHire do ?"/>
+<meta name="twitter:site" content="@therapidhire_"/>
+<meta name="twitter:creator" content="@therapidhire_"/>
+<meta name="twitter:image:src" content="https://www.therapidhire.com/images/faq.png"/>
+<meta name="og:title" content="FAQ - TheRapidHire"/>
+<meta name="og:description" content="How can we help you ? What does TheRapidHire do ?"/>
+<meta name="og:image" content="https://www.therapidhire.com/logo.png"/>
+<meta name="og:url" content="https://www.therapidhire.com/faq"/>
+<meta name="og:site_name" content="therapidhire"/>
+<meta name="og:locale" content="en_US"/>
+<meta name="fb:app_id" content="1369882117133030"/>
+<meta name="og:type" content="article"/>
+<meta name="article:section" content="Software development"/>
+<meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679"/>
+<meta name="article:tag" content="Software development"/>
+
+
+
+
+
+
+       
+        <link rel="canonical" href="https://www.therapidhire.com/faq" />
+
+        <link rel="alternate" href="https://www.therapidhire.com/faq" hreflang="x-default"/>
+  <link rel="alternate" href="https://www.therapidhire.com/faq/en" hreflang="en"/>
+  <link rel="alternate" href="https://www.therapidhire.com/faq/fr" hreflang="fr"/>
+  <link rel="alternate" href="https://www.therapidhire.com/faq/es" hreflang="es"/>
+  <link rel="alternate" href="https://www.therapidhire.com/faq/mx" hreflang="es-mx"/>
+  
       </Helmet>
       <div className="main-content">
-        <div className="rs-breadcrumbs img1">
+        <div className="rs-breadcrumbs img1">s
           <div className="container-fluid">
-            <div className="breadcrumbs-inner">
-              <h2 className="page-title">
+            <div className="breadcrumbs-inner"> 
+              <h1 className="page-title">
                 Frequently Asked Questions
-              </h2>
+              </h1>
             </div>
           </div>
         </div>
@@ -69,11 +77,11 @@ export default function Faq() {
             </section>
             <section className="accordion">
               <input type="checkbox" name="collapse2" id="handle2" />
-              <h2 className="handle">
+              <h3 className="handle">
                 <label for="handle2">
                   Q. What types of technology do you support overall?
                 </label>
-              </h2>
+              </h3>
               <div className="content faqlist">
                 <p>
                   We have skilled programmers on a wide spectrum of
@@ -104,11 +112,11 @@ export default function Faq() {
             </section>
             <section className="accordion">
               <input type="checkbox" name="collapse2" id="handle3" />
-              <h2 className="handle">
+              <h4 className="handle">
                 <label for="handle3">
-                  Q. Why should you go forward with The Rapid Hire?
+                  Q. Why should you go forward with TheRapidHire?
                 </label>
-              </h2>
+              </h4>
               <div className="content faqlist">
                 <p>Because we keep our promises.</p>
                 <p>
@@ -129,11 +137,11 @@ export default function Faq() {
             </section>
             <section className="accordion">
               <input type="checkbox" name="collapse2" id="handle4" />
-              <h2 className="handle">
+              <h5 className="handle">
                 <label for="handle4">
                   Q. What is your method of the development?
                 </label>
-              </h2>
+              </h5>
               <div className="content faqlist">
                 <ul>
                   <li>
@@ -182,12 +190,12 @@ export default function Faq() {
             </section>
             <section className="accordion">
               <input type="checkbox" name="collapse2" id="handle5" />
-              <h2 className="handle">
+              <h6 className="handle">
                 <label for="handle5">
                   Q. Why Choose TheRapidHire as a software development service
                   provider?
                 </label>
-              </h2>
+              </h6>
               <div className="content">
                 <p>
                   TheRapidHire is a well-known software and mobile app
@@ -209,12 +217,12 @@ export default function Faq() {
             </section>
             <section className="accordion">
               <input type="checkbox" name="collapse2" id="handle6" />
-              <h2 className="handle">
+              <h6 className="handle">
                 <label for="handle6">
                   Q. As a software development firm, what software development
                   services do you offer?
                 </label>
-              </h2>
+              </h6>
               <div className="content">
                 <p>
                   We offer full-service software development, including custom
