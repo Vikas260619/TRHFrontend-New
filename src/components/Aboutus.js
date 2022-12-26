@@ -18,7 +18,7 @@ function Aboutus() {
             <div className="front-content-part">
               <div className="front-icon-part">
                 <div className="icon-part">
-                  <img src="images/rapid1.webp" alt="rapid1" />
+                  <img src="images/rapid1.webp" alt="website designing" />
                 </div>
               </div>
               <div className="front-title-part">
@@ -26,7 +26,7 @@ function Aboutus() {
               </div>
               <div className="front-desc-part">
                 <p>
-                  TheRapidHire Pvt Ltd. will inspire its employees to be the
+                  TheRapidHire Pvt Ltd. will inspire it's employees to be the
                   best they can be. We will engage in sustainable practices and
                   anticipate the needs of our customers. Our vision is to bring
                   our employees into the 21st century through innovation and
@@ -45,7 +45,7 @@ function Aboutus() {
             <div className="front-content-part">
               <div className="front-icon-part">
                 <div className="icon-part">
-                  <img src="images/rapid2.webp" alt="rapid2" />
+                  <img src="images/rapid2.webp" alt="cyber security" />
                 </div>
               </div>
               <div className="front-title-part">
@@ -72,7 +72,7 @@ function Aboutus() {
             <div className="front-content-part">
               <div className="front-icon-part">
                 <div className="icon-part">
-                  <img src="images/rapid3.webp" alt="rapid3" />
+                  <img src="images/rapid3.webp" alt="reactjs" />
                 </div>
               </div>
               <div className="front-title-part">
@@ -95,7 +95,10 @@ function Aboutus() {
   return (
     <div>
       <Helmet>
-        <title>About us - TheRapidHire | CMMI Level 5</title> 
+        <meta charset="utf-8" />
+        <title>
+          About us - TheRapidHire|CMMI Level 5|Software|Website Development
+        </title>
 
         <meta
           name="description"
@@ -103,49 +106,66 @@ function Aboutus() {
         />
         <meta
           name="robots"
-          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+          content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
-        <link rel="canonical" href="https://therapidhire.com/aboutus" />
-
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
         <meta
-          property="og:title"
-          content="TheRapidHire - Software Development|IT outsourcing company"
+          name="image"
+          content="https://www.therapidhire.com/images/ser3.png"
         />
-        <meta property="og:url" content="https://therapidhire.com/aboutus" />
         <meta
-          property="og:image"
-          content="https://therapidhire.com/images/ser3.png"
+          itemprop="name"
+          content="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
         />
-        <meta property="og:image:width" content="150" />
-        <meta property="og:image:height" content="150" />
         <meta
-          property="og:description"
-          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+          itemprop="description"
+          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
         />
-        <meta name="twitter:card" content="summary_large_image"/>
+        <meta
+          itemprop="image"
+          content="https://www.therapidhire.com/images/ser3.png"
+        />
+        <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
-          content="TheRapidHire - Software Development|IT outsourcing company"
+          content="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
         />
-        <meta name="twitter:site" content="@therapidhire" />
         <meta
           name="twitter:description"
-          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
+        />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
+        <meta
+          name="twitter:image:src"
+          content="https://www.therapidhire.com/images/ser3.png"
         />
         <meta
-          name="twitter:image"
-          content="https://therapidhire.com/images/ser3.png"
+          name="og:title"
+          content="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
         />
-        <meta name="twitter:image:alt" content="therapidhire" />
+        <meta
+          name="og:description"
+          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
+        />
+        <meta name="og:image" content="https://www.therapidhire.com/logo.png" />
+        <meta name="og:url" content="https://www.therapidhire.com/aboutus" />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+        <meta name="article:section" content="Software development" />
+        <meta
+          name="article:author"
+          content="https://www.facebook.com/profile.php?id=100054281690679"
+        />
+        <meta name="article:tag" content="Software development" />
       </Helmet>
 
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h2 className="page-title">About Us</h2>
+              <h1 className="page-title">About Us</h1>
               <span className="sub-text">
                 At TheRapidHire, we believe in hard work and transparency. We
                 encourage professionalism and clarity of thought at all times.{" "}
@@ -160,15 +180,23 @@ function Aboutus() {
         >
           <div className="container">
             <div className="animat-rat">
-              <img src="images/sib-1.webp" className="rat-sib" alt="icon1" />
+              <img
+                src="images/sib-1.webp"
+                className="rat-sib"
+                alt="website development company in indore"
+              />
               <img
                 src="images/round-2.webp"
                 className="rat-round"
-                alt="icon2"
+                alt="python"
               />
-              <img src="images/ract.webp" className="rat-ract" alt="icon3" />
-              <img src="images/squar.png" className="rat-squar1" alt="icon4" />
-              <img src="images/squar.png" className="rat-squar2" alt="icon5" />
+              <img src="images/ract.webp" className="rat-ract" alt="angular" />
+              <img src="images/squar.png" className="rat-squar1" alt="php" />
+              <img
+                src="images/squar.png"
+                className="rat-squar2"
+                alt="payroll management"
+              />
             </div>
 
             <div className="row">
@@ -186,13 +214,13 @@ function Aboutus() {
                   CMMI 5-level certified and acclaimed organization that
                   provides quality products and professionals on a contract
                   basis. With a mission to deliver quality services at a
-                  reasonable cost, The Rapid Hire takes an agile, collaborative
+                  reasonable cost, TheRapidHire takes an agile, collaborative
                   approach to create customized solutions across the digital
                   value chain. Our deep expertise in web development and
                   application development, cloud services, database management,
                   cyber security, and payroll management transforms your ideas
                   into reality. We aim to create a network of businesses that
-                  help each other acquire more customers. The Rapid Hire company
+                  help each other acquire more customers. TheRapidHire company
                   helps you with quality service at low prices and great
                   satisfaction, giving you a better idea of how to improve your
                   online presence.
@@ -216,7 +244,7 @@ function Aboutus() {
               />
             </div>
             <div className="about-circle-shape">
-              <img src="images/about-circle.webp" alt="imagecircle" />
+              <img src="images/about-circle.webp" alt="cmmi level" />
             </div>
           </div>
         </div>
@@ -225,9 +253,9 @@ function Aboutus() {
           <div className="container">
             <div className="sec-title3 text-center">
               <span className="sub-title">WHY CHOOSE US</span>
-              <h2 className="title">
+              <h3 className="title">
                 We help you to increase your product through solutions.
-              </h2>
+              </h3>
               <div className="heading-border-line"></div>
             </div>
             <br />
@@ -237,15 +265,15 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <img src="images/choose-1.png" alt="imagechoose" />
+                    <img src="images/choose-1.png" alt="business" />
                   </div>
                   <div className="choose-content">
-                    <h3 className="headingcolor">Client Oriented</h3>
+                    <h4 className="headingcolor">Client Oriented</h4>
                     <p>
                       Being customer-oriented is an approach in which, rather
                       than solving for the business’s needs, our company solves
                       the customer’s problems first.
-                    </p>  
+                    </p>
                   </div>
                 </div>
               </div>
@@ -253,10 +281,10 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <img src="images/choose-2.png" alt="choose2" />
+                    <img src="images/choose-2.png" alt="creative" />
                   </div>
                   <div className="choose-content">
-                    <h3 className="headingcolor">Creativity</h3>
+                    <h5 className="headingcolor">Creativity</h5>
                     <p>
                       Our creative thinking can also lead to innovation that
                       will grow our business through increased productivity.
@@ -268,25 +296,25 @@ function Aboutus() {
               </div>
 
               <div className="col-lg-3 col-md-6">
-                <div className="single-choose-card">  
+                <div className="single-choose-card">
                   <div className="choose-image">
-                    <img src="images/choose-3.png" alt="choose3" />
+                    <img src="images/choose-3.png" alt="meeting deadlines" />
                   </div>
                   <div className="choose-content">
-                    <h3 className="headingcolor">Meeting Deadlines</h3>
+                    <h6 className="headingcolor">Meeting Deadlines</h6>
                     <p>
                       Meeting deadlines help us to collaborate toward achieving
                       a shared goal, and to keep complex,we work multi stage
                       projects on track. We set all expectations.
                     </p>
-                  </div>  
+                  </div>
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <img src="images/choose-4.webp" alt="choose4" />
+                    <img src="images/choose-4.webp" alt="planning" />
                   </div>
                   <div className="choose-content">
                     <h3 className="headingcolor">A Plan for Success</h3>
@@ -308,5 +336,3 @@ function Aboutus() {
 }
 
 export default Aboutus;
-
-

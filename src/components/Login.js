@@ -15,9 +15,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordType, setPasswordType] = useState("password");
-  useEffect(() => {
-    document.title = "Login";
-  });
+
   const togglePassword = () => {
     if (passwordType === "password") {
       setPasswordType("text");
@@ -142,28 +140,59 @@ export default function Login() {
   return (
     <div>
       <Helmet>
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Join Our Team " />
-        <meta property="og:url" content="https://therapidhire.com/login" />
+        <meta charset="utf-8" />
+        <title>Join Our Team</title>
+
         <meta
-          property="og:image"
-          content="https://therapidhire.com/images/ser6.png"
-        />
-        <meta
-          property="og:description"
+          name="description"
           content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all times."
         />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="" />
+        <meta name="image" content="https://therapidhire.com/images/ser6.png" />
+
+        <meta itemprop="name" content="Join Our Team" />
+        <meta
+          itemprop="description"
+          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all times."
+        />
+        <meta
+          itemprop="image"
+          content="https://therapidhire.com/images/ser6.png"
+        />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Join Our Team" />
+        <meta
+          name="twitter:description"
+          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all times."
+        />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
+        <meta
+          name="twitter:image:src"
+          content="https://therapidhire.com/images/ser6.png"
+        />
+
+        <meta name="og:title" content="Join Our Team" />
+        <meta
+          name="og:description"
+          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all times."
+        />
+        <meta name="og:image" content="https://www.therapidhire.com/logo.png" />
+        <meta name="og:url" content="https://www.therapidhire.com/login" />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+
+        <meta name="article:section" content="Software development" />
+        <meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679" />
+        <meta name="article:tag" content="Software development" />
       </Helmet>
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h2 className="page-title">
-                Join Our Team
-                <span className="watermark">Login</span>
-              </h2>
+              <h2 className="page-title">Join Our Team</h2>
               <span className="sub-text">
                 At TheRapidHire, we believe in hard work and transparency. We
                 encourage professionalism and clarity of thought at all times.{" "}

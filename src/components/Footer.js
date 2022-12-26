@@ -147,7 +147,7 @@ function Footer() {
             <div className="row y-middle">
               <div className="col-lg-12">
                 <div className="copyright text-center">
-                  <p>© 2022 The Rapid Hire Pvt. Ltd . All Rights Reserved.</p>
+                  <p>©2022 TheRapidHire Pvt. Ltd . All Rights Reserved.</p>
                 </div>
               </div>
             </div>

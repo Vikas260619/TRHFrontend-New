@@ -16,6 +16,8 @@ export default function Signup() {
   const [address, setAddress] = useState("");
   const [errors, setErrors] = useState({});
   const [values, setValues] = useState({});
+  const [message, setMessage] = useState("");
+
 
   const [passwordType, setPasswordType] = useState("password");
 
@@ -70,7 +72,7 @@ export default function Signup() {
         ) {
           setErrors({
             ...errors,
-            email: "Enter a valid email address",
+            email: "Enter a valid Email Address",
           });
         } else {
           let newObj = omit(errors, "email");
@@ -130,15 +132,29 @@ export default function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!isNaN(name)) {
-      document.getElementById("blankMsg").innerHTML =
-        "**Only characters are allowed";
-      return false;
-    } else {
-      document.getElementById("blankMsg").innerHTML = "";
+    // if (!isNaN(name)) {
+    //   document.getElementById("blankMsg").innerHTML =
+    //     "**Only characters are allowed";
+    //   return false;
+    // } else {
+    //   document.getElementById("blankMsg").innerHTML = "";
+    // }
+
+    const regExp =  /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+
+    
+    if(regExp.test(name)){
+      setMessage("")
+    }else if(!regExp.test(name) && name !== ""){
+      setMessage("Please enter a valid Name");
+
+    }else{
+      setMessage("")
     }
-    if (name !== "") {
-      if (email !== "") {
+    if (new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(name)) {
+      if (new RegExp(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        ).test(email)) {
         if (password !== "") {
           if (occupation !== "") {
             if (confirm_password !== "") {
@@ -170,27 +186,30 @@ export default function Signup() {
                         setAddress("");
                       }, 500);
                     })
-                    .catch((err) => toast(err.response.data.message));
+                    // .catch((err) => toast(err.response.data.message));
                 } else {
-                  toast("Please fill the address field ");
+                  toast("Please fill the Address field ");
                 }
               } else {
                 toast("Please fill the Phone number field ");
               }
             } else {
-              toast("Please fill the confirm password field ");
+              toast("Please fill the Confirm Password field ");
             }
           } else {
-            toast("Please fill the occupation field ");
+            toast("Please fill the Occupation field ");
           }
         } else {
-          toast("Please fill the password field ");
+          toast("Please fill the Password field ");
         }
       } else {
-        toast("Please fill the Email field ");
-      }
+if(email === ""){
+  toast("Please fill the Email field")
+}      }
     } else {
-      toast("Please fill the name field ");
+      if (name === "") {
+        toast("Please fill the Name field");
+      }
     }
   };
 
@@ -245,7 +264,9 @@ export default function Signup() {
                               value={name}
                               onChange={(e) => setName(e.target.value)}
                             />
-                            <span id="blankMsg" style={{ color: "red" }} />
+                            {/* <span id="blankMsg" style={{ color: "red" }} /> */}
+                            <p className="validation">{message}</p>
+
                           </div>
                           <div className="col-lg-6 col-xs-12">
                             <Input

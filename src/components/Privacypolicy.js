@@ -5,39 +5,40 @@ function Privacypolicy() {
   return (
     <div>
       <Helmet>
-        <title>Privacy Policy-TheRapidHire</title>
+      <meta charset="utf-8"/>
+<title>Privacy Policy-TheRapidHire</title>
+<meta name="description" content="What kind of data do we collect?"/>
+<meta name="image" content="https://therapidhire.com/images/ser6.png"/>
+<meta itemprop="name" content="Privacy Policy-TheRapidHire"/>
+<meta itemprop="description" content="What kind of data do we collect?"/>
+<meta itemprop="image" content="https://therapidhire.com/images/ser6.png"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Privacy Policy-TheRapidHire"/>
+<meta name="twitter:description" content="What kind of data do we collect?"/>
+<meta name="twitter:site" content="@therapidhire_"/>
+<meta name="twitter:creator" content="@therapidhire_"/>
+<meta name="twitter:image:src" content="https://www.therapidhire.com/images/choose-2.png"/>
+<meta name="og:title" content="Privacy Policy-TheRapidHire"/>
+<meta name="og:description" content="What kind of data do we collect?"/>
+<meta name="og:image" content="https://www.therapidhire.com/logo.png"/>
+<meta name="og:url" content="https://www.therapidhire.com/privacy"/>
+<meta name="og:site_name" content="therapidhire"/>
+<meta name="og:locale" content="en_US"/>
+<meta name="fb:app_id" content="1369882117133030"/>
+<meta name="og:type" content="article"/>
+<meta name="article:section" content="Software development"/>
+<meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679"/>
+<meta name="article:tag" content="Software development"/>
       
-        <link rel="canonical" href="https://therapidhire.com/privacy/" />
-        <meta property="og:url" content="https://therapidhire.com/privacy" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Privacy Policy - TheRapidHire" />
-        <meta
-          property="og:description"
-          content="What kind of data do we collect?
-"
-        />
-        <meta
-          property="og:image"
-          content="https://therapidhire.com/images/choose-2.png"
-        />
+        <link rel="canonical" href="https://www.therapidhire.com/privacy" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="therapidhire.com" />
-        <meta
-          property="twitter:url"
-          content="https://therapidhire.com/privacy"
-        />
-        <meta name="twitter:title" content="Privacy Policy - TheRapidHire" />
-        <meta
-          name="twitter:description"
-          content="What kind of data do we collect?
-"
-        />
-        <meta
-          name="twitter:image"
-          content="https://therapidhire.com/images/choose-2.png"
-        />
-      </Helmet>
+        <link rel="alternate" href="https://www.therapidhire.com/privacy" hreflang="x-default"/>
+  <link rel="alternate" href="https://www.therapidhire.com/privacy/en" hreflang="en"/>
+  <link rel="alternate" href="https://www.therapidhire.com/privacy/fr" hreflang="fr"/>
+  <link rel="alternate" href="https://www.therapidhire.com/privacy/es" hreflang="es"/>
+  <link rel="alternate" href="https://www.therapidhire.com/privacy/mx" hreflang="es-mx"/>
+
+         </Helmet>
       <div className="offwrap"></div>
 
       <div className="main-content">

@@ -145,61 +145,106 @@ function Home() {
   return (
     <div>
       <Helmet>
+        {/* <meta charset="utf-8"/> */}
         <title>
-          Software Development | IT outsourcing Company - TheRapidHire    
+          TheRapidHire-Software Development | IT outsourcing Company
         </title>
-
         <meta
           name="description"
-          content="TheRapidHire Pvt Ltd is a CMMI Level-5 software development, IT outsourcing & HR company. We are a government-certified acclaimed organization providing"
+          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
         />
         <meta
           name="Keywords"
           content="Website Development, Cloud Services, Business Consulting,Software Development, It Services, Java, Php, Aws, Python, Wordpress, Blockchain, System Developer,IT outsourcing, hr outsourcing offshore development,,Mobile App Development, Minimum Viable Product,Data Engineering, New Product Development."
         />
 
-
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <link rel="canonical" href="https://therapidhire.com/" />
-
-        <meta property="og:url" content="https://therapidhire.com" />
-        <meta property="og:type" content="website" />
-
         <meta
-          property="og:title"
-          content="TheRapidHire - Software Development and IT outsourcing company"
+          name="image"
+          content="https://www.therapidhire.com/images/services2.jpeg"
         />
         <meta
-          property="og:description"
+          itemprop="name"
+          content="TheRapidHire-Software Development | IT outsourcing Company"
+        />
+        <meta
+          itemprop="description"
           content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
         />
         <meta
-          property="og:image"
-          content="https://therapidhire.com/images/services2.jpeg"
+          itemprop="image"
+          content="https://www.therapidhire.com/images/services2.jpeg"
         />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="therapidhire.com" />
-        <meta property="twitter:url" content="https://therapidhire.com" />
+        <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
-          content="TheRapidHire - Software Development and IT outsourcing company"
+          content="TheRapidHire-Software Development | IT outsourcing Company"
         />
         <meta
           name="twitter:description"
           content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
         />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
         <meta
-          name="twitter:image"
-          content="https://therapidhire.com/images/services2.jpeg"
+          name="twitter:image:src"
+          content="https://www.therapidhire.com/images/services2.jpeg"
+        />
+        <meta
+          name="og:title"
+          content="TheRapidHire-Software Development | IT outsourcing Company"
+        />
+        <meta
+          name="og:description"
+          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+        />
+        <meta
+          name="og:image"
+          content="https://www.therapidhire.com/images/logo.png"
+        />
+        <meta name="og:url" content="https://www.therapidhire.com" />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US"/>
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+        <meta name="article:section" content="software development" />
+        <meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679" />
+        <meta name="article:tag" content="software development " />
+
+        <link rel="canonical" href="https://www.therapidhire.com/" />
+
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/"
+          hreflang="x-default"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/en/"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/fr/"
+          hreflang="fr"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/es/"
+          hreflang="es"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/mx/"
+          hreflang="es-mx"
         />
       </Helmet>
 
       <AliceCarousel
-        mouseTracking
+        
         controlsStrategy="alternate"
         autoPlay
         autoPlayStrategy="none"
@@ -380,6 +425,7 @@ function Home() {
             infinite
             mouseTracking
             items={items1}
+            height="50vh"
             responsive={responsive}
             controlsStrategy="alternate"
           />

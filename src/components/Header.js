@@ -21,7 +21,7 @@ function Header() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top navtrh">
       <div className="container-fluid navihead">
         <a className="navbar-brand" href="/">
-          <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="TRH" />
+          <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="therapidhire" />
         </a>
 
         <button
@@ -52,7 +52,7 @@ function Header() {
               <ul
                 className="dropdown-menu"
                 aria-labelledby="navbarDr
-              opdown"
+              opdown" 
               >
                 <li>
                   <a className="dropdown-item" href="/aboutus">
@@ -86,7 +86,7 @@ function Header() {
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="/getaenquiry"
+                href="/letsconnect"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"

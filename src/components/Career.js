@@ -5,44 +5,94 @@ function Career() {
   return (
     <div>
       <Helmet>
-        <title>Work with Us - TheRapidHire</title>
+        <meta charset="utf-8" />
+        <title>Work with Us -Join TheRapidHire|CMMI Level 5</title>
+
         <meta
           name="description"
           content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology"
         />
-
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <link rel="canonical" href="https://therapidhire.com/workwithus/" />
-
-        <meta property="og:url" content="https://therapidhire.com/workwithus" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Work with Us - TheRapidHire" />
         <meta
-          property="og:description"
-          content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment."
+          name="image"
+          content="https://www.therapidhire.com/images/ser3.png"
         />
         <meta
-          property="og:image"
-          content="https://therapidhire.com/images/ser3.png"
+          itemprop="name"
+          content="Work with Us -Join TheRapidHire|CMMI Level 5"
         />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="therapidhire.com" />
         <meta
-          property="twitter:url"
-          content="https://therapidhire.com/workwithus"
+          itemprop="description"
+          content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology"
         />
-        <meta name="twitter:title" content="Work with Us - TheRapidHire" />
+        <meta
+          itemprop="image"
+          content="https://www.therapidhire.com/images/ser3.png"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:title"
+          content="Work with Us -Join TheRapidHire|CMMI Level 5"
+        />
         <meta
           name="twitter:description"
-          content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology skills and advance their careers in a fast-paced environment."
+          content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology"
+        />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
+        <meta
+          name="twitter:image:src"
+          content="https://www.therapidhire.com/images/ser3.png"
         />
         <meta
-          name="twitter:image"
-          content="https://therapidhire.com/images/ser3.png"
+          name="og:title"
+          content="Work with Us -Join TheRapidHire|CMMI Level 5"
+        />
+        <meta
+          name="og:description"
+          content="We consider our employees to be our most valuable asset! We strive to provide them with new and challenging opportunities to hone their technology"
+        />
+        <meta name="og:image" content="https://www.therapidhire.com/logo.png" />
+        <meta name="og:url" content="https://www.therapidhire.com/workwithus" />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+        <meta name="article:section" content="Software development" />
+        <meta
+          name="article:author"
+          content="https://www.facebook.com/profile.php?id=100054281690679"
+        />
+        <meta name="article:tag" content="Software development" />
+
+        <link rel="canonical" href="https://www.therapidhire.com/workwithus" />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/workwithus"
+          hreflang="x-default"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/workwithus/en"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/workwithus/fr"
+          hreflang="fr"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/workwithus/es"
+          hreflang="es"
+        />
+        <link
+          rel="alternate"
+          href="https://www.therapidhire.com/workwithus/mx"
+          hreflang="es-mx"
         />
       </Helmet>
 
@@ -52,9 +102,7 @@ function Career() {
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h2 className="page-title">
-                Explore Opportunities
-              </h2>
+              <h1 className="page-title">Explore Opportunities</h1>
               <span className="sub-text">
                 We consider our employees to be our most valuable asset! We
                 strive to provide them with new and challenging opportunities to
@@ -127,7 +175,10 @@ function Career() {
                       </div>
                     </div>
                     <div className="text">
-                      <h6>IPS Connect- Reward Program</h6>
+                      <h6>
+                        Reward <br />
+                        Program
+                      </h6>
                     </div>
                   </div>
                 </div>
@@ -194,7 +245,7 @@ function Career() {
             <div className="row align-items-center mb-45">
               <div className="col-xl-12">
                 <div className="sec-title3 text-center ">
-                  <h2 className="title ">Job Openings</h2>
+                  <h3 className="title ">Job Openings</h3>
                   <div className="heading-border-line"></div>
                 </div>
               </div>
@@ -208,17 +259,15 @@ function Career() {
                     <i className="fa fa-briefcase"></i>
                   </div>
                   <div className="job-tag mb-30 ">
-                    <span className="tag-normal">full time</span>
-                    <span className="tag-urgent">urgent</span>
+                    <span className="tag-normal">Full time</span>
+                    <span className="tag-urgent">Internship</span>
                   </div>
                   <div className="job-instructor-profile mb-30">
                     <div className="job-instructor-img f-left">
-                      <img src="images/job1.png" alt="job1" />
+                      <img src="images/job1.png" alt="java developer" />
                     </div>
                     <div className="job-instructor-title">
-                      <h4>
-                        Java Developer
-                      </h4>
+                      <h4>Java Developer</h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
                       </span>
@@ -245,17 +294,15 @@ function Career() {
                     <i className="flaticon-job-search-3"></i>
                   </div>
                   <div className="job-tag mb-30">
-                    <span className="tag-normal">full time</span>
-                    <span className="tag-urgent">urgent</span>
+                    <span className="tag-normal">Full time</span>
+                    <span className="tag-urgent">Internship</span>
                   </div>
                   <div className="job-instructor-profile mb-30">
                     <div className="job-instructor-img f-left">
-                      <img src="images/job2.png" alt="job2" />
+                      <img src="images/job2.png" alt="MERN developer" />
                     </div>
                     <div className="job-instructor-title">
-                      <h4>
-                        MERN Stack Developer
-                      </h4>
+                      <h4>MERN Stack Developer</h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
                       </span>
@@ -284,16 +331,14 @@ function Career() {
                   </div>
                   <div className="job-tag mb-30">
                     <span className="tag-normal">Full time</span>
-                    <span className="tag-urgent">urgent</span>
+                    <span className="tag-urgent">Internship</span>
                   </div>
                   <div className="job-instructor-profile mb-30">
                     <div className="job-instructor-img f-left">
-                      <img src="images/job3.png" alt="" />
+                      <img src="images/job3.png" alt="Mean Stack developer" />
                     </div>
                     <div className="job-instructor-title">
-                      <h4>
-                        MEAN Stack Developer
-                      </h4>
+                      <h4>MEAN Stack Developer</h4>
                       <span>
                         <i className="fa fa-map-marker"></i> Indore
                       </span>
@@ -305,7 +350,7 @@ function Career() {
                       solutions independently based on high-level
                       architecture.Building interactive consumer data from
                       multiple systems and RESTfully abstract to the UI through
-                      a Node.js.{" "}
+                      a Node.JS.{" "}
                     </p>
                     <div className="job-salary">
                       <a href="/applymean">
@@ -318,12 +363,15 @@ function Career() {
             </div>
             <div className="row">
               <div className="col-xl-12 col-lg-12 col-md-12 text-center">
-                <p className="resume1">
-                  Send your resume at{" "}
-                  <a href="mailto:career@therapidhire.com">
-                    "career@therapidhire.com"
-                  </a>
-                </p>
+                <h5>
+                  {" "}
+                  <p className="resume1">
+                    Send your resume at{" "}
+                    <a href="mailto:career@therapidhire.com">
+                      "career@therapidhire.com"
+                    </a>
+                  </p>
+                </h5>
               </div>
             </div>
           </div>

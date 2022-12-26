@@ -6,25 +6,40 @@ function Terms() {
   return (
     <div>
       <Helmet>
-        <title>Terms of Services-TheRapidHire</title>
-        <link rel="canonical" href="https://therapidhire.com/termsofservices/" />
+      <meta charset="utf-8"/>
+<title>Terms of Services-TheRapidHire</title>
+<meta name="description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us."/>
+<meta name="image" content="https://www.therapidhire.com/images/choose-3.png"/>
+<meta itemprop="name" content="Terms of Services-TheRapidHire"/>
+<meta itemprop="description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us."/>
+<meta itemprop="image" content="https://www.therapidhire.com/images/choose-3.png"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Terms of Services-TheRapidHire"/>
+<meta name="twitter:description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us."/>
+<meta name="twitter:site" content="@therapidhire_"/>
+<meta name="twitter:creator" content="@therapidhire_"/>
+<meta name="twitter:image:src" content="https://www.therapidhire.com/images/choose-3.png"/>
+<meta name="og:title" content="Terms of Services-TheRapidHire"/>
+<meta name="og:description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us."/>
+<meta name="og:url" content="https://www.therapidhire.com/termsofservices"/>
+<meta name="og:type" content="article"/>
+<meta name="article:section" content="softtware development"/>
+<meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679"/>
+<meta name="article:tag" content="software development"/>
 
-  <meta property="og:url" content="https://therapidhire.com/termsofservices"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Terms of Services -TheRapidHire"/>
-  <meta property="og:description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us.
-"/>
-  <meta property="og:image" content="https://therapidhire.com/images/choose-3.png"/>
 
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:domain" content="therapidhire.com"/>
-  <meta property="twitter:url" content="https://therapidhire.com/termsofservices"/>
-  <meta name="twitter:title" content="Terms of Services -TheRapidHire"/>
-  <meta name="twitter:description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us.
-"/>
-  <meta name="twitter:image" content="https://therapidhire.com/images/choose-3.png"/>
 
-        
+      
+        <link rel="canonical" href="https://www.therapidhire.com/termsofservices" />
+
+
+  <link rel="alternate" href="https://www.therapidhire.com/termsofservices" hreflang="x-default"/>
+  <link rel="alternate" href="https://www.therapidhire.com/termsofservices/en" hreflang="en"/>
+  <link rel="alternate" href="https://www.therapidhire.com/termsofservices/fr" hreflang="fr"/>
+  <link rel="alternate" href="https://www.therapidhire.com/termsofservices/es" hreflang="es"/>
+  <link rel="alternate" href="https://www.therapidhire.com/termsofservices/mx" hreflang="es-mx"/>  
+  
+
       </Helmet>
       <div className="offwrap"></div>
 

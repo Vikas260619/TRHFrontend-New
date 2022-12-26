@@ -114,7 +114,7 @@ export default function Forgotpassword() {
             <div className="breadcrumbs-inner">
               <h2 className="page-title">
                 Forgot Password{" "}
-                <span className="watermark">Forgotpassword</span>
+                <span className="watermark">Forgot Password</span>
               </h2>
               <span className="sub-text">
                 At TheRapidHire, we believe in hard work and transparency. We
