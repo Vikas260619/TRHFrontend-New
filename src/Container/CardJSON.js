@@ -10,7 +10,7 @@ const CardData = [
    {
       imgsrc: "images/ser2.webp",
       title: "WEB DESIGNING",
-      description: " We are looking for a web designer who will be responsible for creating great websites for our clients. Primary duties include conceptualizing and implementing creative ideas for client websites, as well as creating visual elements that are in line with our clients' branding."
+      description: "Our web designers have years of experience and keep up with the most recent versions and technologies, so they can create a special, tailored website for your company. We ensure that the website is user-friendly and has all the elements that are necessary to boost conversions."
    },
    {
       imgsrc: "images/ser3.png",
