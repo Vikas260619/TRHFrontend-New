@@ -142,6 +142,7 @@ function Testimonial() {
                 responsive={responsive}
                 controlsStrategy="alternate"
               />
+              
             </div>
             <div className="pattern-img">
               <img
