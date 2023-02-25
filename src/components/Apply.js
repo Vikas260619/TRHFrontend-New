@@ -348,7 +348,6 @@ function Apply() {
                                 type="file"
                                 name="resume"
                                 size="40"
-                                //key={resume || ""}
                                 onChange={(e) => handleFileChange(e)}
                                 className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
                                 required

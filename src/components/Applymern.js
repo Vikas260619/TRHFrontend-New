@@ -55,7 +55,7 @@ function Applymern() {
 
   const handleFileChange = (e) => {
     if (inputFile === false) {
-      setResume(e.target.files[1]);
+      setResume(e.target.files[0]);
     } else {
       e.target.files = null;
     }
@@ -364,7 +364,6 @@ function Applymern() {
                                 type="file"
                                 name="resume"
                                 size="40"
-                                key={resume || ""}
                                 onChange={(e) => handleFileChange(e)}
                                 className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
                                 required
