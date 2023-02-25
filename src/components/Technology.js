@@ -10,6 +10,10 @@ function Technology() {
       <Helmet>
         <meta charset="utf-8" />
         <title>Technology- Java | AngularJs | MernStack | Python | React</title>
+
+
+
+        
         <meta
           name="description"
           content="We Work on the technology Java, React, Vue.js, python, salesforce , MEAN , MERN , .net , angular , C#"

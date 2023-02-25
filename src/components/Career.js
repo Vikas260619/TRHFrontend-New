@@ -245,14 +245,14 @@ function Career() {
             <div className="row align-items-center mb-45">
               <div className="col-xl-12">
                 <div className="sec-title3 text-center ">
-                  <h3 className="title ">Job Openings</h3>
+                  <h3 className="title fs-3">Job Openings</h3>
                   <div className="heading-border-line"></div>
                 </div>
               </div>
             </div>
             <br />
             <br />
-            <div className="row">
+            {/* <div className="row">
               <div className="col-xl-4 col-lg-6 col-md-12 mb-30">
                 <div className="job-wrapper ">
                   <div className="banck-icon">
@@ -360,13 +360,38 @@ function Career() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+
+            {/* <section className="accordionn">
+              <input type="checkbox" name="collapse2" id="handle2" />
+              <h3 className="handle">
+                <label for="handle2" className="fs-4" >
+                  Project Manager
+                </label>
+              </h3>
+              <p className="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indor | Experience +2 | Postion</p>
+
+              <div className="content faqlist me-5">
+
+                <p className="fs-4">
+                Job Description
+
+                </p>
+                <p>Strong problem-solving skills Proficiency in managing cross-functional teams Great social skills Result-orientated mindset Strong communication skills Excellent attention to detail
+
+                </p>
+           
+            <a className="btnapply">Apply know</a>
+
+  </div>
+            </section> */}
+
             <div className="row">
               <div className="col-xl-12 col-lg-12 col-md-12 text-center">
                 <h5>
                   {" "}
-                  <p className="resume1">
-                    Send your resume at{" "}
+                  <p className="resume1 fs-5">
+                  For any information regarding career opportunities email us:{" "}
                     <a href="mailto:career@therapidhire.com">
                       "career@therapidhire.com"
                     </a>
@@ -374,6 +399,232 @@ function Career() {
                 </h5>
               </div>
             </div>
+
+            <section className="accordionn">
+              <input type="checkbox" name="collapse1" id="handle1" />
+
+              
+              <h3 className="handle">
+                
+                <label for="handle1" className="fs-4">
+                Front End Developer 
+
+                </label>
+              </h3>
+              <p className="fs-6">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indor | Experience +2 | Postion
+              </p>
+
+              <div className="content faqlist me-5 border-top">
+                <p className="jobheading fs-4">Job description</p>
+                <p className="jobheading  fs-6">
+                  Strong problem-solving sertretkills Proficiency in managing
+                  cross-functional teams Great social skills Result-orientated
+                  mindset Strong communication skills Excellent attention to
+                  detail
+                </p>
+               
+                {/* <a className="btnapply py-3">Apply know</a> */}
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <a href="/frontenapply" class="btnapply jobheading rounded-pill" >Apply know</a>
+               </div>
+
+              </div>
+            </section>
+
+            <section className="accordionn">
+              <input type="checkbox" name="collapse2" id="handle2" />
+              <h3 className="handle">
+                <label for="handle2" className="fs-4">
+                BackEnd Developer 
+
+                </label>
+              </h3>
+              <p className="fs-6">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indor | Experience +2 | Postion
+              </p>
+
+              <div className="content faqlist me-5 border-top">
+                <p className="jobheading fs-4">Job description</p>
+                <p className="jobheading  fs-6">
+                  Strong problem-solving sertretkills Proficiency in managing
+                  cross-functional teams Great social skills Result-orientated
+                  mindset Strong communication skills Excellent attention to
+                  detail
+                </p>
+               
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="/backapply" class="btnapply jobheading rounded-pill" >Apply know</a>
+               </div>
+
+              </div>
+            </section>
+
+            <section className="accordionn">
+              <input type="checkbox" name="collapse3" id="handle3" />
+              <h3 className="handle">
+                <label for="handle3" className="fs-4">
+                QA Engineer 
+
+                </label>
+              </h3>
+              <p className="fs-6">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indor | Experience +2 | Postion
+              </p>
+
+              <div className="content faqlist me-5 border-top">
+                <p className="jobheading fs-4">Job description</p>
+                <p className="jobheading  fs-6">
+                  Strong problem-solving sertretkills Proficiency in managing
+                  cross-functional teams Great social skills Result-orientated
+                  mindset Strong communication skills Excellent attention to
+                  detail
+                </p>
+               
+                {/* <a className="btnapply py-3">Apply know</a> */}
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="/qaengineerapply" class="btnapply jobheading rounded-pill" >Apply know</a>
+               </div>
+
+              </div>
+            </section>
+
+
+            <section className="accordionn">
+              <input type="checkbox" name="collapse4" id="handle4" />
+              <h3 className="handle">
+                <label for="handle4" className="fs-4">
+                Java Developer 
+ 
+
+                </label>
+              </h3>
+              <p className="fs-6">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indor | Experience +2 | Postion
+              </p>
+
+              <div className="content faqlist me-5 border-top">
+                <p className="jobheading fs-4">Job description</p>
+                <p className="jobheading  fs-6">
+                  Strong problem-solving sertretkills Proficiency in managing
+                  cross-functional teams Great social skills Result-orientated
+                  mindset Strong communication skills Excellent attention to
+                  detail
+                </p>
+               
+                {/* <a className="btnapply py-3">Apply know</a> */}
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="/javaaapply" class="btnapply jobheading rounded-pill" >Apply know</a>
+               </div>
+
+              </div>
+            </section>
+
+
+            <section className="accordionn">
+              <input type="checkbox" name="collapse5" id="handle5" />
+              <h3 className="handle">
+                <label for="handle5" className="fs-4">
+                React Developer 
+ 
+ 
+
+                </label>
+              </h3>
+              <p className="fs-6">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indor | Experience +2 | Postion
+              </p>
+
+              <div className="content faqlist me-5 border-top">
+                <p className="jobheading fs-4">Job description</p>
+                <p className="jobheading  fs-6">
+                  Strong problem-solving sertretkills Proficiency in managing
+                  cross-functional teams Great social skills Result-orientated
+                  mindset Strong communication skills Excellent attention to
+                  detail
+                </p>
+               
+                {/* <a className="btnapply py-3">Apply know</a> */}
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="/reactapply" class="btnapply jobheading rounded-pill" >Apply know</a>
+               </div>
+
+              </div>
+            </section>
+
+
+            <section className="accordionn">
+              <input type="checkbox" name="collapse6" id="handle6" />
+              <h3 className="handle">
+                <label for="handle6" className="fs-4">
+                Talent Acquistion Specialist 
+
+ 
+ 
+
+                </label>
+              </h3>
+              <p className="fs-6">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indor | Experience +2 | Postion
+              </p>
+
+              <div className="content faqlist me-5 border-top">
+                <p className="jobheading fs-4">Job description</p>
+                <p className="jobheading  fs-6">
+                  Strong problem-solving sertretkills Proficiency in managing
+                  cross-functional teams Great social skills Result-orientated
+                  mindset Strong communication skills Excellent attention to
+                  detail
+                </p>
+               
+                {/* <a className="btnapply py-3">Apply know</a> */}
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="/telentapply" class="btnapply jobheading rounded-pill" >Apply know</a>
+               </div>
+
+              </div>
+            </section>
+
+
+            <section className="accordionn">
+              <input type="checkbox" name="collapse7" id="handle7" />
+              <h3 className="handle">
+                <label for="handle7" className="fs-4">
+                Business Development Executive
+
+ 
+ 
+
+                </label>
+              </h3>
+              <p className="fs-6">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indor | Experience +2 | Postion
+              </p>
+
+              <div className="content faqlist me-5 border-top">
+                <p className="jobheading fs-4">Job description</p>
+                <p className="jobheading  fs-6">
+                  Strong problem-solving sertretkills Proficiency in managing
+                  cross-functional teams Great social skills Result-orientated
+                  mindset Strong communication skills Excellent attention to
+                  detail
+                </p>
+               
+                {/* <a className="btnapply py-3">Apply know</a> */}
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="/businessapply" class="btnapply jobheading rounded-pill" >Apply know</a>
+                   </div>
+
+              </div>
+            </section>
+
           </div>
         </div>
       </div>

@@ -12,9 +12,9 @@ const Card = (props) => {
           {props.title}
         </h3>
         <div className="desc">
-          {props.description}
+          {props.description}                                                                                                                                   
         </div>
-      </div>
+      </div>  
     </div>
 
   )

@@ -10,6 +10,48 @@ import "./rapidcss/style.css";
 import "./rapidcss/responsive.css";
 import Sitemap from "./components/Sitemap";
 import CookieBanner from "./components/CookieBanner";
+import CloudApplication from "./Services/CloudApplication";
+import Advancedtech from "./Services/Advancedtech";
+import Userexperience from "./Services/Userexperience";
+import Digitalacceleration from "./Services/Digitalacceleration";
+import Pengineering from "./Services/Pengineering";
+import Androidappdevelopment from "./Services/Androidappdevelopment";
+import Flutterappdevelopment from "./Services/Flutterappdevelopment";
+import Iosappdevelopment from "./Services/Iosappdevelopment";
+import Reactnativeapp from "./Services/Reactnativeapp";
+import Rorappdevelopment from "./Services/Rorappdevelopment";
+import Angularjs from "./Services/Angularjs";
+import Merndevelopment from "./Services/Merndevelopment";
+import Meandevelopment from "./Services/Meandevelopment";
+import Javadevelopment from "./Services/Javadevelopment";
+import Mvcdevelopment from "./Services/Mvcdevelopment";
+import Pythondevelopment from "./Services/Pythondevelopment";
+import Reactjsdevelopment from "./Services/Reactjsdevelopment";
+import Aiandml from "./Services/Aiandml";
+import Datascience from "./Services/Datascience";
+import Iotdevelopment from "./Services/Iotdevelopment";
+import Lowcodedevelopment from "./Services/Lowcodedevelopment";
+import Whatsappchatbot from "./Services/Whatsappchatbot";
+import Staffaugmentation from "./Services/Staffaugmentation";
+import Cybersecurity from "./Services/Cybersecurity";
+import Devops from "./Services/Devops";
+import Itoutsourcing from "./Services/Itoutsourcing";
+import Uiuxdesign from "./Services/Uiuxdesign";
+import Leadership from "./components/Leadership";
+import Healthcare from "./components/Healthcare";
+import Culture from "./components/Culture";
+import Ecommerce from "./components/Ecommerce";
+import Education from "./components/Education";
+import Entertainment from "./components/Entertainment";
+import TravelandHospitality from "./components/TravelandHospitality";
+import Publisector from "./components/Publicsector";
+import Frontentapply from "./components/Frontentapply";
+import BackEndapply from "./components/BackEndapply";
+import Qaengineer from "./components/Qaengineer";
+import Javaapply from "./components/Javaapply";
+import Reactapply from "./components/Reactapply";
+import Telentapply from "./components/Telentapply";
+import Businessdevelopment from "./components/Businessdevelopment ";
 
 const Home = lazy(() => import("./components/Home"));
 
@@ -162,7 +204,7 @@ function App() {
             <Route exact path="/technology" element={<Technology />}></Route>
             {/* <Route exact path="/pricing" element={<Pricing />}></Route> */}
             <Route exact path="/team" element={<Team />}></Route>
-            <Route exact path="/workwithus" element={<Career />}></Route>
+            <Route exact path="/careers" element={<Career />}></Route>
             <Route exact path="/privacy" element={<Privacypolicy />}></Route>
             <Route exact path="/:type" element={<Blogdetail />}></Route>
             <Route exact path="/applyjava" element={<Apply />}></Route>
@@ -187,6 +229,109 @@ function App() {
             <Route exact path="/applymean" element={<Applymean />}></Route>
             <Route exact path="*" element={<Pagefound />}></Route>
             <Route exact path="/sitemap" element={<Sitemap />}></Route>
+            <Route exact path="/cloudapplication" element={<CloudApplication/>}></Route>
+            <Route exact path="/advancetech" element={<Advancedtech/>}></Route>
+            <Route exact path="/userexperiencedesign" element={<Userexperience/>}></Route>
+            <Route exact path="/digitalacceleration" element={<Digitalacceleration/>}></Route>
+            <Route exact path="/productengineering" element={<Pengineering/>}></Route>
+            <Route exact path="/androidappdevelopment" element={<Androidappdevelopment/>}></Route>
+            <Route exact path="/flutterappdevelopment" element={<Flutterappdevelopment/>}></Route>
+            <Route exact path="/iosappdevelopment" element={<Iosappdevelopment/>}></Route>
+            <Route exact path="/reactnativeappdevelopment" element={<Reactnativeapp/>}></Route>
+            <Route exact path="/rorappdevelopment" element={<Rorappdevelopment/>}></Route>
+            <Route exact path="/angularjs" element={<Angularjs/>}></Route>
+            <Route exact path="/merndevelopment" element={<Merndevelopment/>}></Route>
+            <Route exact path="/meandevelopment" element={<Meandevelopment/>}></Route>
+            <Route exact path="/javadevelopment" element={<Javadevelopment/>}></Route>
+            <Route exact path="/mvcdevelopment" element={<Mvcdevelopment/>}></Route>
+            <Route exact path="/pythondevelopment" element={<Pythondevelopment/>}></Route>
+            <Route exact path="/reactjsdevelopment" element={<Reactjsdevelopment/>}></Route>
+            <Route exact path="/artificialintelligencedevelopment" element={<Aiandml/>}></Route>
+            <Route exact path="/datascience" element={<Datascience/>}></Route>
+            <Route exact path="/iotdevelopment" element={<Iotdevelopment/>}></Route>
+            <Route exact path="/lowcodedevelopmentservices" element={<Lowcodedevelopment/>}></Route>
+            <Route exact path="/whatsappbusinesschatbot" element={<Whatsappchatbot/>}></Route>
+            <Route exact path="/staffaugmentation" element={<Staffaugmentation/>}></Route>
+            <Route exact path="/cybersecurity" element={<Cybersecurity/>}></Route>
+            <Route exact path="/devops" element={<Devops/>}></Route>
+            <Route exact path="/itoutsourcing" element={<Itoutsourcing/>}></Route>
+            <Route exact path="/uiuxdesign" element={<Uiuxdesign/>}></Route>
+            <Route exact path="/leadership" element={<Leadership/>}></Route>
+            <Route exact path="/healthcare" element={<Healthcare/>}></Route>
+            <Route exact path="/culture" element={<Culture/>}></Route>
+            <Route exact path="/ecommerce" element={<Ecommerce/>}></Route>
+            <Route exact path="/education" element={<Education/>}></Route>
+            <Route exact path="/education" element={<Education/>}></Route>
+            <Route exact path="/entertainment" element={<Entertainment/>}></Route>
+            <Route exact path="/travel" element={<TravelandHospitality/>}></Route>
+            <Route exact path="/publicsector" element={<Publisector/>}></Route>
+            <Route exact path="/frontenapply" element={<Frontentapply/>}></Route>
+            <Route exact path="/backapply" element={<BackEndapply/>}></Route>
+            <Route exact path="/qaengineerapply" element={<Qaengineer/>}></Route>
+            <Route exact path="/javaaapply" element={<Javaapply/>}></Route>
+
+            <Route exact path="/reactapply" element={<Reactapply/>}></Route>
+
+            <Route exact path="/telentapply" element={<Telentapply/>}></Route>
+
+
+            <Route exact path="/businessapply" element={<Businessdevelopment/>}></Route>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
           </Routes>
           <Footer />
           <Sidebar />

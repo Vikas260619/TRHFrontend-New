@@ -1,0 +1,100 @@
+.bg-gray{
+    /* background-image: url(C:\Users\tarun\Downloads\TRHFrontend-New\TRHFrontend-New\public\images\bg-gray.jpg); */
+    background-image: url(../../public/images/bg-gray.jpg);
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-bottom: 70px;
+}
+
+/* .data-crad-3{
+    min-height: 30rem;
+}
+
+.data-crad-3-heading{
+    min-height: 5rem;
+} */
+
+.icon-size{
+   font-size: 30PX;
+   color: #3498db;
+   padding-right: 10px;
+}
+/* @media only screen and (max-width: 768px) {
+
+
+    .data-crad-3{
+        height: 43rem;
+    }
+    
+    .data-crad-3-heading{
+        height: 6rem;
+    }
+
+}
+@media (min-width: 576px) { 
+
+    .data-crad-3{
+        min-height: 25rem;
+    }
+    
+    .data-crad-3-heading{
+        min-height: 2rem;
+    }
+
+
+
+ } */
+.btn{
+    background-color: #0066b2;
+}
+.hedingcolor{
+    color: #00a3e8;
+}
+.fa-android{
+    font-size: 40px;
+  color: #00a3e8;
+}
+.imagecolor{
+    background-color:  #e9ecef;
+}
+.faqcolor{
+    font-family: 'Satoshi Black',sans-serif;
+    color: #00a3e8;
+    font-size: 45px;
+    text-decoration: none;
+
+}
+.connectbtn{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: #fff;
+    opacity: 1;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+    color: #222;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    mix-blend-mode: normal;
+}
+.fontpara{
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.fontsizepara{
+    font-weight: 500;
+}
+.androidpara{
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+.fa-check-circle{
+
+    color: #00a3e8;
+}
+

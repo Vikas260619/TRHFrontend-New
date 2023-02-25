@@ -2,35 +2,45 @@
 const CardData = [
 
    {
-      imgsrc: "images/ser1.png",
-      title: "CLOUD SERVICES",
-      description: "Our cloud services provide the options of availing remote services via cloud computing servers. Services include dare computing resources, data resources and communication resources. Further more, IaaS, PaaS and SaaS platforms area also available for services"
+      imgsrc: "images/heath.png",
+      title: "Electronic Health Records (EHR) ",
+      description: "Enable digital storage of all patients’ information like medical history treatment, discharge summary, and doctors’ recommendations.   Our custom Electronic Medical Record (EMR) or EHR software solutions offer an excellent option to improve clinical productivity while boosting accuracy and protecting reimbursement. Our comprehensive EHR or EMR system development services come up with practical and robust solutions to eliminate redundancy in patient information collection. Our state-of-the-art EHR systems offer healthcare providers the ease of working efficiently and driving better financial performance, healthcare outcomes, and population health management records.      "
 
    },
    {
-      imgsrc: "images/ser2.webp",
-      title: "WEB DESIGNING",
-      description: " We are looking for a web designer who will be responsible for creating great websites for our clients. Primary duties include conceptualizing and implementing creative ideas for client websites, as well as creating visual elements that are in line with our clients' branding."
+      imgsrc: "images/homehealthcare.png",
+      title: "Home Healthcare Management Solutions",
+      description: "We offer custom solutions for home healthcare providers, community-based organizations, and hospitals that provide patient care at home. We are committed to helping in-home medical and home healthcare providers maximize efficiency, improve compliance, and deliver optimized patient care. The solutions are integrated to provide a seamless experience starting with the receipt of the patient call, visit scheduling, home visits, billing, and payroll functionalities.      ."
    },
    {
-      imgsrc: "images/ser3.png",
-      title: "WEB DEVELOPMENT",
-      description: " An interactive web application readily amplifies use engagement. Our user-centred web app is feature-rich,intuitive, and performs exceedingly well. We craft your web destination with a clear view of the business goal and ensure that it supports the user-journey."
+      imgsrc: "images/Healthcaresupply.png",
+      title: "Healthcare Supply Chain",
+      description: " Hospitals and health systems are scrambling to build a digital supply chain cost-effectively. Digitizing the supply chain eliminates labor-intensive, manual, and repetitive tasks. Softude has relevant expertise in developing top-class healthcare supply chain solutions. With us, you can easily improve supply resilience for lab supplies, medical supplies, consumables and implants, and pharmaceutical supplies.      ."
    },
    {
-      imgsrc: "images/ser4.webp",
-      title: "DATA ENGINEERING",
-      description: "We focus on practical applications of data collection ,analysis and organizing data by also keeping an eye outfor trends or inconsistencies that will impact business goals. We build data pipelines that source and transform the data into the structures needed for analysis."
+      imgsrc: "images/advance.png",
+      title: "Advance Automation",
+      description: "Make your information systems smart to manage a massive volume of work in revenue cycle management, dynamic workflows, and overall healthcare delivery. Connect with our health-tech experts to develop or upgrade your existing healthcare solution by leveraging new-age technologies like RPA, AI, IoT, Low-code and Blockchain. Softude offers healthcare automation software solutions to a number of healthcare providers and organizations such that they are capable of achieving technical, operational, financial, and clinical goals.      ."
    },
    {
-      imgsrc: "images/ser5.webp",
-      title: "MINIMUM VIABLE PRODUCT",
-      description: "Our team follows MVP development technique in which it introduces a new product in the market with basic features, but enough to get the attention of the Consumers. We launch the final product after sufficient feedback from our product’s initial clients."
+      imgsrc: "images/Health and Wellness.png",
+      title: "Health and Wellness Apps",
+      description: "Since our inception, we have been delivering healthcare and wellness application development services for health tech startups, hospitals, gyms, clinics, and other healthcare organizations. We are capable of developing everything -right from fitness apps, hospital management solutions, EMR for seamless medical records, and all types of IT solutions for the health and wellness requirements of our clients.        ."
    },
    {
       imgsrc: "images/ser6.png",
-      title: "PRODUCT DEVELOPMENT",
-      description: "  We believe in bringing new product to the market place by implementing innovative businesses thrive by understanding our marketeers wants, making smart product improvements, and developing new products that meet and exceed their customer’s expectations"
+      title: "Telemedicine",
+      description: " We ensure that our software solutions are compliant, interoperable, and programmed with seamless data encryption for both mobile and web systems. Our telemedicine solutions include HIPAA compliant, robust, videoconferencing and EHR integration capabilities to boost revenues and increase patient satisfaction.      "
+   },
+   {
+      imgsrc: "images/ser6.png",
+      title: "Custom Development      ",
+      description: "Experienced and scalable healthcare software development company, Softude is willing to develop efficient medical software of all complexities to help you gain expertise in the market while improving the quality of medical care and maximizing patient satisfaction. From prototyping to healthcare software development, deployment and maintenance, we provide you with a complete range of software engineering services.      "
+   },
+   {
+      imgsrc: "images/ser6.png",
+      title: "Hospital Information System      ",
+      description: " Leading healthcare and wellness developers at Softude facilitate the overall ease of access and retrieval of patient’s health history, doctors’ schedule, IPD, OPD, OT management, inventory, billing, laboratory tests schedules and reports, and pharmacy by ensuring secure, integrated and centralized digital storage. Our team of capable healthcare developers helps you in removing the massive paperwork and maximizing the capabilities by automation.      "
    }
 
 ]

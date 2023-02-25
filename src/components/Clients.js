@@ -55,6 +55,87 @@ function Clients() {
         </div>
       </div>
     </div>,
+
+<div className="item" data-value="5">
+<div className="counter-area">
+  <div className="counter-list mb-25">
+    <div className="counter-icon">
+      <img src="images/digital.jpg" alt="digital" />
+    </div>
+  </div>
+</div>
+</div>,
+
+<div className="item" data-value="5">
+<div className="counter-area">
+  <div className="counter-list mb-25">
+    <div className="counter-icon">
+      <img src="images/manven.jpg" alt="manven" />
+    </div>
+  </div>
+</div>
+</div>,
+<div className="item" data-value="5">
+<div className="counter-area">
+  <div className="counter-list mb-25">
+    <div className="counter-icon">
+      <img src="images/sartdata.jpg" alt="sartdata" />
+    </div>
+  </div>
+</div>
+</div>,
+<div className="item" data-value="5">
+<div className="counter-area">
+  <div className="counter-list mb-25">
+    <div className="counter-icon">
+      <img src="images/innovation.jpg" alt="innovation" />
+    </div>
+  </div>
+</div>
+</div>,
+<div className="item" data-value="5">
+<div className="counter-area">
+  <div className="counter-list mb-25">
+    <div className="counter-icon">
+      <img src="images/softude.jpg" alt="softude" />
+    </div>
+  </div>
+</div>
+</div>,
+<div className="item" data-value="5">
+<div className="counter-area">
+  <div className="counter-list mb-25">
+    <div className="counter-icon">
+      <img src="images/elgebra.jpg" alt="elgebra" />
+    </div>
+  </div>
+</div>
+</div>,
+<div className="item" data-value="5">
+<div className="counter-area">
+  <div className="counter-list mb-25">
+    <div className="counter-icon">
+      <img src="images/linkage.jpg" alt="linkage" />
+    </div>
+  </div>
+</div>
+</div>,
+<div className="item" data-value="5">
+<div className="counter-area">
+ <div className="counter-list mb-25">
+   <div className="counter-icon">
+     <img src="images/aventussoftware.jpg" alt="AventusSoftware" />
+   </div>
+ </div>
+</div>
+</div>,
+
+
+
+
+
+
+
   ];
   return (
     <div className="rs-counter style1 counter-home5-style client23 bg25  ">

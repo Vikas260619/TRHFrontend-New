@@ -13,7 +13,7 @@ function Testimonial() {
     <div className="item" data-value="1">
       <div className="item text-center">
         <div className="testi-img">
-          <img src="images/testimonial2.webp" alt="agile team development" />
+          <img src="images/pradeepjaiswal.jpg" alt="pradeepjaiswal" />
         </div>
         <ul className="rating">
           <li>
@@ -39,15 +39,15 @@ function Testimonial() {
             Thanks to them, we were able to achieve our goal on time, and we
             look forward to continue working with them in the future.
           </div>
-          <h4 className="name">Anil Spia</h4>
-          <span className="designation">Director Of Softing</span>
+          <h4 className="name">Pradeep Jaiswal</h4>
+          <span className="designation">Director - Sales, Softude</span>
         </div>
       </div>
     </div>,
     <div className="item" data-value="2">
       <div className="item text-center">
         <div className="testi-img">
-          <img src="images/testimonial3.webp" alt="mobile app development" />
+          <img src="images/nandakumar.jpg" alt="nandakumar" />
         </div>
         <ul className="rating">
           <li>
@@ -73,23 +73,20 @@ function Testimonial() {
             various projects with highly professional, flexible, and motivated
             people who deliver first-class results in complex environments.{" "}
           </div>
-          <h4 className="name">Paul Munni</h4>
-          <span className="designation">Developer Of Softing</span>
+          <h4 className="name">Nanda Kumar</h4>
+          <span className="designation">V.P.Sales, Mistminds </span>
         </div>
       </div>
     </div>,
     <div className="item" data-value="3">
       <div className="item text-center">
         <div className="testi-img">
-          <img
-            src="images/testimonial1.webp"
-            alt="software development service client"
-          />
+          <img src="images/ManjunathRao.jpg" alt="ManjunathRao" />
         </div>
         <ul className="rating">
           <li>
             <i className="fa fa-star"></i>
-          </li>
+          </li>``
           <li>
             <i className="fa fa-star"></i>
           </li>
@@ -111,8 +108,8 @@ function Testimonial() {
             with the solution given to us and with the communication flow
             through the project.
           </div>
-          <h4 className="name">Junl Sarukh</h4>
-          <span className="designation">CEO of Softing</span>
+          <h4 className="name"> Manjunath Rao</h4>
+          <span className="designation">HR Manager, Kloud9</span>
         </div>
       </div>
     </div>,
@@ -124,7 +121,7 @@ function Testimonial() {
           <div className="container">
             <div className="sec-title3 text-center text88 ">
               <div className="sub-title secondary-color ">Testimonials</div>
-              <h2 className="title white-color">Customer Reviews</h2>
+              <h2 className="title white-color">Clients Reviews</h2>
               <div className="heading-border-line "></div>
             </div>
             <br />
@@ -135,27 +132,14 @@ function Testimonial() {
                 autoPlayStrategy="none"
                 autoPlayInterval={3000}
                 animationDuration={3000}
-                animationType="fadeout"
                 infinite
                 mouseTracking
                 items={items}
                 responsive={responsive}
                 controlsStrategy="alternate"
               />
-              
             </div>
-            <div className="pattern-img">
-              <img
-                className="img2 common"
-                src="images/pattern2.webp"
-                alt="itsourcing"
-              />
-              <img
-                className="img3 common"
-                src="images/pattern3.webp"
-                alt="database management"
-              />
-            </div>
+            <div className="pattern-img"></div>
           </div>
         </div>
       </div>

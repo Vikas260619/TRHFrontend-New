@@ -284,7 +284,7 @@ function Aboutus() {
                     <img src="images/choose-2.png" alt="creative" />
                   </div>
                   <div className="choose-content">
-                    <h5 className="headingcolor">Creativity</h5>
+                    <h4 className="headingcolor">Creativity</h4>
                     <p>
                       Our creative thinking can also lead to innovation that
                       will grow our business through increased productivity.
@@ -301,7 +301,7 @@ function Aboutus() {
                     <img src="images/choose-3.png" alt="meeting deadlines" />
                   </div>
                   <div className="choose-content">
-                    <h6 className="headingcolor">Meeting Deadlines</h6>
+                    <h4 className="headingcolor">Meeting Deadlines</h4>
                     <p>
                       Meeting deadlines help us to collaborate toward achieving
                       a shared goal, and to keep complex,we work multi stage
@@ -317,7 +317,7 @@ function Aboutus() {
                     <img src="images/choose-4.webp" alt="planning" />
                   </div>
                   <div className="choose-content">
-                    <h3 className="headingcolor">A Plan for Success</h3>
+                    <h4 className="headingcolor">A Plan for Success</h4>
                     <p>
                       Our Planning helps to critically assess the goal to see in
                       realistic. It facilitates decision making and allows
