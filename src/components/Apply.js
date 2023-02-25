@@ -53,11 +53,12 @@ function Apply() {
   };
 
   const handleFileChange = (e) => {
-    if (inputFile === false) {
-      setResume(e.target.files[1]);
-    } else {
-      e.target.files = null;
-    }
+    // if (inputFile === false) {
+    //   setResume(e.target.files[0]);
+    // } else {
+    //   e.target.files = null;
+    // }
+    setResume(e.target.files[0]);
   };
   const handleChange = (event) => {
     event.persist();
@@ -91,6 +92,7 @@ function Apply() {
       ) {
         if (phone_number !== "") {
           if (applypostion !== "") {
+            console.log(resume)
             if (resume !== "") {
               if (technology !== "") {
                 let formData = new FormData();
@@ -346,7 +348,7 @@ function Apply() {
                                 type="file"
                                 name="resume"
                                 size="40"
-                                key={resume || ""}
+                                //key={resume || ""}
                                 onChange={(e) => handleFileChange(e)}
                                 className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
                                 required
