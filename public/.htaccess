@@ -1,6 +1,0 @@
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^therapidhire.com$
-RewriteRule (.*) https://www.therapidhire.com/$1 [R=301,L]
-</IfModule>
