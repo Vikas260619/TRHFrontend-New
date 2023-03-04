@@ -9,7 +9,12 @@ import ScrollToTop from "react-scroll-to-top";
 import "./rapidcss/style.css";
 import "./rapidcss/responsive.css";
 import Sitemap from "./components/Sitemap";
+import Fire from "./components/Fire"
 import CookieBanner from "./components/CookieBanner";
+import Installation from "./components/Installation";
+import Maintenance from "./components/Maintenance";
+import Testing from "./components/Testing";
+import Training from "./components/Training";
 
 const Home = lazy(() => import("./components/Home"));
 
@@ -187,6 +192,16 @@ function App() {
             <Route exact path="/applymean" element={<Applymean />}></Route>
             <Route exact path="*" element={<Pagefound />}></Route>
             <Route exact path="/sitemap" element={<Sitemap />}></Route>
+            <Route exact path="/fire" element={<Fire/>}></Route>
+            <Route exact path="/installation" element={<Installation/>}></Route>
+            <Route exact path="/maintenance" element={<Maintenance/>}></Route>
+            <Route exact path="/testing" element={<Testing/>}></Route>
+            <Route exact path="/trainig" element={<Training/>}></Route>
+
+
+
+
+
           </Routes>
           <Footer />
           <Sidebar />
