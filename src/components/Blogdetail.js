@@ -505,7 +505,7 @@ function Blogdetail() {
                     )}
 
                     <div className="article-leave-comment">
-                      <h3>Leave a reply</h3>
+                      <h3>Leave a Comment</h3>
 
                       <form>
                         <div className="row justify-content-center">
