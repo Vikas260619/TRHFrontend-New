@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet";
 
-function Applymern() {
+  function Applymern() {
   const [candidateName, setCandidateName] = useState("");
   const [email, setEmail] = useState("");
   const [phone_number, setPhone_number] = useState("");
@@ -37,7 +37,7 @@ function Applymern() {
         }
         break;
       case "name":
-        if (!new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(value)) {
+        if (!new RegExp(/^[a-zA-Z ]*$/).test(value)) {
           setErrors({
             ...errors,
             candidateName: "Enter a valid Name",

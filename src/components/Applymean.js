@@ -37,7 +37,7 @@ function Applymean() {
         }
         break;
       case "name":
-        if (!new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(value)) {
+        if (!new RegExp(/^[a-zA-Z ]*$/).test(value)) {
           setErrors({
             ...errors,
             candidateName: "Enter a valid Name",
