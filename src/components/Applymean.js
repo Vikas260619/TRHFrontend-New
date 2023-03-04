@@ -37,7 +37,7 @@ function Applymean() {
         }
         break;
       case "name":
-        if (!new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(value)) {
+        if (!new RegExp(/^[a-zA-Z ]*$/).test(value)) {
           setErrors({
             ...errors,
             candidateName: "Enter a valid Name",
@@ -55,7 +55,7 @@ function Applymean() {
 
   const handleFileChange = (e) => {
     if (inputFile === false) {
-      setResume(e.target.files[1]);
+      setResume(e.target.files[0]);
     } else {
       e.target.files = null;
     }
@@ -366,7 +366,6 @@ function Applymean() {
                                 type="file"
                                 name="resume"
                                 size="40"
-                                key={resume || ""}
                                 onChange={(e) => handleFileChange(e)}
                                 className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
                                 required
