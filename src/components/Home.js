@@ -58,7 +58,7 @@ function Home() {
         </div>
       </div>
     </div>,
-    <div className="item" data-value="2"> 
+    <div className="item" data-value="2">
       <div className="service-wrap">
         <div className="image-part">
           <img src="images/services2.jpeg" alt="WebDevelopment" />

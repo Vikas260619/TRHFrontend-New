@@ -19,7 +19,7 @@ function Header() {
   }, []);
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top navtrh">
-      <div className="container navihead">
+      <div className="container-fluid navihead">
         <a className="navbar-brand" href="/">
           <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="therapidhire" />
         </a>
@@ -114,53 +114,6 @@ function Header() {
                 </li>
               </ul>
             </li>
-
-            {/* <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="/letsconnect"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                TRH Fire Safety Solution
-
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a className="dropdown-item" href="/team">
-                  Fire fighting sytem 
-                  </a>
-                </li>
-
-                <li>
-                  <a className="dropdown-item" href="/faq">
-                  Fire Risk Assessment
-                </a>
-                </li>
-
-                <li>
-                  <a className="dropdown-item" href="/workwithus">
-                  Testing of Fire fighting
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/workwithus">
-                  Trainings
-
-
-                  </a>
-                </li>
-
-              </ul>
-            </li> */}
-
-            <li className="nav-item">
-              <a className="nav-link rounded-pill" href="/fire" style={{backgroundColor:"#FF4500",paddingTop:"10px",paddingBottom:"10px"}}>
-              TRH Fire Safety Solution
-              </a>
-            </li>                                                                                                                                                                                                                                                                                                                                                                                         
           </ul>
           <a href="/letsconnect" className="enquirebtn">
             Let's Connect
@@ -168,21 +121,21 @@ function Header() {
           {token ? (
             <button className="loginbtn" onClick={logoutBtn}>
               <span>
-                <i className="fa fa-user"/>
+                <i className="fa fa-user" />
               </span>
               Logout 
             </button>
           ) : (
             <a href="/login" className="loginbtn">
               <span>
-                <i className="fa fa-user"/>
+                <i className="fa fa-user" />
               </span>
               Login
             </a>
           )}
         </div>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </nav>
   );
 }

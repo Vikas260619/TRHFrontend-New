@@ -36,7 +36,7 @@ function Apply() {
         }
         break;
       case "name":
-        if (!new RegExp(/^[a-zA-Z ]*$/).test(value)) {
+        if (!new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(value)) {
           setErrors({
             ...errors,
             candidateName: "Enter a valid Name",
@@ -53,13 +53,11 @@ function Apply() {
   };
 
   const handleFileChange = (e) => {
-    // if (inputFile === false) {
-    //   setResume(e.target.files[0]);
-    // } else {
-    //   e.target.files = null;
-    // }
-    setResume(e.target.files[0]); 
-
+    if (inputFile === false) {
+      setResume(e.target.files[1]);
+    } else {
+      e.target.files = null;
+    }
   };
   const handleChange = (event) => {
     event.persist();
@@ -85,7 +83,7 @@ function Apply() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (new RegExp(/^[a-zA-Z ]*$/).test(candidateName)) {
+    if (new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(candidateName)) {
       if (
         new RegExp(
           /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -93,7 +91,6 @@ function Apply() {
       ) {
         if (phone_number !== "") {
           if (applypostion !== "") {
-            console.log(resume)
             if (resume !== "") {
               if (technology !== "") {
                 let formData = new FormData();
@@ -102,8 +99,6 @@ function Apply() {
                 formData.append("phone_number", phone_number);
                 formData.append("applypostion", applypostion);
                 formData.append("resume", resume);
-
-
                 formData.append("technology", technology);
                 axios({
                   url: baseURL + "candidate/create",
@@ -151,8 +146,7 @@ function Apply() {
 
   return (
     <div>
-{  console.log(resume)
-}      <Helmet>
+      <Helmet>
         <meta charset="utf-8" />
         <title>Apply for Java Developer -TheRapidHire</title>
 
@@ -352,6 +346,7 @@ function Apply() {
                                 type="file"
                                 name="resume"
                                 size="40"
+                                key={resume || ""}
                                 onChange={(e) => handleFileChange(e)}
                                 className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
                                 required

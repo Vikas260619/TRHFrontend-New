@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet";
 
-  function Applymern() {
+function Applymern() {
   const [candidateName, setCandidateName] = useState("");
   const [email, setEmail] = useState("");
   const [phone_number, setPhone_number] = useState("");
@@ -37,7 +37,7 @@ import { Helmet } from "react-helmet";
         }
         break;
       case "name":
-        if (!new RegExp(/^[a-zA-Z ]*$/).test(value)) {
+        if (!new RegExp(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i).test(value)) {
           setErrors({
             ...errors,
             candidateName: "Enter a valid Name",
@@ -55,7 +55,7 @@ import { Helmet } from "react-helmet";
 
   const handleFileChange = (e) => {
     if (inputFile === false) {
-      setResume(e.target.files[0]);
+      setResume(e.target.files[1]);
     } else {
       e.target.files = null;
     }
@@ -364,6 +364,7 @@ import { Helmet } from "react-helmet";
                                 type="file"
                                 name="resume"
                                 size="40"
+                                key={resume || ""}
                                 onChange={(e) => handleFileChange(e)}
                                 className="wpcf7-form-control wpcf7-file wpcf7-validates-as-required"
                                 required
