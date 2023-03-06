@@ -3,10 +3,18 @@ import React from "react";
 function Training() {
   return (
     <div>
-      <img className="" src="images/2.png" alt="CloudServices" />
-    
+  <div
+              id="rs-slider"
+              className="rs-slider slider3 rs-slider-style3"
+              style={{ position: "relative", overflow: "hidden" }}
+            >
+              <div className="bend niceties">
+                <img src="images/bannerfire4.jpg" alt="trhslider" title="" />
+              </div>
+             
+            </div>    
 
-      <div className="row text-center">
+      <div className="row text-center pt-3">
       <div class="col-md-4">
 
       <img className="mt-3" src="images/Firelogo2-removebg-preview.png" alt="CloudServices" style={{height:"25vh"}}/>
@@ -23,7 +31,7 @@ function Training() {
 </div>
 <div class="col-md-4">
 
-<img className="mt-3" src="images/Firelogo1.png" alt="CloudServices" style={{height:"20vh"}}/>
+<img className="mt-3" src="images/Firelogo1.png" alt="CloudServices" style={{height:"25vh"}}/>
 
 </div>
 
@@ -168,7 +176,7 @@ function Training() {
 </li>
             <li>Competitive Pricing: We offer competitive pricing for all our training courses, without compromising on quality.
 </li>
-                      </ul>
+    </ul>
         </div>
 
       </div>

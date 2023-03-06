@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Header() {
   const Navigate = useNavigate();
   const [token, setToken] = useState("");
@@ -20,8 +20,10 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top navtrh">
       <div className="container navihead">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand">    
+        <Link to="/">
           <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="therapidhire" />
+          </Link>
         </a>
 
         <button
@@ -156,12 +158,16 @@ function Header() {
               </ul>
             </li> */}
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link rounded-pill" href="/fire" style={{backgroundColor:"#FF4500",paddingTop:"10px",paddingBottom:"10px"}}>
               TRH Fire Safety Solution
               </a>
-            </li>                                                                                                                                                                                                                                                                                                                                                                                         
+            </li>                                                                                                                                                                                                                                                                                                                                                                                          */}
           </ul>
+
+          <a href="/fire" className="enquirebtn me-3" style={{backgroundColor:"#FF4500",}}>
+          TRH Fire Safety Solution
+          </a>
           <a href="/letsconnect" className="enquirebtn">
             Let's Connect
           </a>

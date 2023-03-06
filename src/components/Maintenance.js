@@ -3,8 +3,16 @@ import React from "react";
 function Maintenance() {
   return (
     <div>
-      <img className="py-5" src="images/Mantanance6.png" alt="CloudServices" />
-      <h2
+  <div
+              id="rs-slider"
+              className="rs-slider slider3 rs-slider-style3 py-5"
+              style={{ position: "relative", overflow: "hidden" }}
+            >
+              <div className="bend niceties">
+                <img src="images/bannerfire6.jpg" alt="trhslider" title="" />
+              </div>
+             
+            </div>      <h2
         className="fs-2 h3 block-title text-center font-weight-bold"
         style={{ fontWeight: "700" }}
       >
@@ -51,7 +59,7 @@ function Maintenance() {
       </div>
 
       <div class="col-md-6">
-      <img className="py-5" src="images/Man.png" alt="CloudServices" />
+      <img className="py-5" src="images/Man.png" alt="CloudServices"/>
 
       </div>
 
