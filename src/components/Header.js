@@ -20,9 +20,12 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top navtrh">
       <div className="container navihead">
-        <a className="navbar-brand">    
-        <Link to="/">
-          <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="therapidhire" />
+        <a className="navbar-brand">
+          <Link to="/">
+            <img
+              src={process.env.PUBLIC_URL + "/images/logo.png"}
+              alt="therapidhire"
+            />
           </Link>
         </a>
 
@@ -54,7 +57,7 @@ function Header() {
               <ul
                 className="dropdown-menu"
                 aria-labelledby="navbarDr
-              opdown" 
+              opdown"
               >
                 <li>
                   <a className="dropdown-item" href="/aboutus">
@@ -162,33 +165,44 @@ function Header() {
               <a className="nav-link rounded-pill" href="/fire" style={{backgroundColor:"#FF4500",paddingTop:"10px",paddingBottom:"10px"}}>
               TRH Fire Safety Solution
               </a>
-            </li>                                                                                                                                                                                                                                                                                                                                                                                          */}
+            </li>  
+                
+                */}
+            <li className="mt-2" >
+              <a
+                href="/fire"
+                className="enquirebtn me-3"
+                style={{ backgroundColor: "#FF4500" }}
+              >
+                TRH Fire Safety Solution
+              </a>
+            </li>
+            <li className="mt-2">
+              <a href="/letsconnect" className="enquirebtn">
+                Let's Connect
+              </a>
+            </li>
+            <li className="mt-2">
+              {token ? (
+                <button className="loginbtn" onClick={logoutBtn}>
+                  <span>
+                    <i className="fa fa-user" />
+                  </span>
+                  Logout
+                </button>
+              ) : (
+                <a href="/login" className="loginbtn">
+                  <span>
+                    <i className="fa fa-user" />
+                  </span>
+                  Login
+                </a>
+              )}
+            </li>
           </ul>
-
-          <a href="/fire" className="enquirebtn me-3" style={{backgroundColor:"#FF4500",}}>
-          TRH Fire Safety Solution
-          </a>
-          <a href="/letsconnect" className="enquirebtn">
-            Let's Connect
-          </a>
-          {token ? (
-            <button className="loginbtn" onClick={logoutBtn}>
-              <span>
-                <i className="fa fa-user"/>
-              </span>
-              Logout 
-            </button>
-          ) : (
-            <a href="/login" className="loginbtn">
-              <span>
-                <i className="fa fa-user"/>
-              </span>
-              Login
-            </a>
-          )}
         </div>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </nav>
   );
 }

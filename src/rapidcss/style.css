@@ -271,6 +271,7 @@ ul {
 .bg11,
 .bg17,
 .bg25,
+.bg26,
 .bg9 {
   background-repeat: no-repeat;
   background-size: cover;
@@ -287,6 +288,15 @@ ul {
 .bg25 {
   background-image: url(../../public/images/clientback.jpg);
 }
+
+
+.bg26 {
+  /* background-image: url(../../public/images/fireclientbanner.PNG); */
+  background-image: url(../../public/images/clientbanner8.png);
+
+}
+
+
 body.nav-expanded .offwrap {
   left: 0;
   transition: 0.8s ease-out;
@@ -5268,6 +5278,7 @@ body .search-modal .close:hover {
   color: #fff;
   font-weight: 600;
   border-radius: 20px;
+  margin-top: 10px;
 }
 .enquirebtn:hover {
   background: #000;
@@ -8394,4 +8405,12 @@ width: 500px;
 width: 20vh;
 height: 20vh;
 border-radius: 50%;
+}
+
+.cardimges{
+  transition: all 1s ease;
+}
+
+.cardimges:hover{
+  transform: scale(1.1);
 }

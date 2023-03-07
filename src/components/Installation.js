@@ -13,10 +13,11 @@ function Installation() {
           <img src="images/bannerfire3.jpg" alt="trhslider" title="" />
         </div>
       </div>
-      <div className="container">
+
+      <div className=" py-5">
         <h2
-          className="h3 block-title text-center py-5 font-weight-bold"
-          style={{ fontWeight: "700" }}
+          className="h3 block-title text-center py-3 font-weight-bold"
+          style={{ fontWeight: "600",backgroundColor:"#00003c",color:"white" }}
         >
           FIRE PROTECTION SYSTEMS
         </h2>
@@ -31,7 +32,7 @@ function Installation() {
         <div class="container">
           <div class="row">
             <div class="col-md-4 mt-3 col-lg-3">
-              <img src="images/Fire1.jpg" class="img-fluid" alt="image" />
+              <img className="" src="images/Fire1.jpg" class="img-fluid" alt="image" />
             </div>
             <div class="col-md-4 mt-3 col-lg-3">
               <img src="images/Fire2.jpg" class="img-fluid" alt="image" />
@@ -46,10 +47,10 @@ function Installation() {
         </div>
       </div>
 
-      <div className="container">
+      <div className="">
         <h2
-          className="h3 block-title text-center py-5 font-weight-bold"
-          style={{ fontWeight: "700" }}
+          className="h3 block-title text-center py-3 font-weight-bold"
+          style={{ fontWeight: "600",backgroundColor:"#00003c",color:"white" }}
         >
           FIRE DETECTION AND ALARM SYSTEMS
         </h2>

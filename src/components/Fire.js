@@ -7,6 +7,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 
 function Fire() {
+ 
   const responsive = {
     0: { items: 2 },
     568: { items: 3 },
@@ -18,25 +19,16 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img className="fireclient" src="images/ITC_Limited_Logo.svg (1).png" alt="Mistminds" />
+            <img src="images/clientfire1.png" alt="Mistminds" />
           </div>
         </div>
       </div>
     </div>,
-    <div className="item" data-value="1">
-    <div className="counter-area">
-      <div className="counter-list mb-25">
-        <div className="counter-icon">
-          <img src="images/firelogo4.jpg" alt="Mistminds" />
-        </div>
-      </div>
-    </div>
-  </div>,
     <div className="item" data-value="2">
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/firelogo5.jpg" alt="trootech" />
+            <img src="images/clientfire2.png" alt="trootech" />
           </div>
         </div>
       </div>
@@ -45,7 +37,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/firelogo6.jpg" alt="bynebits" />
+            <img src="images/clientfire3.png" alt="bynebits" />
           </div>
         </div>
       </div>
@@ -54,95 +46,84 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/firelogo7.png" alt="coditas" />
+            <img src="images/clientfire4.png" alt="coditas" />
           </div>
         </div>
       </div>
     </div>,
-    <div className="item" data-value="5">
-      <div className="counter-area">
-        <div className="counter-list mb-25">
-          <div className="counter-icon">
-            <img src="images/firelogo8.png" alt="cloud9" />
-          </div>
-        </div>
-      </div>
-    </div>,
+    // <div className="item" data-value="5">
+    //   <div className="counter-area">
+    //     <div className="counter-list mb-25">
+    //       <div className="counter-icon">
+    //         <img src="images/clientfire5.png" alt="cloud9" />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>,
      <div className="item" data-value="5">
      <div className="counter-area">
        <div className="counter-list mb-25">
          <div className="counter-icon">
-           <img src="images/firelogo9.png" alt="digital" />
+           <img src="images/clientfire6.png" alt="digital" />
          </div>
        </div>
      </div>
    </div>,
     
-  //    <div className="item" data-value="5">
-  //    <div className="counter-area">
-  //      <div className="counter-list mb-25">
-  //        <div className="counter-icon">
-  //          <img src="images/manven.jpg" alt="manven" />
-  //        </div>
-  //      </div>
-  //    </div>
-  //  </div>,
-  //    <div className="item" data-value="5">
-  //    <div className="counter-area">
-  //      <div className="counter-list mb-25">
-  //        <div className="counter-icon">
-  //          <img src="images/sartdata.jpg" alt="sartdata" />
-  //        </div>
-  //      </div>
-  //    </div>
-  //  </div>,
-  //    <div className="item" data-value="5">
-  //    <div className="counter-area">
-  //      <div className="counter-list mb-25">
-  //        <div className="counter-icon">
-  //          <img src="images/innovation.jpg" alt="innovation" />
-  //        </div>
-  //      </div>
-  //    </div>
-  //  </div>,
-  //    <div className="item" data-value="5"> 
-  //    <div className="counter-area">
-  //      <div className="counter-list mb-25">
-  //        <div className="counter-icon">
-  //          <img src="images/softude.jpg" alt="softude" />
-  //        </div>
-  //      </div>
-  //    </div>
-  //  </div>,
-  //    <div className="item" data-value="5">
-  //    <div className="counter-area">
-  //      <div className="counter-list mb-25">
-  //        <div className="counter-icon">
-  //          <img src="images/elgebra.jpg" alt="elgebra" />
-  //        </div>
-  //      </div>
-  //    </div>
-  //  </div>,
-  //    <div className="item" data-value="5">
-  //    <div className="counter-area">
-  //      <div className="counter-list mb-25">
-  //        <div className="counter-icon">
-  //          <img src="images/linkage.jpg" alt="linkage" />
-  //        </div>
-  //      </div>
-  //    </div>
-  //  </div>,
-  //   <div className="item" data-value="5">
-  //   <div className="counter-area">
-  //     <div className="counter-list mb-25">
-  //       <div className="counter-icon">
-  //         <img src="images/aventussoftware.jpg" alt="AventusSoftware" />
-  //       </div>
-  //     </div>
-  //   </div>
-  // </div>,
+     <div className="item" data-value="5">
+     <div className="counter-area">
+       <div className="counter-list mb-25">
+         <div className="counter-icon">
+           <img src="images/clientfire7.png" alt="manven" />
+         </div>
+       </div>
+     </div>
+   </div>,
+     <div className="item" data-value="5">
+     <div className="counter-area">
+       <div className="counter-list mb-25">
+         <div className="counter-icon">
+           <img src="images/clientfire8.png" alt="sartdata" />
+         </div>
+       </div>
+     </div>
+   </div>,
+     <div className="item" data-value="5">
+     <div className="counter-area">
+       <div className="counter-list mb-25">
+         <div className="counter-icon">
+           <img src="images/clientfire9.png" alt="innovation" />
+         </div>
+       </div>
+     </div>
+   </div>,
+     <div className="item" data-value="5">
+     <div className="counter-area">
+       <div className="counter-list mb-25">
+         <div className="counter-icon">
+           <img src="images/clientfire10.png" alt="softude" />
+         </div>
+       </div>
+     </div>
+   </div>,
+     <div className="item" data-value="5">
+     <div className="counter-area">
+       <div className="counter-list mb-25">
+         <div className="counter-icon">
+           <img src="images/clientfire11.png" alt="elgebra" />
+         </div>
+       </div>
+     </div>
+   </div>,
+   
    
   ];
+
+
+
+
+
+
   return (
     <div classNameName="py-5">
       <div
@@ -301,57 +282,14 @@ function Fire() {
           </div>
         </section>
 
-        {/* <section className="pt-95 pb-95 ">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12  col-md-12 ">
-                <div className="sec-title3 text-center mb-35">
-                  <span className="sub-title">OUR Client</span>
-                  <h1 className="title pb-25 ">
-                    We help clients harness the power and scope of the digital
-                    world for enhanced business performance and awareness.
-                  </h1>
-                  <div className="heading-border-line"></div>
-                </div>
-              </div>
-              <Marquee className="marq1" style={{ 
-      backgroundImage: `url("images/bannerclient.png")` 
-    }}>
-                <div>
-                  <img src="images/logo1.png" alt="microsoft" />
-                </div>
-                <div>
-                  <img src="images/logo2.png" alt="cloudcomputing" />
-                </div>
-                <div>
-                  <img src="images/logo3.png" alt="vuejs" />
-                </div>
-                <div>
-                  <img src="images/logo4.png" alt="bootstrap" />
-                </div>
-                <div>
-                  <img src="images/logo5.png" alt="emben" />
-                </div>
-                <div>
-                  <img src="images/logo6.png" alt="aws" />
-                </div>
-                <div>
-                  <img src="images/logo7.png" alt="jquery" />
-                </div>
-              
-              </Marquee>
-            </div>
-          </div>
-        </section> */}
-
+      
         
       </div>
-      {/* <div className="container-fluid mb-5"  style={{ 
-      backgroundImage: `url("images/clientbannerfire.png")` 
-    }}>
+   
 
-      <div className="py-5">     
-         <div className="row">
+<div className="rs-counter style1 counter-home5-style client23 bg26  ">
+      <div className="container">
+        <div className="row">
           <div className="col-lg-12  col-md-12 col-xs-12 ">
             <div className="sec-title3 text-center mb-35">
               <span className="sub-title">OUR CLIENTS</span>
@@ -363,15 +301,12 @@ function Fire() {
           </div>
         </div>
 
-        </div>
-  
-
         <div>
           <AliceCarousel
             autoPlay
             autoPlayStrategy="none"
             autoPlayInterval={3000}
-             animationDuration={3000}
+            animationDuration={3000}
             animationType="fadeout"
             infinite
             mouseTracking
@@ -380,7 +315,11 @@ function Fire() {
             controlsStrategy="alternate"
           />
         </div>
-      </div> */}
+      </div>
+    </div>
+
+
+
     </div>
   );
 }
