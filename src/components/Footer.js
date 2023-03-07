@@ -86,7 +86,9 @@ function Footer() {
                   <li>
                     <a href="/letsconnect">Contact Us</a>
                   </li>
-                  <li></li>
+                  <li>
+                  <a href="/fire">TRH Fire Safety Solution</a>
+                  </li>
                 </ul>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12 md-mb-10">

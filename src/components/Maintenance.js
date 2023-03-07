@@ -3,27 +3,35 @@ import React from "react";
 function Maintenance() {
   return (
     <div>
-      <img className="py-5" src="images/Mantanance6.png" alt="CloudServices" />
-      <h2
+  <div
+              id="rs-slider"
+              className="rs-slider slider3 rs-slider-style3 py-5"
+              style={{ position: "relative", overflow: "hidden" }}
+            >
+              <div className="bend niceties">
+                <img src="images/bannerfire6.jpg" alt="trhslider" title="" />
+              </div>
+             
+            </div>      <h2
         className="fs-2 h3 block-title text-center font-weight-bold"
         style={{ fontWeight: "700" }}
       >
        "Fire Fighting System Maintenance"
       </h2>
-      
+      <div className="container">
       <div class="row py-4">
         <div class="col-md-6">
           <img
-            className="py-5"
+            className="shadow rounded"
             src="images/maintanance1.jpg"
             alt="CloudServices"
           />
         </div>
         <div class="col-md-6">
-          <img className="py-5" src="images/Mantanance8.png" alt="CloudServices" />
+          <img className="shadow rounded" src="images/Mantanance8.png" alt="CloudServices" />
         </div>
 
-        <p className="text-center container">
+        <p className="text-center mt-5 container">
           <strong className="text-center fs-5" style={{fontWeight:"400"}} >
             We provide superior fire compliance management services by certified
             fire technicians and offer advanced fire and safety services
@@ -34,7 +42,7 @@ function Maintenance() {
         <div class="col-md-6">
 
         <div className="py-5 ps-5">
-          <ul className="justify-content-start fs-5 px-5" style={{ listStyle: "circle", paddingRight:"50px",fontWeight:"500" }}>
+          <ul className="justify-content-start px-1" style={{ listStyle: "circle", paddingRight:"50px",fontWeight:"500" }}>
    <li> Deluge, water spray, vapor mitigation and sprinkler systems</li>
             <li>Hydrants, post indicator valves and fire monitors</li>
             <li>Fire pumps and fire apparatuses</li>
@@ -50,13 +58,13 @@ function Maintenance() {
         </div>
       </div>
 
-      <div class="col-md-6">
-      <img className="py-5" src="images/Man.png" alt="CloudServices" />
+      <div class="col-md-6 mt-5">
+      <img className="shadow rounded" src="images/Man.png" alt="CloudServices"/>
 
       </div>
 
       </div>
-
+      </div>
     </div>
   );
 }

@@ -7,6 +7,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 
 function Fire() {
+ 
   const responsive = {
     0: { items: 2 },
     568: { items: 3 },
@@ -18,25 +19,16 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/logo1.png" alt="Mistminds" style={{height:"25vh",borderRadius:"50%"}} />
+            <img src="images/clientfire1.png" alt="Mistminds" />
           </div>
         </div>
       </div>
     </div>,
-    <div className="item" data-value="1">
-    <div className="counter-area">
-      <div className="counter-list mb-25">
-        <div className="counter-icon">
-          <img src="images/logo2.png" alt="Mistminds" />
-        </div>
-      </div>
-    </div>
-  </div>,
     <div className="item" data-value="2">
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/trootech.webp" alt="trootech" />
+            <img src="images/clientfire2.png" alt="trootech" />
           </div>
         </div>
       </div>
@@ -45,7 +37,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/bynebits.webp" alt="bynebits" />
+            <img src="images/clientfire3.png" alt="bynebits" />
           </div>
         </div>
       </div>
@@ -54,25 +46,25 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/coditas.webp" alt="coditas" />
+            <img src="images/clientfire4.png" alt="coditas" />
           </div>
         </div>
       </div>
     </div>,
-    <div className="item" data-value="5">
-      <div className="counter-area">
-        <div className="counter-list mb-25">
-          <div className="counter-icon">
-            <img src="images/cloud9.webp" alt="cloud9" />
-          </div>
-        </div>
-      </div>
-    </div>,
+    // <div className="item" data-value="5">
+    //   <div className="counter-area">
+    //     <div className="counter-list mb-25">
+    //       <div className="counter-icon">
+    //         <img src="images/clientfire5.png" alt="cloud9" />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>,
      <div className="item" data-value="5">
      <div className="counter-area">
        <div className="counter-list mb-25">
          <div className="counter-icon">
-           <img src="images/digital.jpg" alt="digital" />
+           <img src="images/clientfire6.png" alt="digital" />
          </div>
        </div>
      </div>
@@ -82,7 +74,7 @@ function Fire() {
      <div className="counter-area">
        <div className="counter-list mb-25">
          <div className="counter-icon">
-           <img src="images/manven.jpg" alt="manven" />
+           <img src="images/clientfire7.png" alt="manven" />
          </div>
        </div>
      </div>
@@ -91,7 +83,7 @@ function Fire() {
      <div className="counter-area">
        <div className="counter-list mb-25">
          <div className="counter-icon">
-           <img src="images/sartdata.jpg" alt="sartdata" />
+           <img src="images/clientfire8.png" alt="sartdata" />
          </div>
        </div>
      </div>
@@ -100,7 +92,7 @@ function Fire() {
      <div className="counter-area">
        <div className="counter-list mb-25">
          <div className="counter-icon">
-           <img src="images/innovation.jpg" alt="innovation" />
+           <img src="images/clientfire9.png" alt="innovation" />
          </div>
        </div>
      </div>
@@ -109,7 +101,7 @@ function Fire() {
      <div className="counter-area">
        <div className="counter-list mb-25">
          <div className="counter-icon">
-           <img src="images/softude.jpg" alt="softude" />
+           <img src="images/clientfire10.png" alt="softude" />
          </div>
        </div>
      </div>
@@ -118,35 +110,32 @@ function Fire() {
      <div className="counter-area">
        <div className="counter-list mb-25">
          <div className="counter-icon">
-           <img src="images/elgebra.jpg" alt="elgebra" />
+           <img src="images/clientfire11.png" alt="elgebra" />
          </div>
        </div>
      </div>
    </div>,
-     <div className="item" data-value="5">
-     <div className="counter-area">
-       <div className="counter-list mb-25">
-         <div className="counter-icon">
-           <img src="images/linkage.jpg" alt="linkage" />
-         </div>
-       </div>
-     </div>
-   </div>,
-    <div className="item" data-value="5">
-    <div className="counter-area">
-      <div className="counter-list mb-25">
-        <div className="counter-icon">
-          <img src="images/aventussoftware.jpg" alt="AventusSoftware" />
-        </div>
-      </div>
-    </div>
-  </div>,
+   
    
   ];
+
+
+
+
+
+
   return (
     <div classNameName="py-5">
-      <img src="images/firebanner2.png" alt="CloudServices" />
-
+      <div
+              id="rs-slider"
+              className="rs-slider slider3 rs-slider-style3"
+              style={{ position: "relative", overflow: "hidden" }}
+            >
+              <div className="bend niceties">
+                <img src="images/bannerfire1.jpg" alt="trhslider" title="" />
+              </div>
+             
+            </div>
       <div>
       
 
@@ -161,7 +150,9 @@ function Fire() {
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
                 >
+                  <a href="/installation" >
                   <i className="fa fa-fire fa-3x head-icon"></i>
+                  </a>
                 </div>
                 <div className="card-body text-center">
                   <h3 className="card-title pt-1">
@@ -184,7 +175,9 @@ function Fire() {
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
                 >
+                  <a href="/maintenance">
                   <i className="fa fa-wrench fa-3x head-icon"></i>
+                  </a>
                 </div>
                 <div className="card-body text-center">
                   <h3 className="card-title pt-1">Maintenance/AMC</h3>
@@ -205,7 +198,9 @@ function Fire() {
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
                 >
+                <a href="/testing">
                   <i className="fa fa-check fa-3x head-icon"></i>
+                  </a>
                 </div>
                 <div className="card-body text-center">
                   <h3 className="card-title pt-1">
@@ -229,7 +224,9 @@ function Fire() {
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
                 >
+                  <a href="/trainig">
                   <i className="fa fa-plus fa-3x head-icon"></i>
+                  </a>
                   
                 </div>
                 <div className="card-body text-center">
@@ -256,8 +253,10 @@ function Fire() {
                 <div className="card-body text-center">
                   <h3 className="card-title pt-1">Fire Risk Assessment</h3>
                   <p className="card-text text-sm">
-                  Investing in our fire risk assessment services will provide you with peace of mind, knowing that you have identified potential fire risks and taken the necessary steps to mitigate them. Contact us today to learn more about our fire risk assessment services and how we can help you protect your business.
-                  </p>
+                  Get peace of mind knowing that your fire risks have been identified and managed with our comprehensive fire risk assessment services.                  </p>
+                  <span className="text-sm text-uppercase font-weight-bold">
+                    Learn More&nbsp;<i className="fe-icon-arrow-right"></i>
+                  </span>
                   
                 </div>
               </a>
@@ -273,62 +272,24 @@ function Fire() {
                 <div className="card-body text-center">
                   <h3 className="card-title pt-1">Fire Safety Audit</h3>
                   <p className="card-text text-sm">
-                  Our fire safety audit services cover all aspects of fire safety, including fire detection, fire suppression, emergency response, and fire prevention. We use a combination of technical expertise and practical experience to provide you with a detailed report of findings and recommendations.
-                  </p>
-                 
+                  Don't wait until it's too late. Schedule a fire safety audit with our expert team today and ensure that your business is fully protected.                  </p>
+                  <span className="text-sm text-uppercase font-weight-bold">
+                    Learn More&nbsp;<i className="fe-icon-arrow-right"></i>
+                  </span>
                 </div>
               </a>
             </div>
           </div>
         </section>
 
-        {/* <section className="pt-95 pb-95 ">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12  col-md-12 ">
-                <div className="sec-title3 text-center mb-35">
-                  <span className="sub-title">OUR Client</span>
-                  <h1 className="title pb-25 ">
-                    We help clients harness the power and scope of the digital
-                    world for enhanced business performance and awareness.
-                  </h1>
-                  <div className="heading-border-line"></div>
-                </div>
-              </div>
-              <Marquee className="marq1">
-                <div>
-                  <img src="images/logo1.png" alt="microsoft" />
-                </div>
-                <div>
-                  <img src="images/logo2.png" alt="cloudcomputing" />
-                </div>
-                <div>
-                  <img src="images/logo3.png" alt="vuejs" />
-                </div>
-                <div>
-                  <img src="images/logo4.png" alt="bootstrap" />
-                </div>
-                <div>
-                  <img src="images/logo5.png" alt="emben" />
-                </div>
-                <div>
-                  <img src="images/logo6.png" alt="aws" />
-                </div>
-                <div>
-                  <img src="images/logo7.png" alt="jquery" />
-                </div>
-              
-              </Marquee>
-            </div>
-          </div>
-        </section> */}
-
+      
         
       </div>
-      <div className="container-fluid"  style={{ 
-      backgroundImage: `url("images/bannerclient.png")` 
-    }}>
-        {/* <div className="row">
+   
+
+<div className="rs-counter style1 counter-home5-style client23 bg26  ">
+      <div className="container">
+        <div className="row">
           <div className="col-lg-12  col-md-12 col-xs-12 ">
             <div className="sec-title3 text-center mb-35">
               <span className="sub-title">OUR CLIENTS</span>
@@ -342,10 +303,10 @@ function Fire() {
 
         <div>
           <AliceCarousel
-            // autoPlay
+            autoPlay
             autoPlayStrategy="none"
-            // autoPlayInterval={3000}
-            // animationDuration={3000}
+            autoPlayInterval={3000}
+            animationDuration={3000}
             animationType="fadeout"
             infinite
             mouseTracking
@@ -353,8 +314,12 @@ function Fire() {
             responsive={responsive}
             controlsStrategy="alternate"
           />
-        </div> */}
+        </div>
       </div>
+    </div>
+
+
+
     </div>
   );
 }

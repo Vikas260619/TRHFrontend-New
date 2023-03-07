@@ -3,8 +3,16 @@ import React from "react";
 function Testing() {
   return (
     <div>
-      <img className="" src="images/firebanner4.png" alt="CloudServices" />
-
+  <div
+              id="rs-slider"
+              className="rs-slider slider3 rs-slider-style3"
+              style={{ position: "relative", overflow: "hidden" }}
+            >
+              <div className="bend niceties">
+                <img src="images/fireimges.jpg" alt="trhslider" title="" />
+              </div>
+             
+            </div>
       <p className="text-center container fs-3 pt-5">
         <strong
           className="text-center font-weight-normal"

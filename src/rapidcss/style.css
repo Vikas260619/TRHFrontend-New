@@ -271,6 +271,7 @@ ul {
 .bg11,
 .bg17,
 .bg25,
+.bg26,
 .bg9 {
   background-repeat: no-repeat;
   background-size: cover;
@@ -287,6 +288,15 @@ ul {
 .bg25 {
   background-image: url(../../public/images/clientback.jpg);
 }
+
+
+.bg26 {
+  /* background-image: url(../../public/images/fireclientbanner.PNG); */
+  background-image: url(../../public/images/clientbanner8.png);
+
+}
+
+
 body.nav-expanded .offwrap {
   left: 0;
   transition: 0.8s ease-out;
@@ -2435,6 +2445,8 @@ body .search-modal .close:hover {
 .rs-breadcrumbs.img1 {
   background: url(../../public/images/inr_1.jpg);
 }
+
+
 .rs-slider {
   position: relative;
   overflow: hidden;
@@ -4541,7 +4553,8 @@ body .search-modal .close:hover {
   background: url(../../public/images/footer.jpg) top/cover no-repeat;
 }
 .rs-footer.style1 .footer-top {
-  padding: 120px 0 65px;
+  padding: 46px 0 46px;
+  background: #00003c;
 }
 .rs-footer.style1 .footer-top .footer-logo img {
   height: 65px;
@@ -5265,6 +5278,7 @@ body .search-modal .close:hover {
   color: #fff;
   font-weight: 600;
   border-radius: 20px;
+  margin-top: 10px;
 }
 .enquirebtn:hover {
   background: #000;
@@ -7558,7 +7572,7 @@ div.job-tag span {
   }
   .enquirebtn {
     padding: 6px 10px 6px 5px;
-    margin-left: 23px;
+    margin-left: 6px;
   }
   .rs-testimonial.style1 .pattern-img .common,
   .wave {
@@ -8367,3 +8381,36 @@ text-align: center;
 	
 } */
 
+#overlapthis {
+
+  background-image: url(../../public/images/Mantanance8.png);
+
+  height: 302px;
+left: 277px;
+position: absolute;
+top: 173px;
+width: 500px;
+}
+
+#thebigimage {
+  background-image: url(../../public/images/maintanance1.jpg);
+  height: 265px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 371px;
+} 
+.fireclient{
+
+width: 20vh;
+height: 20vh;
+border-radius: 50%;
+}
+
+.cardimges{
+  transition: all 1s ease;
+}
+
+.cardimges:hover{
+  transform: scale(1.1);
+}
