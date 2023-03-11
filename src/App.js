@@ -1,6 +1,8 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import Cookies from "universal-cookie";
 import posthog from "posthog-js";
+import ReactWhatsapp from 'react-whatsapp';
+
 
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -45,7 +47,11 @@ const Pagefound = lazy(() => import("./components/Pagefound"));
 const cookies = new Cookies();
 const token = cookies.get("token");
 
+
 function App() {
+
+
+
   const schemaLocalBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -205,6 +211,9 @@ function App() {
           </Routes>
           <Footer />
           <Sidebar />
+          <Routes>
+            
+          </Routes>
         </Suspense>
       </BrowserRouter>
     </div>

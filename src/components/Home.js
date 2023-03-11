@@ -4,6 +4,8 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Clients from "./Clients";
 import Expertteam from "./Expertteam";
 import Testimonial from "./Testimonial";
+import ReactWhatsapp from 'react-whatsapp';
+
 
 import { Helmet } from "react-helmet";
 
@@ -432,6 +434,7 @@ function Home() {
       </div>
       <Testimonial />
       <Expertteam />
+
     </div>
   );
 }

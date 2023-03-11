@@ -1,15 +1,58 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function Maintenance() {
   return (
     <div>
+           <Helmet>
+
+<title>
+Fire Safety Equipment Maintenance & Testing | Ensure Your Workplace is Safe
+
+
+      </title>
+
+      <meta
+        name="description"
+        content=" We provide superior fire compliance management services by certified
+        fire technicians and offer advanced fire and safety services."
+      />
+      <meta
+        name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
+      />
+      <meta
+        name="image"
+        content="https://www.therapidhire.com/images/maintanance1.jpg"
+      />
+      <meta
+        itemprop="name"
+        content="Fire Safety Equipment Maintenance & Testing | Ensure Your Workplace is Safe
+
+
+
+        "
+      />
+      <meta
+        itemprop="description"
+        content=" We provide superior fire compliance management services by certified
+        fire technicians and offer advanced fire and safety services."
+      />
+      <meta
+        itemprop="image"
+        content="https://www.therapidhire.com/images/maintanance1.jpg"
+      />
+   
+
+
+</Helmet>
   <div
               id="rs-slider"
               className="rs-slider slider3 rs-slider-style3 py-5"
               style={{ position: "relative", overflow: "hidden" }}
             >
               <div className="bend niceties">
-                <img src="images/bannerfire6.jpg" alt="trhslider" title="" />
+                <img src="images/Firesafety5.jpg" alt="Firesafety" title="" />
               </div>
              
             </div>      <h2
@@ -24,11 +67,11 @@ function Maintenance() {
           <img
             className="shadow rounded"
             src="images/maintanance1.jpg"
-            alt="CloudServices"
+            alt="maintanance1"
           />
         </div>
         <div class="col-md-6">
-          <img className="shadow rounded" src="images/Mantanance8.png" alt="CloudServices" />
+          <img className="shadow rounded" src="images/Mantanance8.png" alt="maintanance8" />
         </div>
 
         <p className="text-center mt-5 container">
@@ -59,7 +102,7 @@ function Maintenance() {
       </div>
 
       <div class="col-md-6 mt-5">
-      <img className="shadow rounded" src="images/Man.png" alt="CloudServices"/>
+      <img className="shadow rounded" src="images/maintanancesystem.jpg" alt="maintanancesystem"/>
 
       </div>
 

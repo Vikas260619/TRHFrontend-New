@@ -1,25 +1,61 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function Testing() {
   return (
     <div>
-  <div
-              id="rs-slider"
-              className="rs-slider slider3 rs-slider-style3"
-              style={{ position: "relative", overflow: "hidden" }}
-            >
-              <div className="bend niceties">
-                <img src="images/fireimges.jpg" alt="trhslider" title="" />
-              </div>
-             
-            </div>
+      <Helmet>
+        <title>
+          Fire Safety Equipment Maintenance & Testing | Ensure Your Workplace is
+          Safe
+        </title>
+
+        <meta
+          name="description"
+          content=" Testing is important to evaluate the healthiness of the installed
+        fire protection system so that they can work properly in case of an
+        emergency."
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
+        />
+        <meta
+          name="image"
+          content="https://www.therapidhire.com/images/Alarm.png"
+        />
+        <meta
+          itemprop="name"
+          content="Fire Safety Equipment Maintenance & Testing | Ensure Your Workplace is Safe"
+        />
+        <meta
+          itemprop="description"
+          content="Testing is important to evaluate the healthiness of the installed
+        fire protection system so that they can work properly in case of an
+        emergency."
+        />
+        <meta
+          itemprop="image"
+          content="https://www.therapidhire.com/images/Alarm.png"
+        />
+      </Helmet>
+      <div
+        id="rs-slider"
+        className="rs-slider slider3 rs-slider-style3"
+        style={{ position: "relative", overflow: "hidden" }}
+      >
+        <div className="bend niceties">
+          <img src="images/Firesafety2.jpg" alt="firesafety" title="" />
+        </div>
+      </div>
       <p className="text-center container fs-3 pt-5">
         <strong
           className="text-center font-weight-normal"
           style={{ fontWeight: "500" }}
         >
-          "Testing is important to check the healthiness of the install system
-          so that they can work properly any event of an emergency "
+          "Testing is important to evaluate the healthiness of the installed
+          fire protection system so that they can work properly in case of an
+          emergency "
         </strong>
       </p>
       <div
@@ -56,14 +92,10 @@ function Testing() {
                     <img
                       src="images/Pumptest.png"
                       class="card-img-top"
-                      alt="Waterfall"
+                      alt="pumptest"
                     />
                     <div class="card-body">
                       <h5 class="card-title">Pump house Testing</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -73,14 +105,10 @@ function Testing() {
                     <img
                       src="images/Alarm.png"
                       class="card-img-top"
-                      alt="Sunset Over the Sea"
+                      alt="Alarm"
                     />
                     <div class="card-body">
-                      <h5 class="card-title">Fire Detection &  Alarm System</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
+                      <h5 class="card-title">Fire Detection & Alarm System</h5>
                     </div>
                   </div>
                 </div>
@@ -90,14 +118,10 @@ function Testing() {
                     <img
                       src="images/Sprinkler.png"
                       class="card-img-top"
-                      alt="Sunset over the Sea"
+                      alt="Sprinkler"
                     />
                     <div class="card-body">
-                      <h5 class="card-title">sprinkler System Testing</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
+                      <h5 class="card-title">Sprinkler System Testing</h5>
                     </div>
                   </div>
                 </div>
@@ -113,14 +137,10 @@ function Testing() {
                     <img
                       src="images/Supperation.png"
                       class="card-img-top"
-                      alt="Fissure in Sandstone"
+                      alt="Supperation"
                     />
                     <div class="card-body">
                       <h5 class="card-title">Suppression System Testing</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -130,14 +150,10 @@ function Testing() {
                     <img
                       src="images/Supperation.png"
                       class="card-img-top"
-                      alt="Storm Clouds"
+                      alt="Supperation"
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -151,10 +167,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -174,10 +186,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -191,10 +199,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -208,10 +212,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -254,14 +254,10 @@ function Testing() {
                     <img
                       src="images/Supperation.png"
                       class="card-img-top"
-                      alt="Waterfall"
+                      alt="Supperation"
                     />
                     <div class="card-body">
                       <h5 class="card-title">Suppression System Testing</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -271,14 +267,10 @@ function Testing() {
                     <img
                       src="images/hydrant.png"
                       class="card-img-top"
-                      alt="Sunset Over the Sea"
+                      alt="hydrant"
                     />
                     <div class="card-body">
                       <h5 class="card-title">Fire Hydrant System</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -288,14 +280,10 @@ function Testing() {
                     <img
                       src="images/Annual.png"
                       class="card-img-top"
-                      alt="Sunset over the Sea"
+                      alt="Annual"
                     />
                     <div class="card-body">
                       <h5 class="card-title">Annual Performance Testing</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -315,10 +303,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -332,10 +316,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -349,10 +329,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -372,10 +348,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -389,10 +361,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -406,10 +374,6 @@ function Testing() {
                     />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -422,7 +386,7 @@ function Testing() {
       <p className="text-center container pt-5">
         <strong className="text-center fs-4" style={{ fontWeight: "500" }}>
           We provide services in the field of testing of fire Protection system
-          and fire detection system as per we defiend standard.
+          and fire detection system as per the defined standards.
         </strong>
       </p>
     </div>

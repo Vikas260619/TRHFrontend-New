@@ -5372,9 +5372,18 @@ body .search-modal .close:hover {
   z-index: 1;
 }
 .social {
-  top: 40%;
+  top: 30%;
   z-index: 1;
   width: 100px;
+}
+.social ul .whatsap {
+  display: block !important;
+  margin: 10px !important;
+  width: 310px !important;
+  padding: 15px !important;
+  border-radius: 0 30px 30px 0 !important;
+  transition: 1.5s !important;
+
 }
 .icon-seven,
 .icon-six,
@@ -5424,6 +5433,11 @@ body .search-modal .close:hover {
 .social ul .youtube:hover {
   background-color: #0062cc;
 }
+.social ul .whatsap,
+.social ul .whatsap:hover {
+  background-color: #25D366  ;
+}
+
 .social ul li:hover {
   transform: translate(110px, 0);
   transition: 1.5s;
@@ -7572,7 +7586,7 @@ div.job-tag span {
   }
   .enquirebtn {
     padding: 6px 10px 6px 5px;
-    margin-left: 6px;
+    margin-left: 25px;
   }
   .rs-testimonial.style1 .pattern-img .common,
   .wave {
@@ -8414,3 +8428,64 @@ border-radius: 50%;
 .cardimges:hover{
   transform: scale(1.1);
 }
+@media (max-width: 767px) {
+  .loginbtn{
+    margin-left: 25px;
+    font-size: 13px;
+  }
+
+
+  }
+  @media (max-width: 768px) {
+
+    .enquirebtn {
+      
+      padding: 5px;
+      margin-left: 25px;
+  }
+
+  }
+  @media (max-width: 768px) {
+
+    .loginbtn{
+      
+      padding: 5px 22px 6px 22px;
+      margin-left: 25px;
+  }
+
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  
+  }
+  .whatsappbuttn {background: none;
+    border: navajowhite;
+    color: #fff;}
+  /* div.text {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #8360c3, #8360c3, #2ebf91, #2ebf91);
+    background-size: 300%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: -5px;
+    text-transform: uppercase;  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 10s ease-in-out infinite;
+    -moz-animation: animated_text 10s ease-in-out infinite;
+    -webkit-animation: animated_text 10s ease-in-out infinite;
+  }
+  
+  @keyframes animated_text {
+    0% { background-position: 0px 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0px 50%; }
+  }
+   */

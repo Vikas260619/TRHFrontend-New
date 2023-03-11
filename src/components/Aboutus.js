@@ -95,7 +95,6 @@ function Aboutus() {
   return (
     <div>
       <Helmet>
-        <meta charset="utf-8" />
         <title>
           About us - TheRapidHire|CMMI Level 5|Software|Website Development
         </title>

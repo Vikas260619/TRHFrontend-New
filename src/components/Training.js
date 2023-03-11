@@ -1,26 +1,54 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function Training() {
   return (
     <div>
+
+
+<Helmet>
+        <title>
+        Professional Fire Safety Training | Keep Your Workplace Safe
+
+
+
+        </title>
+
+        <meta
+          name="description"
+          content="Experienced Professionals: Our trainers are highly experienced professionals with a wealth of knowledge and expertise in fire safety."
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
+        />
+        <meta
+          name="image"
+          content="https://www.therapidhire.com/images/trainig1.png"
+        />
+        <meta
+          itemprop="name"
+          content="Professional Fire Safety Training | Keep Your Workplace Safe "
+        />
+        <meta
+          itemprop="description"
+          content="Experienced Professionals: Our trainers are highly experienced professionals with a wealth of knowledge and expertise in fire safety."
+        />
+        <meta
+          itemprop="image"
+          content="https://www.therapidhire.com/images/trainig1.png"
+        />
+      </Helmet>
       <div
         id="rs-slider"
         className="rs-slider slider3 rs-slider-style3"
         style={{ position: "relative", overflow: "hidden" }}
       >
         <div className="bend niceties">
-          <img src="images/bannerfire4.jpg" alt="trhslider" title="" />
+          <img src="images/Firesafety4.jpg" alt="FireSafety" title="" />
         </div>
       </div>
       <div className="row text-center">
-        {/* <div class="col-md-4">
-          <img
-            className="mt-3"
-            src="images/Firelogo2-removebg-preview.png"
-            alt="CloudServices"
-            style={{ height: "25vh" }}
-          />
-        </div> */}
         <div class="">
           <h2
             className="fs-3 h3 block-title text-center font-weight-bold pt-3"
@@ -33,25 +61,15 @@ function Training() {
             className="fs-4 block-title text-center"
             style={{ fontWeight: "600" }}
           >
-            "Sweat, Train, Save. The more we Sweat in trainig, the less we'll
-            bleed if a real fire"
+            "Sweat, Train, Save. The more we Sweat in training, the less we'll
+            bled if a real fire"
           </h2>
         </div>
-        {/* <div class="col-md-4">
-          <img
-            className="mt-3"
-            src="images/Firelogo1.png"
-            alt="CloudServices"
-            style={{ height: "25vh" }}
-          />
-
-
-        </div> */}
       </div>
 
-      <div className="row py-4">
+      <div className="row pt-4 pb-5">
         <div class="col-md-6">
-          <div className="" style={{ paddingLeft: "80px"}}>
+          <div className="" style={{ paddingLeft: "80px" }}>
             <h2
               className="fa fa-arrow-right fs-1 h3 block-title   font-weight-bold"
               style={{ fontWeight: "700", color: "#FF4500" }}
@@ -70,9 +88,9 @@ function Training() {
                 className="ps-5"
                 style={{ listStyle: "circle", fontWeight: "500" }}
               >
-                <li> Top Fire Fighting Training</li>
-                <li>Middle Level</li>
-                <li>Low Level</li>
+                <li> Top Level Management</li>
+                <li>Middle Level Management</li>
+                <li>Low Level Management</li>
               </ul>
               <li className="fs-5 px-2">
                 <span class="fa-li fireright">
@@ -104,12 +122,7 @@ function Training() {
                 </span>
                 Fire Extinguisher Training
               </li>
-              <li className="fs-5 px-2">
-                <span class="fa-li fireright">
-                  <i class="fa fa-check"></i>
-                </span>
-                Evacuation Chair Training
-              </li>
+
               <li className="fs-5 px-2">
                 <span class="fa-li fireright">
                   <i class="fa fa-check"></i>
@@ -126,107 +139,76 @@ function Training() {
           </div>
         </div>
         <div class="col-md-6">
-          <img src="images/trainig1.png" alt="trhslider" title="" />
+          <img src="images/trainig1.png" alt="trainig1" title="" />
         </div>
       </div>
 
-      {/* <h2
-        className="fs-3 h3 block-title text-center font-weight-bold"
-        style={{ fontWeight: "700", color: "#FF4500" }}
-      >
-        "The more we Sweet on Training ground.
-        <br />
-        The Less Well Blle on battleground"
-      </h2> */}
-
-      {/* <div class="row py-4">
-        <div class="col-md-6">
-          <img
-            className="py-5"
-            src="images/maintanance1.jpg"
-            alt="CloudServices"
-          />
-        </div>
-        <div class="col-md-6">
-          <img
-            className="py-5"
-            src="images/Traningboy.png"
-            alt="CloudServices"
-          />
-        </div>
-      </div> */}
-
-      {/* <div class="row py-4 ">
-        <div class="col-md-6">
-          <div className="" style={{ paddingLeft: "80px" }}>
-            <h2
-              className="fa fa-arrow-right fs-1 h3 block-title py-4 font-weight-bold"
-              style={{ fontWeight: "700", color: "#FF4500" }}
-            >
-              Training Modules
-            </h2>
-
-            <h2
-              className=" fs-4 h3 block-title font-weight-bold py-2"
-              style={{ fontWeight: "500" }}
-            >
-              Basic Fire Fighting Training
-            </h2>
-
-            <div className="py-3">
-              <ul
-                className="justify-content-start fs-5"
-                style={{ listStyle: "circle", fontWeight: "500" }}
-              >
-                <li> Top Fire Fighting Training</li>
-                <li>Middle Level</li>
-                <li>Low Level</li>
-              </ul>
+      <div className="py-5">
+        <div className="container">
+          <div class="row">
+            <div class="cardimges col-sm-6 col-md-4 mb-3">
+              <img
+                src="images/Firetrainig4.jpg"
+                alt="Firetrainig4"
+                class="fluid img-thumbnail"
+              />
             </div>
-
-            <h2
-              className="py-2 fs-4 h3 block-title font-weight-bold"
-              style={{ fontWeight: "500" }}
-            >
-              Advanced Fire Fighting Training & Rescue training
-            </h2>
-            <h2
-              className="py-2 fs-4 h3 block-title font-weight-bold"
-              style={{ fontWeight: "500" }}
-            >
-              auxillary fire squad training
-            </h2>
-            <h2
-              className=" py-2 fs-4 h3 block-title font-weight-bold"
-              style={{ fontWeight: "500" }}
-            >
-              Incident Command System Training{" "}
-            </h2>
+            <div class=" cardimges col-sm-6 col-md-4 mb-3">
+              <img
+                src="images/Firetrainig2.jpg
+              "
+                alt="Firetrainig2"
+                class="fluid img-thumbnail"
+              />
+            </div>
+            <div class="cardimges col-sm-6 col-md-4 mb-3">
+              <img
+                src="images/Firetrainig3.jpg
+              "
+                alt="Firetrainig2"oi
+                class="fluid img-thumbnail"
+              />
+            </div>
+            <div class="cardimges col-sm-6 col-md-4 mb-3">
+              <img
+                src="images/Firetrainig4.png"
+                alt="Firetrainig4"
+                class="fluid img-thumbnail"
+              />
+            </div>
+            <div class=" cardimges col-sm-6 col-md-4 mb-3">
+              <img
+                src="images/Firetrainig7.png
+              "
+                alt="Firetrainig5"
+                class="fluid img-thumbnail"
+              />
+            </div>
+            <div class="cardimges col-sm-6 col-md-4 mb-3">
+              <img
+                src="images/Firetrainig6.png
+              "
+                alt="Gallary3"
+                class="fluid img-thumbnail"
+              />
+            </div>
           </div>
         </div>
-        <div class="col-md-6 pe-5">
-          <img
-            className="py-5 shadow-lg p-3 mb-5 bg-white rounded"
-            src="images/Traningboy.png"
-            alt="CloudServices"
-          />
-        </div>
-      </div> */}
-
-      <div className="container-fluid">
+      </div>
+      <div className="container-fluid py-5">
         <div className="">
-        <h2
-          className="fa fa-arrow-right fs-1 h3 py-3 block-title font-weight-bold"
-          style={{ fontWeight: "700", color: "#FF4500" }}
-        >
-          Why Choose Us?
-        </h2>
+          <h2
+            className="fa fa-arrow-right fs-1 h3 py-3 block-title font-weight-bold"
+            style={{ fontWeight: "700", color: "#FF4500" }}
+          >
+            Why Choose Us?
+          </h2>
         </div>
 
         <div className="py-2 ps-1">
           <ul
             className="justify-content-start px-5 pb-5"
-            style={{ listStyle: "circle"}}
+            style={{ listStyle: "circle" }}
           >
             <li>
               Experienced Professionals: Our trainers are highly experienced

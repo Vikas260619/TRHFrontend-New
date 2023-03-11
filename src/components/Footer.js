@@ -117,7 +117,7 @@ function Footer() {
                       </a>
                     </div>
                   </li>
-                </ul>
+                </ul>                                              
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12">
                 <h3 className="footer-title">Newsletter</h3>
