@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import ReactWhatsapp from "react-whatsapp";
 
 function Testing() {
   return (
@@ -389,6 +390,16 @@ function Testing() {
           and fire detection system as per the defined standards.
         </strong>
       </p>
+      <div class="floating_btn">
+    <a target="_blank" href="https://wa.me/">
+      <div class="contact_icon">
+      <ReactWhatsapp number="+91-9907657026" message="Hello, May I Help You !" class="whatsappbuttn"> <i className="fa fa-whatsapp"></i></ReactWhatsapp>
+
+      </div>
+    </a>
+    <p class="text_icon">Chat with us</p>
+  </div>
+
     </div>
   );
 }

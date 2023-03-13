@@ -211,9 +211,7 @@ function App() {
           </Routes>
           <Footer />
           <Sidebar />
-          <Routes>
-            
-          </Routes>
+         
         </Suspense>
       </BrowserRouter>
     </div>

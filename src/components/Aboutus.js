@@ -108,7 +108,7 @@ function Aboutus() {
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
         <meta
-          name="image"
+          name="image" 
           content="https://www.therapidhire.com/images/ser3.png"
         />
         <meta
@@ -279,7 +279,7 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <img src="images/choose-2.png" alt="creative" />
+                    <img src="images/choose-2.png" alt="creative" /> 
                   </div>
                   <div className="choose-content">
                     <h4 className="headingcolor">Creativity</h4>
