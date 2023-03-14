@@ -93,7 +93,6 @@ function Apply() {
       ) {
         if (phone_number !== "") {
           if (applypostion !== "") {
-            console.log(resume)
             if (resume !== "") {
               if (technology !== "") {
                 let formData = new FormData();
@@ -396,3 +395,7 @@ function Apply() {
 }
 
 export default Apply;
+
+
+
+

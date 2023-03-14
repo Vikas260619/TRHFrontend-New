@@ -12,12 +12,15 @@ function Sidebar(props) {
         
        
 
-{location.pathname === "/fire" ?
+{location.pathname === "/fire" || location.pathname === "/installation" || location.pathname === "/maintenance" || location.pathname === "/testing" || location.pathname === "/trainig"?
   <ul>
-            <li className="whatsap">
+            {/* <li className="whatsap">
                      <ReactWhatsapp number="+91-9907657026" message="Hello, May I Help You !" class="whatsappbuttn">whatsapp <i className="fa fa-whatsapp" style={{color:"#25D366", marginRight:"-7px"}}></i></ReactWhatsapp>
 
-            </li>         </ul> :
+            </li>         */}
+
+
+             </ul> :
              <ul>
                  <li className="twit">
                  <a href="https://twitter.com/therapidhire_" target="_blank">  

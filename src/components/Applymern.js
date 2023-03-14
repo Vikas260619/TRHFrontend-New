@@ -370,7 +370,7 @@ import { Helmet } from "react-helmet";
                               />
                             </span>{" "}
                           </div>
-                        </div>
+                        </div>  
                         <div className="row">
                           <div className="col-lg-12">
                             <Input
