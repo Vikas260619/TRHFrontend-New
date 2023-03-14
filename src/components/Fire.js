@@ -190,7 +190,7 @@ function Fire() {
                 </div>
                 <div className="card-body text-center">
                   <h3 className="card-title pt-1">
-                    Fire Fighting Sytem Installation
+                    Fire Fighting System Installation
                   </h3>
                   <p className="card-text text-sm">
                     Reliable and effective fire protection solutions for your
