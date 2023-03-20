@@ -19,6 +19,11 @@ function Training() {
           name="description"
           content="Experienced Professionals: Our trainers are highly experienced professionals with a wealth of knowledge and expertise in fire safety."
         />
+         <meta
+          name="keyword"
+          content="fire and safety course,safety training,training courses ,fire training ,fire safety course ,fire safety training ,safety course ,in service training,safety, training courses , training services  ,fire course  ,fire and,safety training,safety train"
+        />
+
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"

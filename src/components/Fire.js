@@ -17,7 +17,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire1.png" alt="clientfire1" />
+            <img src="images/clientfire1.png" alt="sun pharma" />
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire2.png" alt="clientfire2" />
+            <img src="images/clientfire2.png" alt="tata steel" />
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire3.png" alt="clientfire3" />
+            <img src="images/clientfire3.png" alt="mahindra" />
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire4.png" alt="clientfire4" />
+            <img src="images/clientfire4.png" alt="hindustan unilever limited" />
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ function Fire() {
     //   <div className="counter-area">
     //     <div className="counter-list mb-25">
     //       <div className="counter-icon">
-    //         <img src="images/clientfire5.png" alt="cloud9" />
+    //         <img src="images/clientfire5.png" alt="asian paints" />
     //       </div>
     //     </div>
     //   </div>
@@ -62,7 +62,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire6.png" alt="clientfire5" />
+            <img src="images/clientfire6.png" alt="aarti industries limited " />
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire7.png" alt="clientfire7" />
+            <img src="images/clientfire7.png" alt="aditya birla grasim" />
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire8.png" alt="clientfire8" />
+            <img src="images/clientfire8.png" alt="ambuja cement" />
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire9.png" alt="clientfire9" />
+            <img src="images/clientfire9.png" alt="jsw steel" />
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire10.png" alt="clientfire10" />
+            <img src="images/clientfire10.png" alt="alembic" />
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@ function Fire() {
       <div className="counter-area">
         <div className="counter-list mb-25">
           <div className="counter-icon">
-            <img src="images/clientfire11.png" alt="clientfire11" />
+            <img src="images/clientfire11.png" alt="alkem" />
           </div>
         </div>
       </div>
@@ -122,33 +122,33 @@ function Fire() {
   <Helmet>
 
   <title>
-  Expert Fire Safety Professionals | Installation, Maintenance & Training Services | Contact Us Today
-        </title>
-
+  Expert Fire Safety Professionals |Installation| Maintenance</title>
+  <link rel="canonical" href="https://www.therapidhire.com/fire" data-react-helmet="true"/>
         <meta
           name="description"
-          content="  Reliable and effective fire protection solutions for your
-          peace of mind - choose our fire fighting installation
-          systems."
+          content=" Reliable and effective fire protection solutions for your peace of mind - choose our fire fighting installation
+          systems in your city Indore, India."
         />
+        < meta name="keyword" content ="fire safety solutions , fire safety training , fire safety company ,fire safety maintenance ,fire safety intallation ,fire safety company in indore india"
+      />
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
+
         <meta
           name="image"
           content="https://www.therapidhire.com/images/clientfire2.png"
         />
         <meta
           itemprop="name"
-          content="Expert Fire Safety Professionals | Installation, Maintenance & Training Services | Contact Us Today
+          content="Expert Fire Safety Professionals |Installation| Maintenance
           "
         />
         <meta
           itemprop="description"
-          content=" Reliable and effective fire protection solutions for your
-          peace of mind - choose our fire fighting installation
-          systems."
+          content=" Reliable and effective fire protection solutions for your peace of mind - choose our fire fighting installation
+          systems in your city Indore, India."
         />
         <meta
           itemprop="image"
@@ -166,20 +166,20 @@ function Fire() {
         style={{ position: "relative", overflow: "hidden" }}
       >
         <div className="bend niceties">
-          <img src="images/Firesafety1.jpg" alt="Firesafety" title="" />
+          <img src="images/Firesafety1.jpg" alt="Firesafety" title="fire safety" />
         </div>
       </div>
       <div>
         <section className="container pt-3 mb-3">
-          <h2
-            className="h3 block-title text-center py-4 font-weight-bold"
+          <h1
+            className="h1 block-title text-center py-4 font-weight-bold"
             style={{ fontWeight: "700" }}
           >
-            FEATURED SERVICES
-          </h2>
+            Featured Fire Services
+          </h1>
           <div className="row pt-5 mt-30">
             <div className="col-lg-4 col-sm-6 mb-30 pb-5">
-              <a className="card" href="/installation">
+              <a className="card h-100 py-3" href="/installation">
                 <div
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
@@ -189,9 +189,9 @@ function Fire() {
                   </a>
                 </div>
                 <div className="card-body text-center">
-                  <h3 className="card-title pt-1">
+                  <h2 className="card-title pt-1">
                     Fire Fighting System Installation
-                  </h3>
+                  </h2>
                   <p className="card-text text-sm">
                     Reliable and effective fire protection solutions for your
                     peace of mind - choose our fire fighting installation
@@ -206,7 +206,7 @@ function Fire() {
               </a>
             </div>
             <div className="col-lg-4 col-sm-6 mb-30 pb-5">
-              <a className="card" href="/maintenance">
+              <a className="card h-100 py-3" href="/maintenance">
                 <div
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
@@ -230,7 +230,7 @@ function Fire() {
               </a>
             </div>
             <div className="col-lg-4 col-sm-6 mb-30 pb-5">
-              <a className="card" href="/testing">
+              <a className="card h-100 py-3" href="/testing">
                 <div
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
@@ -256,12 +256,12 @@ function Fire() {
               </a>
             </div>
             <div className="col-lg-4 col-sm-6 mb-30 pb-5">
-              <a className="card" href="/trainig">
+              <a className="card h-100 py-3" href="/training">
                 <div
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
                 >
-                  <a href="/trainig">
+                  <a href="/training">
                     <i className="fa fa-plus fa-3x head-icon"></i>
                   </a>
                 </div>
@@ -272,7 +272,7 @@ function Fire() {
                     prevent and manage fire emergencies through our expert
                     training.
                   </p>
-                  <a href="/trainig">
+                  <a href="/training">
                     <span className="text-sm text-uppercase font-weight-bold">
                       Learn More&nbsp;<i className="fe-icon-arrow-right"></i>
                     </span>
@@ -281,7 +281,7 @@ function Fire() {
               </a>
             </div>
             <div className="col-lg-4 col-sm-6 mb-30 pb-5">
-              <a className="card" href="#">
+              <a className="card h-100 py-3" href="#">
                 <div
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
@@ -302,7 +302,7 @@ function Fire() {
               </a>
             </div>
             <div className="col-lg-4 col-sm-6 mb-30 pb-5">
-              <a className="card" href="#">
+              <a className="card h-100 py-3" href="#">
                 <div
                   className="box-shadow bg-white rounded-circle mx-auto text-center"
                   style={{ width: "90px", height: "90px", margintop: "-45px" }}
@@ -332,9 +332,9 @@ function Fire() {
             <div className="col-lg-12  col-md-12 col-xs-12 ">
               <div className="sec-title3 text-center mb-35">
                 <span className="sub-title">OUR CLIENTS</span>
-                <h2 className="title pb-25 white-color">
+                <h4 className="title pb-25 white-color">
                   Trusted By The World's Best Companies
-                </h2>
+                </h4>
                 <div className="heading-border-line"></div>
               </div>
             </div>
@@ -362,7 +362,7 @@ function Fire() {
 <div class="floating_btn">
     <a target="_blank" href="https://wa.me/">
       <div class="contact_icon">
-      <ReactWhatsapp number="+91-9907657026" message="Hello, May I Help You !" class="whatsappbuttn"> <i className="fa fa-whatsapp"></i></ReactWhatsapp>
+      <ReactWhatsapp number="+91-9907657026" message="Hello,How May I Help You !" class="whatsappbuttn"> <i className="fa fa-whatsapp"></i></ReactWhatsapp>
 
       </div>
     </a>

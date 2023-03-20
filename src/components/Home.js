@@ -4,8 +4,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Clients from "./Clients";
 import Expertteam from "./Expertteam";
 import Testimonial from "./Testimonial";
-import ReactWhatsapp from 'react-whatsapp';
-
+import ReactWhatsapp from "react-whatsapp";
 
 import { Helmet } from "react-helmet";
 
@@ -60,7 +59,7 @@ function Home() {
         </div>
       </div>
     </div>,
-    <div className="item" data-value="2"> 
+    <div className="item" data-value="2">
       <div className="service-wrap">
         <div className="image-part">
           <img src="images/services2.jpeg" alt="WebDevelopment" />
@@ -159,12 +158,54 @@ function Home() {
           name="Keywords"
           content="Website Development, Cloud Services, Business Consulting,Software Development, It Services, Java, Php, Aws, Python, Wordpress, Blockchain, System Developer,IT outsourcing, hr outsourcing offshore development,,Mobile App Development, Minimum Viable Product,Data Engineering, New Product Development."
         />
+        <meta
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
+        />
+        <meta property="og:url" content="https://www.therapidhire.com/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="TheRapidHire-Software Development | IT outsourcing Company"
+        />
+        <meta
+          property="og:description"
+          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+        />
+        <meta
+          property="og:image"
+          content="https://www.therapidhire.com/images/services2.jpeg"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta
+          property="og:image:alt"
+          content="therapidhire -software development"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="therapidhire.com" />
+        <meta property="twitter:url" content="https://www.therapidhire.com/" />
+        <meta
+          name="twitter:title"
+          content="TheRapidHire-Software Development | IT outsourcing Company"
+        />
+        <meta
+          name="twitter:description"
+          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.therapidhire.com/images/services2.jpeg"
+        />
 
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <meta
+        {/* <meta
           name="image"
           content="https://www.therapidhire.com/images/services2.jpeg"
         />
@@ -180,7 +221,7 @@ function Home() {
           itemprop="image"
           content="https://www.therapidhire.com/images/services2.jpeg"
         />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
           content="TheRapidHire-Software Development | IT outsourcing Company"
@@ -195,6 +236,9 @@ function Home() {
           name="twitter:image:src"
           content="https://www.therapidhire.com/images/services2.jpeg"
         />
+
+        <meta name="fb:app_id" content="1369882117133030" />
+
         <meta
           name="og:title"
           content="TheRapidHire-Software Development | IT outsourcing Company"
@@ -207,18 +251,19 @@ function Home() {
           name="og:image"
           content="https://www.therapidhire.com/images/logo.png"
         />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="therapidhire" />
+
         <meta name="og:url" content="https://www.therapidhire.com" />
         <meta name="og:site_name" content="therapidhire" />
-        <meta name="og:locale" content="en_US"/>
-        <meta name="fb:app_id" content="1369882117133030" />
-        <meta name="og:type" content="article" />
-        <meta name="article:section" content="software development" />
-        <meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679" />
-        <meta name="article:tag" content="software development " />
+        <meta name="og:locale" content="en_US" />
+        <meta name="og:type" content="website" /> */}
 
         <link rel="canonical" href="https://www.therapidhire.com/" />
 
-        <link
+        {/* <link
           rel="alternate"
           href="https://www.therapidhire.com/"
           hreflang="x-default"
@@ -242,11 +287,10 @@ function Home() {
           rel="alternate"
           href="https://www.therapidhire.com/mx/"
           hreflang="es-mx"
-        />
+        /> */}
       </Helmet>
 
       <AliceCarousel
-        
         controlsStrategy="alternate"
         autoPlay
         autoPlayStrategy="none"
@@ -434,7 +478,6 @@ function Home() {
       </div>
       <Testimonial />
       <Expertteam />
-
     </div>
   );
 }

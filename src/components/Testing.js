@@ -7,16 +7,23 @@ function Testing() {
     <div>
       <Helmet>
         <title>
-          Fire Safety Equipment Maintenance & Testing | Ensure Your Workplace is
-          Safe
-        </title>
+        Title  - Fire Safety Equipment  Testing | Make Your Workplace Safe
+
+
+</title>
+<link rel="canonical" href="https://www.therapidhire.com/testing" data-react-helmet="true"></link>
 
         <meta
           name="description"
-          content=" Testing is important to evaluate the healthiness of the installed
-        fire protection system so that they can work properly in case of an
-        emergency."
+          content="Testing is important to evaluate the healthiness of the installed fire protection system so that it can work properly in case of an emergency."
         />
+     
+     <meta
+          name="keyword"
+          content=" lab test laboratory test testing lab services standard laboratory tests"
+        />
+
+
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
@@ -27,13 +34,14 @@ function Testing() {
         />
         <meta
           itemprop="name"
-          content="Fire Safety Equipment Maintenance & Testing | Ensure Your Workplace is Safe"
+          content="Title  - Fire Safety Equipment  Testing | Make Your Workplace Safe
+
+
+          "
         />
         <meta
           itemprop="description"
-          content="Testing is important to evaluate the healthiness of the installed
-        fire protection system so that they can work properly in case of an
-        emergency."
+          content="Testing is important to evaluate the healthiness of the installed fire protection system so that it can work properly in case of an emergency."
         />
         <meta
           itemprop="image"
