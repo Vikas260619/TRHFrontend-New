@@ -111,6 +111,12 @@ function Sitemap() {
                     <li className="footer-title">
                       <h4>
                         {" "}
+                        <a href="/fire">Fire Safety Solution</a>
+                      </h4>
+                    </li>
+                    <li className="footer-title">
+                      <h4>
+                        {" "}
                         <a href="/termsofservices">Terms of Services</a>
                       </h4>
                     </li>
