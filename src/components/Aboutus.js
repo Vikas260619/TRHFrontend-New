@@ -107,57 +107,58 @@ function Aboutus() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
+        <link
+          rel="canonical"
+          href="https://www.therapidhire.com/aboutus"
+          data-react-helmet="true"
+        ></link>
+
         <meta
-          name="image" 
-          content="https://www.therapidhire.com/images/ser3.png"
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
         />
+
         <meta
-          itemprop="name"
+          property="og:url"
+          content="https://www.therapidhire.com/aboutus"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
           content="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
         />
         <meta
-          itemprop="description"
+          property="og:description"
           content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
         />
         <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/ser3.png"
+          property="og:image"
+          content="https://www.therapidhire.com/images/logo.png"
         />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="therapidhire" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_"/>
+        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/aboutus"
+        />
         <meta
           name="twitter:title"
-          content="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
+          content=" About us - TheRapidHire|CMMI Level 5|Software|Website Development"
         />
         <meta
           name="twitter:description"
-          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
-        />
-        <meta name="twitter:site" content="@therapidhire_" />
-        <meta name="twitter:creator" content="@therapidhire_" />
-        <meta
-          name="twitter:image:src"
-          content="https://www.therapidhire.com/images/ser3.png"
+          content=" At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all times"
         />
         <meta
-          name="og:title"
-          content="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
+          name="twitter:image"
+          content="https://www.therapidhire.com/images/logo.png"
         />
-        <meta
-          name="og:description"
-          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
-        />
-        <meta name="og:image" content="https://www.therapidhire.com/logo.png" />
-        <meta name="og:url" content="https://www.therapidhire.com/aboutus" />
-        <meta name="og:site_name" content="therapidhire" />
-        <meta name="og:locale" content="en_US" />
-        <meta name="fb:app_id" content="1369882117133030" />
-        <meta name="og:type" content="article" />
-        <meta name="article:section" content="Software development" />
-        <meta
-          name="article:author"
-          content="https://www.facebook.com/profile.php?id=100054281690679"
-        />
-        <meta name="article:tag" content="Software development" />
       </Helmet>
 
       <div className="main-content">
@@ -279,7 +280,7 @@ function Aboutus() {
               <div className="col-lg-3 col-md-6">
                 <div className="single-choose-card">
                   <div className="choose-image">
-                    <img src="images/choose-2.png" alt="creative" /> 
+                    <img src="images/choose-2.png" alt="creative" />
                   </div>
                   <div className="choose-content">
                     <h4 className="headingcolor">Creativity</h4>

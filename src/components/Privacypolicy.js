@@ -5,49 +5,59 @@ function Privacypolicy() {
   return (
     <div>
       <Helmet>
-      <meta charset="utf-8"/>
-<title>Privacy Policy-TheRapidHire</title>
-<meta name="description" content="What kind of data do we collect?"/>
-<meta name="image" content="https://therapidhire.com/images/ser6.png"/>
-<meta itemprop="name" content="Privacy Policy-TheRapidHire"/>
-<meta itemprop="description" content="What kind of data do we collect?"/>
-<meta itemprop="image" content="https://therapidhire.com/images/ser6.png"/>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Privacy Policy-TheRapidHire"/>
-<meta name="twitter:description" content="What kind of data do we collect?"/>
-<meta name="twitter:site" content="@therapidhire_"/>
-<meta name="twitter:creator" content="@therapidhire_"/>
-<meta name="twitter:image:src" content="https://www.therapidhire.com/images/choose-2.png"/>
-<meta name="og:title" content="Privacy Policy-TheRapidHire"/>
-<meta name="og:description" content="What kind of data do we collect?"/>
-<meta name="og:image" content="https://www.therapidhire.com/logo.png"/>
-<meta name="og:url" content="https://www.therapidhire.com/privacy"/>
-<meta name="og:site_name" content="therapidhire"/>
-<meta name="og:locale" content="en_US"/>
-<meta name="fb:app_id" content="1369882117133030"/>
-<meta name="og:type" content="article"/>
-<meta name="article:section" content="Software development"/>
-<meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679"/>
-<meta name="article:tag" content="Software development"/>
-      
+        <meta charset="utf-8" />
+        <title>Privacy Policy-TheRapidHire</title>
+        <meta name="description" content="What kind of data do we collect?" />
+        <meta name="image" content="https://therapidhire.com/images/ser6.png" />
+        <meta itemprop="name" content="Privacy Policy-TheRapidHire" />
+        <meta
+          itemprop="description"
+          content="What kind of data do we collect?"
+        />
+        <meta
+          itemprop="image"
+          content="https://therapidhire.com/images/ser6.png"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Privacy Policy-TheRapidHire" />
+        <meta
+          name="twitter:description"
+          content="What kind of data do we collect?"
+        />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta name="twitter:creator" content="@therapidhire_" />
+        <meta
+          name="twitter:image:src"
+          content="https://www.therapidhire.com/images/choose-2.png"
+        />
+        <meta name="og:title" content="Privacy Policy-TheRapidHire" />
+        <meta
+          name="og:description"
+          content="What kind of data do we collect?"
+        />
+        <meta name="og:image" content="https://www.therapidhire.com/logo.png" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="therapidhire" />
+        <meta name="og:url" content="https://www.therapidhire.com/privacy" />
+        <meta name="og:site_name" content="therapidhire" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="fb:app_id" content="1369882117133030" />
+        <meta name="og:type" content="article" />
+        <meta name="article:section" content="Software development" />
+        <meta name="article:author" content="Muskan Sharma" />
+        <meta name="article:tag" content="Software development" />
+
         <link rel="canonical" href="https://www.therapidhire.com/privacy" />
-
-        <link rel="alternate" href="https://www.therapidhire.com/privacy" hreflang="x-default"/>
-  <link rel="alternate" href="https://www.therapidhire.com/privacy/en" hreflang="en"/>
-  <link rel="alternate" href="https://www.therapidhire.com/privacy/fr" hreflang="fr"/>
-  <link rel="alternate" href="https://www.therapidhire.com/privacy/es" hreflang="es"/>
-  <link rel="alternate" href="https://www.therapidhire.com/privacy/mx" hreflang="es-mx"/>
-
-         </Helmet>
+      </Helmet>
       <div className="offwrap"></div>
 
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h2 className="page-title">
-                Privacy Policy
-              </h2>
+              <h2 className="page-title">Privacy Policy</h2>
             </div>
           </div>
         </div>
@@ -179,12 +189,12 @@ function Privacypolicy() {
                   </h5>
                   <p>
                     If you have any questions feel free to contact directly
-                    here: mail to info@therapidhire. Data privacy is important to TheRapidHire.
-                    TheRapidHire has a detailed Data Privacy Policy that is
-                    available on the link Privacy Notice. Therapidhire’s Data
-                    Privacy Policy describes how we collect, use and disclose
-                    information that we may obtain through this Website or as a
-                    part of our internal processes.
+                    here: mail to info@therapidhire. Data privacy is important
+                    to TheRapidHire. TheRapidHire has a detailed Data Privacy
+                    Policy that is available on the link Privacy Notice.
+                    Therapidhire’s Data Privacy Policy describes how we collect,
+                    use and disclose information that we may obtain through this
+                    Website or as a part of our internal processes.
                   </p>
                 </div>
                 <div className="term12">

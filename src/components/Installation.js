@@ -11,12 +11,6 @@ function Installation() {
           Reliable Fire Safety Installation|Trust Experts to Keep You Safe
         </title>
 
-        <link
-          rel="canonical"
-          href="https://www.therapidhire.com/installation"
-          data-react-helmet="true"
-        ></link>
-
         <meta
           name="description"
           content="  Wet and dry riser systems, Courtyard hydrant systems, Auto sprinkler systems, Pump house of auto/manual start types, and Gaseous fire suppression systems."
@@ -35,26 +29,55 @@ function Installation() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
+        <link
+          rel="canonical"
+          href="https://www.therapidhire.com/installation"
+          data-react-helmet="true"
+        ></link>
         <meta
-          name="image"
-          content="https://www.therapidhire.com/images/Fire1.jpg"
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
         />
         <meta
-          itemprop="name"
-          content="Reliable Fire Safety Installation|Trust Experts to Keep You Safe
-          "
+          property="og:url"
+          content="https://www.therapidhire.com/installation"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Reliable Fire Safety Installation|Trust Experts to Keep You Safe"
         />
         <meta
-          itemprop="description"
-          content="fire and sprinkler inspection, fire sprinkler inspections, fire extinguishers, sprinklers systems, smoke detection, extinguishers, fire alarms system, type a fire extinguisher, fire detection system, sprinkler fire, fire sprinkler systems, fire alarm, fire suppression systems, fire alarm panel, fire sensor, fire panel, fire fighting companies, installation of fire alarm, fire alarm, and detection systems
-
-
-
-        "
+          property="og:description"
+          content="Wet and dry riser systems, Courtyard hydrant systems, Auto sprinkler systems, Pump house of auto/manual start types, and Gaseous fire suppression systems."
         />
         <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/Fire1.jpg"
+          property="og:image"
+          content="https://www.therapidhire.com/images/Firesafety3.jpg"
+        />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="fire safety" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/installation"
+        />
+        <meta
+          name="twitter:title"
+          content="Reliable Fire Safety Installation|Trust Experts to Keep You Safe"
+        />
+        <meta
+          name="twitter:description"
+          content="Wet and dry riser systems, Courtyard hydrant systems, Auto sprinkler systems, Pump house of auto/manual start types, and Gaseous fire suppression systems."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.therapidhire.com/images/Firesafety3.jpg"
         />
       </Helmet>
       <div

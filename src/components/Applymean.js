@@ -175,62 +175,47 @@ function Applymean() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
-        <meta
-          name="image"
-          content="https://www.therapidhire.com/images/mean.png"
-        />
-        <meta itemprop="name" content="Apply For Mean Developers" />
-        <meta
-          itemprop="description"
-          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
-        />
-        <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/mean.png"
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Apply For Mean Developers" />
-        <meta
-          name="twitter:description"
-          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
-        />
-        <meta name="twitter:site" content="@therapidhire_" />
-        <meta name="twitter:creator" content="@therapidhire_" />
-        <meta
-          name="twitter:image:src"
-          content="https://www.therapidhire.com/images/services2.jpeg"
-        />
-        <meta name="og:title" content="Apply For Mean Developers" />
-        <meta
-          name="og:description"
-          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
-        />
-        <meta
-          name="og:image"
-          content="https://www.therapidhire.com/images/logo.png"
-        />
-        <meta name="og:url" content="https://therapidhire.com/applymean" />
-        <meta name="og:site_name" content="therapidhire" />
-        <meta name="og:locale" content="en_US" />
-        <meta name="fb:app_id" content="1369882117133030" />
-        <meta name="og:type" content="article" />
-        <meta name="article:section" content="software development" />
-        <meta
-          name="article:author"
-          content="https://www.facebook.com/profile.php?id=100054281690679"
-        />
-        <meta name="article:tag" content="software development " />
+        <link rel="canonical" href="https://www.therapidhire.com/applymean" />
 
         <meta
-          name="robots"
-          content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
         />
-        <link rel="canonical" href="https://www.therapidhire.com/applymean" />
         <meta
           property="og:url"
           content="https://www.therapidhire.com/applymean"
         />
         <meta property="og:type" content="website" />
+        <meta property="og:title" content="Apply for MEAN Stack Developer" />
+        <meta
+          property="og:description"
+          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
+        />
+        <meta
+          property="og:image"
+          content="https://www.therapidhire.com/images/logo.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="therapidhire" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_"/>
+        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/applymean"
+        />
+        <meta name="twitter:title" content="Apply for MEAN Stack Developer" />
+        <meta
+          name="twitter:description"
+          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.therapidhire.com/images/logo.png"
+        />
       </Helmet>
 
       <div className="offwrap"></div>

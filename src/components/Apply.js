@@ -58,8 +58,7 @@ function Apply() {
     // } else {
     //   e.target.files = null;
     // }
-    setResume(e.target.files[0]); 
-
+    setResume(e.target.files[0]);
   };
   const handleChange = (event) => {
     event.persist();
@@ -101,7 +100,6 @@ function Apply() {
                 formData.append("phone_number", phone_number);
                 formData.append("applypostion", applypostion);
                 formData.append("resume", resume);
-
 
                 formData.append("technology", technology);
                 axios({
@@ -150,9 +148,8 @@ function Apply() {
 
   return (
     <div>
-{  console.log(resume)
-}      <Helmet>
-        <meta charset="utf-8" />
+      {console.log(resume)}{" "}
+      <Helmet>
         <title>Apply for Java Developer -TheRapidHire</title>
 
         <meta
@@ -163,62 +160,52 @@ function Apply() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
+        <link rel="canonical" href="https://www.therapidhire.com/applyjava" />
+
         <meta
-          name="image"
-          content="https://www.therapidhire.com/images/java.png"
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
         />
         <meta
-          itemprop="name"
+          property="og:url"
+          content="https://www.therapidhire.com/applyjava"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
           content="Apply for Java Developer -TheRapidHire"
         />
         <meta
-          itemprop="description"
-          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and anti-patterns. Good in algorithms and data structures."
+          property="og:description"
+          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge of design patterns and anti-patterns. Good in algorithms and data structures."
         />
         <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/java.png"
+          property="og:image"
+          content="https://www.therapidhire.com/images/logo.png"
         />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="therapidhire" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_"/>        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/applyjava"
+        />
         <meta
           name="twitter:title"
           content="Apply for Java Developer -TheRapidHire"
         />
         <meta
           name="twitter:description"
-          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and anti-patterns. Good in algorithms and data structures."
-        />
-        <meta name="twitter:site" content="@therapidhire_" />
-        <meta name="twitter:creator" content="@therapidhire_" />
-        <meta
-          name="twitter:image:src"
-          content="https://www.therapidhire.com/images/services2.jpeg"
+          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge of design patterns and anti-patterns. Good in algorithms and data structures."
         />
         <meta
-          name="og:title"
-          content="Apply for Java Developer -TheRapidHire"
-        />
-        <meta
-          name="og:description"
-          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and anti-patterns. Good in algorithms and data structures."
-        />
-        <meta
-          name="og:image"
+          name="twitter:image"
           content="https://www.therapidhire.com/images/logo.png"
         />
-        <meta name="og:url" content="https://www.therapidhire.com/applyjava" />
-        <meta name="og:site_name" content="therapidhire" />
-        <meta name="og:locale" content="en_US" />
-        <meta name="fb:app_id" content="1369882117133030" />
-        <meta name="og:type" content="article" />
-        <meta name="article:section" content="software development" />
-        <meta
-          name="article:author"
-          content="https://www.facebook.com/profile.php?id=100054281690679"
-        />
-        <meta name="article:tag" content="software development " />
-
-        <link rel="canonical" href="https://www.therapidhire.com/applyjava" />
       </Helmet>
       <div className="offwrap"></div>
       <div className="main-content">
@@ -395,7 +382,3 @@ function Apply() {
 }
 
 export default Apply;
-
-
-
-

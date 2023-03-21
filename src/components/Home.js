@@ -146,7 +146,6 @@ function Home() {
   return (
     <div>
       <Helmet>
-        {/* <meta charset="utf-8"/> */}
         <title>
           TheRapidHire-Software Development | IT outsourcing Company
         </title>
@@ -175,9 +174,9 @@ function Home() {
         />
         <meta
           property="og:image"
-          content="https://www.therapidhire.com/images/services2.jpeg"
+          content="https://www.therapidhire.com/images/logo.png"
         />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="315" />
         <meta
@@ -186,7 +185,7 @@ function Home() {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="therapidhire.com" />
+        <meta name="twitter:site" content="@therapidhire_"/>
         <meta property="twitter:url" content="https://www.therapidhire.com/" />
         <meta
           name="twitter:title"
@@ -198,96 +197,14 @@ function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://www.therapidhire.com/images/services2.jpeg"
+          content="https://www.therapidhire.com/images/logo.png"
         />
 
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        {/* <meta
-          name="image"
-          content="https://www.therapidhire.com/images/services2.jpeg"
-        />
-        <meta
-          itemprop="name"
-          content="TheRapidHire-Software Development | IT outsourcing Company"
-        />
-        <meta
-          itemprop="description"
-          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
-        />
-        <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/services2.jpeg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="TheRapidHire-Software Development | IT outsourcing Company"
-        />
-        <meta
-          name="twitter:description"
-          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
-        />
-        <meta name="twitter:site" content="@therapidhire_" />
-        <meta name="twitter:creator" content="@therapidhire_" />
-        <meta
-          name="twitter:image:src"
-          content="https://www.therapidhire.com/images/services2.jpeg"
-        />
-
-        <meta name="fb:app_id" content="1369882117133030" />
-
-        <meta
-          name="og:title"
-          content="TheRapidHire-Software Development | IT outsourcing Company"
-        />
-        <meta
-          name="og:description"
-          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
-        />
-        <meta
-          name="og:image"
-          content="https://www.therapidhire.com/images/logo.png"
-        />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
-        <meta property="og:image:alt" content="therapidhire" />
-
-        <meta name="og:url" content="https://www.therapidhire.com" />
-        <meta name="og:site_name" content="therapidhire" />
-        <meta name="og:locale" content="en_US" />
-        <meta name="og:type" content="website" /> */}
-
-        <link rel="canonical" href="https://www.therapidhire.com/" />
-
-        {/* <link
-          rel="alternate"
-          href="https://www.therapidhire.com/"
-          hreflang="x-default"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/en/"
-          hreflang="en"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/fr/"
-          hreflang="fr"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/es/"
-          hreflang="es"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/mx/"
-          hreflang="es-mx"
-        /> */}
+      
       </Helmet>
 
       <AliceCarousel

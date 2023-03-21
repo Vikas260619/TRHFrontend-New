@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet";
 
-  function Applymern() {
+function Applymern() {
   const [candidateName, setCandidateName] = useState("");
   const [email, setEmail] = useState("");
   const [phone_number, setPhone_number] = useState("");
@@ -174,57 +174,47 @@ import { Helmet } from "react-helmet";
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
+        <link rel="canonical" href="https://www.therapidhire.com/applymern" />
         <meta
-          name="image"
-          content="https://www.therapidhire.com/images/job2.png"
-        />
-        <meta itemprop="name" content="Apply For Mern Developers" />
-        <meta
-          itemprop="description"
-          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to "
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
         />
         <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/job2.png"
+          property="og:url"
+          content="https://www.therapidhire.com/applymern"
         />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Apply For Mern Developers" />
+        <meta
+          property="og:description"
+          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception."
+        />
+        <meta
+          property="og:image"
+          content="https://www.therapidhire.com/images/logo.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="therapidhire" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_"/>
+          
+        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/applymern"
+        />
         <meta name="twitter:title" content="Apply For Mern Developers" />
         <meta
           name="twitter:description"
-          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to "
-        />
-        <meta name="twitter:site" content="@therapidhire_" />
-        <meta name="twitter:creator" content="@therapidhire_" />
-        <meta
-          name="twitter:image:src"
-          content="https://www.therapidhire.com/images/job2.png"
-        />
-        <meta name="og:title" content="Apply For Mern Developers" />
-        <meta
-          name="og:description"
-          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to "
+          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception."
         />
         <meta
-          name="og:image"
+          name="twitter:image"
           content="https://www.therapidhire.com/images/logo.png"
         />
-        <meta name="og:url" content="https://www.therapidhire.com/applymern" />
-        <meta name="og:site_name" content="therapidhire" />
-        <meta name="og:locale" content="en_US" />
-        <meta name="fb:app_id" content="1369882117133030" />
-        <meta name="og:type" content="article" />
-        <meta name="article:section" content="software development" />
-        <meta
-          name="article:author"
-          content="https://www.facebook.com/profile.php?id=100054281690679"
-        />
-        <meta name="article:tag" content="software development" />
-
-        <meta
-          name="robots"
-          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-        />
-        <link rel="canonical" href="https://www.therapidhire.com/applymern" />
       </Helmet>
 
       <div className="offwrap"></div>
@@ -370,7 +360,7 @@ import { Helmet } from "react-helmet";
                               />
                             </span>{" "}
                           </div>
-                        </div>  
+                        </div>
                         <div className="row">
                           <div className="col-lg-12">
                             <Input

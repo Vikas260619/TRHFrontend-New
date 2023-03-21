@@ -18,84 +18,52 @@ function Technology() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <meta
-          name="image"
-          content="https://www.therapidhire.com/images/ser3.png"
-        />
-        <meta
-          itemprop="name"
-          content="Technology- Java | AngularJs | MernStack | Python | React"
-        />
-        <meta
-          itemprop="description"
-          content="We Work on the technology Java, React, Vue.js, python, salesforce , MEAN , MERN , .net , angular , C#"
-        />
-        <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/ser3.png"
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          name="twitter:title"
-          content="Technology- Java | AngularJs | MernStack | Python | React"
-        />
-        <meta
-          name="twitter:description"
-          content="We Work on the technology Java, React, Vue.js, python, salesforce , MEAN , MERN , .net , angular , C#"
-        />
-        <meta name="twitter:site" content="@therapidhire_" />
-        <meta name="twitter:creator" content="@therapidhire_" />
-        <meta
-          name="twitter:image:src"
-          content="https://www.therapidhire.com/images/ser3.png"
-        />
-        <meta
-          name="og:title"
-          content="Technology- Java | AngularJs | MernStack | Python | React"
-        />
-        <meta
-          name="og:description"
-          content="We Work on the technology Java, React, Vue.js, python, salesforce , MEAN , MERN , .net , angular , C#"
-        />
-        <meta name="og:image" content="https://www.therapidhire.com/logo.png" />
-        <meta name="og:url" content="https://www.therapidhire.com/technology" />
-        <meta name="og:site_name" content="therapidhire" />
-        <meta name="og:locale" content="en_US" />
-        <meta name="fb:app_id" content="1369882117133030" />
-        <meta name="og:type" content="article" />
-        <meta name="article:section" content="Software development" />
-        <meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679" />
-        <meta name="article:tag" content="Software development" />
         <link rel="canonical" href="https://www.therapidhire.com/technology" />
-        .
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/technology"
-          hreflang="x-default"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/technology/en"
-          hreflang="en"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/technology/fr"
-          hreflang="fr"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/technology/es"
-          hreflang="es"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/technology/mx"
-          hreflang="es-mx"
+
+        <meta
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
         />
         <meta
           property="og:url"
           content="https://www.therapidhire.com/technology"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Technology- Java | AngularJs | MernStack | Python | React"
+        />
+        <meta
+          property="og:description"
+          content="We Work on the technology Java, React, Vue.js, python, salesforce, MEAN, MERN, .net, angular, C#."
+        />
+        <meta
+          property="og:image"
+          content="https://www.therapidhire.com/images/logo.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="therapidhire" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/technology"
+        />
+        <meta
+          name="twitter:title"
+          content=" Technology- Java | AngularJs | MernStack | Python | React"
+        />
+        <meta
+          name="twitter:description"
+          content=" We Work on the technology Java, React, Vue.js, python, salesforce, MEAN, MERN, .net, angular, C#."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.therapidhire.com/images/logo.png"
         />
       </Helmet>
       <div className="offwrap"></div>

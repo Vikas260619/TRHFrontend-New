@@ -138,78 +138,26 @@ function Contactus() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-        <meta
-          name="image"
-          content="https://www.therapidhire.com/images/choose-1.png"
-        />
-        <meta itemprop="name" content="Let's Connect - TheRapidHire" />
-        <meta
-          itemprop="description"
-          content="Get in touch with us and discuss the needs and requirements of your development project."
-        />
-        <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/choose-1.png"
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Let's Connect - TheRapidHire" />
-        <meta
-          name="twitter:description"
-          content="Get in touch with us and discuss the needs and requirements of your development project."
-        />
-        <meta name="twitter:site" content="@therapidhire_" />
-        <meta name="twitter:creator" content="@therapidhire_" />
-        <meta
-          name="twitter:image:src"
-          content="https://www.therapidhire.com/images/choose-1.png"
-        />
-        <meta name="og:title" content="Let's Connect - TheRapidHire" />
-        <meta
-          name="og:description"
-          content="Get in touch with us and discuss the needs and requirements of your development project."
-        />
-        <meta name="og:image" content="https://www.therapidhire.com/logo.png" />
-        <meta
-          name="og:url"
-          content="https://www.therapidhire.com/letsconnect"
-        />
-        <meta name="og:site_name" content="therapidhire" />
-        <meta name="og:locale" content="en_US" />
-        <meta name="fb:app_id" content="1369882117133030" />
-        <meta name="og:type" content="article" />
-        <meta name="article:section" content="Software development" />
-        <meta
-          name="article:author"
-          content="https://www.facebook.com/profile.php?id=100054281690679"
-        />
-        <meta name="article:tag" content="Software development" />
+                <link rel="canonical" href="https://www.therapidhire.com/letsconnect" />
 
-        <link rel="canonical" href="https://www.therapidhire.com/letsconnect" />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/letsconnect"
-          hreflang="x-default"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/letsconnect/en"
-          hreflang="en"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/letsconnect/fr"
-          hreflang="fr"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/letsconnect/es"
-          hreflang="es"
-        />
-        <link
-          rel="alternate"
-          href="https://www.therapidhire.com/letsconnect/mx"
-          hreflang="es-mx"
-        />
+                <meta name="fb:app_id" content="1369882117133030" data-react-helmet="true"/>
+  <meta property="og:url" content="https://www.therapidhire.com/letsconnect"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Let's Connect - TheRapidHire"/>
+  <meta property="og:description" content="Get in touch with us and discuss the needs and requirements of your development project."/>
+  <meta property="og:image" content="https://www.therapidhire.com/images/logo.png"/>
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image:alt" content="therapidhire" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:domain" content="therapidhire.com"/>
+  <meta property="twitter:url" content="https://www.therapidhire.com/letsconnect"/>
+  <meta name="twitter:title" content="Let's Connect - TheRapidHire"/>
+  <meta name="twitter:description" content="Get in touch with us and discuss the needs and requirements of your development project."/>
+  <meta name="twitter:image" content="https://www.therapidhire.com/images/logo.png"/>
+
       </Helmet>
       <div className="offwrap"></div>
 

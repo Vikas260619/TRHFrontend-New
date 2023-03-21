@@ -6,46 +6,72 @@ function Testing() {
   return (
     <div>
       <Helmet>
-        <title>
-        Title  - Fire Safety Equipment  Testing | Make Your Workplace Safe
-
-
-</title>
-<link rel="canonical" href="https://www.therapidhire.com/testing" data-react-helmet="true"></link>
+        <title>Fire Safety Equipment  Testing | Make Your Workplace Safe</title>
+        <link
+          rel="canonical"
+          href="https://www.therapidhire.com/testing"
+          data-react-helmet="true"
+        ></link>
 
         <meta
           name="description"
           content="Testing is important to evaluate the healthiness of the installed fire protection system so that it can work properly in case of an emergency."
         />
-     
-     <meta
+
+        <meta
           name="keyword"
           content=" lab test laboratory test testing lab services standard laboratory tests"
         />
-
 
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
+
         <meta
-          name="image"
-          content="https://www.therapidhire.com/images/Alarm.png"
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
         />
         <meta
-          itemprop="name"
-          content="Title  - Fire Safety Equipment  Testing | Make Your Workplace Safe
-
-
-          "
+          property="og:url"
+          content="https://www.therapidhire.com/testing"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Fire Safety Equipment  Testing | Make Your Workplace Safe"
         />
         <meta
-          itemprop="description"
+          property="og:description"
           content="Testing is important to evaluate the healthiness of the installed fire protection system so that it can work properly in case of an emergency."
         />
         <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/Alarm.png"
+          property="og:image"
+          content="https://www.therapidhire.com/images/Firesafety2.jpg"
+        />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="fire safety" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/testing"
+        />
+        <meta
+          name="twitter:title"
+          content="Fire Safety Equipment  Testing | Make Your Workplace Safe"
+        />
+        <meta
+          name="twitter:description"
+          content="Testing is important to evaluate the healthiness of the installed fire protection system so that it can work properly in case of an emergency."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.therapidhire.com/images/Firesafety2.jpg"
         />
       </Helmet>
       <div
@@ -399,15 +425,20 @@ function Testing() {
         </strong>
       </p>
       <div class="floating_btn">
-    <a target="_blank" href="https://wa.me/">
-      <div class="contact_icon">
-      <ReactWhatsapp number="+91-9907657026" message="Hello, May I Help You !" class="whatsappbuttn"> <i className="fa fa-whatsapp"></i></ReactWhatsapp>
-
+        <a target="_blank" href="https://wa.me/">
+          <div class="contact_icon">
+            <ReactWhatsapp
+              number="+91-9907657026"
+              message="Hello, May I Help You !"
+              class="whatsappbuttn"
+            >
+              {" "}
+              <i className="fa fa-whatsapp"></i>
+            </ReactWhatsapp>
+          </div>
+        </a>
+        <p class="text_icon">Chat with us</p>
       </div>
-    </a>
-    <p class="text_icon">Chat with us</p>
-  </div>
-
     </div>
   );
 }

@@ -5,21 +5,16 @@ import ReactWhatsapp from "react-whatsapp";
 function Training() {
   return (
     <div>
-
-
-<Helmet>
+      <Helmet>
         <title>
-        Professional Fire Safety Training | Keep Your Workplace Safe
-
-
-
+          Professional Fire Safety Training | Keep Your Workplace Safe
         </title>
 
         <meta
           name="description"
           content="Experienced Professionals: Our trainers are highly experienced professionals with a wealth of knowledge and expertise in fire safety."
         />
-         <meta
+        <meta
           name="keyword"
           content="fire and safety course,safety training,training courses ,fire training ,fire safety course ,fire safety training ,safety course ,in service training,safety, training courses , training services  ,fire course  ,fire and,safety training,safety train"
         />
@@ -28,21 +23,56 @@ function Training() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
+        <link
+          rel="canonical"
+          href="https://www.therapidhire.com/training"
+          data-react-helmet="true"
+        ></link>
+
         <meta
-          name="image"
-          content="https://www.therapidhire.com/images/trainig1.png"
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
         />
         <meta
-          itemprop="name"
-          content="Professional Fire Safety Training | Keep Your Workplace Safe "
+          property="og:url"
+          content="https://www.therapidhire.com/training"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Professional Fire Safety Training | Keep Your Workplace Safe"
         />
         <meta
-          itemprop="description"
+          property="og:description"
           content="Experienced Professionals: Our trainers are highly experienced professionals with a wealth of knowledge and expertise in fire safety."
         />
         <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/trainig1.png"
+          property="og:image"
+          content="https://www.therapidhire.com/images/Firesafety4.jpg"
+        />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="fire safety" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/training"
+        />
+        <meta
+          name="twitter:title"
+          content="Professional Fire Safety Training | Keep Your Workplace Safe"
+        />
+        <meta
+          name="twitter:description"
+          content="Experienced Professionals: Our trainers are highly experienced professionals with a wealth of knowledge and expertise in fire safety."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.therapidhire.com/images/Firesafety4.jpg"
         />
       </Helmet>
       <div
@@ -171,7 +201,8 @@ function Training() {
               <img
                 src="images/Firetrainig3.jpg
               "
-                alt="Firetrainig2"oi
+                alt="Firetrainig2"
+                oi
                 class="fluid img-thumbnail"
               />
             </div>
@@ -241,15 +272,20 @@ function Training() {
         </div>
       </div>
       <div class="floating_btn">
-    <a target="_blank" href="https://wa.me/">
-      <div class="contact_icon">
-      <ReactWhatsapp number="+91-9907657026" message="Hello, May I Help You !" class="whatsappbuttn"> <i className="fa fa-whatsapp"></i></ReactWhatsapp>
-
+        <a target="_blank" href="https://wa.me/">
+          <div class="contact_icon">
+            <ReactWhatsapp
+              number="+91-9907657026"
+              message="Hello, May I Help You !"
+              class="whatsappbuttn"
+            >
+              {" "}
+              <i className="fa fa-whatsapp"></i>
+            </ReactWhatsapp>
+          </div>
+        </a>
+        <p class="text_icon">Chat with us</p>
       </div>
-    </a>
-    <p class="text_icon">Chat with us</p>
-  </div>
-
     </div>
   );
 }

@@ -27,13 +27,18 @@ function Sitemap() {
 <meta name="og:title" content="Sitemap - TheRapidHire"/>
 <meta name="og:description" content="Sitemap - Page List of the website.  Home |Services|Technology|Work with us"/>
 <meta name="og:image" content="https://www.therapidhire.com/logo.png"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image:alt" content="sitemap" />
+
 <meta name="og:url" content="https://www.therapidhire.com/sitemap"/>
 <meta name="og:site_name" content="therapidhire"/>
 <meta name="og:locale" content="en_US"/>
 <meta name="fb:app_id" content="1369882117133030"/>
 <meta name="og:type" content="article"/>
 <meta name="article:section" content="Software development"/>
-<meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679"/>
+<meta name="article:author" content="Muskan Sharma"/>
 <meta name="article:tag" content="Software development"/>
 
 

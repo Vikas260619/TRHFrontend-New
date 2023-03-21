@@ -233,7 +233,6 @@ function Blogdetail() {
     <div>
       {users ? (
         <Helmet>
-          <meta charset="utf-8" />
           <title>{users?.title}</title>
           <meta name="description" content={users?.metaDesc} />
           <meta name="keywords" content={users?.keywords} />
@@ -241,8 +240,9 @@ function Blogdetail() {
             name="robots"
             content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
           />
+          <link rel="canonical" href="https://www.therapidhire.com/:type/" />
 
-          <meta
+          {/* <meta
             name="image"
             content="https://www.therapidhire.com/images/ser6.png"
           />
@@ -283,34 +283,36 @@ function Blogdetail() {
             content="https://www.facebook.com/profile.php?id=100054281690679"
           />
           <meta name="article:tag" content="software development" />
+          <link rel="canonical" href="https://www.therapidhire.com/:type/" /> */}
 
+          <meta
+            name="fb:app_id"
+            content="1369882117133030"
+            data-react-helmet="true"
+          />
+          <meta property="og:url" content={liveUrl} />
+          <meta property="og:type" content="article" />
+          <meta name="article:section" content="technology" />
+          <meta
+            name="article:author"
+            content="Muskan Sharma"
+          />
+          <meta name="article:tag" content="software development" />
           <link rel="canonical" href="https://www.therapidhire.com/:type/" />
+          <meta property="og:title" content={users?.title} />
+          <meta property="og:description" content={users?.description} />
+          <meta property="og:image" content={imageurl} />
+          <meta property="og:image:type" content="image/jpg" />
+          <meta property="og:image:width" content="600" />
+          <meta property="og:image:height" content="315" />
+          <meta property="og:image:alt" content="TechnologyBlog" />
 
-          <link
-            rel="alternate"
-            href="https://www.therapidhire.com/:type/"
-            hreflang="x-default"
-          />
-          <link
-            rel="alternate"
-            href="https://www.therapidhire.com/:type/en"
-            hreflang="en"
-          />
-          <link
-            rel="alternate"
-            href="https://www.therapidhire.com/:type/fr"
-            hreflang="fr"
-          />
-          <link
-            rel="alternate"
-            href="https://www.therapidhire.com/:type/es"
-            hreflang="es"
-          />
-          <link
-            rel="alternate"
-            href="https://www.therapidhire.com/:type/mx"
-            hreflang="es-mx"
-          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@therapidhire_" />
+          <meta property="twitter:url" content={liveUrl} />
+          <meta name="twitter:title" content={users?.title} />
+          <meta name="twitter:description" content={users?.description} />
+          <meta name="twitter:image" content={imageurl} />
         </Helmet>
       ) : (
         ""

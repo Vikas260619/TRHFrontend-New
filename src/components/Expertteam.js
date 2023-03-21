@@ -14,16 +14,12 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            
-              <img src="images/team1.webp" alt="Shraddha_Sharma" />
-          
+            <img src="images/team1.webp" alt="Shraddha_Sharma" />
           </div>
         </div>
         <div className="team-content text-center">
-          <h4 className="person-name">
-            Shraddha Sharma
-          </h4>
-          <span className="designation">BUSINESS DEVELOPMENT</span>   
+          <h4 className="person-name">Shraddha Sharma</h4>
+          <span className="designation">BUSINESS DEVELOPMENT</span>
           {/* <div> EXECUTIVE</div> */}
         </div>
       </div>
@@ -32,15 +28,11 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            
-              <img src="images/team2.webp" alt="Nitin_Vishvakarma" />
-            
+            <img src="images/team2.webp" alt="Nitin_Vishvakarma" />
           </div>
         </div>
         <div className="team-content text-center">
-          <h4 className="person-name">
-          Nitin Vishvakarma
-          </h4>
+          <h4 className="person-name">Nitin Vishvakarma</h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
       </div>
@@ -49,15 +41,11 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-            
-              <img src="images/team3.webp" alt="Vikas Choudhary" />
-            
+            <img src="images/team3.webp" alt="Vikas Choudhary" />
           </div>
         </div>
         <div className="team-content text-center">
-          <h4 className="person-name">
-            Vikas Choudhary
-          </h4>
+          <h4 className="person-name">Vikas Choudhary</h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
       </div>
@@ -66,15 +54,11 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-           
-              <img src="images/team4.webp" alt="Sumit Tiwari" />
-           
+            <img src="images/team4.webp" alt="Sumit Tiwari" />
           </div>
         </div>
         <div className="team-content text-center">
-          <h4 className="person-name">
-           Sumit Tiwari
-          </h4>
+          <h4 className="person-name">Sumit Tiwari</h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
       </div>
@@ -83,15 +67,11 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-          
-              <img src="images/team7.webp" alt="Yogita Saxena" />
-           
+            <img src="images/team7.webp" alt="Yogita Saxena" />
           </div>
         </div>
         <div className="team-content text-center">
-          <h4 className="person-name">
-            Yogita Saxena
-          </h4>
+          <h4 className="person-name">Yogita Saxena</h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
       </div>
@@ -100,15 +80,11 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-           
-              <img src="images/team6.webp" alt="raghav dubey" />
-          
+            <img src="images/team6.webp" alt="raghav dubey" />
           </div>
         </div>
         <div className="team-content text-center">
-          <h4 className="person-name">
-            Raghav Dubey
-          </h4>
+          <h4 className="person-name">Raghav Dubey</h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
       </div>
@@ -117,32 +93,24 @@ function Expertteam() {
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-          
-              <img src="images/team5.webp" alt="vipin joshi" />
-           
+            <img src="images/team5.webp" alt="vipin joshi" />
           </div>
         </div>
         <div className="team-content text-center">
-          <h4 className="person-name">
-            Vipin Joshi
-          </h4>
+          <h4 className="person-name">Vipin Joshi</h4>
           <span className="designation">HR MANAGER</span>
         </div>
       </div>
     </div>,
-      <div className="itemteam" data-value="8">
+    <div className="itemteam" data-value="8">
       <div className="team-item-wrap">
         <div className="team-wrap">
           <div className="image-inner">
-           
-              <img src="images/team8.webp" alt="Navin Kukreja" />
-           
+            <img src="images/team8.webp" alt="Navin Kukreja" />
           </div>
         </div>
         <div className="team-content text-center">
-          <h4 className="person-name">
-          Navin Kukreja
-          </h4>
+          <h4 className="person-name">Navin Kukreja</h4>
           <span className="designation">SOFTWARE DEVELOPER</span>
         </div>
       </div>

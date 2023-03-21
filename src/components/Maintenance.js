@@ -24,21 +24,55 @@ function Maintenance() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
+        <link
+          rel="canonical"
+          href="https://www.therapidhire.com/maintenance"
+          data-react-helmet="true"
+        ></link>
         <meta
-          name="image"
-          content="https://www.therapidhire.com/images/maintanance1.jpg"
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
         />
         <meta
-          itemprop="name"
-          content="Fire Safety Equipment Maintenance Testing | Ensure Workplace Safe "
+          property="og:url"
+          content="https://www.therapidhire.com/maintenance"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Fire Safety Equipment Maintenance Testing | Ensure Workplace Safe"
         />
         <meta
-          itemprop="description"
-          content=" We provide superior fire compliance management services by certified fire technicians and offer advanced fire and safety services."
+          property="og:description"
+          content="We provide superior fire compliance management services by certified fire technicians and offer advanced fire and safety services."
         />
         <meta
-          itemprop="image"
-          content="https://www.therapidhire.com/images/maintanance1.jpg"
+          property="og:image"
+          content="https://www.therapidhire.com/images/Firesafety5.jpg"
+        />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="fire safety" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/maintenance"
+        />
+        <meta
+          name="twitter:title"
+          content="Fire Safety Equipment Maintenance Testing | Ensure Workplace Safe"
+        />
+        <meta
+          name="twitter:description"
+          content="We provide superior fire compliance management services by certified fire technicians and offer advanced fire and safety services."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.therapidhire.com/images/Firesafety5.jpg"
         />
       </Helmet>
       <div
