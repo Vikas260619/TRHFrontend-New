@@ -2,6 +2,8 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Helmet } from "react-helmet";
+import MetaTags from 'react-meta-tags';
+
 
 function Aboutus() {
   const responsive = {
@@ -112,6 +114,8 @@ function Aboutus() {
           href="https://www.therapidhire.com/aboutus"
           data-react-helmet="true"
         ></link>
+      </Helmet>
+      <MetaTags>         
 
         <meta
           name="fb:app_id"
@@ -159,8 +163,8 @@ function Aboutus() {
           name="twitter:image"
           content="https://www.therapidhire.com/images/software.jpg"
         />
-      </Helmet>
-
+         </MetaTags>
+``
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">

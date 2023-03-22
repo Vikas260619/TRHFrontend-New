@@ -19,6 +19,7 @@
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "react-lodash": "^0.1.2",
+    "react-meta-tags": "^1.0.1",
     "react-moment": "^1.1.2",
     "react-multi-carousel": "^2.8.2",
     "react-owl-carousel": "^2.3.3",
