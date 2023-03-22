@@ -5,8 +5,11 @@ import Clients from "./Clients";
 import Expertteam from "./Expertteam";
 import Testimonial from "./Testimonial";
 import ReactWhatsapp from "react-whatsapp";
+import MetaTags from 'react-meta-tags';
+
 
 import { Helmet } from "react-helmet";
+
 
 function Home() {
   const list = [
@@ -24,7 +27,7 @@ function Home() {
     },
     {
       item: "Mobile App Development",
-      image: "images/slider3.webp",
+      image: "images/slider3.webp",   
       descp:
         "We provide complete application design, integration, and management services. Whether it's a consumer-oriented app or a transformative enterprise-class solution",
     },
@@ -157,7 +160,10 @@ function Home() {
           name="Keywords"
           content="Website Development, Cloud Services, Business Consulting,Software Development, It Services, Java, Php, Aws, Python, Wordpress, Blockchain, System Developer,IT outsourcing, hr outsourcing offshore development,,Mobile App Development, Minimum Viable Product,Data Engineering, New Product Development."
         />
-        <link rel="canonical" href="https://www.therapidhire.com" />
+        </Helmet>
+
+        <MetaTags>         
+
 
         <meta
           name="fb:app_id"
@@ -206,7 +212,7 @@ function Home() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-      </Helmet>
+         </MetaTags>
 
       <AliceCarousel
         controlsStrategy="alternate"
