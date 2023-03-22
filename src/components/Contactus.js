@@ -145,8 +145,8 @@ function Contactus() {
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Let's Connect - TheRapidHire"/>
   <meta property="og:description" content="Get in touch with us and discuss the needs and requirements of your development project."/>
-  <meta property="og:image" content="https://www.therapidhire.com/images/logo.png"/>
-<meta property="og:image:type" content="image/png" />
+  <meta property="og:image" content="https://www.therapidhire.com/images/software.jpg"/>
+<meta property="og:image:type" content="image/jpg" />
 <meta property="og:image:width" content="600" />
 <meta property="og:image:height" content="315" />
 <meta property="og:image:alt" content="therapidhire" />
@@ -156,7 +156,7 @@ function Contactus() {
   <meta property="twitter:url" content="https://www.therapidhire.com/letsconnect"/>
   <meta name="twitter:title" content="Let's Connect - TheRapidHire"/>
   <meta name="twitter:description" content="Get in touch with us and discuss the needs and requirements of your development project."/>
-  <meta name="twitter:image" content="https://www.therapidhire.com/images/logo.png"/>
+  <meta name="twitter:image" content="https://www.therapidhire.com/images/software.jpg"/>
 
       </Helmet>
       <div className="offwrap"></div>

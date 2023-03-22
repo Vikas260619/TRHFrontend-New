@@ -1,45 +1,20 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 function Terms() {
- 
- 
   return (
     <div>
       <Helmet>
-      <meta charset="utf-8"/>
-<title>Terms of Services-TheRapidHire</title>
-<meta name="description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us."/>
-<meta name="image" content="https://www.therapidhire.com/images/choose-3.png"/>
-<meta itemprop="name" content="Terms of Services-TheRapidHire"/>
-<meta itemprop="description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us."/>
-<meta itemprop="image" content="https://www.therapidhire.com/images/choose-3.png"/>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Terms of Services-TheRapidHire"/>
-<meta name="twitter:description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us."/>
-<meta name="twitter:site" content="@therapidhire_"/>
-<meta name="twitter:creator" content="@therapidhire_"/>
-<meta name="twitter:image:src" content="https://www.therapidhire.com/images/choose-3.png"/>
-<meta name="og:title" content="Terms of Services-TheRapidHire"/>
-<meta name="og:description" content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us."/>
-<meta name="og:url" content="https://www.therapidhire.com/termsofservices"/>
-<meta name="og:type" content="article"/>
-<meta name="article:section" content="softtware development"/>
-<meta name="article:author" content="https://www.facebook.com/profile.php?id=100054281690679"/>
-<meta name="article:tag" content="software development"/>
+        <meta charset="utf-8" />
+        <title>Terms of Services-TheRapidHire</title>
+        <meta
+          name="description"
+          content="We use our website to communicate with the valuable customers about our products & services and to take in personal information by customers and people who wish to connect with us."
+        />
 
-
-
-      
-        <link rel="canonical" href="https://www.therapidhire.com/termsofservices" />
-
-
-  <link rel="alternate" href="https://www.therapidhire.com/termsofservices" hreflang="x-default"/>
-  <link rel="alternate" href="https://www.therapidhire.com/termsofservices/en" hreflang="en"/>
-  <link rel="alternate" href="https://www.therapidhire.com/termsofservices/fr" hreflang="fr"/>
-  <link rel="alternate" href="https://www.therapidhire.com/termsofservices/es" hreflang="es"/>
-  <link rel="alternate" href="https://www.therapidhire.com/termsofservices/mx" hreflang="es-mx"/>  
-  
-
+        <link
+          rel="canonical"
+          href="https://www.therapidhire.com/termsofservices"
+        />
       </Helmet>
       <div className="offwrap"></div>
 
@@ -47,9 +22,7 @@ function Terms() {
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
             <div className="breadcrumbs-inner">
-              <h2 className="page-title">
-                Terms of Services
-              </h2>
+              <h2 className="page-title">Terms of Services</h2>
               <span className="sub-text">
                 {" "}
                 We use our website to communicate with the valuable customers
@@ -70,18 +43,17 @@ function Terms() {
                   <div className="heading-border-line"></div>
                 </div>
                 <p className="pt-50 text-center">
-                  
                   By using this website (" Website"), you admit that you have
                   read, understood, and accepted the Terms of Use that govern
-                  its use.However, Therapidhire Private Limited (" Therapidhire")
-                  requests that you not pierce the Website or download any document
-                  from the Website, if you don't agree to these terms and conditions.
-                   Continued use of access to the Website or downloading any material 
-                   available on the Website will be interpreted as acceptance of these 
-                   Terms of Use.Therapidhire reserves the right to make changes and variations
-                  to the contents of this Website, including these Terms of Use,
-                  at any time and without notice.
-                
+                  its use.However, Therapidhire Private Limited ("
+                  Therapidhire") requests that you not pierce the Website or
+                  download any document from the Website, if you don't agree to
+                  these terms and conditions. Continued use of access to the
+                  Website or downloading any material available on the Website
+                  will be interpreted as acceptance of these Terms of
+                  Use.Therapidhire reserves the right to make changes and
+                  variations to the contents of this Website, including these
+                  Terms of Use, at any time and without notice.
                 </p>
                 <p>
                   Therapidhire makes no representation that the contents or
@@ -126,22 +98,22 @@ function Terms() {
                   <h5> Intellectual Property Rights </h5>
                   <p>
                     This website, including its design, layout, law, and
-                    contents, as well as all content (banning any
-                    third-party document), is the sole property of Therapidhire
-                    and is defended by brand laws. It's banned to copy,
-                    reproduce in whole or in part, or produce secondary
-                    workshops in any form or medium without express written
-                    authorization. Therapidhire doesn't grant any express or
-                    unexpressed rights under any patents, trademarks, imprints,
-                    or other intellectual property rights.
+                    contents, as well as all content (banning any third-party
+                    document), is the sole property of Therapidhire and is
+                    defended by brand laws. It's banned to copy, reproduce in
+                    whole or in part, or produce secondary workshops in any form
+                    or medium without express written authorization.
+                    Therapidhire doesn't grant any express or unexpressed rights
+                    under any patents, trademarks, imprints, or other
+                    intellectual property rights.
                   </p>
                   <p>
-                    Therapidhire's logo is a registered trademark that's defended
-                    under trademark laws. Therapidhire and the names of
+                    Therapidhire's logo is a registered trademark that's
+                    defended under trademark laws. Therapidhire and the names of
                     Therapidhire's products mentioned here in are Therapidhire
-                    trademarks. Other products and company names mentioned
-                    here in may be trademarks and/ or service marks of their
-                    separate possessors, and they're conceded as similar.
+                    trademarks. Other products and company names mentioned here
+                    in may be trademarks and/ or service marks of their separate
+                    possessors, and they're conceded as similar.
                   </p>
                 </div>
                 <div className="term12">
@@ -187,7 +159,7 @@ function Terms() {
                     purpose.
                   </p>
                   <p>
-                  TheRapidHire doesn't guarantee or warranty that those files
+                    TheRapidHire doesn't guarantee or warranty that those files
                     available for downloading from this website (including,
                     without limitation, mobileslotcash.com) are free of
                     infection or viruses, worms, or other codes that manifest
@@ -239,7 +211,8 @@ function Terms() {
                     The laws of India, without regard to its rules on conflicts
                     of law, shall govern these Terms of Use. Any dispute
                     originating from or relating to these Terms of Use shall be
-                    exclusively before the courts in Indore, Madhya Pradesh, India.
+                    exclusively before the courts in Indore, Madhya Pradesh,
+                    India.
                   </p>
                 </div>
               </div>

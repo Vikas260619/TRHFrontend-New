@@ -69,47 +69,55 @@ function Blog() {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:1, max-video-preview:1"
         />
-        <meta
-          name="image"
-          content="https://www.therapidhire.com/images/ser6.png"
-        />
-        <meta
-          itemprop="name"
-          content="Get the latest updates of Technology | Business | Industry insights"
-        />
-        <meta
-          itemprop="description"
-          content="Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."
-        />
-        <meta
-          name="robots"
-          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-        />
+       
         <meta
           name="keywords"
           content="blockchain, IoT,Internet of things, java, cloud computing, technology, business, software development, mobile application, android, ios, business, marketing, digital marketing, industry insights, cryptocurrency, bitcoin , NFT, fintech , AI, ML, DL, deep learning, python, programming"
         />
-                <link rel="canonical" href="https://www.therapidhire.com/blog"/>
+        <link rel="canonical" href="https://www.therapidhire.com/blog" />
 
-                <meta name="fb:app_id" content="1369882117133030" data-react-helmet="true"/>
-  <meta property="og:url" content="https://www.therapidhire.com/blog"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Get the latest updates of Technology | Business | Industry insights"/>
-  <meta property="og:description" content="Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."/>
-  <meta property="og:image" content="https://trhblogs-s3-bucket.s3.ap-south-1.amazonaws.com/blogsImage/1668497685496-cloudnative.jpg"/>
-<meta property="og:image:type" content="image/jpg" />
-<meta property="og:image:width" content="600" />
-<meta property="og:image:height" content="315" />
-<meta property="og:image:alt" content="TechnologyBlog" />
+        <meta
+          name="fb:app_id"
+          content="1369882117133030"
+          data-react-helmet="true"
+        />
+        <meta property="og:url" content="https://www.therapidhire.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Get the latest updates of Technology | Business | Industry insights"
+        />
+        <meta
+          property="og:description"
+          content="Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."
+        />
+        <meta
+          property="og:image"
+          content="https://www.therapidhire.com/images/software.jpg"
+        />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:image:alt" content="TechnologyBlog" />
 
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:site" content="@therapidhire_"/>
-  <meta property="twitter:url" content="https://www.therapidhire.com/blog"/>
-  <meta name="twitter:title" content="Get the latest updates of Technology | Business | Industry insights"/>
-  <meta name="twitter:description" content="Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."/>
-  <meta name="twitter:image" content="https://trhblogs-s3-bucket.s3.ap-south-1.amazonaws.com/blogsImage/1668497685496-cloudnative.jpg"/>
-
-
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@therapidhire_" />
+        <meta
+          property="twitter:url"
+          content="https://www.therapidhire.com/blog"
+        />
+        <meta
+          name="twitter:title"
+          content="Get the latest updates of Technology | Business | Industry insights"
+        />
+        <meta
+          name="twitter:description"
+          content="Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.therapidhire.com/images/software.jpg"
+        />
       </Helmet>
       <div className="offwrap"></div>
       <div className="main-content">

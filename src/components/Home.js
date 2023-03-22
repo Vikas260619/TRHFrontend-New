@@ -157,26 +157,28 @@ function Home() {
           name="Keywords"
           content="Website Development, Cloud Services, Business Consulting,Software Development, It Services, Java, Php, Aws, Python, Wordpress, Blockchain, System Developer,IT outsourcing, hr outsourcing offshore development,,Mobile App Development, Minimum Viable Product,Data Engineering, New Product Development."
         />
+        <link rel="canonical" href="https://www.therapidhire.com" />
+
         <meta
           name="fb:app_id"
           content="1369882117133030"
           data-react-helmet="true"
         />
-        <meta property="og:url" content="https://www.therapidhire.com/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="TheRapidHire-Software Development | IT outsourcing Company"
         />
+        <meta property="og:url" content="https://www.therapidhire.com/" />
         <meta
           property="og:description"
           content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
         />
         <meta
           property="og:image"
-          content="https://www.therapidhire.com/images/logo.png"
+          content="https://www.therapidhire.com/images/software.jpg"
         />
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="315" />
         <meta
@@ -185,7 +187,7 @@ function Home() {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@therapidhire_"/>
+        <meta name="twitter:site" content="@therapidhire_" />
         <meta property="twitter:url" content="https://www.therapidhire.com/" />
         <meta
           name="twitter:title"
@@ -197,14 +199,13 @@ function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://www.therapidhire.com/images/logo.png"
+          content="https://www.therapidhire.com/images/software.jpg"
         />
 
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-      
       </Helmet>
 
       <AliceCarousel

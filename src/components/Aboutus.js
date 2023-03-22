@@ -134,9 +134,9 @@ function Aboutus() {
         />
         <meta
           property="og:image"
-          content="https://www.therapidhire.com/images/logo.png"
+          content="https://www.therapidhire.com/images/software.jpg"
         />
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="315" />
         <meta property="og:image:alt" content="therapidhire" />
@@ -157,7 +157,7 @@ function Aboutus() {
         />
         <meta
           name="twitter:image"
-          content="https://www.therapidhire.com/images/logo.png"
+          content="https://www.therapidhire.com/images/software.jpg"
         />
       </Helmet>
 
