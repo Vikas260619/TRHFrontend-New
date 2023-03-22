@@ -25,8 +25,8 @@ function Team() {
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Meet Our Team - TheRapidHire"/>
   <meta property="og:description" content="A team's success is determined by how well it plays as a whole. You could have the world's best collection of individual stars. We can all do little things with great love, and together we can accomplish great things."/>
-  <meta property="og:image" content="https://www.therapidhire.com/images/logo.png"/>
-<meta property="og:image:type" content="image/png" />
+  <meta property="og:image" content="https://www.therapidhire.com/images/software.jpg"/>
+<meta property="og:image:type" content="image/jpg" />
 <meta property="og:image:width" content="600" />
 <meta property="og:image:height" content="315" />
 <meta property="og:image:alt" content="therapidhire" />
@@ -36,7 +36,7 @@ function Team() {
   <meta property="twitter:url" content="https://www.therapidhire.com/team"/>
   <meta name="twitter:title" content="Meet Our Team - TheRapidHire"/>
   <meta name="twitter:description" content="A team's success is determined by how well it plays as a whole. You could have the world's best collection of individual stars. We can all do little things with great love, and together we can accomplish great things."/>
-  <meta name="twitter:image" content="https://www.therapidhire.com/images/logo.png"/>
+  <meta name="twitter:image" content="https://www.therapidhire.com/images/software.jpg"/>
   
 
      
