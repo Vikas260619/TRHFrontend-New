@@ -96,8 +96,8 @@ function Blog() {
           content="https://www.therapidhire.com/images/software.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="TechnologyBlog" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -108,11 +108,11 @@ function Blog() {
         />
         <meta
           name="twitter:title"
-          content="Get the latest updates of Technology | Business | Industry insights"
+          content="Get the latest updates of Industry insights"
         />
         <meta
           name="twitter:description"
-          content="Blogs related to the latest updates on technology, information, business development, digital re-imagination, and assurance."
+          content="Blogs related to the latest updates on technology, information."
         />
         <meta
           name="twitter:image"

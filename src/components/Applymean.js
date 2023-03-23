@@ -197,8 +197,8 @@ function Applymean() {
           content="https://www.therapidhire.com/images/software.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="therapidhire" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -210,10 +210,11 @@ function Applymean() {
         <meta name="twitter:title" content="Apply for MEAN Stack Developer" />
         <meta
           name="twitter:description"
-          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture.Building interactive consumer data from multiple systems and RESTfully abstracting to the UI through "
+          content="Scope and deliver solutions with the ability to design solutions independently based on high-level architecture. "
         />
         <meta
           name="twitter:image"
+
           content="https://www.therapidhire.com/images/software.jpg"
         />
       </Helmet>

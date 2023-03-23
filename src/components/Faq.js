@@ -33,8 +33,8 @@ export default function Faq() {
           content="https://www.therapidhire.com/images/software.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="therapidhire" />
 
         <meta name="twitter:card" content="summary_large_image" />

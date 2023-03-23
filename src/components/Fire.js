@@ -163,8 +163,8 @@ function Fire() {
           content="https://www.therapidhire.com/images/Firesafety1.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="fire safety" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -179,7 +179,7 @@ function Fire() {
         />
         <meta
           name="twitter:description"
-          content=" Reliable and effective fire protection solutions for your peace of mind - choose our fire fighting installation systems in your city Indore, India."
+          content=" Reliable and effective fire protection solutions for your peace of mind.."
         />
         <meta
           name="twitter:image"

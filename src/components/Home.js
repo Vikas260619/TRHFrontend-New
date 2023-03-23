@@ -173,20 +173,20 @@ function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="TheRapidHire-Software Development | IT outsourcing Company"
+          content="Software Development | IT outsourcing Company"
         />
         <meta property="og:url" content="https://www.therapidhire.com/" />
         <meta
           property="og:description"
-          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+          content="We are CMMI Level-5 software development, IT outsourcing, and HR company."
         />
         <meta
           property="og:image"
           content="https://www.therapidhire.com/images/software.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta
           property="og:image:alt"
           content="therapidhire -software development"
@@ -197,11 +197,11 @@ function Home() {
         <meta property="twitter:url" content="https://www.therapidhire.com/" />
         <meta
           name="twitter:title"
-          content="TheRapidHire-Software Development | IT outsourcing Company"
+          content="Software Development | IT outsourcing Company"
         />
         <meta
           name="twitter:description"
-          content="TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis."
+          content="We are CMMI Level-5 software development, IT outsourcing, and HR company."
         />
         <meta
           name="twitter:image"

@@ -41,19 +41,19 @@ function Training() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Professional Fire Safety Training | Keep Your Workplace Safe"
+          content="Professional Fire Safety Training"
         />
         <meta
           property="og:description"
-          content="Experienced Professionals: Our trainers are highly experienced professionals with a wealth of knowledge and expertise in fire safety."
+          content="Experienced Professionals: Our trainers are highly experienced professionals."
         />
         <meta
           property="og:image"
           content="https://www.therapidhire.com/images/Firesafety4.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="fire safety" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -64,11 +64,11 @@ function Training() {
         />
         <meta
           name="twitter:title"
-          content="Professional Fire Safety Training | Keep Your Workplace Safe"
+          content="Professional Fire Safety Training"
         />
         <meta
           name="twitter:description"
-          content="Experienced Professionals: Our trainers are highly experienced professionals with a wealth of knowledge and expertise in fire safety."
+          content="Experienced Professionals: Our trainers are highly experienced professionals"
         />
         <meta
           name="twitter:image"

@@ -35,19 +35,19 @@ function Services() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Services - Cloud Services|Designing|MVP|Product Development"
+          content="Cloud Services|Designing|MVP|Product Development"
         />
         <meta
           property="og:description"
-          content="We offer industry-specific and need-based services, allowing us to deliver customized solutions. Customers range from small individual startups to large corporations."
+          content="We offer industry-specific and need-based services, allowing us to deliver customized solutions."
         />
         <meta
           property="og:image"
           content="https://www.therapidhire.com/images/software.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="therapidhire" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -58,11 +58,11 @@ function Services() {
         />
         <meta
           name="twitter:title"
-          content="Services - Cloud Services|Designing|MVP|Product Development"
+          content="Cloud Services|Designing|MVP|Product Development"
         />
         <meta
           name="twitter:description"
-          content="We offer industry-specific and need-based services, allowing us to deliver customized solutions. Customers range from small individual startups to large corporations."
+          content="We offer industry-specific and need-based services, allowing us to deliver customized solutions."
         />
         <meta
           name="twitter:image"

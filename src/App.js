@@ -161,7 +161,7 @@ function App() {
       "url": "https://www.therapidhire.com/images/software.jpg",
       "contentUrl": "https://www.therapidhire.com/images/software.jpg",
       "width": 1200,
-      "height": 600
+      "height": 630
     }, {
       "@type": "WebPage",
       "@id": "https://www.therapidhire.com/#webpage",
@@ -189,7 +189,7 @@ function App() {
       "@id": "https://www.therapidhire.com/#breadcrumb",
       "itemListElement": [{
         "@type": "ListItem",
-        "position": 1,
+        "position": 1, 
         "name": "Home"
       }]
     }]
