@@ -1,17 +1,16 @@
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense } from "react";
 import Cookies from "universal-cookie";
 import posthog from "posthog-js";
-import ReactWhatsapp from 'react-whatsapp';
-
+import ReactWhatsapp from "react-whatsapp";
 
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import ScrollToTop from "react-scroll-to-top";
 import "./rapidcss/style.css";
 import "./rapidcss/responsive.css";
 import Sitemap from "./components/Sitemap";
-import Fire from "./components/Fire"
+import Fire from "./components/Fire";
 import CookieBanner from "./components/CookieBanner";
 import Installation from "./components/Installation";
 import Maintenance from "./components/Maintenance";
@@ -47,10 +46,8 @@ const Pagefound = lazy(() => import("./components/Pagefound"));
 const cookies = new Cookies();
 const token = cookies.get("token");
 
-
 function App() {
-
-
+ 
 
   const schemaLocalBusiness = {
     "@context": "https://schema.org",
@@ -95,9 +92,6 @@ function App() {
     },
   };
   const schemaOrganization_JSON = JSON.stringify(schemaOrganization);
-
- 
-
 
   const schemaWebSite = {
     "@context": "https://schema.org/",
@@ -198,21 +192,18 @@ function App() {
             <Route exact path="/applymean" element={<Applymean />}></Route>
             <Route exact path="*" element={<Pagefound />}></Route>
             <Route exact path="/sitemap" element={<Sitemap />}></Route>
-            <Route exact path="/fire" element={<Fire/>}></Route>
-            <Route exact path="/installation" element={<Installation/>}></Route>
-            <Route exact path="/maintenance" element={<Maintenance/>}></Route>
-            <Route exact path="/testing" element={<Testing/>}></Route>
-            <Route exact path="/training" element={<Training/>}></Route>
-
-
-
-
-
-
+            <Route exact path="/fire" element={<Fire />}></Route>
+            <Route
+              exact
+              path="/installation"
+              element={<Installation />}
+            ></Route>
+            <Route exact path="/maintenance" element={<Maintenance />}></Route>
+            <Route exact path="/testing" element={<Testing />}></Route>
+            <Route exact path="/training" element={<Training />}></Route>
           </Routes>
           <Footer />
           <Sidebar />
-         
         </Suspense>
       </BrowserRouter>
     </div>

@@ -2,8 +2,7 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Helmet } from "react-helmet";
-import MetaTags from 'react-meta-tags';
-
+import MetaTags from "react-meta-tags";
 
 function Aboutus() {
   const responsive = {
@@ -96,7 +95,28 @@ function Aboutus() {
   ];
   return (
     <div>
+      {/* test code starts */}
       <Helmet>
+        <title>Aboout Us</title>
+        <meta
+          property="og:title"
+          content="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
+        />
+        <meta
+          property="og:description"
+          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
+        />
+        <meta
+          property="og:image"
+          content="https://www.therapidhire.com/images/software.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.therapidhire.com/aboutus"
+        />
+      </Helmet>
+      {/* test code ends */}
+      {/* <Helmet>
         <title>
           About us - TheRapidHire|CMMI Level 5|Software|Website Development
         </title>
@@ -163,8 +183,8 @@ function Aboutus() {
           name="twitter:image"
           content="https://www.therapidhire.com/images/software.jpg"
         />
-         </MetaTags>
-``
+         </MetaTags> */}
+      ``
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">
