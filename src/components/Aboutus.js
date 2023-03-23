@@ -3,6 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Helmet } from "react-helmet";
 import MetaTags from "react-meta-tags";
+import OpenGraph from "./OpenGraph";
 
 function Aboutus() {
   const responsive = {
@@ -95,26 +96,15 @@ function Aboutus() {
   ];
   return (
     <div>
+<OpenGraph
+ title="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
+ description="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time "
+ image="https://www.therapidhire.com/images/software.jpg"
+ url="https://therapidhire.com/aboutus"
+/>
       {/* test code starts */}
-      <Helmet>
-        <title>Aboout Us</title>
-        <meta
-          property="og:title"
-          content="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
-        />
-        <meta
-          property="og:description"
-          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
-        />
-        <meta
-          property="og:image"
-          content="https://www.therapidhire.com/images/software.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://www.therapidhire.com/aboutus"
-        />
-      </Helmet>
+      {/* <Helmet>
+         </Helmet> */}
       {/* test code ends */}
       {/* <Helmet>
         <title>
