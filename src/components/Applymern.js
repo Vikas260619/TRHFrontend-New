@@ -195,8 +195,8 @@ function Applymern() {
           content="https://www.therapidhire.com/images/software.jpg"
         />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="therapidhire" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -209,8 +209,7 @@ function Applymern() {
         <meta name="twitter:title" content="Apply For Mern Developers" />
         <meta
           name="twitter:description"
-          content="We are looking for a MERN Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception."
-        />
+          content="We are looking for a MERN Stack Developer to produce scalable software solutions. "        />
         <meta
           name="twitter:image"
           content="https://www.therapidhire.com/images/software.jpg"

@@ -44,15 +44,15 @@ function Testing() {
         />
         <meta
           property="og:description"
-          content="Testing is important to evaluate the healthiness of the installed fire protection system so that it can work properly in case of an emergency."
+          content="Testing is important to evaluate the healthiness of the installed fire protection system."
         />
         <meta
           property="og:image"
           content="https://www.therapidhire.com/images/Firesafety2.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="fire safety" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -63,11 +63,11 @@ function Testing() {
         />
         <meta
           name="twitter:title"
-          content="Fire Safety Equipment  Testing | Make Your Workplace Safe"
+          content="Fire Safety Equipment Testing"
         />
         <meta
           name="twitter:description"
-          content="Testing is important to evaluate the healthiness of the installed fire protection system so that it can work properly in case of an emergency."
+          content="Testing is important to evaluate the healthiness of the installed fire protection system."
         />
         <meta
           name="twitter:image"

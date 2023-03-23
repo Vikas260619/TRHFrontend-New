@@ -303,8 +303,8 @@ function Blogdetail() {
           <meta property="og:description" content={users?.description} />
           <meta property="og:image" content={imageurl} />
           <meta property="og:image:type" content="image/jpg" />
-          <meta property="og:image:width" content="600" />
-          <meta property="og:image:height" content="315" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
           <meta property="og:image:alt" content="TechnologyBlog" />
 
           <meta name="twitter:card" content="summary_large_image" />

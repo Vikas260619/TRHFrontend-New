@@ -154,7 +154,7 @@ function Apply() {
 
         <meta
           name="description"
-          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge on design patterns and anti-patterns. Good in algorithms and data structures."
+          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory."
         />
         <meta
           name="robots"
@@ -178,15 +178,15 @@ function Apply() {
         />
         <meta
           property="og:description"
-          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge of design patterns and anti-patterns. Good in algorithms and data structures."
+          content="Experience in core Java advanced programming."
         />
         <meta
           property="og:image"
           content="https://www.therapidhire.com/images/software.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
         <meta property="og:image:alt" content="therapidhire" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -200,7 +200,7 @@ function Apply() {
         />
         <meta
           name="twitter:description"
-          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory. Experience in building mechanisms like Maven. Good knowledge of design patterns and anti-patterns. Good in algorithms and data structures."
+          content="Experience in core Java advanced programming. Experience in Spring & Hibernate is mandatory."
         />
         <meta
           name="twitter:image"

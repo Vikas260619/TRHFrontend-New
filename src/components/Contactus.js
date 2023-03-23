@@ -147,15 +147,15 @@ function Contactus() {
   <meta property="og:description" content="Get in touch with us and discuss the needs and requirements of your development project."/>
   <meta property="og:image" content="https://www.therapidhire.com/images/software.jpg"/>
 <meta property="og:image:type" content="image/jpg" />
-<meta property="og:image:width" content="600" />
-<meta property="og:image:height" content="315" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="therapidhire" />
 
   <meta name="twitter:card" content="summary_large_image"/>
   <meta property="twitter:domain" content="therapidhire.com"/>
   <meta property="twitter:url" content="https://www.therapidhire.com/letsconnect"/>
   <meta name="twitter:title" content="Let's Connect - TheRapidHire"/>
-  <meta name="twitter:description" content="Get in touch with us and discuss the needs and requirements of your development project."/>
+  <meta name="twitter:description" content="Get in touch with us and discuss."/>
   <meta name="twitter:image" content="https://www.therapidhire.com/images/software.jpg"/>
 
       </Helmet>

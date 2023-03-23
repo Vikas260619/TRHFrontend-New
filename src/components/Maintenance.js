@@ -41,19 +41,19 @@ function Maintenance() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Fire Safety Equipment Maintenance Testing | Ensure Workplace Safe"
+          content="Fire Safety Equipment"
         />
         <meta
           property="og:description"
-          content="We provide superior fire compliance management services by certified fire technicians and offer advanced fire and safety services."
+          content="We provide superior fire compliance management services by certified fire technicians."
         />
         <meta
           property="og:image"
           content="https://www.therapidhire.com/images/Firesafety5.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="fire safety" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -64,11 +64,11 @@ function Maintenance() {
         />
         <meta
           name="twitter:title"
-          content="Fire Safety Equipment Maintenance Testing | Ensure Workplace Safe"
+          content="Fire Safety Equipment"
         />
         <meta
           name="twitter:description"
-          content="We provide superior fire compliance management services by certified fire technicians and offer advanced fire and safety services."
+          content="We provide superior fire compliance management services by certified fire technicians."
         />
         <meta
           name="twitter:image"

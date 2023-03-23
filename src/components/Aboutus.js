@@ -128,19 +128,19 @@ function Aboutus() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
+          content="About us - TheRapidHire"
         />
         <meta
           property="og:description"
-          content="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time"
+          content="At TheRapidHire, we believe in hard work and transparency."
         />
         <meta
           property="og:image"
           content="https://www.therapidhire.com/images/software.jpg"
         />
         <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="therapidhire" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -151,11 +151,11 @@ function Aboutus() {
         />
         <meta
           name="twitter:title"
-          content=" About us - TheRapidHire|CMMI Level 5|Software|Website Development"
+          content=" About us - TheRapidHire"
         />
         <meta
           name="twitter:description"
-          content=" At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all times"
+          content=" At TheRapidHire, we believe in hard work and transparency."
         />
         <meta
           name="twitter:image"
