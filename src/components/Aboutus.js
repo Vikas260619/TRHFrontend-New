@@ -2,8 +2,8 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Helmet } from "react-helmet";
-import MetaTags from "react-meta-tags";
-import OpenGraph from "./OpenGraph";
+import MetaTags from 'react-meta-tags';
+
 
 function Aboutus() {
   const responsive = {
@@ -96,17 +96,7 @@ function Aboutus() {
   ];
   return (
     <div>
-<OpenGraph
- title="About us - TheRapidHire|CMMI Level 5|Software|Website Development"
- description="At TheRapidHire, we believe in hard work and transparency. We encourage professionalism and clarity of thought at all time "
- image="https://www.therapidhire.com/images/software.jpg"
- url="https://therapidhire.com/aboutus"
-/>
-      {/* test code starts */}
-      {/* <Helmet>
-         </Helmet> */}
-      {/* test code ends */}
-      {/* <Helmet>
+      <Helmet>
         <title>
           About us - TheRapidHire|CMMI Level 5|Software|Website Development
         </title>
@@ -124,8 +114,6 @@ function Aboutus() {
           href="https://www.therapidhire.com/aboutus"
           data-react-helmet="true"
         ></link>
-      </Helmet>
-      <MetaTags>         
 
         <meta
           name="fb:app_id"
@@ -173,8 +161,8 @@ function Aboutus() {
           name="twitter:image"
           content="https://www.therapidhire.com/images/software.jpg"
         />
-         </MetaTags> */}
-      ``
+      </Helmet>
+``
       <div className="main-content">
         <div className="rs-breadcrumbs img1">
           <div className="container-fluid">

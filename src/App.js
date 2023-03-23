@@ -47,8 +47,6 @@ const cookies = new Cookies();
 const token = cookies.get("token");
 
 function App() {
- 
-
   const schemaLocalBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -138,9 +136,74 @@ function App() {
   };
   const schemaFaq_JSON = JSON.stringify(schemaFaq);
 
+  const Opengraph = {
+
+    "@context": "https://schema.org",
+    "@graph": [{
+      "@type": "WebSite",
+      "@id": "https://www.therapidhire.com/#website",
+      "url": "https://www.therapidhire.com/",
+      "name": "The Rapid Hire",
+      "description": "Quality over Quantiy",
+      "potentialAction": [{
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.therapidhire.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }],
+      "inLanguage": "en-US"
+    }, {
+      "@type": "ImageObject",
+      "@id": "https://www.therapidhire.com/#primaryimage",
+      "inLanguage": "en-US",
+      "url": "https://www.therapidhire.com/images/software.jpg",
+      "contentUrl": "https://www.therapidhire.com/images/software.jpg",
+      "width": 1200,
+      "height": 600
+    }, {
+      "@type": "WebPage",
+      "@id": "https://www.therapidhire.com/#webpage",
+      "url": "https://www.therapidhire.com/",
+      "name": "TheRapidHire-Software Development | IT outsourcing Company",
+      "isPartOf": {
+        "@id": "https://www.therapidhire.com/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.therapidhire.com/#primaryimage"
+      },
+      "datePublished": "2023-03-23T05:00:16+00:00",
+      "dateModified": "2023-03-23T05:00:16+00:00",
+      "description": "TheRapidHire is a CMMI Level-5 software development, IT outsourcing, and HR company. We are a CMMI 5-level certified organization providing quality products and professionals on a contract basis.",
+      "breadcrumb": {
+        "@id": "https://www.therapidhire.com/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [{
+        "@type": "ReadAction",
+        "target": ["https://www.therapidhire.com/"]
+      }]
+    }, {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.therapidhire.com/#breadcrumb",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home"
+      }]
+    }]
+  
+    
+  };
+  const schemaOpengraph_JSON = JSON.stringify(Opengraph);
+
+
   return (
     <div>
       <Helmet>
+        <script type="application/ld+json">{schemaOpengraph_JSON}</script>
+
         <script type="application/ld+json">{schemaLocalBusiness_JSON}</script>
         <script type="application/ld+json">{schemaOrganization_JSON}</script>
         <script type="application/ld+json">{schemaWebSite_JSON}</script>
